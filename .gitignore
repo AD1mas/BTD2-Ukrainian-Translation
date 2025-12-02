@@ -1,0 +1,6 @@
+*.rpa
+*.rpyc
+*.zip
+*.7z
+game/cache/
+game/saves/

@@ -8,7 +8,7 @@ label splashscreen:
     with Pause(0.5)
 
     scene endslate with dissolve
-    show text "{=endslate_title}{size=90}{color=#cc0000}SOSAV?{/color}{/size}{/=endslate_title}\n{vspace=10}{size=30}ТАК{/size}\nБЛЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯ\nЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯ\nЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯ\nЯЯЯЯЯЯЯЯЯЯЯЯЯЯ\nЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯ\nЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯ\n{vspace=10}{size=30}18+ Тільки!{/size}{vspace=20}\nFor a more specific list of warnings, please visit {a=http://www.boyfriendtodeath.com/btd-2-fresh-blood.html}{color=#ffffff}the website{/color}{/a}." with dissolve
+    show text "{=endslate_title}{size=90}{color=#cc0000}Ти що сосав?{/color}{/size}{/=endslate_title}\n{vspace=10}{size=30}ТАК{/size}\nБЛЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯ\nЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯ\nЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯ\nЯЯЯЯЯЯЯЯЯЯЯЯЯЯ\nЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯ\nЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯ\n{vspace=10}{size=30}18+ Тільки!{/size}{vspace=20}\nFor a more specific list of warnings, please visit {a=http://www.boyfriendtodeath.com/btd-2-fresh-blood.html}{color=#ffffff}the website{/color}{/a}." with dissolve
     pause
     scene endslate_clean with dissolve
     show text "The characters and actions depicted in this game are entirely fictional.\n{vspace=20}Your choices will affect the story and the outcome, but this is not a story where good triumphs over evil. This is a journey through horrors, from the wildly paranormal to the subtle darkness of human apathy.\n{vspace=20}If you're feeling overwhelmed, close the game and take a break.\n{vspace=20}{color=#cc0000}This game was built to thrill, not to harm.\nPlease take care.{/color}" with dissolve
@@ -76,7 +76,7 @@ image endslate_clean = "bloodbg_noblood.jpg"
 style endslate_title:
     size 150
     color "#fff"
-    font "youmurdererbb_reg.ttf"
+    font "Tahyp-rahy-ter22Verydirty.ttf"
 style endslate_subtitle:
     color "#fff"
     italic "true"

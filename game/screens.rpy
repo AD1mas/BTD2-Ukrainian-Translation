@@ -2841,12 +2841,18 @@ screen credits():
             text "{size=24}Game Creators:{/size}"
             textbutton _("Electricpuke") action OpenURL("http://electricpuke.tumblr.com/") xmargin 5
             textbutton _("Gatobob") action OpenURL("http://gurobob.tumblr.com/") xmargin 5
+
+        hbox:
+            xalign 0.5
+            text "{size=24}Переклад гри:{/size}"
+            textbutton _("Leafyiff") action OpenURL("https://t.me/leafyiff") xmargin 5
+            textbutton _("ADimas") action OpenURL("https://linktr.ee/AD1mas") xmargin 5
     frame:
         xpos 10
-        ypos 100
+        ypos 125
         xminimum 550
-        top_padding 20
-        bottom_padding 25
+        top_padding 10
+        bottom_padding 10
         left_padding 20
         right_padding 20
         style "file_picker_frame"

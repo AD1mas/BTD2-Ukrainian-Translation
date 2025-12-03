@@ -4,3 +4,5 @@
 *.7z
 game/cache/
 game/saves/
+
+log.txt

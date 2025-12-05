@@ -17,11 +17,11 @@ init -1 python hide:
 
 
 
-    config.window_title = u"Тебе тут трахнуть та згвалтують 2: Свіжа кров"
+    config.window_title = u"Хлопець до Смерті 2: Свіжа Кров"
 
 
 
-    config.name = "Тебе тут трахнуть та згвалтують 2: Свіжа кров"
+    config.name = "Хлопець до Смерті 2: Свіжа Кров"
     config.version = "1.0"
 
 

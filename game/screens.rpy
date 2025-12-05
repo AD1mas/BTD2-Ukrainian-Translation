@@ -233,16 +233,16 @@ screen main_menu():
 
         has hbox
 
-        textbutton "{font=Bubu_Ghost.ttf}{size=30}New Game{/size}{/font}" action Start() style "main_menu_button"
-        text "{font=Bubu_Ghost.ttf}{size=30}|{/size}{/font}"
-        textbutton "{font=Bubu_Ghost.ttf}{size=30}Load Game{/size}{/font}" action ShowMenu("load") style "main_menu_button"
-        text "{font=Bubu_Ghost.ttf}{size=30}|{/size}{/font}"
-        textbutton _("{font=Bubu_Ghost.ttf}{size=30}Options{/size}{/font}") action ShowMenu("preferences") style "main_menu_button"
-        text "{font=Bubu_Ghost.ttf}{size=30}|{/size}{/font}"
-        textbutton _("{font=Bubu_Ghost.ttf}{size=30}Quit{/size}{/font}") action Quit(confirm=False) style "main_menu_button"
+        textbutton "{font=Tahyp-rahy-ter22.ttf}{size=30}Нова гра{/size}{/font}" action Start() style "main_menu_button"
+        text "{font=Tahyp-rahy-ter22.ttf}{size=30}|{/size}{/font}"
+        textbutton "{font=Tahyp-rahy-ter22.ttf}{size=30}Завантажити гру{/size}{/font}" action ShowMenu("load") style "main_menu_button"
+        text "{font=Tahyp-rahy-ter22.ttf}{size=30}|{/size}{/font}"
+        textbutton _("{font=Tahyp-rahy-ter22.ttf}{size=30}Налаштування{/size}{/font}") action ShowMenu("preferences") style "main_menu_button"
+        text "{font=Tahyp-rahy-ter22.ttf}{size=30}|{/size}{/font}"
+        textbutton _("{font=Tahyp-rahy-ter22.ttf}{size=30}Вийти{/size}{/font}") action Quit(confirm=False) style "main_menu_button"
         if persistent.unlock_bonus == True:
-            text "{font=Bubu_Ghost.ttf}{size=30}|{/size}{/font}"
-            textbutton _("{font=Bubu_Ghost.ttf}{size=30}Extra{/size}{/font}") action ShowMenu("extra") style "main_menu_button_extra"
+            text "{font=Tahyp-rahy-ter22.ttf}{size=30}|{/size}{/font}"
+            textbutton _("{font=Tahyp-rahy-ter22.ttf}{size=30}Додатковий контент{/size}{/font}") action ShowMenu("extra") style "main_menu_button_extra"
 
 init -2:
 
@@ -285,19 +285,19 @@ screen navigation():
 
         has vbox
 
-        textbutton _("CG Gallery") action ShowMenu("cg_gallery")
-        textbutton _("Endings") action ShowMenu("collection")
-        textbutton _("Characters") action ShowMenu("characters")
-        textbutton _("Music") action ShowMenu("music")
-        textbutton _("Credits") action ShowMenu("credits")
+        textbutton _("Галерея") action ShowMenu("cg_gallery")
+        textbutton _("Кінцівки") action ShowMenu("collection")
+        textbutton _("Персонажі") action ShowMenu("characters")
+        textbutton _("Музика") action ShowMenu("music")
+        textbutton _("Розробники") action ShowMenu("credits")
         null height 20
-        textbutton _("Return") action Return()
-        textbutton _("Preferences") action ShowMenu("preferences")
-        textbutton _("Save Game") action ShowMenu("save")
-        textbutton _("Load Game") action ShowMenu("load")
-        textbutton _("Main Menu") action MainMenu()
-        textbutton _("Help") action ShowMenu("help")
-        textbutton _("Quit") action Quit()
+        textbutton _("Назад") action Return()
+        textbutton _("Налаштування") action ShowMenu("preferences")
+        textbutton _("Зберегти") action ShowMenu("save")
+        textbutton _("Завантажити") action ShowMenu("load")
+        textbutton _("Головне меню") action MainMenu()
+        textbutton _("Допомога") action ShowMenu("help")
+        textbutton _("Вийти") action Quit()
 
 init -2:
 
@@ -320,7 +320,7 @@ screen extra():
         ypos 105
 
         has vbox
-        textbutton _("Return") action ShowMenu("cg_gallery")
+        textbutton _("Назад") action ShowMenu("cg_gallery")
 
 
 
@@ -336,7 +336,7 @@ screen extra():
 
         hbox:
             xalign 0.5
-            text "{size=40}{font=Bubu_Ghost.ttf}{color=cc0000}OH SHIT YOU HAVE 100% COMPLETION{/color}{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}{color=cc0000}ОХ НІХУЯ СОБІ, ТИ ПРОЙШОВ ГРУ НА 100%{/color}{/font}{/size}"
 
 
     frame:
@@ -355,7 +355,7 @@ screen extra():
         hbox:
             spacing 10
             vbox:
-                text "{size=16}Damn dude, geez. Anyway, here's some bonus content for you.{/size}"
+                text "{size=16}Оце ти даєш, йопересете... Ось тобі додатковий контент за твої старання{/size}"
 
     frame:
         xpos 10
@@ -375,14 +375,14 @@ screen extra():
             spacing 10
             vbox:
                 xalign 0.5
-                textbutton _("Scene: Ren's dark room epilogue") action Jump("bonus_ren_closet") style "bonus_button"
-                textbutton _("Scene: Rire and Sano") action Jump("sano_rire_special") style "bonus_button"
-                textbutton _("Scene: Vincent and Lawrence") action Jump("vincent_special") style "bonus_button"
-                textbutton _("Scene: Cain and Rire") action Jump("cain_rire_special") style "bonus_button"
-                textbutton _("Art: Lawrence 'Relaxing'") action Jump("bonus_law_dick") style "bonus_button"
-                textbutton _("Art: Vincent and Farz Being Rough") action Jump("bonus_vfarz") style "bonus_button"
-                textbutton _("Sketches: Ren Doodles") action Jump("bonus_ren_doodle") style "bonus_button"
-                textbutton _("Sketches: Vincent Eats Mcrib") action Jump("bonus_mcrib") style "bonus_button"
+                textbutton _("Сцена: Епілог Рена в темній кімнаті") action Jump("bonus_ren_closet") style "bonus_button"
+                textbutton _("Сцена: Раєр і Сано") action Jump("sano_rire_special") style "bonus_button"
+                textbutton _("Сцена: Вінсент та Лоуренс") action Jump("vincent_special") style "bonus_button"
+                textbutton _("Сцена: Каїн і Раєр") action Jump("cain_rire_special") style "bonus_button"
+                textbutton _("Арт: Лоуренс \"відпочиває\"") action Jump("bonus_law_dick") style "bonus_button"
+                textbutton _("Арт: Грубий Вінсент та його омежка Фарц") action Jump("bonus_vfarz") style "bonus_button"
+                textbutton _("Скетчі: Рен милаха") action Jump("bonus_ren_doodle") style "bonus_button"
+                textbutton _("Скетчі: Вінсент і його трапеза") action Jump("bonus_mcrib") style "bonus_button"
     add "BS/puke_chib.png":
         xpos 0
         ypos 300
@@ -427,14 +427,13 @@ screen help():
         hbox:
             xalign 0.5
             add "menu_title_left.png"
-            text "{size=40}{font=Bubu_Ghost.ttf}HELP{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}ДОПОМОГА{/font}{/size}"
             add "menu_title_right.png"
 
     frame:
         xpos 10
         ypos 115
-        xmaximum 590
-        xminimum 590
+        xsize 570
         top_padding 10
         bottom_padding 10
         left_padding 10
@@ -449,9 +448,9 @@ screen help():
                 add "example_bars1.jpg"
             vbox:
                 xmaximum 445
-                text "<-{vspace=1}{size=16}The red and blue bars on the left hand side of the screen indicate your health and sanity points. Letting these run out will usually result in your death! Although, some options or reactions in the game may only happen if your health or sanity are low.{/size}"
+                text "<-{vspace=1}{size=16}Червона шкала ліворуч на екрані показує ваш рівень здоров'я, синя - ваш ґлузд. Деякі опції у грі доступні лише, якщо шкала психіки або здоров'я дуже низька, але будьте обережні: ви можете померти!{/size}"
                 text "->" xalign 1.0
-                text "{size=16}You may run into other bars on the right side of your screen. These will indicate something about your captor. Lawrence has his own sanity bar, and Vincent has a rage bar.{/size}" xalign 1.0
+                text "{size=16}Є і інші шкали: ці дві говорять про стан вашого викрадача. У Лоуренса є шкала його психічної стабільності, у Вінсента - шкала гніву.{/size}" xalign 1.0
             hbox:
                 add "example_bars2.jpg"
     frame:
@@ -471,14 +470,13 @@ screen help():
                 xalign 0.5
                 add "example_hearts.png"
             vbox:
-                xminimum 580
-                xmaximum 580
-                text "{size=16}There is a small heart icon beside the name of characters you can earn 'Love' points with. The heart will generally start at black and warm up to red as you gain points. If you lose points and end up with negative 'Love', the heart icon will appear broken. Some characters also have a special heart icon if you manage to gain 100 points with them.{/size}"
+                xsize 550
+                text "{size=16}Біля деяких персонажів є зображення сердечка: воно показує кількість очок любові між вами. Серце спочатку буде чорним, проте протягом спілкування може змінювати колір ближче до червоного. Якщо ти підеш у мінус, то серце буде розбите. Якщо ти досягнеш 100 очок любові, то у персонажів покажуться їхні особисті варіації червоного сердечка.{/size}"
     frame:
         xalign 0.5
         ypos 63
         has hbox
-        textbutton _("Click here for the built in 'How to use Ren'Py' Page") action Help()
+        textbutton _("Клацніть сюди, щоб дізнатися, як працює RenPy") action Help()
 
 
 
@@ -507,18 +505,17 @@ screen characters():
         hbox:
             xalign 0.5
             add "menu_title_left.png"
-            text "{size=40}{font=Bubu_Ghost.ttf}CHARACTERS{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}ПЕРСОНАЖІ{/font}{/size}"
             add "menu_title_right.png"
 
     frame:
         xpos 10
         ypos 70
-        xmaximum 590
-        xminimum 590
+        xsize 570
         top_padding 10
         bottom_padding 10
-        left_padding 10
-        right_padding 10
+        left_padding 0
+        right_padding 0
         style "file_picker_frame"
 
         has vbox
@@ -526,36 +523,36 @@ screen characters():
         vbox:
             hbox:
                 if persistent.character_unlock_vincent == True:
-                    textbutton _("Vincent ") action ShowMenu("character_vincent") style "character_button_vincent_unlocked"
+                    textbutton _("Вінсент ") action ShowMenu("character_vincent") style "character_button_vincent_unlocked"
                 else:
                     textbutton _("??? ") action NullAction() style "character_button_vincent"
                 if persistent.character_unlock_cain == True:
-                    textbutton _("Cain ") action ShowMenu("character_cain") style "character_button_cain_unlocked"
+                    textbutton _("Каїн ") action ShowMenu("character_cain") style "character_button_cain_unlocked"
                 else:
                     textbutton _("??? ") action NullAction() style "character_button_cain"
             hbox:
                 if persistent.character_unlock_lawrence == True:
-                    textbutton _("Lawrence ") action ShowMenu("character_lawrence") style "character_button_lawrence_unlocked"
+                    textbutton _("Лоуренс ") action ShowMenu("character_lawrence") style "character_button_lawrence_unlocked"
                 else:
                     textbutton _("??? ") action NullAction() style "character_button_lawrence"
                 if persistent.character_unlock_ren2 == True:
-                    textbutton _("Ren ") action ShowMenu("character_ren2") style "character_button_ren_unlocked2"
+                    textbutton _("Рен ") action ShowMenu("character_ren2") style "character_button_ren_unlocked2"
                 elif persistent.character_unlock_ren1 == True:
-                    textbutton _("Ren ") action ShowMenu("character_ren") style "character_button_ren_unlocked"
+                    textbutton _("Рен ") action ShowMenu("character_ren") style "character_button_ren_unlocked"
                 else:
                     textbutton _("??? ") action NullAction() style "character_button_ren"
             hbox:
                 if persistent.character_unlock_farz == True:
-                    textbutton _("Farz ") action ShowMenu("character_farz") style "character_button_farz_unlocked"
+                    textbutton _("Фарц ") action ShowMenu("character_farz") style "character_button_farz_unlocked"
                 else:
                     textbutton _("??? ") action NullAction() style "character_button_farz"
                 if persistent.character_unlock_sano == True:
-                    textbutton _("Sano ") action ShowMenu("character_sano") style "character_button_sano_unlocked"
+                    textbutton _("Сано ") action ShowMenu("character_sano") style "character_button_sano_unlocked"
                 else:
                     textbutton _("??? ") action NullAction() style "character_button_sano"
             hbox:
                 if persistent.character_unlock_damien == True:
-                    textbutton _("Damien ") action ShowMenu("character_damien") style "character_button_damien_unlocked"
+                    textbutton _("Демієн ") action ShowMenu("character_damien") style "character_button_damien_unlocked"
                 else:
                     textbutton _("??? ") action NullAction() style "character_button_damien"
                 if persistent.character_unlock_aed == True:
@@ -564,11 +561,11 @@ screen characters():
                     textbutton _("??? ") action NullAction() style "character_button_aed"
             hbox:
                 if persistent.character_unlock_sam == True:
-                    textbutton _("Sam ") action ShowMenu("character_sam") style "character_button_sam_unlocked"
+                    textbutton _("Сем ") action ShowMenu("character_sam") style "character_button_sam_unlocked"
                 else:
                     textbutton _("??? ") action NullAction() style "character_button_sam"
                 if persistent.character_unlock_ashe == True:
-                    textbutton _("Ashe ") action ShowMenu("character_ashe") style "character_button_ashe_unlocked"
+                    textbutton _("Еш ") action ShowMenu("character_ashe") style "character_button_ashe_unlocked"
                 else:
                     textbutton _("??? ") action NullAction() style "character_button_ashe"
 
@@ -680,13 +677,13 @@ screen character_ren():
         xfill True
         hbox:
             xalign 0.5
-            text "{size=40}{font=Bubu_Ghost.ttf}CHARACTER - Ren{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}ПЕРСОНАЖ - Рен{/font}{/size}"
     add "charpage_ren.png":
         xpos 0
         ypos 400
         xanchor 0.0
         yanchor 1.0
-    text "{size=25}Ren Hana{/size}{vspace=1}Height: 5'1{vspace=1}Age: 21{vspace=1}Likes:???{vspace=1}Fears:???":
+    text "{size=25}Рен Хана{/size}{vspace=1}Зріст: 155 см{vspace=1}Вік: 21{vspace=1}Любить:???{vspace=1}Боїться:???":
         xpos 600
         ypos 385
         text_align 1.0
@@ -704,7 +701,7 @@ screen character_ren():
         left_padding 20
         right_padding 20
         style "file_picker_frame"
-        text "A short fellow who invited Lawrence to meet him. He seems cheerful but he may be hiding something."
+        text "Низенький веселий хлопчина, що запросив Лоуренса на зустріч, проте схоже, він щось приховує"
 screen character_ren2():
     tag menu
     use navigation
@@ -716,13 +713,13 @@ screen character_ren2():
         xfill True
         hbox:
             xalign 0.5
-            text "{size=40}{font=Bubu_Ghost.ttf}CHARACTER - Ren{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}ПЕРСОНАЖ - Рен{/font}{/size}"
     add "charpage_ren2.png":
         xpos 0
         ypos 400
         xanchor 0.0
         yanchor 1.0
-    text "{size=25}Ren Hana{/size}{vspace=1}Height: 5'1{vspace=1}Age: 21{vspace=1}Likes: Sweets, Anime, Hearts{vspace=1}Fears: His past":
+    text "{size=25}Рен Хана{/size}{vspace=1}Зріст: 155 см{vspace=1}Вік: 21{vspace=1}Любить: солодощі, аніме, сердечка{vspace=1}Боїться: Минулого":
         xpos 600
         ypos 385
         text_align 1.0
@@ -740,7 +737,7 @@ screen character_ren2():
         left_padding 20
         right_padding 20
         style "file_picker_frame"
-        text "A near-human fox demon who's looking for a new friend. He can be sweet and gentle, or clingy and volatile. He's got some skeletons in his closet."
+        text "Лисо-людина-демон, що шукає нового друга! Він може бути як милим та лагідним, так і жорстоким. Він має кілька скелетів у шафі."
 screen character_lawrence():
     tag menu
     use navigation
@@ -752,13 +749,13 @@ screen character_lawrence():
         xfill True
         hbox:
             xalign 0.5
-            text "{size=40}{font=Bubu_Ghost.ttf}CHARACTER - Lawrence{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}ПЕРСОНАЖ - Лоуренс{/font}{/size}"
     add "charpage_lawrence.png":
         xpos 0
         ypos 400
         xanchor 0.0
         yanchor 1.0
-    text "{size=25}Lawrence Oleander{/size}{vspace=1}Height: 5'11{vspace=1}Age: 26{vspace=1}Likes: Gardening, Tea, Reading{vspace=1}Fears: People":
+    text "{size=25}Лоуренс Олеандер{/size}{vspace=1}Зріст: 180,3 см{vspace=1}Вік: 26{vspace=1}Любить: рослини, чай, книги{vspace=1}Боїться: людей":
         xpos 600
         ypos 385
         text_align 1.0
@@ -776,7 +773,7 @@ screen character_lawrence():
         left_padding 20
         right_padding 20
         style "file_picker_frame"
-        text "A soft spoken man who prefers to keep to himself. He rarely leaves his home during the day and likes to spend time outdoors at night when he can."
+        text "Тихий хлопчина, що зазвичай завжди на самоті. Він рідко виходить з дому, проте часто гуляє вночі безлюдними вуличками."
 screen character_cain():
     tag menu
     use navigation
@@ -788,13 +785,13 @@ screen character_cain():
         xfill True
         hbox:
             xalign 0.5
-            text "{size=40}{font=Bubu_Ghost.ttf}CHARACTER - Cain{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}ПЕРСОНАЖ - Каїн{/font}{/size}"
     add "charpage_cain.png":
         xpos 0
         ypos 400
         xanchor 0.0
         yanchor 1.0
-    text "{size=25}Cain Zeitgeist{/size}{vspace=1}Height: 6'3{vspace=1}Age: ???{vspace=1}Likes: Wine, Wide open areas, Art{vspace=1}Fears: Nothing":
+    text "{size=25}Каїн Зайтґайст{/size}{vspace=1}Зріст: 190,5 см{vspace=1}Вік: ???{vspace=1}Любить: вино, просторі території, мистецтво{vspace=1}Боїться: Нічого":
         xpos 600
         ypos 385
         text_align 1.0
@@ -812,7 +809,7 @@ screen character_cain():
         left_padding 20
         right_padding 20
         style "file_picker_frame"
-        text "A fallen Angel with an affinity for Demons. He's sadistic and romantic, but easily bored. He's an ancient being with a chaotic agenda. Earning his respect is very difficult."
+        text "Хаотичний стародавній упалий янгол, споріднений з демонами. Він садист і романтик, заслужити його поваги справді складно, тож не дайте йому заскучати!"
 screen character_vincent():
     tag menu
     use navigation
@@ -824,13 +821,13 @@ screen character_vincent():
         xfill True
         hbox:
             xalign 0.5
-            text "{size=40}{font=Bubu_Ghost.ttf}CHARACTER - Vincent{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}ПЕРСОНАЖ - Вінсент{/font}{/size}"
     add "charpage_vincent.png":
         xpos 0
         ypos 400
         xanchor 0.0
         yanchor 1.0
-    text "{size=25}Vincent Metzger{/size}{vspace=1}Height: 6'0{vspace=1}Age: 28{vspace=1}Likes: Motorcycles, Weapons, Steak{vspace=1}Fears: The full moon":
+    text "{size=25}Вінсент Метцґер{/size}{vspace=1}Зріст: 183 см{vspace=1}Вік: 28{vspace=1}Любить: мотоцикли, зброя, стейки{vspace=1}Боїться: повного місяця":
         xpos 600
         ypos 385
         text_align 1.0
@@ -848,7 +845,7 @@ screen character_vincent():
         left_padding 20
         right_padding 20
         style "file_picker_frame"
-        text "A scarred up, rough around the edges man with a short temper. Vincent prefers to talk with his fists, but if you can get him to open up, he can be surprisingly kind. He's fiercely violent, but also fiercely loyal to anyone who's earned it."
+        text "Пошрамований, грубий чоловік з запальним характером. Він вирішує проблеми кулаками, проте до небайдужих йому істот він на диво дуже добрий та лагідний. Він дуже жорстокий, проте вірний тим, хто цього заслуговує."
 screen character_sano():
     tag menu
     use navigation
@@ -860,13 +857,13 @@ screen character_sano():
         xfill True
         hbox:
             xalign 0.5
-            text "{size=40}{font=Bubu_Ghost.ttf}CHARACTER - Sano{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}ПЕРСОНАЖ - Сано{/font}{/size}"
     add "charpage_sano.png":
         xpos 0
         ypos 400
         xanchor 0.0
         yanchor 1.0
-    text "{size=25}Sano Kojima{/size}{vspace=1}Height: 5'11{vspace=1}Age: 28{vspace=1}Likes: Dolls, Centipedes, Akira{vspace=1}Fears: Family Loss":
+    text "{size=25}Сано Коджіма{/size}{vspace=1}Зріст: 181 см{vspace=1}Вік: 28{vspace=1}Любить: Ляльки, Сороконіжки, Акіру{vspace=1}Боїться: Втратити родину":
         xpos 600
         ypos 385
         text_align 1.0
@@ -884,7 +881,7 @@ screen character_sano():
         left_padding 20
         right_padding 20
         style "file_picker_frame"
-        text "A somewhat cold and even-tempered man. He's lost a lot in life and is trying his best to pick up the pieces."
+        text "Дещо холодний і врівноважений, спокійний. Він багато чого втратив у своєму житті, і наразі намагається зібрати все до купи."
 screen character_farz():
     tag menu
     use navigation
@@ -896,13 +893,13 @@ screen character_farz():
         xfill True
         hbox:
             xalign 0.5
-            text "{size=40}{font=Bubu_Ghost.ttf}CHARACTER - Farz{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}ПЕРСОНАЖ - Фарц{/font}{/size}"
     add "charpage_farz.png":
         xpos 0
         ypos 400
         xanchor 0.0
         yanchor 1.0
-    text "{size=25}Farz Murphy{/size}{vspace=1}Height: 5'1{vspace=1}Age: 27{vspace=1}Likes: Animals, Fighting, Being hurt{vspace=1}Fears: Water":
+    text "{size=25}Фарц Мерфі{/size}{vspace=1}Зріст: 156 см{vspace=1}Вік: 27{vspace=1}Любить: Тварин, Битися, Біль{vspace=1}Боїться: Води":
         xpos 600
         ypos 385
         text_align 1.0
@@ -920,7 +917,7 @@ screen character_farz():
         left_padding 20
         right_padding 20
         style "file_picker_frame"
-        text "A small but scrappy person currently living with Vincent. He may look like a pushover at first glance, but Farz can be harsh, stubborn, and even dangerous."
+        text "Малий та непокірний омежка Вінсента. Виглядає слабким, проте може бути грубим, впертим та небезпечним."
 screen character_damien():
     tag menu
     use navigation
@@ -932,13 +929,13 @@ screen character_damien():
         xfill True
         hbox:
             xalign 0.5
-            text "{size=40}{font=Bubu_Ghost.ttf}CHARACTER - Damien{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}ПЕРСОНАЖ - Демієн{/font}{/size}"
     add "charpage_damien.png":
         xpos 0
         ypos 400
         xanchor 0.0
         yanchor 1.0
-    text "{size=25}Damien Morningstar{/size}{vspace=1}Height: 6'0{vspace=1}Age: 24{vspace=1}Likes: Necromancy, Fox demons, Sleeping in{vspace=1}Fears: Fallen Angels":
+    text "{size=25}Демієн Морнінґстар{/size}{vspace=1}Зріст: 183 см{vspace=1}Вік: 24{vspace=1}Любить: Некромантію, Лисодемонів, Спати{vspace=1}Боїться: Упалих янголів":
         xpos 600
         ypos 385
         text_align 1.0
@@ -956,7 +953,7 @@ screen character_damien():
         left_padding 20
         right_padding 20
         style "file_picker_frame"
-        text "Half brother to Cain, he's a young man who experiments heavily with dark magic. Despite his heritage and rougher tastes, he's actually a fairly friendly person."
+        text "Напівбрат Каїна. Молодий хлопець-священнослужитель, що багато експериментував з темною магією. Попри своє коріння і грубість, він насправді є доброю людиною."
 screen character_aed():
     tag menu
     use navigation
@@ -968,13 +965,13 @@ screen character_aed():
         xfill True
         hbox:
             xalign 0.5
-            text "{size=40}{font=Bubu_Ghost.ttf}CHARACTER - A.E.D.{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}ПЕРСОНАЖ - A.E.D.{/font}{/size}"
     add "charpage_aed.png":
         xpos 0
         ypos 400
         xanchor 0.0
         yanchor 1.0
-    text "{size=25}A.E.D.{/size}{vspace=1}Height: 5'7 - 5'8{vspace=1}Age: 21{vspace=1}Likes: Strawberries, His friends, Street Dancing{vspace=1}Fears: Being helpless":
+    text "{size=25}A.E.D.{/size}{vspace=1}Зріст: 173 СМ{vspace=1}Вік: 21{vspace=1}Любить: Полуницю, Друзів, Вуличні танці{vspace=1}Боїться: Бути безпорадним":
         xpos 600
         ypos 385
         text_align 1.0
@@ -992,7 +989,7 @@ screen character_aed():
         left_padding 20
         right_padding 20
         style "file_picker_frame"
-        text "A battle priest trained to fight demons, and aquaintance of Damien. He works hard to protect his friends."
+        text "Права рука Демієна, бойовий священник, що б'ється з демонами пліч-о-пліч із ним. Важко працює, щоб захистити своїх близьких"
 screen character_sam():
     tag menu
     use navigation
@@ -1004,13 +1001,13 @@ screen character_sam():
         xfill True
         hbox:
             xalign 0.5
-            text "{size=40}{font=Bubu_Ghost.ttf}CHARACTER - Sam{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}ПЕРСОНАЖ - Сем{/font}{/size}"
     add "charpage_sam.png":
         xpos 0
         ypos 400
         xanchor 0.0
         yanchor 1.0
-    text "{size=25}Samael Volkov{/size}{vspace=1}Height: 5'10{vspace=1}Age: ???{vspace=1}Likes: Winter, Night, Cassiel{vspace=1}Fears: Nothing":
+    text "{size=25}Самаель Вовк{/size}{vspace=1}Зріст: 178 см{vspace=1}Вік: ???{vspace=1}Любить: Зиму, Ніч, Архангела Кассієля{vspace=1}Боїться: Нічого":
         xpos 600
         ypos 385
         text_align 1.0
@@ -1028,7 +1025,7 @@ screen character_sam():
         left_padding 20
         right_padding 20
         style "file_picker_frame"
-        text "Archangel commander of the Reapers. He has an icy disposition to match his power. He has very little tolerance for chaos or disrespect; he runs the department of Reapers with brutal efficiency."
+        text "Архангел, що керує женцями з жорстокою ефективністю. Має холодний характер та велику силу у потойбіччі. Нетерпимий до хаосу та неповаги."
 screen character_ashe():
     tag menu
     use navigation
@@ -1040,13 +1037,13 @@ screen character_ashe():
         xfill True
         hbox:
             xalign 0.5
-            text "{size=40}{font=Bubu_Ghost.ttf}CHARACTER - Ashe{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}ПЕРСОНАЖ - Еш{/font}{/size}"
     add "charpage_ashe.png":
         xpos 0
         ypos 400
         xanchor 0.0
         yanchor 1.0
-    text "{size=25}Ashe{/size}{vspace=1}Height: 5'0{vspace=1}Age: ???{vspace=1}Likes: ???{vspace=1}Fears: ???":
+    text "{size=25}Еш{/size}{vspace=1}Зріст: 152 см{vspace=1}Вік: ???{vspace=1}Любить: Нічого не робити{vspace=1}Боїться: ???":
         xpos 600
         ypos 385
         text_align 1.0
@@ -1064,7 +1061,7 @@ screen character_ashe():
         left_padding 20
         right_padding 20
         style "file_picker_frame"
-        text "A young Reaper from a prestigious family of Reapers. Despite his advantages, he's been demoted to supervising a section of the Veil. He's excessively lazy and forgetful, and will frequently try to avoid doing any real work."
+        text "Молодий жнець з впливової родини женців. Попри це його призначили наглядати за частиною річки Вейль. Він надзвичайно лінивий та забудькуватий, тож насправді намагається уникнути виконання своєї роботи."
 
 
 
@@ -1089,20 +1086,20 @@ screen file_picker():
         hbox:
             style_group "file_picker_nav"
 
-            textbutton _("Previous"):
+            textbutton _("Назад"):
                 action FilePagePrevious()
 
-            textbutton _("Auto"):
+            textbutton _("Авто"):
                 action FilePage("auto")
 
-            textbutton _("Quick"):
+            textbutton _("Швидко"):
                 action FilePage("quick")
 
             for i in range(1, 9):
                 textbutton str(i):
                     action FilePage(i)
 
-            textbutton _("Next"):
+            textbutton _("Наступний"):
                 action FilePageNext()
 
         $ columns = 1
@@ -1114,7 +1111,7 @@ screen file_picker():
         has vbox
 
         hbox:
-            xmaximum 550
+            xmaximum 570
             grid columns rows:
                 transpose True
                 style_group "file_picker"
@@ -1189,30 +1186,30 @@ screen preferences():
                 style_group "pref"
                 has vbox
 
-                label _("Display")
-                textbutton _("Window") action Preference("display", "window")
-                textbutton _("Fullscreen") action Preference("display", "fullscreen")
+                label _("Відображення")
+                textbutton _("У вікні") action Preference("display", "window")
+                textbutton _("Повноекранний") action Preference("display", "fullscreen")
 
             frame:
                 style_group "pref"
                 has vbox
 
-                label _("Transitions")
-                textbutton _("All") action Preference("transitions", "all")
-                textbutton _("None") action Preference("transitions", "none")
+                label _("Переходи")
+                textbutton _("Всі") action Preference("transitions", "all")
+                textbutton _("Ніякі") action Preference("transitions", "none")
 
             frame:
                 style_group "pref"
                 has vbox
 
-                label _("Text Speed")
+                label _("Швидкість тексту")
                 bar value Preference("text speed")
 
             frame:
                 style_group "pref"
                 has vbox
 
-                textbutton _("Joystick...") action Preference("joystick")
+                textbutton _("Джойстик") action Preference("joystick")
 
 
         vbox:
@@ -1220,51 +1217,51 @@ screen preferences():
                 style_group "pref"
                 has vbox
 
-                label _("Skip")
-                textbutton _("Seen Messages") action Preference("skip", "seen")
-                textbutton _("All Messages") action Preference("skip", "all")
+                label _("Пропустити")
+                textbutton _("Прочитаний текст") action Preference("skip", "seen")
+                textbutton _("Весь текст") action Preference("skip", "all")
 
             frame:
                 style_group "pref"
                 has vbox
 
-                textbutton _("Begin Skipping") action Skip()
+                textbutton _("Пропустити") action Skip()
 
             frame:
                 style_group "pref"
                 has vbox
 
-                label _("After Choices")
-                textbutton _("Stop Skipping") action Preference("after choices", "stop")
-                textbutton _("Keep Skipping") action Preference("after choices", "skip")
+                label _("Після виборів")
+                textbutton _("Зупинитись пропуск") action Preference("after choices", "stop")
+                textbutton _("Продовжувати пропуск") action Preference("after choices", "skip")
 
             frame:
                 style_group "pref"
                 has vbox
 
-                label _("Auto-Forward Time")
+                label _("Час автопрокрутки")
                 bar value Preference("auto-forward time")
 
                 if config.has_voice:
-                    textbutton _("Wait for Voice") action Preference("wait for voice", "toggle")
+                    textbutton _("Чекати вибору") action Preference("wait for voice", "toggle")
 
         vbox:
             frame:
                 style_group "pref"
                 has vbox
 
-                label _("Music Volume")
+                label _("Гучність музики")
                 bar value Preference("music volume")
 
             frame:
                 style_group "pref"
                 has vbox
 
-                label _("Sound Volume")
+                label _("Гучність звуку")
                 bar value Preference("sound volume")
 
                 if config.sample_sound:
-                    textbutton _("Test"):
+                    textbutton _("Тест"):
                         action Play("sound", config.sample_sound)
                         style "soundtest_button"
 
@@ -1273,12 +1270,12 @@ screen preferences():
                     style_group "pref"
                     has vbox
 
-                    label _("Voice Volume")
+                    label _("Гучність голосу")
                     bar value Preference("voice volume")
 
-                    textbutton _("Voice Sustain") action Preference("voice sustain", "toggle")
+                    textbutton _("Утримання голосу") action Preference("voice sustain", "toggle")
                     if config.sample_voice:
-                        textbutton _("Test"):
+                        textbutton _("Тест"):
                             action Play("voice", config.sample_voice)
                             style "soundtest_button"
 
@@ -1377,28 +1374,28 @@ screen cg_gallery:
         hbox:
             xalign 0.5
             add "menu_title_left.png"
-            text "{size=40}{font=Bubu_Ghost.ttf}CG GALLERY{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}ГАЛЕРЕЯ{/font}{/size}"
             add "menu_title_right.png"
         hbox:
             xalign 0.5
             spacing 20
             if persistent.unlock_vincent_cgs == True:
-                textbutton _("Vincent") action ShowMenu("cg_gallery_vincent") style "special_cg_button_vincent"
+                textbutton _("Вінсент") action ShowMenu("cg_gallery_vincent") style "special_cg_button_vincent"
             else:
-                textbutton _("Vincent") action ShowMenu("cg_gallery_vincent")
+                textbutton _("Вінсент") action ShowMenu("cg_gallery_vincent")
             if persistent.unlock_cain_cgs == True:
-                textbutton _("Cain") action ShowMenu("cg_gallery_cain") style "special_cg_button_cain"
+                textbutton _("Каїн") action ShowMenu("cg_gallery_cain") style "special_cg_button_cain"
             else:
-                textbutton _("Cain") action ShowMenu("cg_gallery_cain")
+                textbutton _("Каїн") action ShowMenu("cg_gallery_cain")
             if persistent.unlock_lawrence_cgs == True:
-                textbutton _("Lawrence") action ShowMenu("cg_gallery_lawrence") style "special_cg_button_law"
+                textbutton _("Лоуренс") action ShowMenu("cg_gallery_lawrence") style "special_cg_button_law"
             else:
-                textbutton _("Lawrence") action ShowMenu("cg_gallery_lawrence")
+                textbutton _("Лоуренс") action ShowMenu("cg_gallery_lawrence")
             if persistent.character_unlock_ren2 == True:
                 if persistent.unlock_ren_cgs == True:
-                    textbutton _("Ren") action ShowMenu("cg_gallery_ren") style "special_cg_button_ren"
+                    textbutton _("Рен") action ShowMenu("cg_gallery_ren") style "special_cg_button_ren"
                 else:
-                    textbutton _("Ren") action ShowMenu("cg_gallery_ren")
+                    textbutton _("Рен") action ShowMenu("cg_gallery_ren")
 
 screen cg_gallery_lawrence:
     tag menu
@@ -1410,7 +1407,7 @@ screen cg_gallery_lawrence:
         yalign .98
 
         has vbox
-        textbutton _("Return") action ShowMenu("cg_gallery")
+        textbutton _("Назад") action ShowMenu("cg_gallery")
 
     frame:
         bottom_padding 15
@@ -1423,28 +1420,28 @@ screen cg_gallery_lawrence:
         hbox:
             xalign 0.5
             add "menu_title_left.png"
-            text "{size=40}{font=Bubu_Ghost.ttf}CGS - Lawrence{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}CGS - Лоуренс{/font}{/size}"
             add "menu_title_right.png"
         hbox:
             xalign 0.5
             spacing 20
             if persistent.unlock_vincent_cgs == True:
-                textbutton _("Vincent") action ShowMenu("cg_gallery_vincent") style "special_cg_button_vincent"
+                textbutton _("Вінсент") action ShowMenu("cg_gallery_vincent") style "special_cg_button_vincent"
             else:
-                textbutton _("Vincent") action ShowMenu("cg_gallery_vincent")
+                textbutton _("Вінсент") action ShowMenu("cg_gallery_vincent")
             if persistent.unlock_cain_cgs == True:
-                textbutton _("Cain") action ShowMenu("cg_gallery_cain") style "special_cg_button_cain"
+                textbutton _("Каїн") action ShowMenu("cg_gallery_cain") style "special_cg_button_cain"
             else:
-                textbutton _("Cain") action ShowMenu("cg_gallery_cain")
+                textbutton _("Каїн") action ShowMenu("cg_gallery_cain")
             if persistent.unlock_lawrence_cgs == True:
-                textbutton _("Lawrence") action ShowMenu("cg_gallery_lawrence") style "special_cg_button_law"
+                textbutton _("Лоуренс") action ShowMenu("cg_gallery_lawrence") style "special_cg_button_law"
             else:
-                textbutton _("Lawrence") action ShowMenu("cg_gallery_lawrence")
+                textbutton _("Лоуренс") action ShowMenu("cg_gallery_lawrence")
             if persistent.character_unlock_ren2 == True:
                 if persistent.unlock_ren_cgs == True:
-                    textbutton _("Ren") action ShowMenu("cg_gallery_ren") style "special_cg_button_ren"
+                    textbutton _("Рен") action ShowMenu("cg_gallery_ren") style "special_cg_button_ren"
                 else:
-                    textbutton _("Ren") action ShowMenu("cg_gallery_ren")
+                    textbutton _("Рен") action ShowMenu("cg_gallery_ren")
     frame background None:
         grid gal_rows gal_cols:
             ypos 130
@@ -1464,7 +1461,7 @@ screen cg_gallery_lawrence:
             xalign 0.01
             has vbox
             if len(gallery_cg_items_lawrence)>gal_cells:
-                textbutton _("Next Page") action [SetVariable('cg_page', next_cg_page), ShowMenu("cg_gallery_lawrence")]
+                textbutton _("Наступна сторінка") action [SetVariable('cg_page', next_cg_page), ShowMenu("cg_gallery_lawrence")]
 screen cg_gallery_ren:
     tag menu
     window:
@@ -1475,7 +1472,7 @@ screen cg_gallery_ren:
         yalign .98
 
         has vbox
-        textbutton _("Return") action ShowMenu("cg_gallery")
+        textbutton _("Назад") action ShowMenu("cg_gallery")
 
     frame:
         bottom_padding 15
@@ -1488,28 +1485,28 @@ screen cg_gallery_ren:
         hbox:
             xalign 0.5
             add "menu_title_left.png"
-            text "{size=40}{font=Bubu_Ghost.ttf}CGS - Ren{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}CGS - Рен{/font}{/size}"
             add "menu_title_right.png"
         hbox:
             xalign 0.5
             spacing 20
             if persistent.unlock_vincent_cgs == True:
-                textbutton _("Vincent") action ShowMenu("cg_gallery_vincent") style "special_cg_button_vincent"
+                textbutton _("Вінсент") action ShowMenu("cg_gallery_vincent") style "special_cg_button_vincent"
             else:
-                textbutton _("Vincent") action ShowMenu("cg_gallery_vincent")
+                textbutton _("Вінсент") action ShowMenu("cg_gallery_vincent")
             if persistent.unlock_cain_cgs == True:
-                textbutton _("Cain") action ShowMenu("cg_gallery_cain") style "special_cg_button_cain"
+                textbutton _("Каїн") action ShowMenu("cg_gallery_cain") style "special_cg_button_cain"
             else:
-                textbutton _("Cain") action ShowMenu("cg_gallery_cain")
+                textbutton _("Каїн") action ShowMenu("cg_gallery_cain")
             if persistent.unlock_lawrence_cgs == True:
-                textbutton _("Lawrence") action ShowMenu("cg_gallery_lawrence") style "special_cg_button_law"
+                textbutton _("Лоуренс") action ShowMenu("cg_gallery_lawrence") style "special_cg_button_law"
             else:
-                textbutton _("Lawrence") action ShowMenu("cg_gallery_lawrence")
+                textbutton _("Лоуренс") action ShowMenu("cg_gallery_lawrence")
             if persistent.character_unlock_ren2 == True:
                 if persistent.unlock_ren_cgs == True:
-                    textbutton _("Ren") action ShowMenu("cg_gallery_ren") style "special_cg_button_ren"
+                    textbutton _("Рен") action ShowMenu("cg_gallery_ren") style "special_cg_button_ren"
                 else:
-                    textbutton _("Ren") action ShowMenu("cg_gallery_ren")
+                    textbutton _("Рен") action ShowMenu("cg_gallery_ren")
     frame background None:
         grid gal_rows gal_cols:
             ypos 130
@@ -1529,7 +1526,7 @@ screen cg_gallery_ren:
             xalign 0.01
             has vbox
             if len(gallery_cg_items_ren)>gal_cells:
-                textbutton _("Next Page") action [SetVariable('cg_page', next_cg_page), ShowMenu("cg_gallery_ren")]
+                textbutton _("Наступна сторінка") action [SetVariable('cg_page', next_cg_page), ShowMenu("cg_gallery_ren")]
 screen cg_gallery_cain:
     tag menu
     window:
@@ -1540,7 +1537,7 @@ screen cg_gallery_cain:
         yalign .98
 
         has vbox
-        textbutton _("Return") action ShowMenu("cg_gallery")
+        textbutton _("Назад") action ShowMenu("cg_gallery")
 
     frame:
         bottom_padding 15
@@ -1553,28 +1550,28 @@ screen cg_gallery_cain:
         hbox:
             xalign 0.5
             add "menu_title_left.png"
-            text "{size=40}{font=Bubu_Ghost.ttf}CGS - Cain{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}CGS - Каїн{/font}{/size}"
             add "menu_title_right.png"
         hbox:
             xalign 0.5
             spacing 20
             if persistent.unlock_vincent_cgs == True:
-                textbutton _("Vincent") action ShowMenu("cg_gallery_vincent") style "special_cg_button_vincent"
+                textbutton _("Вінсент") action ShowMenu("cg_gallery_vincent") style "special_cg_button_vincent"
             else:
-                textbutton _("Vincent") action ShowMenu("cg_gallery_vincent")
+                textbutton _("Вінсент") action ShowMenu("cg_gallery_vincent")
             if persistent.unlock_cain_cgs == True:
-                textbutton _("Cain") action ShowMenu("cg_gallery_cain") style "special_cg_button_cain"
+                textbutton _("Каїн") action ShowMenu("cg_gallery_cain") style "special_cg_button_cain"
             else:
-                textbutton _("Cain") action ShowMenu("cg_gallery_cain")
+                textbutton _("Каїн") action ShowMenu("cg_gallery_cain")
             if persistent.unlock_lawrence_cgs == True:
-                textbutton _("Lawrence") action ShowMenu("cg_gallery_lawrence") style "special_cg_button_law"
+                textbutton _("Лоуренс") action ShowMenu("cg_gallery_lawrence") style "special_cg_button_law"
             else:
-                textbutton _("Lawrence") action ShowMenu("cg_gallery_lawrence")
+                textbutton _("Лоуренс") action ShowMenu("cg_gallery_lawrence")
             if persistent.character_unlock_ren2 == True:
                 if persistent.unlock_ren_cgs == True:
-                    textbutton _("Ren") action ShowMenu("cg_gallery_ren") style "special_cg_button_ren"
+                    textbutton _("Рен") action ShowMenu("cg_gallery_ren") style "special_cg_button_ren"
                 else:
-                    textbutton _("Ren") action ShowMenu("cg_gallery_ren")
+                    textbutton _("Рен") action ShowMenu("cg_gallery_ren")
     frame background None:
         grid gal_rows gal_cols:
             ypos 130
@@ -1594,7 +1591,7 @@ screen cg_gallery_cain:
             xalign 0.01
             has vbox
             if len(gallery_cg_items_cain)>gal_cells:
-                textbutton _("Next Page") action [SetVariable('cg_page', next_cg_page), ShowMenu("cg_gallery_cain")]
+                textbutton _("Наступна сторінка") action [SetVariable('cg_page', next_cg_page), ShowMenu("cg_gallery_cain")]
 screen cg_gallery_vincent:
     tag menu
     window:
@@ -1605,7 +1602,7 @@ screen cg_gallery_vincent:
         yalign .98
 
         has vbox
-        textbutton _("Return") action ShowMenu("cg_gallery")
+        textbutton _("Назад") action ShowMenu("cg_gallery")
 
     frame:
         bottom_padding 15
@@ -1618,28 +1615,28 @@ screen cg_gallery_vincent:
         hbox:
             xalign 0.5
             add "menu_title_left.png"
-            text "{size=40}{font=Bubu_Ghost.ttf}CGS - Vincent{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}CGS - Вінсент{/font}{/size}"
             add "menu_title_right.png"
         hbox:
             xalign 0.5
             spacing 20
             if persistent.unlock_vincent_cgs == True:
-                textbutton _("Vincent") action ShowMenu("cg_gallery_vincent") style "special_cg_button_vincent"
+                textbutton _("Вінсент") action ShowMenu("cg_gallery_vincent") style "special_cg_button_vincent"
             else:
-                textbutton _("Vincent") action ShowMenu("cg_gallery_vincent")
+                textbutton _("Вінсент") action ShowMenu("cg_gallery_vincent")
             if persistent.unlock_cain_cgs == True:
-                textbutton _("Cain") action ShowMenu("cg_gallery_cain") style "special_cg_button_cain"
+                textbutton _("Каїн") action ShowMenu("cg_gallery_cain") style "special_cg_button_cain"
             else:
-                textbutton _("Cain") action ShowMenu("cg_gallery_cain")
+                textbutton _("Каїн") action ShowMenu("cg_gallery_cain")
             if persistent.unlock_lawrence_cgs == True:
-                textbutton _("Lawrence") action ShowMenu("cg_gallery_lawrence") style "special_cg_button_law"
+                textbutton _("Лоуренс") action ShowMenu("cg_gallery_lawrence") style "special_cg_button_law"
             else:
-                textbutton _("Lawrence") action ShowMenu("cg_gallery_lawrence")
+                textbutton _("Лоуренс") action ShowMenu("cg_gallery_lawrence")
             if persistent.character_unlock_ren2 == True:
                 if persistent.unlock_ren_cgs == True:
-                    textbutton _("Ren") action ShowMenu("cg_gallery_ren") style "special_cg_button_ren"
+                    textbutton _("Рен") action ShowMenu("cg_gallery_ren") style "special_cg_button_ren"
                 else:
-                    textbutton _("Ren") action ShowMenu("cg_gallery_ren")
+                    textbutton _("Рен") action ShowMenu("cg_gallery_ren")
     frame background None:
         grid gal_rows gal_cols:
             ypos 130
@@ -1659,7 +1656,7 @@ screen cg_gallery_vincent:
             xalign 0.01
             has vbox
             if len(gallery_cg_items_vincent)>gal_cells:
-                textbutton _("Next Page") action [SetVariable('cg_page', next_cg_page), ShowMenu("cg_gallery_vincent")]
+                textbutton _("Наступна сторінка") action [SetVariable('cg_page', next_cg_page), ShowMenu("cg_gallery_vincent")]
 
 
 
@@ -1691,28 +1688,28 @@ screen collection():
         hbox:
             xalign 0.5
             add "menu_title_left.png"
-            text "{size=40}{font=Bubu_Ghost.ttf}ENDINGS{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}КІНЦІВКИ{/font}{/size}"
             add "menu_title_right.png"
         hbox:
             xalign 0.5
             spacing 20
             if persistent.unlock_vincent_endings == True:
-                textbutton _("Vincent") action ShowMenu("collection_vincent") style "special_cg_button_vincent"
+                textbutton _("Вінсент") action ShowMenu("collection_vincent") style "special_cg_button_vincent"
             else:
-                textbutton _("Vincent") action ShowMenu("collection_vincent")
+                textbutton _("Вінсент") action ShowMenu("collection_vincent")
             if persistent.unlock_cain_endings == True:
-                textbutton _("Cain") action ShowMenu("collection_cain") style "special_cg_button_cain"
+                textbutton _("Каїн") action ShowMenu("collection_cain") style "special_cg_button_cain"
             else:
-                textbutton _("Cain") action ShowMenu("collection_cain")
+                textbutton _("Каїн") action ShowMenu("collection_cain")
             if persistent.unlock_lawrence_endings == True:
-                textbutton _("Lawrence") action ShowMenu("collection_lawrence") style "special_cg_button_law"
+                textbutton _("Лоуренс") action ShowMenu("collection_lawrence") style "special_cg_button_law"
             else:
-                textbutton _("Lawrence") action ShowMenu("collection_lawrence")
+                textbutton _("Лоуренс") action ShowMenu("collection_lawrence")
             if persistent.character_unlock_ren2 == True:
                 if persistent.unlock_ren_endings == True:
-                    textbutton _("Ren") action ShowMenu("collection_ren") style "special_cg_button_ren"
+                    textbutton _("Рен") action ShowMenu("collection_ren") style "special_cg_button_ren"
                 else:
-                    textbutton _("Ren") action ShowMenu("collection_ren")
+                    textbutton _("Рен") action ShowMenu("collection_ren")
 transform chibvincent:
     xpos 20
     ypos 180
@@ -1764,7 +1761,7 @@ screen collection_vincent():
         yalign .98
         has vbox
 
-        textbutton _("Return") action ShowMenu("collection")
+        textbutton _("Назад") action ShowMenu("collection")
 
     frame:
         bottom_padding 15
@@ -1777,28 +1774,28 @@ screen collection_vincent():
         hbox:
             xalign 0.5
             add "menu_title_left.png"
-            text "{size=40}{font=Bubu_Ghost.ttf}ENDINGS - Vincent{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}КІНЦІВКИ - Вінсент{/font}{/size}"
             add "menu_title_right.png"
         hbox:
             xalign 0.5
             spacing 20
             if persistent.unlock_vincent_endings == True:
-                textbutton _("Vincent") action ShowMenu("collection_vincent") style "special_cg_button_vincent"
+                textbutton _("Вінсент") action ShowMenu("collection_vincent") style "special_cg_button_vincent"
             else:
-                textbutton _("Vincent") action ShowMenu("collection_vincent")
+                textbutton _("Вінсент") action ShowMenu("collection_vincent")
             if persistent.unlock_cain_endings == True:
-                textbutton _("Cain") action ShowMenu("collection_cain") style "special_cg_button_cain"
+                textbutton _("Каїн") action ShowMenu("collection_cain") style "special_cg_button_cain"
             else:
-                textbutton _("Cain") action ShowMenu("collection_cain")
+                textbutton _("Каїн") action ShowMenu("collection_cain")
             if persistent.unlock_lawrence_endings == True:
-                textbutton _("Lawrence") action ShowMenu("collection_lawrence") style "special_cg_button_law"
+                textbutton _("Лоуренс") action ShowMenu("collection_lawrence") style "special_cg_button_law"
             else:
-                textbutton _("Lawrence") action ShowMenu("collection_lawrence")
+                textbutton _("Лоуренс") action ShowMenu("collection_lawrence")
             if persistent.character_unlock_ren2 == True:
                 if persistent.unlock_ren_endings == True:
-                    textbutton _("Ren") action ShowMenu("collection_ren") style "special_cg_button_ren"
+                    textbutton _("Рен") action ShowMenu("collection_ren") style "special_cg_button_ren"
                 else:
-                    textbutton _("Ren") action ShowMenu("collection_ren")
+                    textbutton _("Рен") action ShowMenu("collection_ren")
 
     hbox:
         xalign 0.5
@@ -1819,168 +1816,168 @@ screen collection_vincent():
                 xfill True
                 has hbox
                 if persistent.vincent_ending_dayone_weaponlocker:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Vincent blew you away.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}1: Вінсент засадив у тебе... кілька куль{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_neg_lovedeath:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Vincent didn't like you.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}9: Ти виявився смачненьким{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_splattered:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You didn't look both ways.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}18: Перебігати дорогу - не найкраща ідея{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_weaponslocker_fail:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Vincent caught you.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}2: Вінсент спіймав тебе{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_healthdeath:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You were too tired.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}10: Ти був занадто виснажений для сексу{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_opened_mouth:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}He opened your mouth.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}19: Тобі було варто роззявити рота{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_temperdeath:
-                    text "{image=icon_skull.png} {color=ffffff}{size=13}He used you as a punching bag.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=13}3: Ти тепер груша для биття{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_refused_knife:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Vincent replaced you.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}11: Ти був гіршим за Фарца{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_worthless:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You weren't worth keeping.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}20: Ти не гідний утримання{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_help:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Vincent had some help.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}4: Фарц допоміг Вінсенту з впоратися тобою{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_kill_him:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You couldn't kill him.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}12: Вовкулаки не вмирають від простого пострілу{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_good_ending:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}Vincent saved you.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}21: Вінсент лишив тебе у себе{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_pinata:
-                    text "{image=icon_skull.png} {color=ffffff}{size=13}Vincent used you as a pinata.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=13}5: Ти став його піньятою{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.farz_ending_HP_Death:
-                    text "{image=icon_skull.png} {color=ffffff}{size=14}You couldn't stand up to him.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=14}13: Фарц надавав тобі стусанів{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_death:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}You killed Vincent.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}22: Твій господар вбив Вінсента{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_dropped_weapon_death:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You gave up your gun.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}6: Вінсент прострелив тобі горло{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_badvore:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Vincent ate you.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}14: Вінсент зжер тебе повністю{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_alone:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You died alone.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}23: Ти помер наодинці{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_bat:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Vincent beat you to death.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}7: Вінсент забив тебе до смерті{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_letgo:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}Vincent let you go.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}15: Вінсент відпустив тебе{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_farz_killed:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You were too weak.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}24: Ти був заслабкий для Фарца{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_stepped_in:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Vincent stepped in.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}8: Вінсент втрутився{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.farz_ending_carved_eye:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Farz pulled out your eye.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}16: Фарц вирвав твоє око{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.vincent_ending_snappedneck:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Vincent snapped your neck.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}25: Вінсент звернув твою шию{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
@@ -1992,7 +1989,7 @@ screen collection_vincent():
                 xfill True
                 has hbox
                 if persistent.farz_vincent_ending_good:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}You were accepted.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}17: Тебе прийняли у зграю{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
@@ -2058,7 +2055,7 @@ screen collection_cain():
         yalign .98
         has vbox
 
-        textbutton _("Return") action ShowMenu("collection")
+        textbutton _("Назад") action ShowMenu("collection")
 
     frame:
         bottom_padding 15
@@ -2071,28 +2068,28 @@ screen collection_cain():
         hbox:
             xalign 0.5
             add "menu_title_left.png"
-            text "{size=40}{font=Bubu_Ghost.ttf}ENDINGS - Cain{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}КІНЦІВКИ - Каїн{/font}{/size}"
             add "menu_title_right.png"
         hbox:
             xalign 0.5
             spacing 20
             if persistent.unlock_vincent_endings == True:
-                textbutton _("Vincent") action ShowMenu("collection_vincent") style "special_cg_button_vincent"
+                textbutton _("Вінсент") action ShowMenu("collection_vincent") style "special_cg_button_vincent"
             else:
-                textbutton _("Vincent") action ShowMenu("collection_vincent")
+                textbutton _("Вінсент") action ShowMenu("collection_vincent")
             if persistent.unlock_cain_endings == True:
-                textbutton _("Cain") action ShowMenu("collection_cain") style "special_cg_button_cain"
+                textbutton _("Каїн") action ShowMenu("collection_cain") style "special_cg_button_cain"
             else:
-                textbutton _("Cain") action ShowMenu("collection_cain")
+                textbutton _("Каїн") action ShowMenu("collection_cain")
             if persistent.unlock_lawrence_endings == True:
-                textbutton _("Lawrence") action ShowMenu("collection_lawrence") style "special_cg_button_law"
+                textbutton _("Лоуренс") action ShowMenu("collection_lawrence") style "special_cg_button_law"
             else:
-                textbutton _("Lawrence") action ShowMenu("collection_lawrence")
+                textbutton _("Лоуренс") action ShowMenu("collection_lawrence")
             if persistent.character_unlock_ren2 == True:
                 if persistent.unlock_ren_endings == True:
-                    textbutton _("Ren") action ShowMenu("collection_ren") style "special_cg_button_ren"
+                    textbutton _("Рен") action ShowMenu("collection_ren") style "special_cg_button_ren"
                 else:
-                    textbutton _("Ren") action ShowMenu("collection_ren")
+                    textbutton _("Рен") action ShowMenu("collection_ren")
     hbox:
         xalign 0.5
         spacing 10
@@ -2112,126 +2109,126 @@ screen collection_cain():
                 xfill True
                 has hbox
                 if persistent.cain_ending_vincent_saved:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}Cain saved you.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}1: Каїн тебе врятував{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_centerpeice:
-                    text "{image=icon_skull.png} {color=ffffff}{size=13}Cain made you a centerpiece.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=13}7: В тобі проросли гарні квіти{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_dropped_balcony:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Cain dropped you.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}13: Каїн впустив тебе з балкона{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_struggled_balcony:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You struggled.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}2: Ти чинив опір, тож впав в Тартар{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_drown:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Cain drowned you.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}8: Каїн втопив тебе{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_boiled:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Cain boiled you alive.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}14: Каїн зварив тебе живцем{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_rippedapart:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Cain ripped you apart.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}3: Каїн пошматував тебе ланцюгами{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_autocani:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You ate yourself.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}9: Ти з'їв себе{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_traitor:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Cain abandoned you.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}15: Каїн тебе покинув - Самаель подбав про тебе{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_demon:
-                    text "{image=icon_star.png} {color=ffffff}{size=13}Cain made you into a demon.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=13}4: Ти тепер домашній улюбленець демон :з{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_damien:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}Damien saved you.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}10: Демієн забрав тебе собі{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_pushed_balcony:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Cain pushed you off.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}16: Каїн зіштовхнув тебе з балкона{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_arm:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Cain cut off your arm.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}5: Каїн відірвав твою руку - не варто чіпати чуже{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_bordom1:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Cain got bored.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}11: Ти йому набрид{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_bordom2:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You couldn't be tamed.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}17: Каїн відірвав твій язик - Ти не приручився{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_wander:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}You wandered forever.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}6: Ти йшов вічність{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_fallen:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}Cain saw your value.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}12: Ти сподобався Каїну{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.cain_ending_sanity:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Cain left you in the pit.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}18: Каїн стратив тебе як давній кат{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
     if persistent.unlock_cain_endings == True:
@@ -2294,7 +2291,7 @@ screen collection_lawrence():
 
         has vbox
 
-        textbutton _("Return") action ShowMenu("collection")
+        textbutton _("Назад") action ShowMenu("collection")
 
     frame:
         bottom_padding 15
@@ -2307,28 +2304,28 @@ screen collection_lawrence():
         hbox:
             xalign 0.5
             add "menu_title_left.png"
-            text "{size=40}{font=Bubu_Ghost.ttf}ENDINGS - Lawrence{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}КІНЦІВКИ - Лоуренс{/font}{/size}"
             add "menu_title_right.png"
         hbox:
             xalign 0.5
             spacing 20
             if persistent.unlock_vincent_endings == True:
-                textbutton _("Vincent") action ShowMenu("collection_vincent") style "special_cg_button_vincent"
+                textbutton _("Вінсент") action ShowMenu("collection_vincent") style "special_cg_button_vincent"
             else:
-                textbutton _("Vincent") action ShowMenu("collection_vincent")
+                textbutton _("Вінсент") action ShowMenu("collection_vincent")
             if persistent.unlock_cain_endings == True:
-                textbutton _("Cain") action ShowMenu("collection_cain") style "special_cg_button_cain"
+                textbutton _("Каїн") action ShowMenu("collection_cain") style "special_cg_button_cain"
             else:
-                textbutton _("Cain") action ShowMenu("collection_cain")
+                textbutton _("Каїн") action ShowMenu("collection_cain")
             if persistent.unlock_lawrence_endings == True:
-                textbutton _("Lawrence") action ShowMenu("collection_lawrence") style "special_cg_button_law"
+                textbutton _("Лоуренс") action ShowMenu("collection_lawrence") style "special_cg_button_law"
             else:
-                textbutton _("Lawrence") action ShowMenu("collection_lawrence")
+                textbutton _("Лоуренс") action ShowMenu("collection_lawrence")
             if persistent.character_unlock_ren2 == True:
                 if persistent.unlock_ren_endings == True:
-                    textbutton _("Ren") action ShowMenu("collection_ren") style "special_cg_button_ren"
+                    textbutton _("Рен") action ShowMenu("collection_ren") style "special_cg_button_ren"
                 else:
-                    textbutton _("Ren") action ShowMenu("collection_ren")
+                    textbutton _("Рен") action ShowMenu("collection_ren")
     hbox:
         xalign 0.5
         spacing 10
@@ -2348,147 +2345,147 @@ screen collection_lawrence():
                 xfill True
                 has hbox
                 if persistent.law_ending_choked:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Lawrence made you quiet.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}1: Лоуренс змусив тебе замовкнути{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_disarmed:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Lawrence took your arms.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}8: Лоуренс розчленував твою руку{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_drown:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Lawrence held you under.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}15: Лоуренс потопив тебе{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_throat:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You were too slow.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}2: Ти був занадто повільним{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_bleedout:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Lawrence bled you out.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}9: Знекровлений, ти задихнувся власною кров'ю{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_burial:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Lawrence buried you.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}16: Лоуренс закопав тебе живцем{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_murder:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}You killed Lawrence instead.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}3: Ти вбив Лоуренса натомість{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_escape:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Lawrence caught you.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}10: Лоуренс тебе спіймав{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_bedtime:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You startled Lawrence.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}17: Лоуренсу трупи подобаються більше, ніж ти{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_lsanity:
-                    text "{image=icon_skull.png} {color=ffffff}{size=13}Lawrence stopped holding back.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=13}4: Лоуренс перестав стримуватися{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_drugs:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You took too many drugs.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}11: Ти прийняв забагато наркотиків{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_river_missed:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You can't see the river.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}18: Ти так і не побачив річку{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_river:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}It was beautiful...{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}5: Ти побачив річку - як прекрасно...{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_closer:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Lawrence got closer.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}12: Лоуренс хотів бути якомога ближче{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_shutyouup:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Lawrence shut you up.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}19: Він заткнув тебе{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_eviscerate:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You became art.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}6: Ти став витвором мистецтвом{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_health:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}He took you to the woods.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}13: Ти сконав наодинці в лісі{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_sanity:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You lost it.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}20: Ти довів йому, що він - монстр{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_yandere:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}Lawrence kept you.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}7: Ти тепер його квіточка :з{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.law_ending_secret:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}You both know the truth.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}14: Тільки ви двоє знаєте правду{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_law:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Ren had Law kill you.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}21: Рен дав Лоуренсу тебе вбити{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
 
@@ -2554,7 +2551,7 @@ screen collection_ren():
 
         has vbox
 
-        textbutton _("Return") action ShowMenu("collection")
+        textbutton _("Назад") action ShowMenu("collection")
 
     frame:
         bottom_padding 15
@@ -2567,28 +2564,28 @@ screen collection_ren():
         hbox:
             xalign 0.5
             add "menu_title_left.png"
-            text "{size=40}{font=Bubu_Ghost.ttf}ENDINGS - Ren{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}КІНЦІВКИ - Рен{/font}{/size}"
             add "menu_title_right.png"
         hbox:
             xalign 0.5
             spacing 20
             if persistent.unlock_vincent_endings == True:
-                textbutton _("Vincent") action ShowMenu("collection_vincent") style "special_cg_button_vincent"
+                textbutton _("Вінсент") action ShowMenu("collection_vincent") style "special_cg_button_vincent"
             else:
-                textbutton _("Vincent") action ShowMenu("collection_vincent")
+                textbutton _("Вінсент") action ShowMenu("collection_vincent")
             if persistent.unlock_cain_endings == True:
-                textbutton _("Cain") action ShowMenu("collection_cain") style "special_cg_button_cain"
+                textbutton _("Каїн") action ShowMenu("collection_cain") style "special_cg_button_cain"
             else:
-                textbutton _("Cain") action ShowMenu("collection_cain")
+                textbutton _("Каїн") action ShowMenu("collection_cain")
             if persistent.unlock_lawrence_endings == True:
-                textbutton _("Lawrence") action ShowMenu("collection_lawrence") style "special_cg_button_law"
+                textbutton _("Лоуренс") action ShowMenu("collection_lawrence") style "special_cg_button_law"
             else:
-                textbutton _("Lawrence") action ShowMenu("collection_lawrence")
+                textbutton _("Лоуренс") action ShowMenu("collection_lawrence")
             if persistent.character_unlock_ren2 == True:
                 if persistent.unlock_ren_endings == True:
-                    textbutton _("Ren") action ShowMenu("collection_ren") style "special_cg_button_ren"
+                    textbutton _("Рен") action ShowMenu("collection_ren") style "special_cg_button_ren"
                 else:
-                    textbutton _("Ren") action ShowMenu("collection_ren")
+                    textbutton _("Рен") action ShowMenu("collection_ren")
 
     hbox:
         xalign 0.5
@@ -2609,189 +2606,189 @@ screen collection_ren():
                 xfill True
                 has hbox
                 if persistent.ren_ending_movienight:
-                    text "{image=icon_star.png} {color=ffffff}{size=14}You let Ren take care of you.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=14}1: Тепер Рен попіклується про тебе{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_sextoys:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}He'll never ever let you go.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}10: Він ніколи тебе не відпустить{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_bjbang:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}You're his pet now.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}19: Ти тепер його домашній улюбленець <3{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_genitals:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}You got a new piercing.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}2: Тепер в тебе є гарний новий пірсинг!{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_shot:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Ren shot you in the head.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}11: Рен прострелив тобі голову{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_allhis:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}You're all his.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}20: Ми полюбили одне одного: ти тепер весь його{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_nailgun:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}You got nailed.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}3: Тебе пригвоздили занадто сильно{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_chain:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}He didn't need you.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}12: Ти йому більше не потрібен{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_chainkill:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}You choked Ren to death.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}21: Ти задушив Рена{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_escapelive:
-                    text "{image=icon_star.png} {color=ffffff}{size=14}You escaped and spared Ren.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=14}4: Ти втік, пощадивши Рена{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_sublove:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}You stayed with Ren.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}13: Ти справді його полюбив{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_subobey:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}You kept Ren.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}22: Рен тепер твій домашній лисик :з{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_subsex:
-                    text "{image=icon_star.png} {color=ffffff}{size=14}You took Ren for yourself.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=14}5: Ти з'ясував, що Рен добре смокче{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_subnaildie:
-                    text "{image=icon_star.png} {color=ffffff}{size=14}You nailed Ren in the head.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=14}14: Ти пригвоздив Рена прямо в голову{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_subnaillive:
-                    text "{image=icon_star.png} {color=ffffff}{size=13}You gave him some new holes.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=13}23: Ти зробив у Рені декілька нових дірочок{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_subknifedie:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}You let Ren bleed.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}6: Ти лишив Рена стікати кров'ю{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_subknifelive:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}You'll replace Ren's scars.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}15: Ти підлатав його шрами, що сам і лишив{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_neutralheart:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Ren ate your heart.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}24: Рен зжер твоє серце{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_neutralabandon:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}Now the house is yours.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}7: Рен так і не повернувся. Тепер дім твій{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_neutralneutral:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}It's not so bad.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}16: Ви, двоє злочинців, тепер разом{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_neutralrun:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}You ran from Ren.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}25: Рен відпустив тебе{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_neutralshock:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Ren shocked you to death.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}8: Рен вбив тебе електрошоком{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_neutralkeep:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}Ren won't let you die.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}17: Рен не дасть тобі померти: він буде поруч вічно{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_neutralkeepren:
-                    text "{image=icon_star.png} {color=ffffff}{size=14}You'll care for each other.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=14}26: Ви попіклуєтесь один про одного{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_health:
-                    text "{image=icon_skull.png} {color=ffffff}{size=15}Your body gave out.{/size}{/color}"
+                    text "{image=icon_skull.png} {color=ffffff}{size=15}9: Твоє тіло не витримало шокової терапії{/size}{/color}"
                 else:
                     text "{image=icon_skull_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_neutralgood:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}You helped Ren.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}18: Ти допоміг Рену і ви потоваришували{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
             frame:
                 xfill True
                 has hbox
                 if persistent.ren_ending_sanity:
-                    text "{image=icon_star.png} {color=ffffff}{size=15}You begged for more.{/size}{/color}"
+                    text "{image=icon_star.png} {color=ffffff}{size=15}27: Ти благав про продовження{/size}{/color}"
                 else:
                     text "{image=icon_star_grey.png} ???"
     if persistent.unlock_ren_endings == True:
@@ -2834,79 +2831,80 @@ screen credits():
         hbox:
             xalign 0.5
             add "menu_title_left.png"
-            text "{size=40}{font=Bubu_Ghost.ttf}CREDITS{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}ПОДЯКИ{/font}{/size}"
             add "menu_title_right.png"
         hbox:
             xalign 0.5
-            text "{size=24}Game Creators:{/size}"
+            text "{size=24}Розробники:{/size}"
             textbutton _("Electricpuke") action OpenURL("http://electricpuke.tumblr.com/") xmargin 5
             textbutton _("Gatobob") action OpenURL("http://gurobob.tumblr.com/") xmargin 5
 
         hbox:
             xalign 0.5
             text "{size=24}Переклад гри:{/size}"
-            textbutton _("Leafyiff") action OpenURL("https://t.me/leafyiff") xmargin 5
-            textbutton _("ADimas") action OpenURL("https://linktr.ee/AD1mas") xmargin 5
+            textbutton _("Лис") action OpenURL("https://linktr.ee/les_fox") xmargin 5
+            textbutton _("АДімас") action OpenURL("https://linktr.ee/AD1mas") xmargin 5
     frame:
         xpos 10
         ypos 125
         xminimum 550
+        xmaximum 570
         top_padding 10
         bottom_padding 10
-        left_padding 20
-        right_padding 20
+        left_padding 10
+        right_padding 10
         style "file_picker_frame"
 
         has vbox
 
         vbox:
             xsize 560
-            text "{size=14}This game was created by Gato and Puke!{vspace=10}Writing, coding, and art for Vincent/Cain was done by Puke. Writing, coding, and art for Lawrence/Ren was done by Gato. Additional coding for CG gallery, Endings gallery, Credits, Bio pages etc. was done by Gato. BTD2 Website and Patreon are managed primarily by Puke!{vspace=10}Special thanks to {a=http://darqx.tumblr.com}{color=#ee0000}Darqx{/color}{/a} for the character and art of A.E.D in Cain's path, and for drawing the reward chibis in the Endings collection page.{/size}"
+            text "{size=14}Цю гру створили Gato і Puke!{vspace=10}Puke працював над Вінсентом та Каїном, Gato над Реном, Лоуренсом та рештою гри. {vspace=10}Окрема подяка {a=http://darqx.tumblr.com}{color=#ee0000}Darqx{/color}{/a} за персонажа A.E.D (Шлях Каїна), а також за малювання чібі-персонажів, яких можна побачити, розблокувавши всі кінцівки{/size}"
     frame:
         xpos 10
         ypos 295
         top_padding 20
         bottom_padding 25
-        left_padding 20
-        right_padding 20
+        left_padding 10
+        right_padding 10
         style "file_picker_frame"
 
         has vbox
 
         vbox:
             xsize 290
-            text "{size=16}Thanks so much to the six wonderful artists who let us use their art for posters in Ren's room! In order from left to right:{vspace=20}{space=20}{a=https://twitter.com/lilvoidprince?lang=en}{color=#ee0000}@LilVoidPrince on Twitter{/color}{/a}{vspace=5}{space=20}{a=http://darkstainedclovers.tumblr.com/}{color=#ee0000}Mae on Tumblr{/color}{/a}{vspace=5}{space=20}{a=http://spacetime-vapor.deviantart.com/}{color=#ee0000}Quinn on Deviantart{/color}{/a}{vspace=5}{space=20}{a=http://sweeetguro.tumblr.com/}{color=#ee0000}Taylor on Tumblr{/color}{/a}{vspace=5}{space=20}{a=http://medi0crities.tumblr.com/}{color=#ee0000}Medi0crities on Tumblr{/color}{/a}{vspace=5}{space=20}{a=http://passionguts.tumblr.com/}{color=#ee0000}Pas on Tumblr{/color}{/a}{/size}"
+            text "{size=16}Дякуємо шістьом художникам, що дозволили використовувати їхні арти як постери у кімнаті Рена! Зліва направо: {vspace=20}{space=20}{a=https://twitter.com/lilvoidprince?lang=en}{color=#ee0000}@LilVoidPrince on Twitter{/color}{/a}{vspace=5}{space=20}{a=http://darkstainedclovers.tumblr.com/}{color=#ee0000}Mae on Tumblr{/color}{/a}{vspace=5}{space=20}{a=http://spacetime-vapor.deviantart.com/}{color=#ee0000}Quinn on Deviantart{/color}{/a}{vspace=5}{space=20}{a=http://sweeetguro.tumblr.com/}{color=#ee0000}Taylor on Tumblr{/color}{/a}{vspace=5}{space=20}{a=http://medi0crities.tumblr.com/}{color=#ee0000}Medi0crities on Tumblr{/color}{/a}{vspace=5}{space=20}{a=http://passionguts.tumblr.com/}{color=#ee0000}Pas on Tumblr{/color}{/a}{/size}"
     frame:
-        xpos 350
+        xpos 335
         xanchor 0.0
         ypos 295
         top_padding 20
         bottom_padding 25
-        left_padding 20
-        right_padding 20
+        left_padding 15
+        right_padding 10
         style "file_picker_frame"
 
         has vbox
 
         vbox:
             xsize 220
-            text "{size=16}Special thanks as well to our hardworking beta testers!:{vspace=20}{space=20}{a=https://twitter.com/jedka}{color=#ee0000}Jedka{/color}{/a}{vspace=5}{space=20}{a=http://rotworld.tumblr.com/}{color=#ee0000}Rotworld{/color}{/a}{vspace=5}{space=20}{a=http://tweakerwolf.deviantart.com/}{color=#ee0000}Tweakerwolf{/color}{/a}{/size}"
+            text "{size=16}Окрема подяка нашим бета-тестерам: {vspace=20}{space=20}{a=https://twitter.com/jedka}{color=#ee0000}Jedka{/color}{/a}{vspace=5}{space=20}{a=http://rotworld.tumblr.com/}{color=#ee0000}Rotworld{/color}{/a}{vspace=5}{space=20}{a=http://tweakerwolf.deviantart.com/}{color=#ee0000}Tweakerwolf{/color}{/a}{/size}"
 
     frame:
-        xpos 350
+        xpos 335
         xanchor 0.0
         ypos 506
         top_padding 20
         bottom_padding 25
-        left_padding 20
-        right_padding 20
+        left_padding 15
+        right_padding 10
         style "file_picker_frame"
 
         has vbox
 
         vbox:
             xsize 220
-            text "{size=16}Music/sounds purchased from {a=https://www.audioblocks.com/}{color=#ee0000}audioblocks.com{/color}{/a}!"
+            text "{size=16}Музика та звуки були придбані тут: {a=https://www.audioblocks.com/}{color=#ee0000}audioblocks.com{/color}{/a}!"
 
 
 
@@ -2943,8 +2941,8 @@ screen yesno_prompt(message, yes_action, no_action):
             xalign 0.5
             spacing 100
 
-            textbutton _("Yes") action yes_action
-            textbutton _("No") action no_action
+            textbutton _("Так") action yes_action
+            textbutton _("Ні") action no_action
 
 
     key "game_menu" action no_action
@@ -3105,18 +3103,18 @@ screen music():
         hbox:
             xalign 0.5
             add "menu_title_left.png"
-            text "{size=40}{font=Bubu_Ghost.ttf}MUSIC/AUDIO GALLERY{/font}{/size}"
+            text "{size=40}{font=Tahyp-rahy-ter22.ttf}МУЗИЧНА ГАЛЕРЕЯ{/font}{/size}"
             add "menu_title_right.png"
 
     frame:
         xpos 10
         ypos 70
-        xsize 600
+        xsize 570
         ysize 520
         top_padding 5
         bottom_padding 25
-        left_padding 20
-        right_padding 20
+        left_padding 10
+        right_padding 10
         style_group "file_picker"
         has hbox
         frame:
@@ -3124,7 +3122,7 @@ screen music():
             left_margin 10
             has vbox
             style_group "file_picker"
-            text "{color=#cc0000}- Vincent -{/color}"
+            text "{color=#cc0000}- Вінсент -{/color}"
             if renpy.seen_audio("vincent/Vincent_Poolhall.mp3"):
                 textbutton "Route 66" action mr.Play("vincent/Vincent_Poolhall.mp3") style "music_button"
             else:
@@ -3180,7 +3178,7 @@ screen music():
 
             null height 10
 
-            text "{color=#cc0000}- Lawrence -{/color}"
+            text "{color=#cc0000}- Лоуренс -{/color}"
             if renpy.seen_audio("lawrence/g-major-restful-and-peaceful-classical-piano-90-bpm_GksJuA4d.mp3"):
                 textbutton "The Jackalope" action mr.Play("lawrence/g-major-restful-and-peaceful-classical-piano-90-bpm_GksJuA4d.mp3") style "music_button"
             else:
@@ -3215,7 +3213,7 @@ screen music():
             background None
             has vbox
             style_group "file_picker"
-            text "{color=#cc0000}- Cain -{/color}"
+            text "{color=#cc0000}- Каїн -{/color}"
 
             if renpy.seen_audio("cain/cain_intro.mp3"):
                 textbutton "Cafe Royale" action mr.Play("cain/cain_intro.mp3") style "music_button"
@@ -3256,7 +3254,7 @@ screen music():
 
             null height 10
 
-            text "{color=#cc0000}- Ren -{/color}"
+            text "{color=#cc0000}- Рен -{/color}"
             if renpy.seen_audio("ren/all-alone-v2_fyETywru.mp3"):
                 textbutton "Alone" action mr.Play("ren/all-alone-v2_fyETywru.mp3") style "music_button"
             else:

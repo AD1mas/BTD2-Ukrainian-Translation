@@ -670,7 +670,7 @@ n "Він проходив все глибше. Я видав гучний кр�
 $ sanity -=10
 n "Він проігнорував мої звуки, лише міцніше стиснувши своїми м'язистими та сильними руками моє тендітне тіло, злизуючи кров з рани"
 $ vbase,vblush,vexp = 1,0,5
-n "Невдовзі закінчивши, він облизався та нахилив свою головую над моїм обличчям. Його пронизливий хижий погляд змушував мене тремтіти ще більше"
+n "Невдовзі закінчивши, він облизався та нахилив свою голову над моїм обличчям. Його пронизливий хижий погляд змушував мене тремтіти ще більше"
 $ vbase,vblush,vexp = 1,0,4
 vincent "З тебе вийде дуже гарний обід... Я давно не куштував аж настільки смачну здобич~"
 $ vbase,vblush,vexp = 1,0,5
@@ -770,130 +770,130 @@ menu:
 
 label vincent_get_drunk:
 $ vbase,vblush,vexp = 2,0,1
-if player_name == "Farz":
-    vincent "Can you even drink, shrimp?"
+if player_name.lower() == "farz" or player_name.lower() == "фарц":
+    vincent "Ти хоч колись пив, моя маленька омежка?"
 else:
-    vincent "Can you even drink?"
-n "Vincent shoved his shoulder into mine walking past me."
-n "I bit my lip and looked at him."
-p "I could out drink you."
-n "Vincent stopped in his tracks and turned to me."
-n "He walked back over to me and slammed his palm on the wall by my head."
-n "I felt myself flinch at the sound."
-n "I slowly shifted my eyes to the dent he made in the drywall."
+    vincent "Ти хоч колись пив?"
+n "Вінсент штовхнув мене плечем, проходячи повз"
+n "Я прикусив свою губу та глянув на нього"
+p "Та я тебе легко переп'ю!"
+n "Вінсент зупинився та поглянув на мене здивовано"
+n "Він загрозливо підійшов до мене назад, штовхнувши мене в стіну та вдаривши рукою біля моєї голови. Його тіло нависло наді мною"
+n "Я аж здригнувся від цього поштовху"
+n "Наляканий, я повільно поглянув на вм'ятину, яку він залишив у гіпсокартонній стіні"
 $ vbase,vblush,vexp = 2,0,2
-vincent "You're fuckin on."
-vincent "I'll even pay for the drinks."
-vincent "That's just the kind of guy that I am."
-n "Vincent let out a low snarl as he walked over to the bar."
-n "I examined the wall and quickly followed."
-n "I took a seat next to him as the bartender put out shots."
+vincent "Ти блять в ділі"
+vincent "Я за все заплачу"
+vincent "Можу собі дозволити поглумитися з твого его, коли ти вже не витримуватимеш"
+n "Вінсент взяв мене за руку, міцно стиснувши, та повів за собою"
+n "Я швидко глянув на стіну за собою та пройшов за ним, не сильно чинячи опір"
+n "Він відпустив мене, коли ми дійшли до бармена, і я сів на високий стілець поруч з ним"
 $ vbase,vblush,vexp = 2,0,9
-unknown "Don't hurt this one, Vincent.."
+unknown "Не вбий цього малого, Вінсент. Мені вистачило минулого разу"
 $ vbase,vblush,vexp = 2,0,8
-vincent "I wouldn't do that!"
+vincent "Побачимо, хто він є всередині, хе-хе~"
 $ vbase,vblush,vexp = 2,0,5
-n "Vincent flicked me on the nose and grinned."
-vincent "I'm a heavy drinker I hope you can keep up."
-n "I put my hand around the shot regretting challenging him."
-n "I took the drink and gulped it down."
-n "It burned all the way down my throat."
+n "Вінсент обережно погладив моє волосся, по-хижому всміхаючись, поки розглядав риси мого обличчя"
+vincent "Я стійкий до випивки, багато можу витримати. Думаєш, зможеш тримати такий же темп?"
+n "Я невпевнено взяв шот, який мені протягнув бармен, вже жалкуючи, що вв'язався у це"
+n "Я зробив ковток, поставивши склянку на стіл назад"
+n "Моє горло ніби палало - скільки вони туди додають алкоголю?!"
 $ vbase,vblush,vexp = 2,1,5
-n "When I looked over Vincent was gulping down his second."
-n "I picked up the next shot and felt Vincent's arm around me."
+n "Коли я глянув на Вінсента, він випив вже свою третю чарку"
+n "Я взяв свою наступну, раптом відчувши, як масивна рука цього хлопця обіймає мене ззаду, притискаючи поближче"
 $ vbase,vblush,vexp = 2,1,6
-n "He tugged me close and grinned."
-vincent "Feeling it yet, kiddo?"
-n "I swatted him away and grinned."
+n "Він підтягнув мене до свого гарячого тіла, всміхаючись"
+vincent "Відчуваєш це, малий?"
+n "Я відмахнувся від нього, посміхаючись у відповідь. Я намагався здаватися впевненим"
 $ vbase,vblush,vexp = 2,1,6
-p "Not even close."
-if player_name == "Farz":
-    vincent "HAHAH! Do you drink alot!?"
-    p "Sometimes...I have a high tolerance."
-    n "Vincent patted me on the head."
-    vincent "Fair enough!"
-n "I could feel myself downing another shot."
-n "But everything was getting fuzzy."
-vincent "You wanna get outta here?"
+p "Навіть не близько!"
+if player_name.lower() == "farz" or player_name.lower() == "фарц":
+    vincent "Хах, то ти справді багато п'єш?"
+    p "Інколи.. в мене насправді висока толератність до алкоголю"
+    n "Вінсент поглади мене по голові ще раз"
+    vincent "Ну добре, добре~"
+n "Я випив ще один шот"
+n "Все вже почало розпливатися в моїх очах, ставало нечітким та ніби ефемерним"
+vincent "Не хочеш піти з цього місця до мене?"
 $ vbase,vblush,vexp = 2,1,4
-p "...Yeah let's go."
-n "I got up on my feet and wobbled into his arms."
-n "Vincent caught me and lifted me up with ease."
-n "I knew he was talking to the bartender but I buried my face into his shirt instead, smelling him."
-n "He smelled like sweat and alcohol but I didn't mind the scent it was nice."
+p "... Ходімо, бро"
+n "Я встав, проте було складно стояти через тяжке сп'яніння. Добре, що він стояв ззаду і міг спіймати мене прямо у свої м'які обійми"
+n "Він з легкістю підтягнув мене ближче, взявши на руки"
+n "Він щось сказав бармену, проте мені вже було байдуже. Я просто обіймав його у відповідь, занурившись носом у його шию"
+n "Він пахнув потом та алкоголем, проте я не мав нічого проти: це був приємний запах"
 scene vincent_bedroom_night with dissolve
 show vincent
 $ vbase,vblush,vexp = 1,1,9
 $ vincent_dayzero_sex = True
-n "It wasn't too long before we were in his house."
-n "It all felt like a blur to me as he took off my clothes."
-n "He was so rough with me."
+n "Пройшло небагато часу, як він приніс мене до себе додому"
+n "Я не міг думати про щось чітко, дивлячись, як він скидає мій одяг"
+n "Він був дуже грубим зі мною, міцно тримаючи, проте я не заперечував."
 $ vbase,vblush,vexp = 1,1,10
-n "I let out a soft moan as he growled into my chest."
-n "I couldn't focus, greedily taking whatever he had to give me."
+n "Я тихо стогнав, насолоджуючись його теплом всередині та зовні. Він був так близько, його велике тіло втискало мене в ліжко"
+n "Я не міг зосередитись, просто приймаючи все, що він робить зі мною"
 scene black with fade
-n "I moaned softly as I felt myself orgasming."
-n "I could feel my eyes drifting shut."
+n "Мої стогони стали гучнішими, коли я відчув, як він кінчає всередину. Мій оргазм настав приблизно у цей же час"
+n "Він міцніше стиснув мою шию, видавши задоволений гаркіт, поки в мене в очах все чорніло"
 jump vincent_day1_drunk
 
 
 
 label vincent_left_alone:
 scene alleyway with fade
-n "There was a cafe down the street."
-n "I'll just head over there."
-n "I let out a sigh as I headed towards the street."
-n "I felt a hand on the back of my neck forcing me into the brick wall." with hpunch
+n "Нижче по вулиці було ще якесь кафе"
+n "Я попрямував саме туди"
+n "Я тяжко видихнув, поки переходив між вулиць"
+n "Аж раптом відчув щось на своїй шиї. Рука Вінсента міцно стиснула її, перекриваючи доступ до кисню" with hpunch
 $ vbase,vblush,vexp = 6,0,5
 $ health -=5
 show vincent
 $ fbase,fexp = 2,1
 $ vbase,vblush,vexp = 6,0,5
-vincent "You are so fucking weak."
-n "Vincent smashed my head into the wall and I felt myself crumpling to the ground." with hpunch
+vincent "Ти такий слабкий..."
+n "Він швидко вдарив мене головою об стіну, відпустивши, через що я впав на холодний асфальт. Це було дуже боляче" with hpunch
 $ health -=5
-vincent "You shouldn't have come here, brat."
-n "A low growling voice drifted into my ear."
-n "I could feel my vision blurring as I tasted the coppery blood flowing out of my nose."
-vincent "You were ripe for huntin'."
-vincent "All I needed to do was catch ya."
+vincent "Ти не мав сюди приходити, неслухняна омежка"
+n "Він сидів біля мене навшпиньки, тихо говорячи мені на вухо"
+n "Мій зір був нечітким, поки гаряча кров стікала з мого носа. Я відчув залізний присмак крові на своїх губах"
+vincent "Ти так гарно підходиш для полювання..."
+vincent "Все, що мені треба було - це лише спіймати тебе"
 show farz:
     subpixel True
     xpos 0
 show vincent:
     subpixel True
     xpos 500
-farz "Vincent, what are you doing out here?"
-vincent "I'm just talkin to our buddy here."
-n "Vincent caressed the top of my head and I looked up at Farz."
+farz "Вінсент, що тут відбувається?"
+vincent "Та нічого такого, просто говорю з твоїм новим другом тут"
+n "Вінсент погладив мене по голові, посміхаючись Фарцу"
 menu:
-    "-Ask for help-":
+    "-Попросити допомоги-":
         $ farz_love +=10
-        p "He-Help."
-        n "I managed to choke out."
+        p "Д-допоможи.. б-будь ласка.."
+        n "Я видав з неабиякими зусиллями"
         $ fbase,fexp = 2,5
-        farz "They look like shit."
-        vincent "Yeah, haha I might have hit them a little too hard."
-        n "He didn't seem to be interested in helping me."
-    "-Say nothing-":
+        farz "Ти виглядаєш як гімно"
+        vincent "Та, мабуть я трохи перестарався, коли вдарив його"
+        n "Схоже, Фарц не був зацікавлений у тому, щоб допомагати мені"
+    "-Промовчати-":
         $ farz_love +=5
-        n "I didn't say anything to these two."
-        n "I had nothing else to say."
-        farz "They're quiet."
-        vincent "They're gonna stay that way too."
-    "-Scream at them-":
+        n "Я не знав, що сказати цим двом, повністю спантеличений"
+        n "Я боявся наслідків своїх слів"
+        farz "А воно тихе"
+        vincent "От і добре. Менше проблем. Так і має бути"
+    "-Закричати-":
         $ temper +=10
         $ farz_love -=10
-        p "FUCK YOU BOTH."
-        n "Vincent kicked me in my chest, it felt like he crushed my ribs."
-        vincent "You think this is bad?"
-        vincent "It's about to get much worse."
+        p "ТА ЙДІТЬ ВИ ОБИДВА НАХУЙ, ПОТВОРИ ОБІСРАТІ, ТА ШОБ ВАС В-..."
+        n "Вінсент дуже сильно вдарив мене у грудну клітину. Відчуття були такими, ніби він зламав мені декілька ребер"
+        vincent "Думаєш, зараз все погано?"
+        vincent "З такою поведінкою буде лише гірше"
         $ fbase,fexp = 2,5
 
-n "Vincent put his boot on my temple."
-vincent "Good night."
+n "Вінсент притиснув своїм черевиком до моєї скроні"
+vincent "Добраніч"
 $ vincent_love = farz_love
-n "He stomped on my head, quickly forcing my vision to black."
+n "Він наступив на мою голову, від чого в моїх очах все почорніло"
 $ health -=5
 scene black
 with fade
@@ -902,143 +902,143 @@ jump vincent_day1_start
 label vincent_day1_consenual:
 scene vincent_bedroom_day with dissolve
 play music "vincent/vincent_morningafter.mp3"
-n "I woke up the next day with a thick heavy arm draped around me."
-n "I cuddled into Vincent's chest as his hand swept through my hair as he woke up slowly."
+n "Коли я прокинувся наступного дня, я відчув масивну важку руку, що обіймала мене ззаду"
+n "Моє обличчя було притиснуте до його грудної клітини, як раптом він мило погладив моє волосся, почувши, що я прокинувся"
 show vincent
 $ vbase,vblush,vexp = 5,0,9
-n "He looked at the time and rubbed his eye."
-p "I better get going."
-n "I leaned away from him and he nodded."
-vincent "You wouldn't wanna be caught walkin' out of here."
-n "Vincent smacked my ass hard as I got out of the bed."
-p "HEY."
-n "I could feel a blush creeping up on my face, as I put my clothes back on."
-n "I looked at the tattered jeans on the ground."
-n "Vincent stood up and tossed a pair of sweatpants at me."
-vincent "Take those."
-vincent "I expect them back."
+n "Він оглянув моє голе тіло ще раз та облизався, всміхаючись"
+p "Я.. краще піду"
+n "Він кивнув, відпустивши мене. Я зміг без проблем встати з ліжка"
+vincent "Слухай, ти ж не хочеш, щоб тебе хтось вполював, поки ти тут ходиш?"
+n "Вінсент дуже сильно вдарив мене по дупі, щойно я піднявся з ліжка"
+p "Агов! Досить!"
+n "Я відчув, як дуже сильно почервонів, поки одягався"
+n "Я побив свої роздерті джинси, що лежали на підлозі"
+n "Вінсент встав і кинув мені пару спортивних штанів"
+vincent "Тримай"
+vincent "Потім повернеш, коли я тобі куплю нові"
 $ vbase,vblush,vexp = 5,0,6
-n "I felt my blush grow."
-vincent "Are you still blushing around me?"
+n "Я почервонів ще сильніше, мені було дуже соромно"
+vincent "Ти все ще червонієш біля мене, малий?"
 $ vbase,vblush,vexp = 5,0,8
-vincent "I saw you naked already!"
-p "Yeah well, I wasn't expecting you'd wanna see me again."
-vincent "Why wouldn't I?"
-n "I brushed my shirt against his face trying to swat him away and he sniffed it."
+vincent "Я бачив тебе голяка, я кінчав в тебе, чого ти соромишся?"
+p "Ну.. просто не думав, що ти будеш радий бачити мене знову"
+vincent "Чого? Ти мені подобаєшся"
+n "Я кинув свою футболку на його обличчя, щоб він відстав, проте він тільки посміхнувся та понюхав її"
 $ vbase,vblush,vexp = 5,0,11
-vincent "...Leave that one with me... "
-vincent "I like the way you smell."
-p "Fine! But you're buying me a new shirt too."
+vincent "Ох.. залиш її мені"
+vincent "Ти навіть не уявляєш, як мені подобається те, як ти пахнеш"
+p "Добре... Але тоді разом з джинсами ти купиш мені і нову футболку"
 $ vbase,vblush,vexp = 5,0,8
-vincent "Deal."
-n "Vincent tossed me one of his shirts."
-n "An old band shirt."
-vincent "You look really cute now."
-n "Vincent got out of bed."
-vincent "You have a good day now, darlin'."
-n "Vincent waved at me and I nodded."
-p "You too."
-n "I reached for a door and I heard Vincent make a sound."
+vincent "Домовились"
+n "Вінсент кинув в мене одну зі своїх футболок у відповідь
+n "Якась стара футболка з емблемою якогось рок-гурту"
+vincent "В тебе таке миле обличчя"
+n "Вінсент підійшов до мене ближче"
+vincent "Що ж, тоді гарного дня тобі"
+n "Вінсент обійняв мене ще раз, після чого ми попрощались"
+p "І тобі гарного дня!"
+n "Я вже підійшов до дверей, як раптом почув гучний крик від Вінсента"
 $ vbase,vblush,vexp = 5,0,7
-vincent "WAIT."
+vincent "ЧЕКАЙ!"
 play music "vincent/skeletons_in_closet.mp3"
-n "I looked down at my feet as something wet and foul-smelling fell out of the closet."
+n "В мене не було часу обдумати цю фразу, тож я відчинив двері. Це виявилась його шафа, і звідти випало щось бридке, що пахло гниллю"
 scene CG_vincent_skull with dissolve
 $ sanity -=10
-n "It looked like a skull."
-vincent "Shit."
-p "Wh-what is this?"
-n "My shaky voice came."
-vincent "That was the wrong door."
+n "Воно було схоже на чийсь людський череп..."
+vincent "От блять"
+p "Щ-що це..?"
+n "Я вимовив тремтливим голосом"
+vincent "Це.. не ті двері. Вихід в іншому боці"
 scene vincent_bedroom_day with dissolve
 show vincent
 $ vbase,vblush,vexp = 5,0,5
-n "Vincent let out a low growl as he rushed from his spot."
-n "It felt like only a moment before he pushed me into the wall."
-n "I could feel my head colliding with the brick, a warm trickle of blood down the side of my face."
+n "Вінсент тихо загарчав і кинувся з місця"
+n "Минула лише мить, перш ніж він притиснув мене до стіни"
+n "Я відчував, як моя голова вдаряється об цеглу, а тепла кров почала стікати моїм обличчям"
 $ health -=10
-n "My ears started to ring as I fell to the ground."
-n "Vincent walked over me and sighed."
+n "Дзвін у вухах збивав мене, а голова боліла від болю"
+n "Все в моїх очах почорніло, як Вінсент нахилився наді мною"
 scene black with fade
-vincent "...Damn... {size=12}I really liked ya too..{/size}"
+vincent "...Бляха... {size=12}Ти мені справді подобався..{/size}"
 jump vincent_day1_start
 
 label vincent_day1_drunk:
 play music "vincent/vincent_morningafter.mp3"
 scene vincent_bedroom_day with fade
-n "I groaned in my sleep and rolled over."
-n "I could feel my stomach turn upside down as my nose touched something fuzzy and warm."
-n "I slowly opened my eyes and felt a pang in my head."
-p "Ugh."
-n "I put my hand on the side of my head and felt it throbbing."
-n "What did I do last night?"
+n "Я застогнав від болю, перевернувшись"
+n "Я відчув, як мій шлунок неймовірно болів. Мені терміново треба було в туалет"
+n "Я розплющив свої очі та відчув, як сильно моя голова боліла від похмілля"
+p "Агхх..."
+n "Я притулив долоню до своєї голови, відчуваючи, як мої руки тремтять"
+n "Скільки я вчора випив?"
 show vincent
 $ vbase,vblush,vexp = 5,0,6
-vincent "Had too much to drink then?"
-n "Vincent's mocking tone didn't help my headache."
-n "That's right, I had a bunch of drinks with Vincent."
-n "I opened my mouth to reply to him and felt like everything was going to burst out of my throat."
-n "Vincent leaned back and started laughing as I got up to go to the bathroom."
-n " I grabbed the doorknob and pulled it open."
+vincent "Що, перепив, хлопче?"
+n "Вінсент зловтішався наді мною, сміючись"
+n "Але він був правий, мені справді не варто було пити настільки багато алкоголю"
+n "Я хотів відповісти йому, проте швидко відчув, як блювота заповнює моє горло"
+n "Вінсент посміявся, споглядаючи, як я швидко біжу в бік туалету"
+n "Я швидко схопив дверну ручку, відчинивши двері"
 $ vbase,vblush,vexp = 5,0,7
-vincent "HOLD UP-"
+vincent "ЗАЧЕКАЙ-"
 play music "vincent/skeletons_in_closet.mp3"
-n "I could hear Vincent's voice behind me but I couldn't focus on it."
+n "Я чув його голос позаду, проте не міг зосередитися на ньому"
 $ sanity -=10
-n "A putrid smell hit my face as I kneeled down in front of the closet."
-n "A revolting smell emanated off of a skull that tapped me on the knee."
+n "Жахливий гнилий запах потрапив мені у носа, коли я став на коліна перед унітазом та почав ригати"
+n "Коли шлунок вже спорожнів, в мене з'явилась можливість оглянути все навколо мене: біля туалету лежав чийсь череп"
 scene CG_vincent_skull with dissolve
-n "I reached out for it but I couldn't hold back my nausea any more."
-n "I threw up on the floor, coughing and gasping for some fresh air."
-n "I felt weak and debilitated but I tried to crawl away from the open closet door."
-vincent "...Where do you think you're going?"
-n "My eyes shot open remembering who I was with."
+n "Я був у ступорі, проте він цього жахливого запаху нова хвиля нудоти захопила мене."
+n "Кашляючи та намагаючисьнабрати якомога більше повітря, я знову проригався в унітаз"
+n "Я відчував себе слабким і виснаженим, але намагався відповзти від цього жаху подалі
+vincent "Що ти робиш? Куди ти повзеш?"
+n "Почувши цей агресивний роздратований голос, я згадав, в чиєму я домі"
 scene vincent_bedroom_day with dissolve
 show vincent
 $ vbase,vblush,vexp = 5,0,5
-n "I turned my head and looked up at Vincent."
-p "...I-"
-vincent "Save it."
-n "Vincent looked like he was in no mood for anything I had to say as his foot came down on my head."
+n "Я підняв свою голову, оглядаючи голе фактурне тіло Вінсента"
+p "Я-.."
+vincent "Помовч"
+n "Він виглядав так, ніби був не в настрої для будь-чого, що б я не сказав. Я побачив, як він наступив на мою голову"
 scene black with fade
-n "My nose cracked against the putrescent skull and everything went black."
+n "Тиск на мене був занадто сильним, тож я втратив свідомість, все ще відчуваючи цей жахливий запах"
 jump vincent_day1_start
 
 label vincent_day1_start:
 scene black with dissolve
 play music "vincent/vincent_mainphase.mp3"
-vincent "Wake up."
-n "I felt a swift kick to my ribs as the air pushed out of my lungs." with hpunch
-n "I started to cough uncontrollably as I looked around the room."
+vincent "Прокидайся"
+n "Я відчув, як Вінсент легко вдарив мене по щоках, дивлячись на моє обличчя" with hpunch
+n "Я аж закашлявся, в паніці оглядаючись навколо"
 scene falloutshelter with dissolve
-n "It looked like a fallout shelter."
-p "Wh-what's going on?"
+n "Кімната навколо виглядала як бункер на випадок ядерної війни"
+p "Щ-що відбувається?!"
 $ vbase,vblush,vexp = 7,0,5
 show vincent
-n "Vincent tossed a knife up and down."
-n "His eye followed it, as if he was thinking what to say next."
-n "He tossed the knife directly at my head."
+n "Вінсент підкидав ніж вгору і вниз"
+n "Він дивився на те, як ніж рухається, ніби це допомагало йому зосередитися та краще обдумати, що сказати"
+n "Раптом він схопив ніж однією рукою та кинув прямо в мене"
 $ vbase,vblush,vexp = 1,0,5
-n "I tried to dodge it but, my arm hitched."
-n "I was handcuffed to a radiator."
-n "The knife sailed past my face cutting my cheek and bouncing off the cement near me."
+n "Я рефлекторно намагався відсторонитись від нього, проте відчув, що мої руки були зв'язані за моєю спиною"
+n "Я був прикутий наручниками до батареї ззаду"
+n "Ніж пролетів повз моє обличчя, порізавши мою щоку, після чого вдарився об стіну та впав додолу"
 if vincent_dayzero_sex == True:
-    vincent "Look kiddo."
-    vincent "You saw a little too much."
-    vincent "I couldn't just let you walk out of my house."
-    n "He turned his head away from me and scoffed."
+    vincent "Слухай, хлопче"
+    vincent "Ти бачив забагато"
+    vincent "Я не можу тепер просто дозволити тобі піти звідси"
+    n "Він оглянув мене, презирливо посміхнувшись"
 $ vbase,vblush,vexp = 7,0,5
-n "Vincent walked over and picked up the knife."
-n "He lifted it up to my throat and leaned in."
-vincent "Ya see I got a little anger issue."
+n "Вінсент підійшов до мене, взявши ніж в руку"
+n "Він наблизився до мене, притиснувши гостре лезо до моєї шиї"
+vincent "Слухай.. в мене є деякі проблеми з контролем гніву"
 show screen vincent_rage_bar
 with dissolve
-vincent "Some unresolved inner conflict or some hippy dippy shit like that."
-n "He pushed the knife up against my throat, the sharp steel cutting lightly into my skin."
-n "The adrenaline picked up and my heart started to pound."
-n "He pressed it deep and I could feel my blood dripping onto his blade."
-vincent "I thought you could help me solve that."
-n "He pulled the blade away and licked the blood off of the broad side."
+vincent "Невирішений внутрішній конфлікт і бла-бла-бла, у кожного є свої психологічні травми, еге ж?"
+n "Він проштовхнув ножа неглибоко в моє горло. Гаряча кров почала стікати по ножу та по моєму горлу"
+n "Я відчув потужний викид адреналіну, а моє серце пришвидшилось в рази"
+n "Вінсент пронизливим поглядом вдивлявся на те, з яким нажаханим поглядом я дивлюсь на нього"
+vincent "Тож я подумав, що ти можеш мені допомогти з цим"
+n "Він наблизив ножа до свого рота, з неймовірною блаженною насолодою злизавши кров з нього"
 menu:
     "\"I'm not going to help you psychopath!\"":
         $ temper +=10

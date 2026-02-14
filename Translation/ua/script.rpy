@@ -1472,179 +1472,180 @@ $ sanity -=10
 if sanity <= 0:
     jump vincent_badend_vore
 p "Щ-що ти.."
-n "Before I could even complete my thought he tug my bottoms off from around my waist."
-n "I let out a small cry as it went over my feet, they still hurt but the pain was replaced by fear as he flicked open a knife."
-vincent "Oh yeah! My bad."
-vincent "Lemme get these off too."
-n "He grabbed the hem of my underwear and tore through the fabric."
-p "Vincent!"
-n "I squeaked out as he tossed away the cloth."
-vincent "I just wanna get a front row look!"
-vincent "It's cute."
-n "I tried to clamp my legs together but he pushed them apart."
-p "I... Don't..."
-vincent "Do it."
-n "Vincent growled out between his teeth."
-n "He wasn't asking nicely anymore."
-n "I closed my eyes as I felt my bladder release."
-n "Vincent let out an excited sound as I emptied myself on the floor."
-vincent "Aaaahhh~"
-n "Vincent scooted in, not seeming to notice it was getting on the knees of his pants."
-n "He pressed his cock up against my crotch and I squirmed."
-vincent "I'm fuckin hard."
-n "I let out a gasp as he pressed up against me."
-p "N-no."
+n "Перед тим, як зміг реалізувати задумане, він стягнув з мене штани"
+n "Тканина стянутого одягу заділа рану на моїй стопі, змусивши мене простогнати від болю, хоча відчуття болю було пригнічене страхом від того, як вправно Вінсент підкидав і ловив ніж в своїй руці"
+vincent "Ох, вибач, мій пройоб"
+vincent "Лишилися труси, почекай-но секунду"
+n "Він потягнув мої труси, необережно розрізавши їх своїм мисливським ножем"
+p "В-вінсенте!"
+n "Я вкрикнув від неочікуваності, проте видихнув, коли побачив, що той не лишив нових ран"
+vincent "Я просто хотів побачити це напряму!"
+vincent "Це мило!"
+n "Я намагався приховати свої інтимні місця ногами, притуливши їх одна до одної, проте він їх відразу ж розсунув"
+p "Я... Не треба..."
+vincent "РОБИ ЦЕ"
+n "Вінсент прогарчав, показуючи свої гострі зуби"
+n "Він більше не звучав веселим та добрим"
+n "Я заплющив свої очі та дозволив своєму сечовому міхуру зробити свою роботу"
+n "Вінсент видав дуже натхненний задоволений звук, бачачи, як я випорожнився на підлогу"
+vincent "Аааахх~"
+n "Вінсент наблизився, не помітивши, що це потрапило на частину його штанів біля колін"
+n "Я вкрикнув, коли він поклав свою руку на мій пах"
+vincent "Я блять тебе хочу, сучка"
+n "Я аж затамував подих від того, як грубо він рухався і дуже хотів пройти всередину"
+p "Н-ні, будь ласка..."
 $ vbase,vblush,vexp = 1,1,5
-n "Vincent slammed me into the radiator and I gasped."
-vincent "Not really giving you a choice now."
-n "He unbuckled his pants and rubbed his cock on me."
-p "PLEASE... ST-STO..."
-n "He didn't listen as he pushed his way inside of me."
-n "I let out a loud scream feeling my muscles tighten around the hard dick inside of me."
-vincent "Fuck! You're tight."
+n "Вінсент накинувся на мене, міцно схопивши за мій торс, від чого я аж вдарився об батарею"
+vincent "Не те, що б я давав тобі вибір"
+n "Він розстібнув свої штани та притулив свій гарячий член до мого проходу"
+p "ВІНСЕНТЕ, ЗАЧЕК-..."
+n "Він не слухав мене, грубо проходячи всередину. Він так задоволено стогнав від цього, ніби нарешті зробив щось, що давно хотів"
+n "Я гучно закричав від того, як він різко пройшов, без жодної підготовки"
+vincent "Ох блять, а тут дуже навіть вузько~"
 if vincent_dayzero_sex == True:
     jump vincent_noncon_day1_tough
 else:
     jump vincent_noncon_day1_easy
 
 label vincent_noncon_day1_easy:
-n "Vincent gripped my hair and pushed my head back into the radiator."
-n "I let out a gasp as he thrusted into me."
-n "The sound of light splashing underneath, made me feel sick."
-n "I gripped my hands as he huffed."
-p "Please... Stop... "
-n "I stopped fighting, he was too strong."
-n "I didn't want this."
-p "You- You can have anyone!"
-n "Vincent leaned into me."
-vincent "And I wanna have you."
-n "I couldn't hold my tears back anymore."
+n "Вінсент грубо тримав мене за волосся та притиснув мою голову до батареї ззаду"
+n "Я гучно стогнав від того, як він швидко трахав мене ззаду"
+n "Мені стало зле від такого швидкого ритму. Все всередині боліло"
+n "Я стиснув зуби, намагаючись витерпіти цю біль"
+p "Вінсенте.. будь ласка.. з-зуп.. аах.. зупинись.."
+n "Він був занадто сильним, чинити опір не мало сенсу"
+n "Я хотів, щоб це пошвидше закінчилось"
+p "Ти.. аах.. ти можеш трахнути будь-кого іншого!"
+n "Вінсент притиснувся своїм м'язистим торсом до мого тіла"
+vincent "Але я хочу тебе, ти неймовірний~"
+n "Я вже не міг стримувати сльози"
 $ sanity -=10
 if sanity <= 0:
     jump vincent_badend_vore
-n "I started to cry as he leaned in my neck."
-vincent "AH! Fuck you're crying."
-vincent "It's so fucking cute."
-n "He growled out as he came inside of me, dropping my hips on the floor."
+n "Він вкусив мою шию, поки мої гарячі сльози стікали вниз"
+vincent "Ох єбать, ти плачеш..."
+vincent "Це так мило!"
+n "Він відпустив мене, увійшовши повністю. Я відчув, як він кінчає всередину. Приємне тепло розповсюджувалося по моєму тілу"
 if vincent_love >= 20:
     jump vincent_cleanup
 else:
-    n "Vincent got up and smirked at me."
-    vincent "Have a good night, baby."
+    n "Вінсент встав та окинув мене поглядом"
+    vincent "Що ж... гарної ночі, малий"
     scene falloutshelter:
         subpixel True
         xalign 0.5
         easeout 0.9 xalign 0.95
-    n "He walked off and opened the door to the bunker."
-    p "WAIT!"
-    n "Vincent flicked off the light and slammed the door behind him."
+    n "Він обернувся та пішов до дверей бункеру"
+    p "Вінсенте, чекай..."
+    n "Він вимкнув світло, після чого я почув гучний звук, як він зачиняє двері"
     scene falloutshelter_dark:
         subpixel True
         xalign 0.9
         easein 1.0 xalign 0.5
-    n "I cried softly into my chest."
-    n "I didn't wanna be awake anymore."
+    n "Я тихо плакав від того, як боліло моє тіло"
+    n "Я просто хотів почуватися добре та порухатись, адже моє тіло затекло."
     scene black with dissolve
     jump vincent_dayone_midnight
 
 label vincent_noncon_day1_tough:
 $ vbase,vblush,vexp = 1,1,5
-vincent "Tighter than you were last night."
-n "Vincent gripped my hair and pushed my head back into the radiator."
-n "I let out a gasp as he thrusted into me."
-n "He was right, it hurt so much more than before."
-n "I gritted my teeth."
-n "I just wanted him to stop."
-n "I could feel the bile turning in my stomach as I leaned my head back."
-p "Stop... Goddamn it!"
-n "Vincent grinned and pushed his forearm into my throat."
-vincent "I'll stop when I fucking feel like it."
-n "He leaned in and licked the sweat off my forehead."
-vincent "Just take it like the bitch you are."
-n "He grinned as he thrusted into me harder."
-n "I could feel myself tearing on the inside."
+vincent "А ти вужчий, ніж був минулої ночі"
+n "Вінсент вчепився мені в волосся й втиснув мою голову назад у радіатор."
+n "Я гучно стогнав, поки він проштовхував свій член всередину"
+n "Він мав рацію, це боліло набагато сильніше, ніж раніше"
+n "Я стиснув зуби від болю."
+n "Я просто хотів, щоб він зупинився."
+n "Я відчував, як жовч підступає до горла, коли я відкинула голову назад."
+p "Зупинись... Чорт забирай!"
+n "Вінсент оскалився і різко схопив мене за щелепу"
+vincent "Я зупинюся, коли, бляха, сам захочу."
+n "Він нахилився ближче й злизав піт із мого чола."
+vincent "Просто прийма мене як справжня сучка, якою ти і є"
+n "Він почав трахати мене ще жорсткіше, застогнавши"
+n "Я відчував, як рвуся зсередини"
+
 $ sanity -=10
 if sanity <= 0:
     jump vincent_badend_vore
-p "I-It hurts... "
-n "I choked out under his forearm."
-n "He leaned into me and grinned."
-n "In that low southern drawl he whispered."
-vincent "Good."
-vincent "I want it to hurt."
-vincent "You look so much cuter when you cry."
-n "I broke...."
-n "I started to feel the tears fall down my cheeks as he slammed me hard."
-n "I could feel him moan and cum inside me as he dropped my hips on the ground."
+p "Ц-це боляче..."
+n "Я почав задихатися від того, як він міцно тримав мене"
+n "Він ліг на мене та задоволено видихнув"
+n "Його південний акцент був добре відчутний у його словах"
+vincent "Який же ти ахуєнний..."
+vincent "Я хочу, щоб тобі було боляче"
+vincent "Ти виглядаєш таким милим, коли ти плачеш"
+n "Я зламався"
+n "Він трахав мене тільки грубіше, через що я почав плакати"
+n "Ми обидва впали на підлогу, як він увійшов до кінця та почав кінчати всередину"
 if vincent_love >= 20:
     jump vincent_cleanup
 else:
-    n "Vincent got up and smirked at me."
-    vincent "Have a good night.... Baby."
+    n "Закінчивши, він став та усміхнувся"
+    vincent "Це було неймовірно. Приємної ночі тут, малий"
     scene falloutshelter:
         subpixel True
         xalign 0.5
         easeout 0.9 xalign 0.95
-    n "He walked off and opened the door to the bunker."
+    n "Він пройшов до виходу, вимкнувши світло зачинивши за собою двері"
     scene falloutshelter_dark:
         subpixel True
         xalign 0.9
         easein 1.0 xalign 0.5
-    n "It slammed shut behind him and I cried softly into my chest."
+    n "Вони зачинилися настільки гучно, що цей звук ще хвилину гудів в мене у вухах"
     scene black with dissolve
     jump vincent_dayone_midnight
 
 label vincent_omo_wait:
-p "I'm going.. to wait."
-n "I looked to the side and Vincent arched an eyebrow."
-vincent "Yeah sure, kid."
+p "Я просто.. почекаю"
+n "Вінсент підняв брову, від чого я відвернувся"
+vincent "Без проблем, малий"
 $ temper += 10
-vincent "You do that."
-n "He grinned at kicked me on the chest, knocking the wind out of me."
+vincent "Чекай скільки завгодно"
+n "Він різко вдарив мене у грудну клітку, від чого я візко видихнув все повітря з себе"
 if temper >=50:
-    n "Vincent turned to the table and gripped the sides."
-    n "He started to play with various things on the table as if thinking about something."
+    n "Вінсент повернувся до столу та задумався, почухавши свою потилицю"
+    n "Він почав перебирати різні інструменти на столі, ніби думаючи, що він може з ними зробити"
     jump vincent_temper_death
 if vincent_love <= 0:
     jump vincent_neglove_death
-vincent "See ya later, kiddo!"
-vincent "Don't stay up too late now."
+vincent "Побачимось пізніше, малий!"
+vincent "Не засижуйся допізна"
 hide vincent with dissolve
-n "Vincent said laughing and walking out of the bunker."
-n "The metal door shut and I could hear all the mechanisms latch closed."
-n "I leaned my head down and felt my pants get warmer."
-n "I let the tears fall down my face and leaned my head down."
+n "Вінсент посміявся та вийшов з бункеру"
+n "Металічні двері захлопнулись гучно, ще з десяток секунд ехом затримавшись в мене в голові"
+n "Я нахилив свою голову і відчув тепло в своїх трусах"
+n "Я почав плакати від того, як сумно почувався всередині"
 jump vincent_dayone_midnight
 
 label vincent_cleanup:
-n "I looked up at Vincent as he looked at the mess on himself then me."
+n "Я подивився наверх, поки він оглядався на те, що зі мною зробив"
 $ vbase,vblush,vexp = 1,0,1
 $ vincent_love +=10
-vincent "Tsk. I better clean this shit up."
+vincent "От бля. Краще це пошвидше прибрати"
 $ vbase,vblush,vexp = 1,0,5
-n "Vincent grabbed a towel above me and wiped me down tossing the towel aside."
-p "..W-Why.."
-n "Vincent flicked my forehead."
-vincent "Don't look a gift horse in the mouth."
-n "He wiped up the cement out from under me."
-n "He tossed a blanket on my head."
+n "Вінсент дістав рушник та витер мене з усіх боків"
+p "Вінсенте.. чого..?"
+n "Вінсент легенько погладив мене по волоссю"
+vincent "Дарованому коню в зуби не дивляться"
+n "Після цього він витер підлогу піді мною"
+n "Він поклав ковдру на моє тіло"
 $ vbase,vblush,vexp = 1,0,6
-vincent "Go to sleep, brat."
+vincent "Поспи краще, омежка~"
 scene falloutshelter:
     subpixel True
     xalign 0.5
     easeout 0.9 xalign 0.95
 hide vincent with dissolve
-n "He walked off and shut the door behind him."
+n "Він пройшов до виходу за зачинив двері за ним"
 scene falloutshelter_dark:
     subpixel True
     xalign 0.9
     easein 1.0 xalign 0.5
-n "I curled up underneath the blanket, feeling the warmth."
+n "Я скрутився клубочком під ковдрою, заплющивши очі"
 scene black with dissolve
-n "I closed my eyes."
+n "Я заплющив свої очі"
 $ sanity +=10
-n "I felt grateful for the warm cloth around me."
+n "Я почувався вдячним за теплу ковдру на мені"
 jump vincent_dayone_midnight
 
 
@@ -1688,27 +1689,27 @@ $ vincent_code_day1 = False
 $ vincent_teeth_day1 = False
 $ vincent_handcuffoff_day1 = False
 if vincent_kicktwice == True:
-    n "I opened my eyes and looked around."
-    n "The bunker was dark."
-    n "How long was I out?"
+    n "Я розплющив очі та оглянувся"
+    n "В бункері була непроглядна темрява"
+    n "Як довго я тут взагалі?"
 else:
-    n "I picked up my head."
-    n "I couldn't sleep."
-    n "How could someone sleep in this situation?"
-    n "I opened my eyes slowly."
+    n "Я почувався неспокійно"
+    n "Я не міг більше спати"
+    n "Як хтось в такій ситуації взагалі міг спати?"
+    n "Я широко розплющив очі та оглянувся"
 scene falloutshelter_dark:
     xalign 0.0
 with dissolve
-n "I sighed and yanked the hand cuff."
-p "..Come on."
+n "Я видихнув та потягнув за наручник"
+p "..Ох, та блять..."
 menu:
-    "-Pull handcuffs-":
+    "-Потягнути наручник-":
         $ handcuff_pull_nightone = 0
         jump vincent_night1_handcuffpull
-    "-Go to sleep-":
+    "-Піти спати-":
 
         jump vincent_night1_gotosleep
-    "-Look around-":
+    "-Оглянути все навколо-":
 
         jump vincent_night1_lookaround
 
@@ -1720,8 +1721,8 @@ $ vincent_key_day1 = False
 $ vincent_code_day1 = False
 $ vincent_teeth_day1 = False
 hide screen table_button
-n "...There was something on the table."
-n "I moved in that direction to see what I could find."
+n "...Щось було на столі."
+n "Я пройшов у цьому напрямку, щоб ознайомитись детальніше"
 label screen_tableday1:
 hide screen table_button
 hide screen health_bar
@@ -1741,46 +1742,46 @@ if vincent_code_day1 == True:
     hide screen vincent_picture_day1
 if vincent_teeth_day1 == True:
     hide screen vincent_teeth_day1
-n "What can I find..."
+n "Що тут можна знайти..."
 jump screen_tableday1
 
 label food_day1:
 if vincent_food_day1 == False:
     $ vincent_food_day1 = True
     hide screen vincent_food_day1
-    n "I picked up the bag of food and looked at it."
-    n "It looked like jerky... Did he make this himself."
-    n "I opened up the bag and sniffed it."
-    n "It smelled like regular meat..."
-    n "My stomach growled and I took a piece out."
-    n "I nibbled on it and it tasted great!"
+    n "Я підняв пакетик з їжею та оглянув його"
+    n "Виглядало, як в'ялене м'ясо. Він сам це приготував?"
+    n "Я обережно розпакував його та принюхався"
+    n "Пахло наче звичайне в'ялене м'ясо..."
+    n "Мій шлунок болів від голоду, тож я відкусив шматок"
+    n "Я прожував його, і він був навіть дуже класним на смак!"
     $ health +=10
-    n "I shouldn't take too much..."
+    n "Мені не слід їсти багато.."
     $ temper +=10
-    n "I ate the piece pulled out and put it back where I found it. "
+    n "Я з'їв ще декілька шматочків та поклав його назад, де воно було"
     jump screen_tableday1
 
 label picture_day1:
     if vincent_code_day1 == False:
         $ vincent_code_day1 = True
         hide screen vincent_picture_day1
-        n "I picked up the picture that was tucked under a box."
-        p "What's this?"
-        n "I looked at the guys in the picture and tilted my head to the side"
+        n "Я підняв картину, тісно сховану за коробкою"
+        p "Що це?"
+        n "Я нахилив голову вбік, оглянувши декількох хлопців на ній"
         hide screen table_day1
         hide screen table_button
         hide screen back_day1_button
         scene CG_vincent_code with dissolve
-        p "Was he in the army?"
-        n "I asked to myself as I looked at the back, which was blank."
-        n "I sighed softly, he used to be a good guy right?"
-        n "I guess anyone could join the military though."
-        n "I bit my lip, maybe it wasn't the best idea to fight with him."
-        n "If he had combat experience-"
-        n "He could take me down pretty quickly."
+        p "Він служив у армії?"
+        n "Я спитав себе, оглянувши зад картини, який був порожнім"
+        n "Я тихо видихнув: він раніше був гарним хлопцем?"
+        n "Хоча будь-хто міг піти у армію"
+        n "Я прикусив свою губу. Битися з ним точно було поганою ідеєю"
+        n "Якби ж в мене ще був досвід бійок-"
+        n "Він міг вирубити мене одним ударом, чітко і швидко, безсумнівно"
         show desk
         show screen back_day1_button
-        n "I tucked the picture where I found it."
+        n "Я поклав картину туди, де знайшов"
         jump screen_tableday1
 
 label teeth_day1:
@@ -1789,28 +1790,28 @@ label teeth_day1:
         $ vincent_teeth_day1 = True
         hide screen vincent_teeth_day1
         if sanity <= 0:
-            n "My vision went blurry and I blacked out."
+            n "Все навколо ніби почорніло, і я втратив свідомість"
             jump vincent_badend_vore
-        n "I looked at the table and picked up a tooth."
-        p "Why would he keep... this.."
-        n "I asked myself then looked down at the table."
-        n "The pliers were bloody."
-        n "Freshly bloody."
-        n "When was the last time he had someone down here."
-        n "I touched the pliers and dropped the tooth."
-        n "I didn't want to know."
+        n "Я оглянув стіл і побачив різні вирвані зуби"
+        p "Навіщо він це зберігає?"
+        n "Спитав я себе перед тим, як оглянути решту речей"
+        n "Пласкогубці були скривавлені"
+        n "Кров була свіжою"
+        n "Коли тут був хтось востаннє?"
+        n "Я доторкнувся до пласкогубців та поклав зуб на місце"
+        n "Я не хотів знати"
         jump screen_tableday1
 
 label key_day1:
     if vincent_key_day1 == False:
         hide screen vincent_key_day1
         $ vincent_key_day1 = True
-        n "I looked down at the key."
-        n "He must have left a spare here for safe keeping."
-        n "He probably didn't count on anyone getting out of the cuffs."
-        n "I sighed and picked it up."
-        n "I'd have to hide it."
-        n "Maybe I could get out of here when he wasn't looking."
+        n "Я поглянув на ключ"
+        n "Мабуть лишив їх тут на випадок, якщо знадобиться запасний"
+        n "Мабуть не думав, що хтось зможе звільнитися з його наручників"
+        n "Я видихнув та підняв його"
+        n "Я маю сховати його"
+        n "Можливо зможу вибратися, поки він не бачить"
         jump screen_tableday1
 
 label back_buttonday1:
@@ -1828,39 +1829,40 @@ hide screen vincent_picture_day1
 show screen health_bar
 show screen vincent_rage_bar
 show screen sanity_bar
-n "Now what do I do?"
+n "Що тепер мені слід зробити?"
 menu:
-    "-Go to sleep-":
+    "-Піти спати-":
         jump vincent_backtosleep_nightone
-    "-Check weapons locker-":
-        n "I should check out that weapons locker."
+    "-Перевірити збройову шафку-":
+        n "Мені слід перевірити збройову шафку"
         jump vincent_weaponlocker_try
 
 label vincent_night1_lookaround:
 $ sanity +=10
-n "I tugged at the handcuff again."
-n "I wasn't going to pull out of the cuff anytime soon."
-n "Unless, I really wanted to hurt myself, and what would be the point of that."
-n "I looked around from my spot."
-n "But, there wasn't much to look at."
-n "I let out a soft sigh. "
-n "Maybe there wasn't anything I could do."
-n "I closed my eyes and went back to sleep."
+n "Я потягнув за наручники знову"
+n "Я не збирався більше намагатися вириватися з наручників"
+n "Хіба що я справді хотів завдати собі болю, але який у цьому сенс?"
+n "Я оглянув все навколо ще раз"
+n "Але й дивитися було майже ні на що"
+n "Я тихо зітхнув"
+n "Схоже, я нічого не зможу зробити."
+n "Я заплющив очі й знову заснув."
+
 jump vincent_day2_morning
 
 label vincent_night1_gotosleep:
 $ health +=10
-n "I really shouldn't take my chances."
-n "I wasn't sure if Vincent would be coming back any time soon and I didn't want to press my luck."
-n "I hung my head down and I tried my best to go back to sleep."
-n "The fallout shelter produced no sound."
-n "I fell into an uncomfortable sleep."
+n "Мені й справді не варто ризикувати."
+n "Я не був певен, чи Вінсент скоро повернеться, і я не хотів випробовувати долю."
+n "Я опустив голову й щосили намагався знову заснути."
+n "У бункері не було ані звуку, повна тиша"
+n "І зрештою я провалився в незручний сон."
 jump vincent_day2_morning
 
 label vincent_night1_handcuffpull:
 $ weapon_unlockattempts= 0
-n "I pulled at the handcuff around my arm."
-n "It seemed pretty loose."
+n "Я проштовхнув наручник крізь свою руку"
+n "Моя рука відчувалася більш вільною"
 label vincent_nightone_handcuffpull_attempt:
 $ time = 2
 $ timer_range = 2
@@ -1869,7 +1871,7 @@ show screen countdown
 label vincent_night1_handcuffpull_menu:
 $ vincent_handcuffoff_day1= False
 menu:
-    "-Pull-":
+    "-Тягнути-":
         show vincent_redvignette
         $ handcuff_pull_nightone += 1
         $ health -=5
@@ -1882,51 +1884,51 @@ if health <=0:
     jump vincent_healthdeath_alone
 if handcuff_pull_nightone >=3:
     jump vincent_handcuff_free
-n "I gave up..."
-n "I better not touch anything..."
-n "He'd probably get really angry."
-n "I just wanted this to be over."
-n "I closed my eyes and fell back asleep."
+n "Я здався..."
+n "Краще було б нічого не робити..."
+n "Він мабуть дуже розізлиться"
+n "Я просто хотів, щоб це закінчилось"
+n "Я заплющив очі та знову заснув"
 jump vincent_day2_morning
 
 label vincent_handcuff_free:
 $ vincent_handcuffoff_day1 = True
 hide screen countdown
-n "It came off!"
-n "But I looked at my arm."
-n "It was all cut up and bloody."
+n "В мене вдалося! Моя рука вільна!"
+n "Я детальніше придивився до своєї руки"
+n "Вся порізана та в крові"
 if health <=0:
-    n "I stood up and waviered."
+    n "Я встав і похитнувся"
     jump vincent_healthdeath_alone
-n "I held it close to me."
-n "He'd notice that for sure."
+n "Я тримав свою руку близько до себе"
+n "Він точно помітить"
 if vincent_footcut == True:
-    n "I got up but I wobbled."
-    n "I forgot Vincent cut my foot."
-    n "I leaned against the wall and used it to stablize me."
-    p "Damn it..."
-    n "I cursed softly to myself as I walked towards his workbench."
+    n "Я встав, але стояти було тяжко, мене хитало, а голова йшла обертом"
+    n "Я забув, що Вінсент надрізав мою стопу"
+    n "Я тримався за стіну, щоб не впасти"
+    p "Блять..."
+    n "Я матюкнувся тихо про себе, підійшовши до робочого столу з інструментами"
 if vincent_cigburn == True:
-    n "I got up and slipped a bit."
-    n "My foot felt like it was were on fire."
-    n "I slipped in my own blood as I tried to get across the floor."
-    p "AH."
-    n "I clapped my hands over my mouth, quickly looking around."
-    n "He didn't hear me."
-    n "I let out a sigh of relief."
-n "I reached for a towel that was tucked in the corner and gingerly pressed it against my arm for now."
+    n "Я встав і ледь не впав від болю"
+    n "Мої ноги ледь відчувалися, вони були ніби у вогні за відчуттями"
+    n "Я намагався пройти всеред, залишаючи по собі кривавий слід"
+    p "Ахх.. блять..."
+    n "Я міцно стиснув зуби, намагаючись не видавати гучних звуків"
+    n "Він мене не почув"
+    n "Я видихнув з полегшенням"
+n "Я дібрався до рушника, що лежав неподалів, затиснувши його між своїм тілом та рукою"
 show screen table_button
-n "I looked at his table, there were a lot of small tools all over the place..."
-n "Nothing of true value."
+n "Я оглянув стіл: навколо було дуже багато невеликих інструментів"
+n "Нічого корисного насправді"
 hide screen table_button
-n "I sighed and looked at the weapons locker."
-n "It had a number combination on it."
+n "Я поглянув на збройну шафку"
+n "На ній був кодовий замок"
 
 label vincent_weapon_locker_choice:
 menu:
-    "-Try it-":
+    "-Спробувати-":
         jump vincent_weaponlocker_try
-    "-Go back to radiator-":
+    "-Повернутися до батареї-":
         jump vincent_backtosleep_nightone
 
 label vincent_weaponlocker_try:

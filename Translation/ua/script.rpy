@@ -2232,43 +2232,43 @@ menu:
 n "Я відсунувся назад, а він потроху присувався до мене" # "I scooted back and he inched towards me."
 vincent "Ну ж бо, розслабся" # "Come on, loosen up."
 $ vbase,vblush,vexp = 3,1,5
-n "Він підвівся й схопив мене за ніс" # "He got up and grabbed my nose."
+n "Він підвівся й схопив мене за носа" # "He got up and grabbed my nose."
 n "Я почав панікувати, серце шалено закалатало, і я відкрив рота, щоб дихати" # "I started to panic my heart raced hard and opened my mouth to breath."
-vincent "Ах, ось так, любчику!" # "Ah there you go sweetie!"
+vincent "Ах, ось так, молодець~" # "Ah there you go sweetie!"
 n "Вінсент запхав пляшку мені в рот" # "Vincent jammed the bottle into my mouth."
-n "Він відпустив мій рот, поки я давився рідиною" # "He let go over my mouth as I choked down the liquid."
+n "Він відпустив мене, поки я давився рідиною" # "He let go over my mouth as I choked down the liquid."
 n "Здавалося, ніби воно обпікає все горло дорогою вниз" # "It felt like it was burning all down my throat."
-n "Мої очі почали сльозитися, поки я давився цим" # "My eyes started to water as I choked it back."
+n "Мої очі почали сльозитися" # "My eyes started to water as I choked it back."
 n "Вінсент витягнув пляшку з мого рота й затиснув його рукою" # "Vincent took the bottle out of my mouth and slapped his hand over my mouth."
 $ vbase,vblush,vexp = 3,1,6
 vincent "Ковтай" # "Swallow it."
 n "Я відчував, як сльози течуть по моєму обличчю" # "I could feel the tears running down my face."
 n "Здавалося, ніби всі мої нутрощі палають" # "It felt like all of my insides were on fire."
-n "Я проковтнув і одразу пошкодував" # "I swallowed it and immediately regretted it."
+n "Я проковтнув і одразу пошкодував про це" # "I swallowed it and immediately regretted it."
 n "Голова пішла обертом, коли Вінсент прибрав руку з мого рота" # "My head spun as Vincent took his hand off my mouth."
 $ vbase,vblush,vexp = 3,1,5
-vincent "Ти такий милий" # "You look so cute."
+vincent "Ти такий миленький... Вже тебе люблю~" # "You look so cute."
 n "Я осів на підлогу" # "I slumped on the floor."
 n "Я не міг сидіти прямо без опори" # "I couldn't sit straight without something holding me up."
 n "Мене знудило на підлогу, і Вінсент цокнув язиком" # "I threw up on the floor and Vincent tsked."
-vincent "Оце марнотратство" # "Man, what a waste."
-vincent "Та байдуже" # "Whatever."
+vincent "Блять, яке марнотратство" # "Man, what a waste."
+vincent "Похуй" # "Whatever."
 $ sanity -=10
 if sanity <= 0:
     n "В очах помутніло, і я знепритомнів" # "My vision went blurry and I blacked out."
     jump vincent_badend_vore
 show CG_Vincent_vomit with dissolve
-n "Він вдавив чобіт мені в потилицю, і я відчув запах власної жовчі та блювоти" # "He pushed his boot into the back of my head and I smelled my own bile and vomit."
+n "Він став чоботом мені на потилицю, втиснувши мене носом у мою ж жовч та блювоту. Запах пробивав мені носа" # "He pushed his boot into the back of my head and I smelled my own bile and vomit."
 n "Я дряпав підлогу, але він не давав мені підвестися" # "I scratched at the floor but he wouldn't let me up."
-vincent "Злизуй" # "Lick it."
-p "Н-ні. Будь ласка" # "N-No. Please."
-vincent "Ти мене чув" # "You heard me."
+vincent "Злизуй. Підлога має бути чиста" # "Lick it."
+p "Н-ні... Будь ласка" # "N-No. Please."
+vincent "Ти мене почув" # "You heard me."
 menu:
     "-Зробити це-": # "-Do it-"
         jump vincent_vomit_sex
     "-Відмовитися-": # "-Refuse-"
-
         jump vincent_vomit_refuse
+
 
 label vincent_vomit_refuse:
 $ temper +=10
@@ -2285,8 +2285,8 @@ $ health -=5
 if health <= 0:
     jump vincent_health_death
 vincent "Відкрий рота" # "Open your mouth."
-n "Він розстебнув ширіньку й став наді мною" # "He unzipped his pants and stood above me."
-n "Я глянув на його ширіньку, а тоді знову на нього..." # "I looked at I looked at his fly and then back at him..."
+n "Він розстебнув свої штани й став наді мною" # "He unzipped his pants and stood above me."
+n "Я глянув на його розстібнуту застібку, а тоді знову на нього" # "I looked at I looked at his fly and then back at him..."
 label vincent_vomit_refuse_menu:
 $ time = 1
 $ timer_range = 1
@@ -2319,14 +2319,14 @@ menu:
         n "Біль засліплював мене, коли я відчув його ніж з іншого боку щоки, як він розтинає м'яз і плоть" # "The pain blinding me as I felt his knife on the other side of my cheek, tearing through the muscle and flesh."
         $ sanity -=20
         $ health -=20
-        n "Я намагався закричати, але кров швидко заповнювала рот" # "I tried to scream but the blood was filling my mouth fast."
+        n "Я кричав та дригався від болю" # "I tried to scream but the blood was filling my mouth fast."
         n "Я вже не міг тримати рота стуленим, дивлячись угору на нього" # "I couldn't keep my mouth closed anymore as I looked up at him."
         vincent "Чорт!" # "Shit!"
-        vincent "Трохи перестарався з тією усмішкою Глазго, га?" # "Over did that Glasgow smile huh?"
+        vincent "Як тобі нова посмішка Глазґо? Мабуть, трохи перестарався..." # "Over did that Glasgow smile huh?"
         vincent "Але ти диви-но" # "But lookie here."
         vincent "Тепер твій рот широко відкритий" # "Your mouth is wide open now."
-        n "Він розстебнув джинси й обдзюрив мені прямо обличчя, поки я сповзав на підлогу" # "He opened his jeans and pissed right on my face as I slid to the floor."
-        n "Я відчував, як голова пливе, поки я сповзав на підлогу" # "I felt my head floating as I slid to the floor."
+        n "Він дістав свого члена та почав дзюрити мені прямо на обличчя, поки я сповзав на підлогу" # "He opened his jeans and pissed right on my face as I slid to the floor."
+        n "Я відчував, як голова пливе, а перед очима все пливе" # "I felt my head floating as I slid to the floor."
         $ sanity -=100
         $ health -=100
         vincent "Здаєшся вже?" # "Giving up on me?"
@@ -2348,13 +2348,13 @@ menu:
 label vincent_open_mouth_slow:
 $ sanity -=10
 if sanity <= 0:
-    n "В очах помутніло, і я знепритомнів" # "My vision went blurry and I blacked out."
+    n "В очах помутніло повністю і я знепритомнів" # "My vision went blurry and I blacked out."
     jump vincent_badend_vore
 n "Я відкрив рота й поклав руки йому на стегна" # "I opened my mouth and put my hands on his hips."
 show CG_Vincent_Dick_out with dissolve
 n "Він заштовхнув член мені в рот, ніздрі заполонив запах поту, і я вдавився, коли член дістав до горла" # "He pushed his cock into my mouth, a sweaty scent filled my nose and I gagged as his cock reached the back of my throat."
 $ vbase,vblush,vexp = 3,1,9
-vincent "Ого, який же ти тендітний" # "Wow you're so delicate."
+vincent "Ого, який же ти тендітний. Слухняна гарна омежка...~" # "Wow you're so delicate."
 n "Він вишкірився до мене й притримав член, поки я знову давився" # "He grinned at me and kept his cock back as I gagged again."
 vincent "Тоді пий оце" # "Drink this then."
 n "Я відчув, як тепла рідина заповнює горло, і мої очі широко розплющились" # "I felt a warm liquid filling up the back of my throat and my eyes shot open."
@@ -2376,8 +2376,8 @@ menu:
         n "Вінсент лагідно поплескав мене по голові" # "Vincent patted my head gently."
         vincent "Ось так" # "There you go."
         vincent "Хіба не краще?" # "Isn't that better?"
-        n "Він відступив, і я безмовно впав на підлогу" # "He backed off and I fell to the ground without another sound."
-        n "Я скрутився й спробував стати якомога меншим" # "I curled in and tried to make myself small."
+        n "Він відступив, і я мовчки впав на підлогу" # "He backed off and I fell to the ground without another sound."
+        n "Я скрутився, намагаючись виглядати якомога меншим" # "I curled in and tried to make myself small."
         if sanity <=30 and temper >=50:
             jump vincent_beatdown_daytwo
         else:
@@ -2392,9 +2392,9 @@ menu:
             jump vincent_health_death
         n "Він витягнув його, поки я почав несамовито кашляти на підлогу" # "He pulled himself out as I started to cough violently onto the ground."
         $ vbase,vblush,vexp = 3,1,6
-        vincent "Ну та байдуже" # "Well whatever."
+        vincent "Ну та й байдуже" # "Well whatever."
         vincent "Принаймні було весело" # "That was fun at least."
-        n "Він самовдоволено посміхнувся й поплескав мене по потилиці, поки я скрутився в клубок на підлозі" # "He smirked and patted the back of my head as I curled up into a ball on the ground."
+        n "Він самовдоволено посміхнувся й поплескав мене по потилиці, поки я скрутився в клубочок на підлозі" # "He smirked and patted the back of my head as I curled up into a ball on the ground."
         if sanity <=30 and temper >=50:
             jump vincent_beatdown_daytwo
         else:
@@ -2410,23 +2410,23 @@ if sanity <= 0:
 scene falloutshelter with dissolve
 show vincent
 n "Я більше не хотів, щоб він завдавав мені болю" # "I didn't want to be hurt by him anymore."
-n "Вінсент низько загарчав, коли я це зробив, і присів" # "Vincent made a low growl as I did and kneeled down."
-vincent "Ходи сюди, крихітко" # "Come here, baby."
-n "Я підповз до нього, і він злизав блювоту з моїх губ" # "I crawled over to him and he licked the vomit off my lips."
-n "Я охнув, коли його губи наблизилися до моїх" # "I gasped as his lips came close to mine."
+n "Вінсент загарчав низьким голосом, коли я це зробив" # "Vincent made a low growl as I did and kneeled down."
+vincent "Ходи сюди, моє маленьке кошенятко~" # "Come here, baby."
+n "Він присів до мене. Я підповз до нього, а він злизав блювоту з моїх губ" # "I crawled over to him and he licked the vomit off my lips."
+n "Я налякано вдихнув, коли його губи наблизилися до моїх" # "I gasped as his lips came close to mine."
 n "Я вчепився в його руку й притиснув свої губи до його" # "I clutched his arm and pressed my lips into his."
 n "Я відчував, як його язик проникає до мого" # "I could feel his tongue pushing into mine."
 n "Його поцілунок був жадібним" # "His kiss was hungry."
 n "Ніби він ніяк не міг насититися" # "Like he couldn't get enough."
 n "Я більше не міг думати" # "I couldn't think anymore."
 $ vbase,vblush,vexp = 3,1,16
-vincent "Хочеш трахнутися?" # "Wanna fuck?"
+vincent "Хочеш трахатись?" # "Wanna fuck?"
 n "Його низьке гарчання змусило моє тіло затремтіти" # "His low growl made my body tremble."
 n "Я кивнув і висунув язика" # "I nodded and stuck my tongue out."
 n "Він штовхнув мене на спину й розстебнув штани" # "He pushed me on my back and opened his pants."
 n "Схоже, йому було байдуже, в чому він стоїть на колінах" # "He didn't seem to care about what he was kneeling in."
 n "Він увійшов у мене, і я відкинув голову назад" # "He pushed his way into me and I leaned my head back."
-p "Аааа~ Вінсент. " # "Aaaa~ Vincent. "
+p "Аааах~ Вінсенте..." # "Aaaa~ Vincent. "
 $ vbase,vblush,vexp = 3,1,4
 vincent "Ну що, розслабився?" # "You loosened up now?"
 n "Я лишив рота відкритим, поки він тицявся носом у мою шию" # "I left my mouth open as he nuzzled my neck."
@@ -2438,9 +2438,9 @@ n "Він лизнув моє плече й різко штовхнувся в �
 n "Я почав важко дихати, дивлячись угору на нього" # "I started to pant as he stared up at him."
 n "Мені мало б бути від цього огидно" # "I should have been disgusted by this."
 n "Але було просто приємно, коли він заганяв член у мене" # "But, it just felt good as he pushed his cock into me."
-p "...Він..вінсент..." # "...Vin..vincent..."
+p "...Він..Вінсенте..." # "...Vin..vincent..."
 n "Я знову застогнав, відчуваючи, як заплющуються очі" # "I let out another moan as I felt my eyes closing."
-n "Я просто відчував, як його тепла сперма наповнює мене" # "I could just feel his warm cum fill me up."
+n "А невдовзі я просто стогнав, поки його тепла сперма наповнювала мене" # "I could just feel his warm cum fill me up."
 $ vbase,vblush,vexp = 3,0,5
 if sanity <=30 and temper >=50:
     jump vincent_beatdown_daytwo
@@ -2459,19 +2459,19 @@ n "Вінсент увійшов і глянув на мене згори вни
 show vincent with dissolve
 vincent "Ти чемно поводився цілу ніч?" # "Were you good all night long?"
 n "Він присів і зняв з мене наручники" # "He kneeled down and uncuffed me."
-vincent "Трохи нудно, але я не засуджую" # "Kinda boring, but I ain't gonna judge."
+vincent "Трохи нудно, але я не засуджую. Ти слухняна омежка, це добре~" # "Kinda boring, but I ain't gonna judge."
 vincent "Я б і сам звідси не втікав, коли за мною стежить хтось типу мене" # "I wouldn't break outta here with someone like me watching."
 jump vincent_daytwo_part2
 
 label vincent_beatdown_daytwo:
 $ vexp = 2
 n "Я дивився, як Вінсент відходить від мене й проводить рукою по волоссю" # "I watched Vincent walk away from me and run his hand through his hair."
-n "Здавалося, його щось дратує, я потер коліна одне об одне" # "He seemed frustrated by something, I rubbed my knees together."
+n "Здавалося, його щось дратує, а я тремтів від страху" # "He seemed frustrated by something, I rubbed my knees together."
 n "Я тихо застогнав, і Вінсент озирнувся через плече на мене" # "I let out a small sound and Vincent looked over his shoulder at me."
 vincent "Що з тобою не так?" # "What's your problem?"
 p "А з тобою?" # "What's yours?"
-vincent "Розумник, га?" # "A smart ass hm?"
-vincent "Я оскаженілий і намагаюся заспокоїтись, щоб не розпанахати тебе від п'ят до підборіддя" # "I'm pissed off and trying to calm down so I don't cut you from toe to chin."
+vincent "Які ми розумні, хе-хе.." # "A smart ass hm?"
+vincent "Я оскаженілий і намагаюся заспокоїтись, щоб не розпанахати тобі черево" # "I'm pissed off and trying to calm down so I don't cut you from toe to chin."
 n "Пальці на ногах підібгалися від думки про його погрозу, але..." # "My toes curled thinking about his threat but..."
 menu:
     "-Розсунути ноги-": # "-Open your legs-"
@@ -2487,10 +2487,10 @@ menu:
 
 label vincent_beatdown_daytwo_offer:
 $ vbase,vblush,vexp = 3,0,7
-n "Я повільно розсунув для нього ноги, оголюючись" # "I opened my legs slowly for him, exposing myself."
+n "Я повільно розсунув перед ним ноги, показуючи своє голе тіло" # "I opened my legs slowly for him, exposing myself."
 vincent "Що ти робиш?" # "What are you doing?"
-p "Якщо ти... хочеш зігнати на мені свою агресію" # "If you... wanna take out your aggression on me."
-p "То давай" # "You can go ahead."
+p "Якщо ти хочеш вимістити на комусь свою агресію.." # "If you... wanna take out your aggression on me."
+p "То я завжди тут для тебе" # "You can go ahead."
 $ vbase,vblush,vexp = 3,0,1
 n "Я відчував, як червонію, і як калатає серце, коли він присунувся ближче" # "I could feel myself blushing and my heart pounding as he moved closer to me."
 n "Він нахилився й понюхав мою шию" # "He leaned in and sniffed my neck."
@@ -2534,7 +2534,7 @@ n "Чому він мав би довірити мені таке?" # "Why shoul
 n "Вінсент відпустив моє горло й відкинувся назад" # "Vincent let my neck go and leaned back."
 vincent "Ну то давай" # "Go for it then."
 $ vincent_love +=10
-n "Я радо зрушив з місця й нахилився до його штанів, розстібаючи їх" # "I happily moved from my spot and leaned down to his pants, unbuttoning him."
+n "Я радо зрушив з місця й нахилився до його штанів" # "I happily moved from my spot and leaned down to his pants, unbuttoning him."
 n "Він стояв лише наполовину, і я облизав губи" # "He was only half way hardened, and I licked my lips."
 n "Я заштовхнув його член собі в рот, проводячи язиком по кожному виступу" # "I pushed his cock into my mouth, running my tongue over every ridge."
 n "Я обвів язиком голівку й ніжно її посмоктав" # "I pushed my tongue around the head and sucked on it gently."
@@ -2545,13 +2545,13 @@ vincent "Мені треба більше" # "I need more than that."
 n "Я відчував, як сльози набігають на очі, поки я стискав його стегна" # "I could feel my tears welling at the edges of my eyes as I gripped his hips."
 n "Я дозволив йому рухати моєю головою, поки він насаджував її на член" # "I let him move my head for me as he forced my head down on his cock."
 n "Я давився й захлинався ним, але намагався тримати ритм" # "I choked and gagged on it but I tried to keep my rhythm."
-n "Він знову загарчав, і по моїй спині пробіг дрож" # "He let out another growl that sent a shiver down my spine."
+n "Він знову загарчав, від чого мене пройняв страх" # "He let out another growl that sent a shiver down my spine."
 n "Він з силою заганяв член глибоко мені в горло" # "He forced his cock down hard into the back of my throat."
-n "Я відчув, як тепла рідина стікає мені в горло, дивлячись угору на нього" # "I could feel a warm liquid drip down my throat as I looked up at him."
-vincent "Ах... а ти доволі непоганий у цьому" # "Ah... You're pretty good at that."
+n "Я відчув, як тепла рідина стікає мені в горло, дивлячись угору прямо йому в очі" # "I could feel a warm liquid drip down my throat as I looked up at him."
+vincent "Ах... а ти доволі непоганий у цьому. Гарна омежка~" # "Ah... You're pretty good at that."
 $ vbase,vblush,vexp = 3,1,11
 n "Його суворий погляд трохи пом'якшав, поки я застібав його штани" # "His harsh gaze, softening just slightly as I closed his pants."
-n "Я видав щасливий звук, коли він розкрив обійми" # "I made a happy sound as he put his arms out."
+n "Я видав щасливий звук, коли він розсунув свої руки для обійм" # "I made a happy sound as he put his arms out."
 n "Я присунувся до нього й дозволив на мить себе обійняти" # "I shifted towards him and let him hold me for a moment."
 n "Я провів пальцями по його шрамах, а він тихо зітхнув" # "I ran my fingers along his scars as he let out a soft sigh."
 vincent "Це приємно..." # "This is nice..."
@@ -2592,12 +2592,12 @@ $ fbase,fexp = 1,1
 farz "Якщо він занадто слабкий, щоб мене здолати, то не переживе твого перевтілення" # "If they're too weak to beat me, then they won't survive your change."
 farz "Ти й сам це знаєш" # "You know that."
 farz "Ти з ним забагато грався" # "You played with them too much."
-farz "Ти вже пережив кілька повних місяців, нікого не вбивши, перш ніж зірватися в шал" # "You've gone a few full moons without killing someone before going berserk."
+farz "Ти вже пережив кілька повних місяців, нікого не вбивши, перш ніж зірватися" # "You've gone a few full moons without killing someone before going berserk."
 vincent "Тц. А тобі яке діло?" # "Tsk. Why do you care?"
 $ fbase,fexp = 1,7
-farz "Я хочу про тебе подбати" # "I want to take care of you."
+farz "Я дбаю про тебе!" # "I want to take care of you."
 $ vbase,vblush,vexp = 3,0,2
-vincent "Я не- Гаразд. Та хуй з ним" # "I don't- Fine. Fuck it."
+vincent "Я не-.. Блять, нехай, хуй з ним" # "I don't- Fine. Fuck it."
 $ fbase,fexp = 1,5
 n "Вінсент проштовхнувся повз Фарца й простягнув мені ніж" # "Vincent shoved pass Farz and held out a knife for me."
 vincent "Він тобі знадобиться" # "You're gonna need it."
@@ -2890,8 +2890,8 @@ label vincent_attack_him:
         $ persistent.vincent_ending_help = True
         scene endslate with Dissolve(1.0)
         screen vincent_ending_help:
-            text "{=endslate_title}You Died{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-            text "\n\n\n\n{=endslate_subtitle}Vincent had some help.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+            text "{=endslate_title}Ти помер{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died"
+            text "\n\n\n\n{=endslate_subtitle}Вінсенту трохи допомогли.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "Vincent had some help."
         show screen vincent_ending_help
         with Dissolve(1.0)
         pause
@@ -2901,58 +2901,58 @@ label vincent_attack_him:
 label farz_watchover_daytwo:
 $ farz_watchover_night2= True
 play music "vincent/farz_main.mp3"
-n "Vincent moved away from me and over to the big door."
-n "Vincent opened the door and looked at the little brunette."
+n "Вінсент відійшов від мене до великих дверей" # "Vincent moved away from me and over to the big door."
+n "Вінсент відчинив двері й глянув на невисокого брюнета" # "Vincent opened the door and looked at the little brunette."
 $ fbase,fexp = 3,1
 show farz:
     xalign .9
 show vincent:
     xalign .2
 $ vblush, vexp = 0,5
-vincent "This little shit got out last night."
-vincent "Watch over them, Farz."
-vincent "I gotta go pick up shit for tomorrow night."
-farz "Of course, Vincent."
-n "Vincent leaned down and gave him a small sniff and a kiss behind the ear before he walked away."
+vincent "Це мале лайно вночі звільнилося" # "This little shit got out last night."
+vincent "Наглянь за ним, Фарц" # "Watch over them, Farz."
+vincent "Мені треба дещо забрати на завтрашню ніч" # "I gotta go pick up shit for tomorrow night."
+farz "Звісно, Вінсенте" # "Of course, Vincent."
+n "Вінсент нахилився, легенько понюхав його й поцілував за вухом, перш ніж піти" # "Vincent leaned down and gave him a small sniff and a kiss behind the ear before he walked away."
 hide vincent
 show farz at center
-n "Farz slammed the giant door shut and spun the wheel, sealing both of us inside."
-n "He climbed up on Vincent's table and kept his eyes on me."
+n "Фарц грюкнув велетенськими дверима й провернув штурвал, замкнувши нас обох усередині" # "Farz slammed the giant door shut and spun the wheel, sealing both of us inside."
+n "Він заліз на стіл Вінсента, не зводячи з мене очей" # "He climbed up on Vincent's table and kept his eyes on me."
 menu:
-    "-Talk to him-":
+    "-Заговорити до нього-": # "-Talk to him-"
         $ farz_love -=10
-        p "Hey-"
+        p "Гей-" # "Hey-"
         $ fbase,fexp = 3,2
-        farz "Shut up, no one gave you permission to talk."
+        farz "Стули пельку, ніхто не давав тобі дозволу говорити" # "Shut up, no one gave you permission to talk."
         jump farz_daytwo_talk
-    "-Say nothing-":
+    "-Мовчати-": # "-Say nothing-"
 
         $ farz_love +=10
-        farz "You're lucky you know?"
-        farz "H-he's pretty violent around these times."
-        farz "You're lucky he didn't kill you."
+        farz "Тобі пощастило, знаєш?" # "You're lucky you know?"
+        farz "В-він доволі агресивний у такі періоди" # "H-he's pretty violent around these times."
+        farz "Тобі пощастило, що він тебе не вбив" # "You're lucky he didn't kill you."
         jump farz_daytwo_nothing
 
 label farz_daytwo_nothing:
 menu:
-    "\"Is that what happened to your eye?\"":
+    "\"Це те, що сталося з твоїм оком?\"": # "Is that what happened to your eye?"
         $ farz_love +=10
-        n "His hand shot up to touch the swollen skin around his eye."
-        farz "He didn't do it because he was pissed at me."
-        farz "I asked him to do it."
-        p "Why would you ask him to do it?"
-        farz "You wouldn't understand."
+        n "Його рука сіпнулася вгору, торкнувшись припухлої шкіри навколо ока" # "His hand shot up to touch the swollen skin around his eye."
+        farz "Він зробив це не тому, що злився на мене" # "He didn't do it because he was pissed at me."
+        farz "Я сам його попросив" # "I asked him to do it."
+        p "Нащо тобі просити його про таке?" # "Why would you ask him to do it?"
+        farz "Ти не зрозумієш" # "You wouldn't understand."
         if farz_love <=40:
             jump farz_daytwo_teach
         else:
             jump farz_daytwo_punishment
-    "\"You're crazy if you think getting tortured is lucky!\"":
+    "\"Ти божевільний, якщо вважаєш, що бути закатованим — це щастя!\"": # "You're crazy if you think getting tortured is lucky!"
 
         $ farz_love -=10
-        farz "You think this is bad?"
-        farz "Just wait and see what he's got for you."
-        n "He scratched his knife across the table top then picked his nails."
-        farz "It's not pretty."
+        farz "Гадаєш, це погано?" # "You think this is bad?"
+        farz "Просто зачекай і побачиш, що він приготував для тебе" # "Just wait and see what he's got for you."
+        n "Він шкрябнув ножем по стільниці, а тоді почав колупати нігті" # "He scratched his knife across the table top then picked his nails."
+        farz "Це не буде гарно" # "It's not pretty."
         if farz_love <=40:
             jump farz_daytwo_teach
         else:
@@ -2960,30 +2960,30 @@ menu:
 
 label farz_daytwo_talk:
     menu:
-        "\"Those are cute ear cuffs.\"":
+        "\"Гарні кафи на вухах.\"": # "Those are cute ear cuffs."
             $ farz_love +=10
-            farz "Oh you think so?"
-            n "Farz put his hands to his ears."
-            farz "Vincent gave them to me."
+            farz "О, гадаєш?" # "Oh you think so?"
+            n "Фарц підняв руки до вух" # "Farz put his hands to his ears."
+            farz "Їх мені подарував Вінсент" # "Vincent gave them to me."
             $ fbase,fexp = 3,7
-            n "He sounded proud and gave me a happy sigh."
-            farz "Relic of his youth or something."
-            farz "He doesn't remember but he says they look better on me."
-            n "He stuck out his tongue and showed me a tongue ring."
+            n "Він звучав гордо й щасливо зітхнув" # "He sounded proud and gave me a happy sigh."
+            farz "Реліквія його юності чи щось таке" # "Relic of his youth or something."
+            farz "Він не пам'ятає, але каже, що на мені вони краще виглядають" # "He doesn't remember but he says they look better on me."
+            n "Він висунув язика й показав мені пірсинг на ньому" # "He stuck out his tongue and showed me a tongue ring."
             $ fbase,fexp = 3,5
-            farz "He's real good to you if you treat him right."
-            farz "Not that you'd know shit about that."
+            farz "Він дуже добрий до тебе, якщо ти ставишся до нього як слід" # "He's real good to you if you treat him right."
+            farz "Не те щоб ти хоч щось про це тямив" # "Not that you'd know shit about that."
             if farz_love <=40:
                 jump farz_daytwo_teach
             else:
                 jump farz_daytwo_punishment
-        "\"Why do you do anything for him?\"":
+        "\"Чому ти взагалі щось для нього робиш?\"": # "Why do you do anything for him?"
 
             $ farz_love -=10
-            p "All he does is beat on you."
-            p "Why do you do anything for him?"
-            farz "I asked him to hit me."
-            farz "You wouldn't understand."
+            p "Він тільки те й робить, що лупить тебе" # "All he does is beat on you."
+            p "Чому ти взагалі щось для нього робиш?" # "Why do you do anything for him?"
+            farz "Я сам попросив його мене бити" # "I asked him to hit me."
+            farz "Ти не зрозумієш" # "You wouldn't understand."
             if farz_love <=40:
                 jump farz_daytwo_teach
             else:
@@ -2991,93 +2991,93 @@ label farz_daytwo_talk:
 
 label farz_daytwo_teach:
 $ vincent_love +=10
-p "Maybe you can teach me?"
-n "I needed to appeal to him."
-n "I didn't know what else to do, and Farz was safe with Vincent."
-farz "You want me to teach you how to be a masochist?"
-farz "It's not taught, it's something that you just have."
-n "I crawled towards Farz and felt my arm hitch on the radiator."
-n "Farz got out of his spot and stood above me, just out of reach."
-p "Please, I just want to be useful to you."
+p "Може, ти мене навчиш?" # "Maybe you can teach me?"
+n "Мені треба було до нього підлеститися" # "I needed to appeal to him."
+n "Я не знав, що ще робити, а Фарц був у безпеці з Вінсентом" # "I didn't know what else to do, and Farz was safe with Vincent."
+farz "Хочеш, щоб я навчив тебе бути мазохістом?" # "You want me to teach you how to be a masochist?"
+farz "Цьому не навчають, це просто в тобі або є, або нема" # "It's not taught, it's something that you just have."
+n "Я поповз до Фарца й відчув, як моя рука смикнулася об батарею" # "I crawled towards Farz and felt my arm hitch on the radiator."
+n "Фарц зіскочив зі свого місця й став наді мною, якраз поза межами досяжності" # "Farz got out of his spot and stood above me, just out of reach."
+p "Будь ласка, я просто хочу бути тобі корисним" # "Please, I just want to be useful to you."
 $ fbase,fexp = 3,2
-n "Farz scoffed and kicked me in the stomach, he hit hard." with vpunch
+n "Фарц пирхнув і вдарив мене ногою в живіт, гатив сильно" with vpunch # "Farz scoffed and kicked me in the stomach, he hit hard."
 $ health -=5
 if health <= 0:
     jump farz_hp_death
-farz "What use are you to me?"
-n "I put my hands on his foot and he kicked me away." with vpunch
+farz "Яка мені з тебе користь?" # "What use are you to me?"
+n "Я поклав руки на його ногу, а він відкинув мене копняком" with vpunch # "I put my hands on his foot and he kicked me away."
 $ health -=5
 if health <= 0:
     jump farz_hp_death
-p "I can help you... with anything."
-p "Whatever you want, name it!"
-n "Farz rubbed his chin and grabbed my head."
+p "Я можу допомогти тобі... з будь-чим" # "I can help you... with anything."
+p "Що завгодно, тільки скажи!" # "Whatever you want, name it!"
+n "Фарц потер підборіддя й схопив мене за голову" # "Farz rubbed his chin and grabbed my head."
 $ fbase,fexp = 3,5
-farz "Anything huh? Vincent needs your blood."
-farz "I don't know why."
-farz "Maybe just cause he needs to drink it because of his werewolf thing."
-farz "You can give it to me."
+farz "Що завгодно, кажеш? Вінсенту потрібна твоя кров" # "Anything huh? Vincent needs your blood."
+farz "Не знаю навіщо" # "I don't know why."
+farz "Може, просто тому, що йому треба її пити через оту його вовкулацьку штуку" # "Maybe just cause he needs to drink it because of his werewolf thing."
+farz "Ти можеш віддати її мені" # "You can give it to me."
 $ fbase,fexp = 4,5
-n "I watched Farz reach into his back pocket and pull out a knife."
-n "I flinched and moved back."
-farz "Don't you want me to teach you?"
-farz "I'm going to teach you."
+n "Я дивився, як Фарц сягає в задню кишеню й дістає ніж" # "I watched Farz reach into his back pocket and pull out a knife."
+n "Я здригнувся й відсунувся" # "I flinched and moved back."
+farz "Хіба ти не хочеш, щоб я тебе навчив?" # "Don't you want me to teach you?"
+farz "Я тебе навчу" # "I'm going to teach you."
 menu:
-    "-Refuse-":
+    "-Відмовитися-": # "-Refuse-"
         $ farz_love -=10
         jump farz_daytwo_punishment
-    "-Let him teach you-":
+    "-Дозволити йому навчити тебе-": # "-Let him teach you-"
         $ farz_love +=10
         jump farz_daytwo_teach_blood
 
 label farz_daytwo_teach_blood:
-n "I crawled over to him."
-p "Please, teach me."
-n "Farz grabbed my arm and looked at the veins in my arm."
-farz "You're life doesn't belong to you anymore."
-farz "It's mine."
-farz "It's Vincent's and we can do whatever we want to you."
-n "Farz grabbed my arm and sliced it without even thinking twice."
-n "The blood dripped out of it and I screamed holding my arm in pain." with vpunch
+n "Я підповз до нього" # "I crawled over to him."
+p "Будь ласка, навчи мене" # "Please, teach me."
+n "Фарц схопив мою руку й глянув на вени" # "Farz grabbed my arm and looked at the veins in my arm."
+farz "Твоє життя тобі більше не належить" # "You're life doesn't belong to you anymore."
+farz "Воно моє" # "It's mine."
+farz "Воно Вінсента, і ми можемо робити з тобою все, що захочемо" # "It's Vincent's and we can do whatever we want to you."
+n "Фарц схопив мою руку й, ні секунди не вагаючись, різонув по ній" # "Farz grabbed my arm and sliced it without even thinking twice."
+n "Кров закапала з неї, і я закричав, тримаючись за руку від болю" with vpunch # "The blood dripped out of it and I screamed holding my arm in pain."
 $ health -=10
 if health <= 0:
     jump farz_hp_death
-farz "NOW SMILE."
-n "I looked up at him with a defeated look."
+farz "А ТЕПЕР УСМІХНИСЯ" # "NOW SMILE."
+n "Я глянув на нього знизу вгору переможеним поглядом" # "I looked up at him with a defeated look."
 menu:
-    "-Smile-":
+    "-Усміхнутися-": # "-Smile-"
         $ farz_love +=10
-        n "I smiled at him as best as I could."
-        farz "Good."
-        n "He punched me in the face and I reeled back."
-        n "I put my hands over my nose and tried to stop the bleeding."
-        n "But, I didn't cover up my smile."
-        farz "Go to sleep."
-        farz "I'll tell Vincent what you did."
+        n "Я всміхнувся йому як міг" # "I smiled at him as best as I could."
+        farz "Добре" # "Good."
+        n "Він вдарив мене в обличчя, і я відсахнувся" # "He punched me in the face and I reeled back."
+        n "Я затиснув ніс руками й спробував спинити кровотечу" # "I put my hands over my nose and tried to stop the bleeding."
+        n "Але усмішки я не сховав" # "But, I didn't cover up my smile."
+        farz "Іди спати" # "Go to sleep."
+        farz "Я розповім Вінсенту, що ти зробив" # "I'll tell Vincent what you did."
         $ vincent_love +=10
         scene black with fade
-        n "I watched the door open and listened to it slam shut."
+        n "Я дивився, як відчиняються двері, і слухав, як вони з грюкотом зачиняються" # "I watched the door open and listened to it slam shut."
         jump vincent_day2_night
-    "-Don't smile-":
+    "-Не усміхатися-": # "-Don't smile-"
 
-        n "I spat in his face."
-        farz "You shit."
-        n "Farz charged at me and pulled out his knife."
-        farz "I'll TEACH YOU MANNERS."
-        n "He grabbed my face and plunged his knife into my eye."
-        n "I screamed in his face."
-        n "I cursed him."
-        n "But no matter how much I fought and screamed."
-        n "He was stronger than me."
-        n "The pain shot through my face as he carved the skin around my eye."
-        n "He reached in, shoving his fingers in the open wound."
+        n "Я плюнув йому в обличчя" # "I spat in his face."
+        farz "Ти лайно" # "You shit."
+        n "Фарц кинувся на мене й витягнув ножа" # "Farz charged at me and pulled out his knife."
+        farz "Я НАВЧУ ТЕБЕ МАНЕР" # "I'll TEACH YOU MANNERS."
+        n "Він схопив моє обличчя й увігнав ножа мені в око" # "He grabbed my face and plunged his knife into my eye."
+        n "Я закричав йому в обличчя" # "I screamed in his face."
+        n "Я проклинав його" # "I cursed him."
+        n "Але скільки б я не боровся й не кричав" # "But no matter how much I fought and screamed."
+        n "Він був сильніший за мене" # "He was stronger than me."
+        n "Біль прострілив моє обличчя, коли він вирізав шкіру навколо ока" # "The pain shot through my face as he carved the skin around my eye."
+        n "Він засунув пальці у відкриту рану" # "He reached in, shoving his fingers in the open wound."
         show CG_Farz_eyepull with dissolve
-        n "Farz didn't say anything as he pulled my eye from my face."
-        n "I could feel my body shake and convulse in pain."
-        n "I grabbed his arm and tried to push him off."
+        n "Фарц мовчки вирвав моє око з обличчя" # "Farz didn't say anything as he pulled my eye from my face."
+        n "Я відчував, як моє тіло трясеться й судомиться від болю" # "I could feel my body shake and convulse in pain."
+        n "Я схопив його за руку й спробував відштовхнути" # "I grabbed his arm and tried to push him off."
         $ health -=100
-        farz "It's too bad that you couldn't last."
-        farz "Vincent might actually like you."
+        farz "Шкода, що ти не протримався" # "It's too bad that you couldn't last."
+        farz "Ти б Вінсенту, може, і справді сподобався" # "Vincent might actually like you."
         hide screen health_bar
         hide screen sanity_bar
         hide screen vincent_rage_bar
@@ -3085,81 +3085,81 @@ menu:
         $ persistent.farz_ending_carved_eye = True
         scene endslate with Dissolve(1.0)
         screen farz_ending_carved_eye:
-            text "{=endslate_title}You Died{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-            text "\n\n\n\n{=endslate_subtitle}Farz pulled out your eye.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+            text "{=endslate_title}Ти помер{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died"
+            text "\n\n\n\n{=endslate_subtitle}Фарц вирвав тобі око.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "Farz pulled out your eye."
         show screen farz_ending_carved_eye
         with Dissolve(1.0)
         pause
         return
 
 label farz_daytwo_punishment:
-n "Farz took out a knife and flicked it open."
-n "He looked at the tip and pushed it into his finger."
-farz "You know."
-farz "I could help you understand."
-n "He got up from the table and played with his knife."
-n "I backed up into the radiator and Farz kneeled down."
-farz "Let's play a little game."
+n "Фарц дістав ножа й розкрив його" # "Farz took out a knife and flicked it open."
+n "Він глянув на кінчик і кольнув ним свій палець" # "He looked at the tip and pushed it into his finger."
+farz "Знаєш" # "You know."
+farz "Я міг би допомогти тобі зрозуміти" # "I could help you understand."
+n "Він встав зі столу й погрався з ножем" # "He got up from the table and played with his knife."
+n "Я відсунувся до батареї, а Фарц присів" # "I backed up into the radiator and Farz kneeled down."
+farz "Зіграймо в невеличку гру" # "Let's play a little game."
 menu:
-    "\"No.\"":
+    "\"Ні\"": # "No."
         $ farz_love -=10
-        p "I don't want to play a game with you."
-        n "Farz punched me in the face." with vpunch
+        p "Я не хочу грати з тобою в жодні ігри" # "I don't want to play a game with you."
+        n "Фарц вдарив мене в обличчя" with vpunch # "Farz punched me in the face."
         $ health -=10
         if health <= 0:
             jump farz_hp_death
-        farz "I'm not giving you a choice."
-    "\"Okay...\"":
+        farz "Я не даю тобі вибору" # "I'm not giving you a choice."
+    "\"Гаразд...\"": # "Okay..."
 
         $ farz_love +=10
-        n "He lit up and pointed to the ground."
-        farz "Good choice."
+        n "Він пожвавішав і вказав на підлогу" # "He lit up and pointed to the ground."
+        farz "Гарний вибір" # "Good choice."
 
-farz "Put your hand out and spread your fingers wide."
-n "He spread out his fingers and put his palm down on the floor."
-n "I copied him and he put his knife between my fingers."
-farz "Watch."
-n "He started to stab between my fingers."
-n "Farz's motion was so quick that I almost couldn't keep up with my eyes."
-n "I fidgeted and Farz cut my finger."
-n "I let out a scream as he sliced into my finger."
+farz "Простягни руку й широко розстав пальці" # "Put your hand out and spread your fingers wide."
+n "Він розставив пальці й поклав долоню на підлогу" # "He spread out his fingers and put his palm down on the floor."
+n "Я повторив за ним, а він встромив ножа між моїми пальцями" # "I copied him and he put his knife between my fingers."
+farz "Дивись" # "Watch."
+n "Він почав штрикати між моїми пальцями" # "He started to stab between my fingers."
+n "Рухи Фарца були такі швидкі, що я ледве встигав за ними очима" # "Farz's motion was so quick that I almost couldn't keep up with my eyes."
+n "Я засовався, і Фарц різонув мені палець" # "I fidgeted and Farz cut my finger."
+n "Я закричав, коли він врізався мені в палець" # "I let out a scream as he sliced into my finger."
 $ health -=5
 if health <= 0:
     jump farz_hp_death
-n "The knife almost hit my bone as I tried to pull back my hand."
-n "Farz grabbed my wrist and forced my hand back down."
-farz "I'm not done."
-farz "I need someone to practice on."
+n "Ніж мало не зачепив кістку, коли я спробував відсмикнути руку" # "The knife almost hit my bone as I tried to pull back my hand."
+n "Фарц схопив моє зап'ястя й силою притиснув руку назад" # "Farz grabbed my wrist and forced my hand back down."
+farz "Я ще не закінчив" # "I'm not done."
+farz "Мені треба на комусь тренуватися" # "I need someone to practice on."
 menu:
-    "-Put your hand down-":
+    "-Опустити руку-": # "-Put your hand down-"
         $ farz_love +=10
-        n "I put my hand back down, shaking but I didn't want to infurate him more."
-        n "Farz started to stab between my fingers quickly again."
-        n "I couldn't even keep up with his movements."
-        n "He cut me on some stabs."
-        n "Most of them missed my fingers or only gave me small cuts."
-        farz "See."
-        farz "It's not so scary if you listen."
-        n "Farz pulled his knife away from my shaking hand."
-        n "It was bleeding and throbbing in pain."
-        farz "You should listen to me."
-        farz "I can make your life so much easier."
-        farz "What's left of it at least."
+        n "Я знову опустив руку, тремтячи, але не хотів злити його ще більше" # "I put my hand back down, shaking but I didn't want to infurate him more."
+        n "Фарц знову почав швидко штрикати між моїми пальцями" # "Farz started to stab between my fingers quickly again."
+        n "Я навіть не встигав за його рухами" # "I couldn't even keep up with his movements."
+        n "Деякими ударами він мене таки різав" # "He cut me on some stabs."
+        n "Більшість із них проходили повз пальці або залишали лише дрібні порізи" # "Most of them missed my fingers or only gave me small cuts."
+        farz "От бачиш" # "See."
+        farz "Це не так страшно, якщо слухатися" # "It's not so scary if you listen."
+        n "Фарц прибрав ножа від моєї тремтливої руки" # "Farz pulled his knife away from my shaking hand."
+        n "Вона кровоточила й пульсувала від болю" # "It was bleeding and throbbing in pain."
+        farz "Тобі варто мене слухатися" # "You should listen to me."
+        farz "Я можу зробити твоє життя набагато легшим" # "I can make your life so much easier."
+        farz "Принаймні те, що від нього лишилося" # "What's left of it at least."
         scene black with fade
-        n "Farz got up and walked away, slamming the heavy metal door shut."
-        n "I closed my eyes and clutched my hand close to me."
+        n "Фарц підвівся й пішов, грюкнувши важкими металевими дверима" # "Farz got up and walked away, slamming the heavy metal door shut."
+        n "Я заплющив очі й притиснув руку до себе" # "I closed my eyes and clutched my hand close to me."
         jump vincent_day2_night
-    "-Refuse-":
+    "-Відмовитися-": # "-Refuse-"
 
         $ farz_love -=10
-        n "Farz shrugged."
-        farz "Your loss."
-        n "He got back up and left me in the room alone as I pulled my hand close to me."
-        n "Farz was so quick."
-        n "I needed to be careful."
+        n "Фарц знизав плечима" # "Farz shrugged."
+        farz "Тобі ж гірше" # "Your loss."
+        n "Він знову підвівся й лишив мене в кімнаті самого, поки я притискав руку до себе" # "He got back up and left me in the room alone as I pulled my hand close to me."
+        n "Фарц був такий швидкий" # "Farz was so quick."
+        n "Мені треба бути обережним" # "I needed to be careful."
         scene black with fade
-        n "I held my hand close to me and shut my eyes."
-        n "I just needed to go back to sleep."
+        n "Я притиснув руку до себе й заплющив очі" # "I held my hand close to me and shut my eyes."
+        n "Мені просто треба було знову заснути" # "I just needed to go back to sleep."
         jump vincent_day2_night
 
 label vincent_day2_night:
@@ -3194,30 +3194,30 @@ if farz_watchover_night2== True:
 else:
     scene falloutshelter_dark:
         xalign 0.0
-    n "I woke up and looked at the handcuff."
+    n "Я прокинувся й глянув на наручник" # "I woke up and looked at the handcuff."
 if vincent_key_day1 == True:
-    n "I picked up the key from under the radiator and looked at it."
-    n "I was glad I went looking around the first day."
-    n "I might have never gotten out of the cuffs, I was too tired today."
-    n "I unlocked the cuff."
-    n "Now I could look around."
+    n "Я підняв ключ з-під батареї й глянув на нього" # "I picked up the key from under the radiator and looked at it."
+    n "Я був радий, що першого дня все обшукав" # "I was glad I went looking around the first day."
+    n "Інакше я б, може, ніколи не виплутався з наручників, сьогодні я був надто виснажений" # "I might have never gotten out of the cuffs, I was too tired today."
+    n "Я відімкнув наручник" # "I unlocked the cuff."
+    n "Тепер я міг роззирнутися" # "Now I could look around."
     jump vincent_night2_lookaround
 else:
-    n "I was too tired..."
-    n "I couldn't pull my arm out."
-    n "I leaned back and went back to sleep."
+    n "Я був надто виснажений..." # "I was too tired..."
+    n "Я не міг витягнути руку" # "I couldn't pull my arm out."
+    n "Я відкинувся назад і знову заснув" # "I leaned back and went back to sleep."
     jump vincent_day_three
 
 label vincent_night2_lookaround:
 menu:
-    "-Look around-":
+    "-Роззирнутися-": # "-Look around-"
         jump vincent_table_night2
-    "-Look at weapons locker-":
+    "-Оглянути зброярню-": # "-Look at weapons locker-"
 
-        n "I might as well see if I could protect myself."
-        n "I walked over to the weapons locker."
+        n "Можна й глянути, чи зможу я себе захистити" # "I might as well see if I could protect myself."
+        n "Я підійшов до зброярні" # "I walked over to the weapons locker."
         jump vincent_weapons_locker_night2
-    "-Back to sleep-":
+    "-Знову спати-": # "-Back to sleep-"
 
         jump vincent_sleep_night2
 
@@ -3225,9 +3225,9 @@ label vincent_sleep_night2:
 $ vincent_love -=20
 $ sanity -=10
 $ health +=10
-n "I was too tried to keep looking around."
-n "I sat back down and locked myself back into the cuff."
-n "I closed my eyes and went back to sleep."
+n "Я був надто виснажений, щоб роззиратися далі" # "I was too tried to keep looking around."
+n "Я знову сів і замкнув себе в наручнику" # "I sat back down and locked myself back into the cuff."
+n "Я заплющив очі й знову заснув" # "I closed my eyes and went back to sleep."
 jump vincent_day_three
 
 label vincent_weapons_locker_night2:
@@ -3235,7 +3235,7 @@ $ vincent_picture_day2 = vincent_code_day1
 if vincent_code_day1 == False or vincent_code_day1 == False:
     jump vincent_night2_nocode
 scene CG_vincent_keypad
-$ locker_combination = renpy.input("What's the number...?",length=4)
+$ locker_combination = renpy.input("Який там номер...?",length=4) # "What's the number...?"
 if locker_combination== "8590":
     jump vincent_weapon_unlock_death_night2
 else:
@@ -3246,262 +3246,262 @@ if weapon_unlockattempts == 1:
     jump vincent_weaponlocker_death
 else:
     $ weapon_unlockattempts +=1
-    n "The locker buzzed."
-    n "That wasn't right!"
+    n "Замок пискнув" # "The locker buzzed."
+    n "Це неправильно!" # "That wasn't right!"
     menu:
-        "-Try again-":
+        "-Спробувати ще раз-": # "-Try again-"
             jump vincent_weapons_locker_night2
-        "-Go back to the Radiator-":
+        "-Повернутися до батареї-": # "-Go back to the Radiator-"
 
             scene falloutshelter_dark with dissolve
             $ vincent_love -=10
-            n "I didn't want to try anymore."
-            n "If this thing was armed..."
-            n "I didn't know what Vincent would say if he saw me messing with his stuff."
+            n "Я більше не хотів пробувати" # "I didn't want to try anymore."
+            n "Якщо ця штука на охороні..." # "If this thing was armed..."
+            n "Я не знав, що скаже Вінсент, якщо побачить, що я порпаюся в його речах" # "I didn't know what Vincent would say if he saw me messing with his stuff."
             jump vincent_day_three
 
 label vincent_night2_nocode:
-n "I don't know the code still."
-n "I better not touch this."
-n "I wandered back to my spot on the floor."
-n "Better go to bed."
+n "Я все ще не знаю коду" # "I don't know the code still."
+n "Краще мені цього не чіпати" # "I better not touch this."
+n "Я побрів назад до свого місця на підлозі" # "I wandered back to my spot on the floor."
+n "Краще лягти спати" # "Better go to bed."
 $ sanity +=10
 scene black with fade
 jump vincent_day_three
 
 label vincent_weapon_unlock_death_night2:
-n "I punched in the numbers and opened up the locker."
-n "I breathed deep a sigh of relief as I grabbed the shotgun off the rack."
+n "Я набрав цифри й відчинив зброярню" # "I punched in the numbers and opened up the locker."
+n "Я з полегшенням глибоко зітхнув, знявши дробовик зі стійки" # "I breathed deep a sigh of relief as I grabbed the shotgun off the rack."
 if vincent_love < 90:
-    n "Maybe I could kill that bastard this time."
+    n "Може, цього разу я зможу вбити цього виродка" # "Maybe I could kill that bastard this time."
 else:
-    n "What was I going to do with this?"
-    n "I felt a sinking in my stomach."
-    n "Did I really want to kill him?"
+    n "Що я збирався з цим робити?" # "What was I going to do with this?"
+    n "Усередині все обірвалося" # "I felt a sinking in my stomach."
+    n "Невже я справді хотів його вбити?" # "Did I really want to kill him?"
 scene falloutshelter_dark:
     xalign 0.0
-n "I heard the door opening and I quickly shut the locker, scrambling back to my spot on the floor."
-n "I didn't bother locking my hand this time."
-n "Vincent walked into the room and closed the door behind him."
+n "Я почув, як відчиняються двері, і швидко зачинив зброярню, метнувшись назад до свого місця на підлозі" # "I heard the door opening and I quickly shut the locker, scrambling back to my spot on the floor."
+n "Цього разу я не став замикати руку" # "I didn't bother locking my hand this time."
+n "Вінсент увійшов до кімнати й зачинив за собою двері" # "Vincent walked into the room and closed the door behind him."
 show vincent
 $ vbase,vblush,vexp = 3,0,2
 if vincent_love < 90:
-    n "Now was my chance.."
+    n "Ось мій шанс.." # "Now was my chance.."
 else:
-    n "I felt the gun behind me and gripped it."
+    n "Я намацав рушницю за спиною й стиснув її" # "I felt the gun behind me and gripped it."
 menu:
-    "-Shoot Vincent-":
+    "-Вистрілити у Вінсента-": # "-Shoot Vincent-"
         jump vincent_shot_day2
-    "-Drop weapon-" if vincent_love >=90:
+    "-Кинути зброю-" if vincent_love >=90: # "-Drop weapon-"
         jump vincent_hard_blowjob
-    "-Threaten him-":
+    "-Погрожувати йому-": # "-Threaten him-"
         $ vincent_love -=10
         jump vincent_hard_gunjob
 
 label vincent_hard_gunjob:
-n "I aimed the gun at him."
+n "Я націлив рушницю на нього" # "I aimed the gun at him."
 $ vbase,vblush,vexp = 3,0,13
-vincent "WOAH WAIT A SECOND."
-vincent "DROP IT."
-n "I could feel myself shaking as I lowered the weapon."
-n "Vincent grabbed the barrel."
-vincent "You fucking idiot, you really think I would fill this with something you could kill me with?"
+vincent "ОГО, СТРИВАЙ-НО" # "WOAH WAIT A SECOND."
+vincent "КИНЬ ЇЇ" # "DROP IT."
+n "Я відчував, як тремчу, опускаючи зброю" # "I could feel myself shaking as I lowered the weapon."
+n "Вінсент схопився за дуло" # "Vincent grabbed the barrel."
+vincent "Ти, блять, ідіот, ти справді думаєш, що я зарядив би її чимось, чим можна мене вбити?" # "You fucking idiot, you really think I would fill this with something you could kill me with?"
 $ vincent_love -=40
-n "Vincent yanked the gun from my hand and rammed the stock into my chest."
-n "I felt the air leave my lungs and I started to cough and stumble."
-n "He aimed the gun at my leg and fired."
+n "Вінсент вирвав рушницю з моєї руки й вгатив прикладом мені в груди" # "Vincent yanked the gun from my hand and rammed the stock into my chest."
+n "Я відчув, як повітря покидає легені, і почав кашляти й хитатися" # "I felt the air leave my lungs and I started to cough and stumble."
+n "Він націлив рушницю мені в ногу й вистрілив" # "He aimed the gun at my leg and fired."
 $ health -=40
-n "I felt pellets rip through my leg and I let out a loud scream as I fell to the ground."
-vincent "It's fucking bird shot."
-vincent "For teaching bastards like you a lesson."
+n "Я відчув, як дробинки розривають мою ногу, і голосно закричав, падаючи на землю" # "I felt pellets rip through my leg and I let out a loud scream as I fell to the ground."
+vincent "Це, блять, дріб на птицю" # "It's fucking bird shot."
+vincent "Щоб провчати таких вилупків, як ти" # "For teaching bastards like you a lesson."
 $ vbase,vblush,vexp = 3,0,2
-n "Vincent pushed his boot into the wound and I whimpered in pain."
+n "Вінсент вдавив чобіт мені в рану, і я заскиглив від болю" # "Vincent pushed his boot into the wound and I whimpered in pain."
 $ health -=20
-n "He dug his heel in and cocked his head to the side."
+n "Він вдавив підбор глибше й схилив голову набік" # "He dug his heel in and cocked his head to the side."
 $ vincent_love -=40
-vincent "Open your mouth."
-p "...I-I'm... so-s-"
-n "I choked out but he wasn't interested in my apology."
+vincent "Відкрий рота" # "Open your mouth."
+p "...Я-я... ви-в-" # "...I-I'm... so-s-"
+n "Ледве вичавив я, але йому були нецікаві мої вибачення" # "I choked out but he wasn't interested in my apology."
 $ vbase,vblush,vexp = 3,0,13
-vincent "Open your FUCKING mouth."
-n "I complied and opened my mouth for him."
-n "He smirked and shoved the barrel of the into my mouth."
+vincent "Відкрий свій ЙОБАНИЙ рот" # "Open your FUCKING mouth."
+n "Я послухався й відкрив для нього рота" # "I complied and opened my mouth for him."
+n "Він самовдоволено посміхнувся й запхав дуло мені в рот" # "He smirked and shoved the barrel of the into my mouth."
 show CG_vincent_SHOTGUN_JOB with dissolve
-n "I could feel the steel in my throat as he started to rub it in and out."
-vincent "Suck on it like your life depends on it."
-n "He cocked the gun and shoved me on the ground."
+n "Я відчував сталь у горлі, поки він рухав нею туди-сюди" # "I could feel the steel in my throat as he started to rub it in and out."
+vincent "Смокчи так, ніби від цього залежить твоє життя" # "Suck on it like your life depends on it."
+n "Він звів курок і штовхнув мене на землю" # "He cocked the gun and shoved me on the ground."
 $ vbase,vblush,vexp = 3,0,2
-vincent "Cause it does."
-n "I started to gag as the hard tip entered my throat."
-n "Vincent watched me unwavering as I started to lick the underside of the barrel."
-n "I let out a hard choking sound as he pushed his boot into my wound again."
-n "Tears started to run down my face as I tried to breath."
-n "It was too much."
-n "The taste of gunpowder, his heavy boot in my wound."
-n "I threw up into the gun and he laughed loudly."
-vincent "Is that all you got?"
-n "He growled in a low tone and put his finger over the trigger."
-vincent "...Pathetic."
-n "I could see him pulling the trigger and the pellets entered the back of my throat."
+vincent "Бо так воно і є" # "Cause it does."
+n "Я почав давитися, коли твердий кінчик увійшов мені в горло" # "I started to gag as the hard tip entered my throat."
+n "Вінсент незворушно спостерігав, як я почав облизувати дуло знизу" # "Vincent watched me unwavering as I started to lick the underside of the barrel."
+n "Я видав різкий здавлений звук, коли він знову вдавив чобіт мені в рану" # "I let out a hard choking sound as he pushed his boot into my wound again."
+n "Сльози покотилися по моєму обличчю, поки я намагався дихати" # "Tears started to run down my face as I tried to breath."
+n "Це було занадто" # "It was too much."
+n "Смак пороху, його важкий чобіт у моїй рані" # "The taste of gunpowder, his heavy boot in my wound."
+n "Мене знудило прямо в рушницю, а він голосно засміявся" # "I threw up into the gun and he laughed loudly."
+vincent "Це все, на що ти здатен?" # "Is that all you got?"
+n "Він низько загарчав і поклав палець на спусковий гачок" # "He growled in a low tone and put his finger over the trigger."
+vincent "...Жалюгідно" # "...Pathetic."
+n "Я побачив, як він натискає на гачок, і дробинки увійшли мені в горло" # "I could see him pulling the trigger and the pellets entered the back of my throat."
 $ health -=100
-n "I coughed up blood and laid to the side."
-vincent "Too bad... I was starting to like you."
+n "Я викашляв кров і завалився набік" # "I coughed up blood and laid to the side."
+vincent "Шкода... ти вже почав мені подобатися" # "Too bad... I was starting to like you."
 hide screen health_bar
 hide screen sanity_bar
 hide screen vincent_rage_bar
 $ persistent.vincent_dropped_weapon_death = True
 scene endslate with Dissolve(1.0)
 screen vincent_dropped_weapon_death:
-    text "{=endslate_title}You Died{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-    text "\n\n\n\n{=endslate_subtitle}You gave up your gun. {/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+    text "{=endslate_title}Ти помер{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died"
+    text "\n\n\n\n{=endslate_subtitle}Ти віддав свою зброю. {/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "You gave up your gun. "
 show screen vincent_dropped_weapon_death
 with Dissolve(1.0)
 pause
 return
 
 label vincent_hard_blowjob:
-n "I looked at the gun and held it out for him to take."
-vincent "You fucking idiot, You really think I would fill this with something you could kill me with."
-n "Vincent yanked the gun from my hand and tossed it away."
-vincent "Why the fuck, did you do that?"
-vincent "Goddamn it."
-n "He grumbled to himself."
-n "He seemed agitated and confused."
+n "Я глянув на рушницю й простягнув її йому" # "I looked at the gun and held it out for him to take."
+vincent "Ти, блять, ідіот, ти справді думаєш, що я зарядив би її чимось, чим можна мене вбити" # "You fucking idiot, You really think I would fill this with something you could kill me with."
+n "Вінсент вирвав рушницю з моєї руки й відкинув її вбік" # "Vincent yanked the gun from my hand and tossed it away."
+vincent "Якого хуя ти це зробив?" # "Why the fuck, did you do that?"
+vincent "Дідько" # "Goddamn it."
+n "Пробурмотів він сам до себе" # "He grumbled to himself."
+n "Він здавався збудженим і розгубленим" # "He seemed agitated and confused."
 $ vbase,vblush,vexp = 3,0,2
-n "I opened my mouth to speak but he put his hand up."
-vincent "DON'T."
-vincent "Don't say a goddamn..."
+n "Я відкрив рота, щоб щось сказати, але він підняв руку" # "I opened my mouth to speak but he put his hand up."
+vincent "НЕ ТРЕБА" # "DON'T."
+vincent "Не кажи ані клятого..." # "Don't say a goddamn..."
 $ vbase,vblush,vexp = 3,0,13
-vincent "FUCKING..."
+vincent "ЙОБАНОГО..." # "FUCKING..."
 $ vbase,vblush,vexp = 3,0,2
-vincent "...thing to me right now."
-n "Vincent looked at the weapons locker and put his hand on the open door."
-vincent "How'd you know the code?"
-vincent "You put it out in the open, duh."
-n "He seemed to be talking to himself."
-n "What should I do?"
-n "I got up quietly and put my hand on his back."
-n "He stiffened as I felt his skin."
-vincent "Don't."
-n "He warned but I didn't listen."
-p "I'm sorry."
-n "I said as I ran my hands down his muscular back."
-n "He stood perfectly still, listening."
-vincent "It takes some serious fucking balls to aim a gun at your captor."
-vincent "You don't know what I could have done to you."
-n "Vincent spoke in a slow, thoughtful manner."
-n "He was thinking about what he was going to do with me."
-n "I shuffled around him and looked at his face."
+vincent "...слова мені зараз" # "...thing to me right now."
+n "Вінсент глянув на зброярню й поклав руку на відчинені дверцята" # "Vincent looked at the weapons locker and put his hand on the open door."
+vincent "Звідки ти знав код?" # "How'd you know the code?"
+vincent "Ти ж лишив його на видноті, ото ж" # "You put it out in the open, duh."
+n "Здавалося, він говорить сам до себе" # "He seemed to be talking to himself."
+n "Що мені робити?" # "What should I do?"
+n "Я тихо підвівся й поклав руку йому на спину" # "I got up quietly and put my hand on his back."
+n "Він напружився, коли я торкнувся його шкіри" # "He stiffened as I felt his skin."
+vincent "Не треба" # "Don't."
+n "Попередив він, але я не послухав" # "He warned but I didn't listen."
+p "Вибач" # "I'm sorry."
+n "Сказав я, проводячи руками по його м'язистій спині" # "I said as I ran my hands down his muscular back."
+n "Він стояв абсолютно нерухомо, слухаючи" # "He stood perfectly still, listening."
+vincent "Треба мати збіса великі яйця, щоб націлити ствол на свого викрадача" # "It takes some serious fucking balls to aim a gun at your captor."
+vincent "Ти навіть не уявляєш, що я міг би з тобою зробити" # "You don't know what I could have done to you."
+n "Вінсент говорив повільно й задумливо" # "Vincent spoke in a slow, thoughtful manner."
+n "Він обмірковував, що зі мною зробити" # "He was thinking about what he was going to do with me."
+n "Я обійшов його й глянув йому в обличчя" # "I shuffled around him and looked at his face."
 $ vbase,vblush,vexp = 3,0,12
-p "I-I'm sorry."
-p "I'll do whatever you want."
-p "Please."
-n "He looked to the side and tsked out of his mouth."
-vincent "You can't just do whatever you want."
-n "He said as I rubbed my head under his chin."
-n "He let out a low growl but it seemed to be.. happy."
-p "I know that, I just."
-vincent "Wanted to get away from me?"
+p "В-вибач" # "I-I'm sorry."
+p "Я зроблю все, що захочеш" # "I'll do whatever you want."
+p "Будь ласка" # "Please."
+n "Він глянув убік і цокнув язиком" # "He looked to the side and tsked out of his mouth."
+vincent "Ти не можеш просто робити що заманеться" # "You can't just do whatever you want."
+n "Сказав він, поки я тицявся головою йому під підборіддя" # "He said as I rubbed my head under his chin."
+n "Він низько загарчав, але це звучало.. щасливо" # "He let out a low growl but it seemed to be.. happy."
+p "Я знаю, я просто" # "I know that, I just."
+vincent "Хотів утекти від мене?" # "Wanted to get away from me?"
 $ vbase,vblush,vexp = 3,0,2
-n "I paused and looked at the gun."
-n "That gun didn't make me free."
-n "I looked up at him and pawed at his chest."
-p "I don't want to get away.."
-p "Tell me what... I can do to make it up to you."
-n " He gripped my hair and forced me to my knees."
-n "He shoved his crotch in my face."
-vincent "You know how."
-n "Vincent growled between his teeth as I pulled open his jeans."
+n "Я завмер і глянув на рушницю" # "I paused and looked at the gun."
+n "Та рушниця не робила мене вільним" # "That gun didn't make me free."
+n "Я глянув угору на нього й провів рукою по його грудях" # "I looked up at him and pawed at his chest."
+p "Я не хочу тікати.." # "I don't want to get away.."
+p "Скажи, що... я можу зробити, щоб загладити провину" # "Tell me what... I can do to make it up to you."
+n " Він схопив мене за волосся й змусив стати на коліна" # " He gripped my hair and forced me to my knees."
+n "Він тицьнув своїм пахом мені в обличчя" # "He shoved his crotch in my face."
+vincent "Ти знаєш як" # "You know how."
+n "Вінсент загарчав крізь зуби, поки я розстібав його джинси" # "Vincent growled between his teeth as I pulled open his jeans."
 $ vbase,vblush,vexp = 3,0,1
-n "He was only half erect."
-n "He must have still been frustrated."
-n "I leaned into his cock and took it into my mouth."
-n "He let out a ragged breath as I pushed it as deep as I could."
-n "It started to get hard inside my mouth."
-n "I wanted to make him happy."
+n "Він стояв лише наполовину" # "He was only half erect."
+n "Мабуть, він усе ще був роздратований" # "He must have still been frustrated."
+n "Я нахилився до його члена й узяв його в рот" # "I leaned into his cock and took it into my mouth."
+n "Він хрипко видихнув, коли я заштовхнув його так глибоко, як міг" # "He let out a ragged breath as I pushed it as deep as I could."
+n "Він почав тверднути в мене в роті" # "It started to get hard inside my mouth."
+n "Я хотів зробити його щасливим" # "I wanted to make him happy."
 $ vbase,vblush,vexp = 3,1,2
-n "I started to bob my head taking it deeper and deeper."
-n "I shuttered as I choked on the hard flesh and looked up at him with tears in my eyes."
-n "He was starting to pant and look happy."
+n "Я почав рухати головою, беручи його все глибше й глибше" # "I started to bob my head taking it deeper and deeper."
+n "Я здригнувся, давлячись твердою плоттю, і глянув угору на нього зі сльозами на очах" # "I shuttered as I choked on the hard flesh and looked up at him with tears in my eyes."
+n "Він почав важко дихати й виглядав щасливим" # "He was starting to pant and look happy."
 $ vbase,vblush,vexp = 3,1,16
-n "He must have liked that."
-n "I started to push his cock deep into my throat and gagged on it."
-n "I didn't stop despite my reflexes."
-n "I choked again but kept taking it down my throat."
-n "He pushed me against the wall and fucked my skull."
-n "I couldn't breath, but it felt so good."
-n "I gagged, bile coming up this time but I didn't care."
-n "I let it drip down my chest and around his cock as he took what he wanted from me."
-n "The inhuman growls, the way he put his strong hands in my hair."
-n "I was intoxicated."
-n "He slammed me harder and harder into the wall."
-n "My back started to ache but I just wanted more."
-n "The bile hit my throat again as it dripped out between us."
-n "I coughed it out."
-vincent "Fuck..."
-n "He growled as he came down my throat."
-n "He slowly pulled away."
-n "A trail of saliva and vomit between his dick and my lips the only thing connecting us."
-n "I swallowed whatever was in my mouth, mostly cum."
+n "Мабуть, йому це сподобалось" # "He must have liked that."
+n "Я почав заштовхувати його член глибоко в горло й давився ним" # "I started to push his cock deep into my throat and gagged on it."
+n "Я не спинявся, попри рефлекси" # "I didn't stop despite my reflexes."
+n "Я знову вдавився, але продовжував заганяти його в горло" # "I choked again but kept taking it down my throat."
+n "Він притиснув мене до стіни й трахав мене в голову" # "He pushed me against the wall and fucked my skull."
+n "Я не міг дихати, але це було так приємно" # "I couldn't breath, but it felt so good."
+n "Я вдавився, цього разу підступила жовч, але мені було байдуже" # "I gagged, bile coming up this time but I didn't care."
+n "Я дав їй стекти по грудях і навколо його члена, поки він брав від мене те, що хотів" # "I let it drip down my chest and around his cock as he took what he wanted from me."
+n "Ці нелюдські гарчання, те, як він запускав свої сильні руки в моє волосся" # "The inhuman growls, the way he put his strong hands in my hair."
+n "Я був наче сп'янілий" # "I was intoxicated."
+n "Він гатив мене об стіну все сильніше й сильніше" # "He slammed me harder and harder into the wall."
+n "Спина почала боліти, але я хотів тільки більшого" # "My back started to ache but I just wanted more."
+n "Жовч знову підступила до горла й стікала між нами" # "The bile hit my throat again as it dripped out between us."
+n "Я викашляв її" # "I coughed it out."
+vincent "Блять..." # "Fuck..."
+n "Він загарчав, кінчаючи мені в горло" # "He growled as he came down my throat."
+n "Він повільно відсторонився" # "He slowly pulled away."
+n "Ниточка зі слини й блювоти між його членом і моїми губами — єдине, що нас з'єднувало" # "A trail of saliva and vomit between his dick and my lips the only thing connecting us."
+n "Я проковтнув усе, що було в роті, здебільшого сперму" # "I swallowed whatever was in my mouth, mostly cum."
 $ vbase,vblush,vexp = 3,0,2
-vincent "Don't try that shit again."
-n "Vincent said pointing at the gun."
-n "I grabbed his leg and rubbed my head on his knee."
-p "I won't."
-n "I said happily as he reached down to pet the top of my head."
-n "He didn't seem angry anymore."
-n "And I was glad."
-n "He let me go as I shuffled back to the wall."
-n "He locked up his weapon locker again, this time with a padlock."
-n "I wasn't going to try it but I could see his concern."
-vincent "Go to sleep, pup."
-n "Vincent patted my head again as he passed by."
+vincent "Більше не смій утнути таке лайно" # "Don't try that shit again."
+n "Сказав Вінсент, вказуючи на рушницю" # "Vincent said pointing at the gun."
+n "Я обхопив його ногу й потерся головою об коліно" # "I grabbed his leg and rubbed my head on his knee."
+p "Не буду" # "I won't."
+n "Сказав я щасливо, коли він нахилився погладити мене по маківці" # "I said happily as he reached down to pet the top of my head."
+n "Він більше не здавався злим" # "He didn't seem angry anymore."
+n "І я був цьому радий" # "And I was glad."
+n "Він відпустив мене, і я поплентався назад до стіни" # "He let me go as I shuffled back to the wall."
+n "Він знову замкнув зброярню, цього разу на висячий замок" # "He locked up his weapon locker again, this time with a padlock."
+n "Я й не збирався пробувати знову, але бачив його стурбованість" # "I wasn't going to try it but I could see his concern."
+vincent "Іди спати, цуценя" # "Go to sleep, pup."
+n "Вінсент знову поплескав мене по голові, проходячи повз" # "Vincent patted my head again as he passed by."
 hide vincent with dissolve
-n "I closed my eyes and leaned against the wall."
+n "Я заплющив очі й притулився до стіни" # "I closed my eyes and leaned against the wall."
 scene black with fade
 jump vincent_day_three
 
 label vincent_shot_day2:
-n "I got up and aimed the gun at him."
+n "Я підвівся й націлив рушницю на нього" # "I got up and aimed the gun at him."
 $ vbase,vblush,vexp = 3,0,7
-vincent "Woah wait a second."
-n "Vincent said looking at the gun then at me."
-vincent "You don't wanna-"
-n "I cut him short."
+vincent "Ого, стривай-но" # "Woah wait a second."
+n "Сказав Вінсент, глянувши на рушницю, а тоді на мене" # "Vincent said looking at the gun then at me."
+vincent "Ти ж не хочеш-" # "You don't wanna-"
+n "Я перервав його" # "I cut him short."
 hide vincent with dissolve
-n "I shot straight into his chest and he fell backwards."
-n "I smiled and held the gun close."
-n "I needed to shoot him in the head now."
-n "It wouldn't be too hard if he was down."
-n "I walked over and aimed the shotgun at his face."
+n "Я вистрілив прямо йому в груди, і він упав назад" # "I shot straight into his chest and he fell backwards."
+n "Я всміхнувся й притиснув рушницю до себе" # "I smiled and held the gun close."
+n "Тепер мені треба було вистрілити йому в голову" # "I needed to shoot him in the head now."
+n "Це буде неважко, поки він лежить" # "It wouldn't be too hard if he was down."
+n "Я підійшов і націлив дробовик йому в обличчя" # "I walked over and aimed the shotgun at his face."
 $ vbase,vblush,vexp = 9,0,13
-n "But, before I could pull the trigger he grabbed the barrel and yanked it away."
+n "Але перш ніж я встиг натиснути на гачок, він схопив дуло й вирвав його" # "But, before I could pull the trigger he grabbed the barrel and yanked it away."
 show vincent
-n "He bashed the butt of the shotgun into my nose and snarled loudly."
-vincent "WHAT THE FUCK DID I JUST SAY?"
+n "Він гатив прикладом дробовика мені в ніс і голосно загарчав" # "He bashed the butt of the shotgun into my nose and snarled loudly."
+vincent "ЩО Я, БЛЯТЬ, ЩОЙНО СКАЗАВ?" # "WHAT THE FUCK DID I JUST SAY?"
 $ temper +=100
-n "He stood over me and growled as he pulled the pellets out of his chest."
-n "He stomped my leg and I heard it crack underneath his boot."
-n "I let out a scream as he started to dig in his chest."
+n "Він навис наді мною й загарчав, витягуючи дробинки зі своїх грудей" # "He stood over me and growled as he pulled the pellets out of his chest."
+n "Він притупнув мені по нозі, і я почув, як вона хруснула під його чоботом" # "He stomped my leg and I heard it crack underneath his boot."
+n "Я закричав, коли він почав копирсатися у своїх грудях" # "I let out a scream as he started to dig in his chest."
 $ vincent_love -=100
-n "He flicked some metal pieces away and leaned down and grabbed my hair."
-vincent "Birdshot ain't gonna kill me!"
-vincent "I'm not human!"
-n "He picked up the shotgun and shot into my other leg."
+n "Він відкинув кілька металевих шматочків, нахилився й схопив мене за волосся" # "He flicked some metal pieces away and leaned down and grabbed my hair."
+vincent "Дробом на птицю мене не вб'єш!" # "Birdshot ain't gonna kill me!"
+vincent "Я не людина!" # "I'm not human!"
+n "Він підняв дробовик і вистрілив мені в другу ногу" # "He picked up the shotgun and shot into my other leg."
 $ health -=10
-n "I could feel the pellets tearing through my skin and flesh."
+n "Я відчував, як дробинки роздирають мою шкіру й плоть" # "I could feel the pellets tearing through my skin and flesh."
 $ health -=10
-n "I let out another scream as Vincent put the tip of his boot in my mouth."
+n "Я знову закричав, коли Вінсент запхав носак чобота мені в рот" # "I let out another scream as Vincent put the tip of his boot in my mouth."
 $ health -=10
-vincent "Plus, it's for torturing stupid fucks like you."
-vincent "Target practice."
-n "I tried to scream but he brought his foot down on my jaw."
+vincent "До того ж він для того, щоб катувати тупих виродків, як ти" # "Plus, it's for torturing stupid fucks like you."
+vincent "Тренування на мішені" # "Target practice."
+n "Я спробував закричати, але він опустив ногу мені на щелепу" # "I tried to scream but he brought his foot down on my jaw."
 $ health -=10
-n "He narrowed his eye and stepped down hard."
+n "Він примружив око й з силою натиснув" # "He narrowed his eye and stepped down hard."
 $ health -=10
-n "I could feel his boot cracking my jaw."
+n "Я відчував, як його чобіт трощить мені щелепу" # "I could feel his boot cracking my jaw."
 $ health -=100
-n "Then my throat."
+n "А потім і горло" # "Then my throat."
 hide screen health_bar
 hide screen sanity_bar
 hide screen vincent_rage_bar
@@ -3509,8 +3509,8 @@ play music "vincent/vincent_death.mp3"
 $ persistent.vincent_ending_kill_him = True
 scene endslate with Dissolve(1.0)
 screen vincent_ending_kill_him:
-    text "{=endslate_title}You Died{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-    text "\n\n\n\n{=endslate_subtitle}You couldn't kill him.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+    text "{=endslate_title}Ти помер{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died"
+    text "\n\n\n\n{=endslate_subtitle}Ти не зміг його вбити.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "You couldn't kill him."
 show screen vincent_ending_kill_him
 with Dissolve(1.0)
 pause
@@ -3527,18 +3527,18 @@ show screen health_bar
 show screen vincent_rage_bar
 show screen sanity_bar
 
-n "I didn't feel like looking at this anymore."
+n "Мені більше не хотілося на це дивитися" # "I didn't feel like looking at this anymore."
 menu:
-    "-Look at weapons locker-":
-        n "I might as well see if I could protect myself."
-        n "I walked over to the weapons locker."
+    "-Оглянути зброярню-": # "-Look at weapons locker-"
+        n "Можна й глянути, чи зможу я себе захистити" # "I might as well see if I could protect myself."
+        n "Я підійшов до зброярні" # "I walked over to the weapons locker."
         jump vincent_weapons_locker_night2
-    "-Back to sleep-":
+    "-Знову спати-": # "-Back to sleep-"
 
         jump vincent_sleep_night2
 
 label vincent_table_night2:
-n "I walked back over to the table maybe there was something useful on it this time."
+n "Я знову підійшов до столу, може, цього разу на ньому є щось корисне" # "I walked back over to the table maybe there was something useful on it this time."
 show desk
 show screen back_day2_button
 show screen vincent_food_day2
@@ -3556,16 +3556,16 @@ if vincent_picture_day2== True:
     hide screen vincent_picture_day2
 if vincent_code_day1 == True:
     hide screen vincent_picture_day2
-n "What can I find..?"
+n "Що ж я знайду..?" # "What can I find..?"
 jump vincent_night2_tableexplore
 
 label vincent_food_day2:
 $ vincent_food_day2 = True
 hide screen vincent_food_day2
-n "I picked up the bag and looked at the meat."
-n "My stomach rumbled but I put it back down quickly."
-n "What if this was... people or something?"
-n "My mind started to race and I felt sick."
+n "Я взяв пакет і глянув на м'ясо" # "I picked up the bag and looked at the meat."
+n "У животі забурчало, але я швидко поклав його назад" # "My stomach rumbled but I put it back down quickly."
+n "А що, як це були... люди чи щось таке?" # "What if this was... people or something?"
+n "Думки закружляли, і мене занудило" # "My mind started to race and I felt sick."
 $ sanity -=10
 jump vincent_night2_tableexplore
 
@@ -3573,21 +3573,21 @@ label vincent_picture_day2:
     $ vincent_picture_day2 =  True
     $ vincent_code_day1 = vincent_picture_day2
     hide screen vincent_picture_day2
-    n "I picked up the picture that was tucked under a box."
-    p "What's this?"
-    n "I looked at the guys in the picture and tilted my head to the side"
+    n "Я взяв фото, засунуте під коробку" # "I picked up the picture that was tucked under a box."
+    p "Що це?" # "What's this?"
+    n "Я глянув на хлопців на фото й схилив голову набік" # "I looked at the guys in the picture and tilted my head to the side"
     hide screen back_day1_button
     scene CG_vincent_code with dissolve
-    p "Was he in the army?"
-    n "I asked to myself as I looked at the back, which was blank."
-    n "I sighed softly, he used to be a good guy right?"
-    n "I guess anyone could join the military though."
-    n "I bit my lip, maybe it wasn't the best idea to fight with him."
-    n "If he had combat experience-"
-    n "He could take me down pretty quickly."
+    p "Він служив в армії?" # "Was he in the army?"
+    n "Спитав я сам себе, глянувши на зворот, який був порожній" # "I asked to myself as I looked at the back, which was blank."
+    n "Я тихо зітхнув, колись же він був хорошим хлопцем, так?" # "I sighed softly, he used to be a good guy right?"
+    n "Хоча, гадаю, до армії міг вступити будь-хто" # "I guess anyone could join the military though."
+    n "Я прикусив губу, може, битися з ним було не найкращою ідеєю" # "I bit my lip, maybe it wasn't the best idea to fight with him."
+    n "Якщо в нього був бойовий досвід-" # "If he had combat experience-"
+    n "Він міг би вирубати мене доволі швидко" # "He could take me down pretty quickly."
     show desk
     show screen back_day2_button
-    n "I tucked the picture where I found it."
+    n "Я засунув фото туди, де знайшов" # "I tucked the picture where I found it."
     jump vincent_night2_tableexplore
 
 label vincent_nighttwo_dogtags:
@@ -3597,67 +3597,67 @@ hide screen vincent_picture_day2
 hide screen vincent_dogtags_day2
 hide screen back_day2_button
 scene CG_vincent_dogtags
-n "I picked up his dog tags and looked at them."
-p "Vincent Metzger."
-n "I whispered out loud to myself."
+n "Я підняв його жетони й глянув на них" # "I picked up his dog tags and looked at them."
+p "Вінсент Мецґер" # "Vincent Metzger."
+n "Прошепотів я вголос сам до себе" # "I whispered out loud to myself."
 $ vincent_love +=10
 $ temper +=10
 play music "vincent/vincent_sad.mp3"
-vincent "Yeah that's me."
-vincent "What of it."
+vincent "Ага, це я" # "Yeah that's me."
+vincent "Ну і що з того" # "What of it."
 scene falloutshelter_dark:
     xalign 0.0
     easeout 0.3 xalign 0.5
 show screen health_bar
 show screen vincent_rage_bar
 show screen sanity_bar
-n "I turned quickly."
+n "Я швидко обернувся" # "I turned quickly."
 $ vbase,vblush,vexp = 3,0,2
 show vincent with dissolve
-n "He didn't look like he was going to attack me."
-p "You were in the army?"
-n "I asked as I held out the dog tags for him."
-vincent "Yeah. I was once."
-n "He took the tags and looked at them."
-p "Why'd you leave?"
+n "Не схоже було, що він збирається на мене нападати" # "He didn't look like he was going to attack me."
+p "Ти був в армії?" # "You were in the army?"
+n "Спитав я, простягаючи йому жетони" # "I asked as I held out the dog tags for him."
+vincent "Ага. Колись був" # "Yeah. I was once."
+n "Він узяв жетони й глянув на них" # "He took the tags and looked at them."
+p "Чому ти пішов?" # "Why'd you leave?"
 $ vbase,vblush,vexp = 3,0,14
-vincent "I got attacked."
-vincent "That's why I look like I got into a fight with a blender and lost."
-p "Do you remember anything before that?"
-n "Vincent paused looking for the words."
-vincent "No."
-n "He tapped his skull and shrugged."
-vincent "Lost it all in a car accident."
-vincent "All my childhood memories."
-vincent "Lost my family too, except my dad."
-n "He nodded his head towards the spot on the floor and I walked that direction."
-n "I sat down and he cuffed me back to the radiator."
+vincent "На мене напали" # "I got attacked."
+vincent "Тому я й виглядаю так, ніби побився з блендером і програв" # "That's why I look like I got into a fight with a blender and lost."
+p "Ти пам'ятаєш щось до того?" # "Do you remember anything before that?"
+n "Вінсент затнувся, підбираючи слова" # "Vincent paused looking for the words."
+vincent "Ні" # "No."
+n "Він постукав себе по черепу й знизав плечима" # "He tapped his skull and shrugged."
+vincent "Втратив усе в автокатастрофі" # "Lost it all in a car accident."
+vincent "Усі спогади дитинства" # "All my childhood memories."
+vincent "Втратив і сім'ю теж, окрім батька" # "Lost my family too, except my dad."
+n "Він кивнув у бік місця на підлозі, і я рушив туди" # "He nodded his head towards the spot on the floor and I walked that direction."
+n "Я сів, і він знову прикував мене до батареї" # "I sat down and he cuffed me back to the radiator."
 $ vbase,vblush,vexp = 3,0,2
-vincent "The key."
-n "I smiled sheepishly and gave him the key."
-vincent "I know you took it brat."
-n "He tussled my hair and looked at it."
-vincent "You're pretty brave."
-p "Brave or stupid."
+vincent "Ключ" # "The key."
+n "Я винувато всміхнувся й віддав йому ключ" # "I smiled sheepishly and gave him the key."
+vincent "Я знаю, що ти його поцупив, шмаркач" # "I know you took it brat."
+n "Він скуйовдив моє волосся й глянув на ключ" # "He tussled my hair and looked at it."
+vincent "А ти доволі сміливий" # "You're pretty brave."
+p "Сміливий чи тупий" # "Brave or stupid."
 $ vbase,vblush,vexp = 3,0,6
-vincent "It's one of those two things."
+vincent "Щось одне з двох" # "It's one of those two things."
 $ vbase,vblush,vexp = 3,0,2
-vincent "Stay in this spot alright?"
-p "Okay."
-n "He held out a can and shook it."
-n "I took it and looked at it."
-n "It looked like a food supplement."
-vincent "It's all I really had-"
-vincent "That's not dog food."
-p "Do you have a dog?"
+vincent "Лишайся на цьому місці, гаразд?" # "Stay in this spot alright?"
+p "Гаразд" # "Okay."
+n "Він простягнув банку й потрусив нею" # "He held out a can and shook it."
+n "Я взяв її й глянув" # "I took it and looked at it."
+n "Схоже на харчову добавку" # "It looked like a food supplement."
+vincent "Це все, що в мене було-" # "It's all I really had-"
+vincent "Це не собачий корм" # "That's not dog food."
+p "У тебе є собака?" # "Do you have a dog?"
 $ vbase,vblush,vexp = 3,0,6
-vincent "...You could say that."
-vincent "Sleep."
+vincent "...Можна і так сказати" # "...You could say that."
+vincent "Спи" # "Sleep."
 $ vbase,vblush,vexp = 3,0,2
-vincent "It'll be better if you do."
-n "Vincent got up and left me alone again."
+vincent "Так буде краще" # "It'll be better if you do."
+n "Вінсент підвівся й знову лишив мене самого" # "Vincent got up and left me alone again."
 $ health +=10
-n "I drank the rest of the cold drink and sighed as I went back to bed."
+n "Я допив решту холодного напою й, зітхнувши, знову ліг спати" # "I drank the rest of the cold drink and sighed as I went back to bed."
 scene black with fade
 jump vincent_day_three
 
@@ -3665,50 +3665,50 @@ jump vincent_day_three
 label farz_night2:
 scene black
 play music "vincent/farz_main.mp3"
-farz "Hey wake up."
-n "I could hear Farz's voice as I opened my eyes."
+farz "Гей, прокидайся" # "Hey wake up."
+n "Я почув голос Фарца, розплющуючи очі" # "I could hear Farz's voice as I opened my eyes."
 $ fbase, fexp= 3, 1
 scene falloutshelter_dark:
     xalign 0.0
     easein 0.3
 show farz
-n "He kneeled down and looked at me."
-p "Wh-what?"
-farz "I have an idea."
-n "Farz unlocked me and I rubbed my wrist."
-farz "Let's go out."
+n "Він присів і глянув на мене" # "He kneeled down and looked at me."
+p "Щ-що?" # "Wh-what?"
+farz "У мене є ідея" # "I have an idea."
+n "Фарц відімкнув мене, і я потер зап'ясток" # "Farz unlocked me and I rubbed my wrist."
+farz "Ходімо прогуляємось" # "Let's go out."
 menu:
-    "\"No.\"":
+    "\"Ні\"": # "No."
         $ farz_love -=10
-        farz "Come on."
-        farz "I just wanna take a walk."
-        n "I looked at my feet and back at Farz."
-        farz "You can lean on me if you want."
-        n "I stood up and leaned on Farz."
-        n "I knew this was a bad idea, but could I really say no to him."
-        n "He'd kill me faster than Vincent would."
-    "\"Won't we get in trouble?\"":
+        farz "Та ну" # "Come on."
+        farz "Я просто хочу прогулятися" # "I just wanna take a walk."
+        n "Я глянув на свої ноги, а тоді знову на Фарца" # "I looked at my feet and back at Farz."
+        farz "Можеш спертися на мене, якщо хочеш" # "You can lean on me if you want."
+        n "Я підвівся й сперся на Фарца" # "I stood up and leaned on Farz."
+        n "Я знав, що це погана ідея, але хіба я міг йому відмовити" # "I knew this was a bad idea, but could I really say no to him."
+        n "Він убив би мене швидше за Вінсента" # "He'd kill me faster than Vincent would."
+    "\"А в нас не буде проблем?\"": # "Won't we get in trouble?"
 
         $ farz_love +=10
-        farz "Don't worry!"
-        farz "We won't get in trouble."
-        p "Okay..."
-        n "I couldn't help but feel worried."
-    "\"Okay.\"":
+        farz "Не хвилюйся!" # "Don't worry!"
+        farz "Ніяких проблем не буде" # "We won't get in trouble."
+        p "Гаразд..." # "Okay..."
+        n "Я все одно не міг позбутися тривоги" # "I couldn't help but feel worried."
+    "\"Гаразд\"": # "Okay."
 
         $ farz_love +=10
-        farz "Haha awesome."
-        n "I stood up and stumbled."
-        farz "Whoa careful!"
+        farz "Хаха, чудово" # "Haha awesome."
+        n "Я підвівся й похитнувся" # "I stood up and stumbled."
+        farz "Гей, обережно!" # "Whoa careful!"
 
-n "We both looked at the door as the knob started to spin."
-n "Farz looked at me and narrowed his eyes."
-farz "Take the fall."
-p "W-what!?"
-n "What did he mean?"
-n "I stumbled on the wall and leaned against it."
-n "Vincent opened the door and looked at the two of us."
-n "He grit his teeth."
+n "Ми обидва глянули на двері, коли ручка почала прокручуватися" # "We both looked at the door as the knob started to spin."
+n "Фарц глянув на мене й примружив очі" # "Farz looked at me and narrowed his eyes."
+farz "Візьми провину на себе" # "Take the fall."
+p "Щ-що!?" # "W-what!?"
+n "Що він мав на увазі?" # "What did he mean?"
+n "Я захитався біля стіни й притулився до неї" # "I stumbled on the wall and leaned against it."
+n "Вінсент відчинив двері й глянув на нас двох" # "Vincent opened the door and looked at the two of us."
+n "Він зціпив зуби" # "He grit his teeth."
 $ vbase, vexp= 2, 1
 show farz:
     subpixel True
@@ -3720,28 +3720,28 @@ show vincent:
     xalign 0.9
     alpha 0.0
     easeout 0.3 alpha 1.0
-vincent "What are you little shits doing!?"
+vincent "Що ви, малі засранці, робите!?" # "What are you little shits doing!?"
 menu:
-    "\"It was Farz's fault.\"":
+    "\"Це була провина Фарца\"": # "It was Farz's fault."
         $ fexp = 2
-        farz "Yeah right!"
-        farz "They're the one that wanted to stretch their-"
-        n "Vincent put a hand up immediately silencing Farz."
-        n "He put one finger to his lips."
-        vincent "Shh."
-        vincent "Don't play the blame game."
-        n "Vincent leaned his head to the side cracking his neck and bolted forward."
-        n "He grabbed my neck and squeezed."
+        farz "Ага, аякже!" # "Yeah right!"
+        farz "Це ж він захотів розім'яти свої-" # "They're the one that wanted to stretch their-"
+        n "Вінсент підняв руку, миттю змусивши Фарца замовкнути" # "Vincent put a hand up immediately silencing Farz."
+        n "Він приклав палець до губ" # "He put one finger to his lips."
+        vincent "Тсс" # "Shh."
+        vincent "Не грайся в перекладання провини" # "Don't play the blame game."
+        n "Вінсент нахилив голову вбік, хруснувши шиєю, і рвонув уперед" # "Vincent leaned his head to the side cracking his neck and bolted forward."
+        n "Він схопив мене за шию й стиснув" # "He grabbed my neck and squeezed."
         $ vexp = 5
-        vincent "I don't care who's fault it is."
-        n "He squeezed harder, cutting off my air."
-        n "I scratched at his arm and tried to pull away."
-        vincent "But, if you wanna blame Farz for it..."
-        n "Vincent's grip got tighter as he started grip my throat."
-        n "I let out choked breaths and put my hand on his arm."
-        n "I couldn't get out of his vice grip."
-        vincent "...Darlin', I ain't gonna stand for that."
-        n "I felt my neck snap under this hand."
+        vincent "Мені байдуже, чия це провина" # "I don't care who's fault it is."
+        n "Він стиснув сильніше, перекриваючи мені повітря" # "He squeezed harder, cutting off my air."
+        n "Я дряпав його руку й намагався вирватися" # "I scratched at his arm and tried to pull away."
+        vincent "Але якщо ти хочеш звинуватити в цьому Фарца..." # "But, if you wanna blame Farz for it..."
+        n "Хватка Вінсента міцнішала, поки він стискав моє горло" # "Vincent's grip got tighter as he started grip my throat."
+        n "Я хрипів, задихаючись, і поклав руку йому на передпліччя" # "I let out choked breaths and put my hand on his arm."
+        n "Я не міг вирватися з його лещат" # "I couldn't get out of his vice grip."
+        vincent "...Любий, такого я не терпітиму" # "...Darlin', I ain't gonna stand for that."
+        n "Я відчув, як моя шия хруснула під його рукою" # "I felt my neck snap under this hand."
         hide screen health_bar
         hide screen sanity_bar
         hide screen vincent_rage_bar
@@ -3749,78 +3749,78 @@ menu:
         $ persistent.vincent_ending_snappedneck = True
         scene endslate with Dissolve(1.0)
         screen vincent_ending_snappedneck:
-            text "{=endslate_title}You Died!{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-            text "\n\n\n\n{=endslate_subtitle}Vincent snapped your neck.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+            text "{=endslate_title}Ти помер!{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died!"
+            text "\n\n\n\n{=endslate_subtitle}Вінсент скрутив тобі шию.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "Vincent snapped your neck."
         show screen vincent_ending_snappedneck 
         with Dissolve(1.0)
         pause
         return
-    "\"It's my fault.\"":
+    "\"Це моя провина\"": # "It's my fault."
 
         $ farz_love +=10
-        vincent "What the fuck?"
+        vincent "Якого хуя?" # "What the fuck?"
         $ vexp = 2
-        vincent "What makes you think that you can just walk around like you own the place!?"
-        n "Vincent started to advance on me."
+        vincent "З чого ти взяв, що можеш просто розгулювати тут, наче ти тут господар!?" # "What makes you think that you can just walk around like you own the place!?"
+        n "Вінсент почав насуватися на мене" # "Vincent started to advance on me."
         if farz_love >=60 and vincent_love >=90:
-            farz "Wait."
-            n "Farz slipped in front of me and put his hands on Vincent's collar."
-            farz "Wait, Vincent."
-            farz "I've been talking to them."
+            farz "Стій" # "Wait."
+            n "Фарц прослизнув переді мною й поклав руки на комір Вінсента" # "Farz slipped in front of me and put his hands on Vincent's collar."
+            farz "Стій, Вінсенте" # "Wait, Vincent."
+            farz "Я з ним розмовляв" # "I've been talking to them."
             $ fexp = 6
-            farz "I think they'd be good to have around."
-            farz "I mean... I did let them out."
-            n "Vincent let out a low growl and looked at Farz."
-            n "Farz ran his hands up Vincent's neck and to his face."
+            farz "Гадаю, він би нам знадобився" # "I think they'd be good to have around."
+            farz "Тобто... це ж я його випустив" # "I mean... I did let them out."
+            n "Вінсент низько загарчав і глянув на Фарца" # "Vincent let out a low growl and looked at Farz."
+            n "Фарц провів руками вгору по шиї Вінсента до його обличчя" # "Farz ran his hands up Vincent's neck and to his face."
             $ fexp = 7
-            farz "We could use the help."
-            farz "Not everyone is going to trust a scarred up guy like you."
+            farz "Зайва поміч нам би не завадила" # "We could use the help."
+            farz "Не кожен довіриться такому пошрамованому типу, як ти" # "Not everyone is going to trust a scarred up guy like you."
             $ vexp = 10
-            n "Vincent closed his eye and listened."
-            farz "We can hunt for you when you can't."
-            n "Vincent put his hand over Farz's letting out a breath."
-            vincent "Fine."
-            n "Farz smiled and pushed his hand through Vincent's hair."
+            n "Вінсент заплющив око й слухав" # "Vincent closed his eye and listened."
+            farz "Ми можемо полювати за тебе, коли ти не можеш" # "We can hunt for you when you can't."
+            n "Вінсент накрив руку Фарца своєю й видихнув" # "Vincent put his hand over Farz's letting out a breath."
+            vincent "Гаразд" # "Fine."
+            n "Фарц усміхнувся й провів рукою по волоссю Вінсента" # "Farz smiled and pushed his hand through Vincent's hair."
             $ vexp = 2
-            vincent "They're under your watch though."
-            vincent "I don't have long."
+            vincent "Але він під твоїм наглядом" # "They're under your watch though."
+            vincent "У мене небагато часу" # "I don't have long."
             $ fexp = 3
-            farz "Oh. OH."
-            farz "I'll get them out of your way."
-            vincent "Yeah.."
-            n "Vincent let out a gruff growl."
-            vincent "Get the fuck out of here."
-            vincent "NOW." with vpunch
+            farz "О. О!" # "Oh. OH."
+            farz "Я заберу його, щоб не заважав" # "I'll get them out of your way."
+            vincent "Ага.." # "Yeah.."
+            n "Вінсент грубо загарчав" # "Vincent let out a gruff growl."
+            vincent "Забирайтеся звідси нахуй" # "Get the fuck out of here."
+            vincent "ЗАРАЗ ЖЕ" with vpunch # "NOW."
             jump farz_day_three
         else:
-            n "Vincent charged at me and pinned me on the wall."
-            vincent "Get out Farz."
-            n "Farz nodded and backed out of the room."
+            n "Вінсент кинувся на мене й притиснув до стіни" # "Vincent charged at me and pinned me on the wall."
+            vincent "Забирайся, Фарц" # "Get out Farz."
+            n "Фарц кивнув і позадкував з кімнати" # "Farz nodded and backed out of the room."
             $ fexp = 5
-            n "I heard the door click behind him."
+            n "Я почув, як за ним клацнули двері" # "I heard the door click behind him."
             hide farz with dissolve
-            n "He just left me..."
+            n "Він просто кинув мене..." # "He just left me..."
             show vincent at center
             jump vincent_badend_pinata2
-    "-Say nothing-":
+    "-Мовчати-": # "-Say nothing-"
 
-        n "Vincent charged at me and pinned me on the wall."
-        vincent "Get out,Farz."
-        n "Farz nodded and backed out of the room."
+        n "Вінсент кинувся на мене й притиснув до стіни" # "Vincent charged at me and pinned me on the wall."
+        vincent "Забирайся, Фарц" # "Get out,Farz."
+        n "Фарц кивнув і позадкував з кімнати" # "Farz nodded and backed out of the room."
         $ fexp = 5
         hide farz with dissolve
         show vincent at center
-        n "I heard the door click behind him."
-        n "He just left me..."
+        n "Я почув, як за ним клацнули двері" # "I heard the door click behind him."
+        n "Він просто кинув мене..." # "He just left me..."
         jump vincent_badend_pinata2
 
 
 label farz_hp_death:
-n "I could feel myself getting tired and looking up."
-n "I couldn't keep focus on the man in front of me."
-n "I could feel Farz stepping on my back."
-farz "Tsk you're so weak."
-n "Everything went black."
+n "Я відчував, як утома бере гору, і підвів погляд" # "I could feel myself getting tired and looking up."
+n "Я не міг зосередитися на чоловікові переді мною" # "I couldn't keep focus on the man in front of me."
+n "Я відчував, як Фарц наступає мені на спину" # "I could feel Farz stepping on my back."
+farz "Тц, який же ти слабкий" # "Tsk you're so weak."
+n "Усе почорніло" # "Everything went black."
 hide screen health_bar
 hide screen sanity_bar
 hide screen vincent_rage_bar
@@ -3828,8 +3828,8 @@ play music "vincent/farz_death.mp3"
 $ persistent.farz_ending_HP_Death = True
 scene endslate with Dissolve(1.0)
 screen farz_ending_HP_Death:
-    text "{=endslate_title}You Died!{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-    text "\n\n\n\n{=endslate_subtitle}You couldn't stand up to him.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+    text "{=endslate_title}Ти помер!{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died!"
+    text "\n\n\n\n{=endslate_subtitle}Ти не зміг йому протистояти.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "You couldn't stand up to him."
 show screen farz_ending_HP_Death
 with Dissolve(1.0)
 pause
@@ -3845,237 +3845,237 @@ else:
 label vincent_highlove:
 scene falloutshelter
 play music "vincent/vincent_sad.mp3"
-n "I heard the door open and I looked up."
+n "Я почув, як відчиняються двері, і підвів погляд" # "I heard the door open and I looked up."
 show vincent
-n "Vincent wandered into the bunker."
+n "Вінсент забрів до бункера" # "Vincent wandered into the bunker."
 $ vbase,vblush,vexp = 3,0,14
-n "Vincent looked frustrated and he kneeled down and unlocked me from my cuff."
-p "What are you doing?"
-vincent "Can't a guy unlock you without the 20 questions!?"
-n "I flinched at his loud tone and he stiffened."
-vincent "I can't control my anger when it's this close."
-n "He paused, his eye shifting around, looking for the words."
-n "Vincent bit back what he was going to say and didn't complete his thought."
-p "What's close?"
-n "Maybe if I asked myself he'd respond."
-vincent "Full moon."
-n "He let out a low animalistic growl as he sat down next to me with a soft thud."
-n "Vincent looked at me and bit back his words again."
-p "W-what's wrong?"
-n "I tried to sound strong but my words came out in a stutter anyways."
+n "Вінсент виглядав роздратованим, він присів і відімкнув мене з наручника" # "Vincent looked frustrated and he kneeled down and unlocked me from my cuff."
+p "Що ти робиш?" # "What are you doing?"
+vincent "Хіба не можна просто тебе відімкнути без цих двадцяти запитань!?" # "Can't a guy unlock you without the 20 questions!?"
+n "Я здригнувся від його гучного тону, а він напружився" # "I flinched at his loud tone and he stiffened."
+vincent "Я не можу стримувати свій гнів, коли воно так близько" # "I can't control my anger when it's this close."
+n "Він затнувся, його око забігало, шукаючи слова" # "He paused, his eye shifting around, looking for the words."
+n "Вінсент проковтнув те, що збирався сказати, не закінчивши думку" # "Vincent bit back what he was going to say and didn't complete his thought."
+p "Що близько?" # "What's close?"
+n "Може, якщо я сам спитаю, він відповість" # "Maybe if I asked myself he'd respond."
+vincent "Повний місяць" # "Full moon."
+n "Він видав низьке звірине гарчання й сів поруч зі мною з глухим звуком" # "He let out a low animalistic growl as he sat down next to me with a soft thud."
+n "Вінсент глянув на мене й знову проковтнув слова" # "Vincent looked at me and bit back his words again."
+p "Щ-що не так?" # "W-what's wrong?"
+n "Я намагався звучати впевнено, але слова все одно вийшли з затинанням" # "I tried to sound strong but my words came out in a stutter anyways."
 $ vbase,vblush,vexp = 3,0,3
-vincent "Fucking hell."
-vincent "The 20 questions."
-n "Vincent's aggressive tone didn't hide anything from me."
-p "You look like a hurt animal, lashing out at people who are trying to help you."
-n "Vincent sealed his lips tight."
-n "He knew I was right."
-vincent "Alright smart ass."
-n "Vincent let out a heavy sigh."
-vincent "I wanted to say sorry..."
-n "His low angry tone turned soft and dark."
-vincent "For this."
+vincent "Бляха-муха" # "Fucking hell."
+vincent "Знову двадцять запитань" # "The 20 questions."
+n "Агресивний тон Вінсента нічого від мене не приховував" # "Vincent's aggressive tone didn't hide anything from me."
+p "Ти схожий на поранену тварину, що кидається на тих, хто намагається їй допомогти" # "You look like a hurt animal, lashing out at people who are trying to help you."
+n "Вінсент міцно стис губи" # "Vincent sealed his lips tight."
+n "Він знав, що я маю рацію" # "He knew I was right."
+vincent "Ну гаразд, розумнику" # "Alright smart ass."
+n "Вінсент важко зітхнув" # "Vincent let out a heavy sigh."
+vincent "Я хотів вибачитися..." # "I wanted to say sorry..."
+n "Його низький злий тон став м'яким і похмурим" # "His low angry tone turned soft and dark."
+vincent "За це" # "For this."
 $ vbase,vblush,vexp = 3,0,14
-n "Vincent motioned in my direction, his eye pausing at every cut."
-n "Every part of me that was out of place."
-n "Any part that was cut or bloody."
-n "Or broken."
-n "And in the end, he was the one that did this to me."
-n "He was the one that put me here."
-n "He hurt me."
+n "Вінсент повів рукою в мій бік, його око затримувалося на кожному порізі" # "Vincent motioned in my direction, his eye pausing at every cut."
+n "На кожній частині мене, що була не на місці" # "Every part of me that was out of place."
+n "На будь-якій, що була порізана чи закривавлена" # "Any part that was cut or bloody."
+n "Чи зламана" # "Or broken."
+n "І врешті-решт, це саме він зі мною таке зробив" # "And in the end, he was the one that did this to me."
+n "Це він кинув мене сюди" # "He was the one that put me here."
+n "Він завдав мені болю" # "He hurt me."
 menu:
-    "-Forgive him.-":
+    "-Пробачити йому-": # "-Forgive him.-"
         jump forgive_vincent
-    "-Say nothing.-":
+    "-Промовчати-": # "-Say nothing.-"
         jump dont_forgive_vincent
 
 label forgive_vincent:
-n "Maybe I was crazy but..."
-p "It's okay."
-p "I forgive you."
+n "Може, я був божевільний, але..." # "Maybe I was crazy but..."
+p "Усе гаразд" # "It's okay."
+p "Я тебе прощаю" # "I forgive you."
 $ vbase,vblush,vexp = 3,0,1
-n "He tucked his face in his arms."
-vincent "...Oh..."
-n "He sounded dejected."
+n "Він сховав обличчя в руках" # "He tucked his face in his arms."
+vincent "...О..." # "...Oh..."
+n "Він звучав пригнічено" # "He sounded dejected."
 $ vbase,vblush,vexp = 3,0,14
-p "What were you expecting?"
+p "А чого ти чекав?" # "What were you expecting?"
 $ vbase,vblush,vexp = 3,0,1
-vincent "Shit, I dunno!"
-vincent "Maybe YOU screamin' at me?"
-vincent "Telling me to fuck myself."
-vincent "'Fuck off Vince, you're the one who fuckin put me here.'"
-n "Vincent tried to immitate my voice, he did a poor job of it."
-n "I stiffled a laugh."
-vincent "Laugh it up, pup."
-vincent "You're not going to laugh very long."
-vincent "Not after-"
+vincent "Чорт, я не знаю!" # "Shit, I dunno!"
+vincent "Може, що ТИ на мене кричатимеш?" # "Maybe YOU screamin' at me?"
+vincent "Пошлеш мене нахуй" # "Telling me to fuck myself."
+vincent "«Відвали, Вінсе, це ти мене сюди, блять, запхав.»" # "'Fuck off Vince, you're the one who fuckin put me here.'"
+n "Вінсент спробував зобразити мій голос, вийшло в нього кепсько" # "Vincent tried to immitate my voice, he did a poor job of it."
+n "Я стримав сміх" # "I stiffled a laugh."
+vincent "Смійся-смійся, цуценя" # "Laugh it up, pup."
+vincent "Недовго тобі сміятися лишилось" # "You're not going to laugh very long."
+vincent "Не після-" # "Not after-"
 $ vbase,vblush,vexp = 3,0,14
-n "He stopped himself and bit his bottom lip."
-n "Vincent put his head down on his arms."
-p "You're dancing around the point."
-n "I reached out and started to stroke his hair."
-n "It looked like it would be rough."
-n "His soft hair slipped through my fingers like silk."
-n "I ran my hands through his hair, petting him lightly."
-n "Hopefully he wouldn't be angry."
-n "My hands weren't the cleanest things."
-n "Vincent leaned into my touch letting off a low sound of pleasure."
-n "I kept my hand on his head and I felt something growing under my hand."
-p "Your ears!"
+n "Він спинився й прикусив нижню губу" # "He stopped himself and bit his bottom lip."
+n "Вінсент опустив голову на руки" # "Vincent put his head down on his arms."
+p "Ти ходиш околяса" # "You're dancing around the point."
+n "Я простягнув руку й почав гладити його волосся" # "I reached out and started to stroke his hair."
+n "Здавалося, воно буде жорстким" # "It looked like it would be rough."
+n "Його м'яке волосся ковзало між моїми пальцями, наче шовк" # "His soft hair slipped through my fingers like silk."
+n "Я провів руками по його волоссю, легенько гладячи" # "I ran my hands through his hair, petting him lightly."
+n "Сподіваюся, він не розсердиться" # "Hopefully he wouldn't be angry."
+n "Мої руки були не найчистішими" # "My hands weren't the cleanest things."
+n "Вінсент подався назустріч моєму дотику, видавши низький звук задоволення" # "Vincent leaned into my touch letting off a low sound of pleasure."
+n "Я тримав руку на його голові й відчув, як щось росте під моєю долонею" # "I kept my hand on his head and I felt something growing under my hand."
+p "Твої вуха!" # "Your ears!"
 hide vincent with dissolve
 show vincent
 $ vbase,vblush,vexp = 4,0,14
-vincent "What?"
-n "He swatted my hand away and put his hand on the top of his head, feeling for himself."
-vincent "Goddamn it!"
+vincent "Що?" # "What?"
+n "Він відмахнувся від моєї руки й поклав свою на маківку, намацуючи сам" # "He swatted my hand away and put his hand on the top of his head, feeling for himself."
+vincent "Дідько!" # "Goddamn it!"
 $ vbase,vblush,vexp = 4,0,2
-p "I wanna touch them!"
+p "Я хочу їх помацати!" # "I wanna touch them!"
 $ vbase,vblush,vexp = 4,2,12
-vincent "NO FUCK OFF!"
+vincent "НІ, ВІДВАЛИ!" # "NO FUCK OFF!"
 
 menu:
-    "-Pet his ears anyways-":
-        n "I reached out to pet his ears and it twitched to the side when my fingers touched it."
-        n "I giggled softly."
-        n "His warning went on deaf ears, but he didn't seem to mind as much as he lead on."
-        vincent "I said fuck off.."
-        n "His tail was moving side to side."
-        p "It's cute."
-        vincent "IT WON'T BE SO CUTE WHEN I'M-"
-    "-Catch his tail-":
+    "-Все одно погладити його вуха-": # "-Pet his ears anyways-"
+        n "Я простягнув руку погладити його вуха, і воно смикнулося вбік, коли мої пальці торкнулися його" # "I reached out to pet his ears and it twitched to the side when my fingers touched it."
+        n "Я тихо хихикнув" # "I giggled softly."
+        n "Його попередження я пропустив повз вуха, але, схоже, він переймався цим менше, ніж вдавав" # "His warning went on deaf ears, but he didn't seem to mind as much as he lead on."
+        vincent "Я сказав відвали.." # "I said fuck off.."
+        n "Його хвіст рухався з боку в бік" # "His tail was moving side to side."
+        p "Це мило" # "It's cute."
+        vincent "БУДЕ НЕ ТАК МИЛО, КОЛИ Я-" # "IT WON'T BE SO CUTE WHEN I'M-"
+    "-Схопити його хвіст-": # "-Catch his tail-"
 
-        n "I grabbed his tail and his ears and shoulders shot straight up."
-        vincent "HEY CAREFUL."
+        n "Я схопив його за хвіст, і його вуха й плечі різко стрепенулися вгору" # "I grabbed his tail and his ears and shoulders shot straight up."
+        vincent "ГЕЙ, ОБЕРЕЖНО" # "HEY CAREFUL."
         $ vbase,vblush,vexp = 4,2,2
-        n "He curled his tail around himself and looked down."
+        n "Він обгорнув хвіст навколо себе й опустив погляд" # "He curled his tail around himself and looked down."
 
-p "What's wrong?"
-vincent "There is a REASON why I brought you here."
-n "I looked at my injuries."
-p "I told you I don't care."
+p "Що не так?" # "What's wrong?"
+vincent "Є ПРИЧИНА, чому я привів тебе сюди" # "There is a REASON why I brought you here."
+n "Я глянув на свої рани" # "I looked at my injuries."
+p "Я ж казав, мені байдуже" # "I told you I don't care."
 $ vbase,vblush,vexp = 4,0,14
-p "So, what about it...?"
-vincent "When I turn into a werewolf-"
-n "I snorted, What was he talking about."
-p "You're kidding right?"
-n "Vincent looked at me deadpan."
-n "He just pointed at his ears and I put up my hands."
-p "Point taken."
-vincent "I go after one person."
-vincent "The first bastard I see, usually."
-n "Vincent gripped his hands and looked at them."
-vincent "But, I learned to lock myself down here so I don't go looking around anymore."
-vincent "That's why you're here."
+p "То й що з того...?" # "So, what about it...?"
+vincent "Коли я перетворююся на вовкулаку-" # "When I turn into a werewolf-"
+n "Я пирхнув. Що це він таке верзе" # "I snorted, What was he talking about."
+p "Ти жартуєш, так?" # "You're kidding right?"
+n "Вінсент глянув на мене з кам'яним обличчям" # "Vincent looked at me deadpan."
+n "Він просто вказав на свої вуха, і я підняв руки" # "He just pointed at his ears and I put up my hands."
+p "Зрозумів, приймається" # "Point taken."
+vincent "Я кидаюся на одну людину" # "I go after one person."
+vincent "Зазвичай на першого-ліпшого виродка, якого побачу" # "The first bastard I see, usually."
+n "Вінсент стиснув руки й глянув на них" # "Vincent gripped his hands and looked at them."
+vincent "Але я навчився замикати себе тут, щоб більше не блукати в пошуках" # "But, I learned to lock myself down here so I don't go looking around anymore."
+vincent "Ось чому ти тут" # "That's why you're here."
 jump forgive_vincent_2
 
 label dont_forgive_vincent:
-n "I stayed quiet."
-n "I was his prisoner after all."
-n "He hurt me, that didn't mean I was going to forgive him right away."
-vincent "Well, that's all."
-n "I looked up at him."
-n "Why am I down here?"
-vincent "There is a REASON why I brought you here."
-n "I looked at my injuries."
-p "So, what about it?"
-vincent "When I turn into a werewolf-"
-n "What was he talking about?"
-p "You're kidding right?"
+n "Я мовчав" # "I stayed quiet."
+n "Зрештою, я був його бранцем" # "I was his prisoner after all."
+n "Він завдав мені болю, і це не значило, що я одразу його пробачу" # "He hurt me, that didn't mean I was going to forgive him right away."
+vincent "Ну, це все" # "Well, that's all."
+n "Я глянув угору на нього" # "I looked up at him."
+n "Чому я тут унизу?" # "Why am I down here?"
+vincent "Є ПРИЧИНА, чому я привів тебе сюди" # "There is a REASON why I brought you here."
+n "Я глянув на свої рани" # "I looked at my injuries."
+p "То й що з того?" # "So, what about it?"
+vincent "Коли я перетворююся на вовкулаку-" # "When I turn into a werewolf-"
+n "Що це він таке верзе?" # "What was he talking about?"
+p "Ти жартуєш, так?" # "You're kidding right?"
 $ temper +=10
 $ vblush,vexp = 0,2
-n "Vincent looked at me deadpan."
+n "Вінсент глянув на мене з кам'яним обличчям" # "Vincent looked at me deadpan."
 play music "vincent/vincent_changedmind.mp3"
-vincent "I go after one person."
+vincent "Я кидаюся на одну людину" # "I go after one person."
 $ temper +=10
-vincent "The first bastard I see, usually."
+vincent "Зазвичай на першого-ліпшого виродка, якого побачу" # "The first bastard I see, usually."
 $ temper +=10
-n "Vincent gripped his hands and looked at them."
-vincent "But, I learned to lock myself down here so I don't go looking around anymore."
-vincent "That's why you're here."
+n "Вінсент стиснув руки й глянув на них" # "Vincent gripped his hands and looked at them."
+vincent "Але я навчився замикати себе тут, щоб більше не блукати в пошуках" # "But, I learned to lock myself down here so I don't go looking around anymore."
+vincent "Ось чому ти тут" # "That's why you're here."
 menu:
-    "\"Why take someone down here?\"":
+    "\"Навіщо тягнути когось сюди?\"": # "Why take someone down here?"
         $ vincent_love -= 30
-        n "I spoke a bit scared."
+        n "Промовив я трохи налякано" # "I spoke a bit scared."
         $ temper +=10
-        n "Vincent's eye shifted towards me."
-        vincent "You know, you're doing the world a favor."
-        vincent "Sacrificing yourself for them."
-        vincent "If I had my way-"
+        n "Око Вінсента перевело погляд на мене" # "Vincent's eye shifted towards me."
+        vincent "Знаєш, ти робиш світові послугу" # "You know, you're doing the world a favor."
+        vincent "Жертвуєш собою заради них" # "Sacrificing yourself for them."
+        vincent "Якби моя воля-" # "If I had my way-"
         $ temper +=10
-        n "He stood up and leaned in."
-        vincent "I'd kill those people too."
-        n "He locked me on the radiator again and glared."
-        vincent "See ya later."
-        n "I watched him go and leaned my head down."
-        n "He seemed... angry."
+        n "Він підвівся й нахилився ближче" # "He stood up and leaned in."
+        vincent "Я б і тих людей повбивав" # "I'd kill those people too."
+        n "Він знову прикував мене до батареї й люто зиркнув" # "He locked me on the radiator again and glared."
+        vincent "Побачимось" # "See ya later."
+        n "Я дивився, як він іде, і опустив голову" # "I watched him go and leaned my head down."
+        n "Він здавався... злим" # "He seemed... angry."
         scene black with fade
         jump vincent_ending_checks
-    "\"Can't you let me go?\"":
+    "\"Ти не можеш мене відпустити?\"": # "Can't you let me go?"
 
         $ vincent_love -=50
-        vincent "I was wrong about you."
-        n "He stood up and growled angrily."
-        vincent "You just wanna get out of here."
-        vincent "And I don't blame you."
-        n "His somber tone gone."
+        vincent "Я в тобі помилявся" # "I was wrong about you."
+        n "Він підвівся й люто загарчав" # "He stood up and growled angrily."
+        vincent "Ти просто хочеш звідси вибратися" # "You just wanna get out of here."
+        vincent "І я тебе не звинувачую" # "And I don't blame you."
+        n "Його похмурий тон зник" # "His somber tone gone."
         $ vblush,vexp =0,2
-        vincent "BUT, I can't let you outta here."
-        vincent "And, fucking frankly, I suddenly don't give a fuck what you think of me."
-        n "He opened his weapons locker and picked out a wooden bat slinging it over his shoulder."
-        vincent "You wanna be let go so badly?"
+        vincent "АЛЕ я не можу тебе звідси випустити" # "BUT, I can't let you outta here."
+        vincent "І, чесно кажучи, блять, мені раптом стало насрати, що ти про мене думаєш" # "And, fucking frankly, I suddenly don't give a fuck what you think of me."
+        n "Він відчинив зброярню й дістав дерев'яну біту, закинувши її на плече" # "He opened his weapons locker and picked out a wooden bat slinging it over his shoulder."
+        vincent "Так сильно хочеш, щоб тебе відпустили?" # "You wanna be let go so badly?"
         $ vblush,vexp = 0,5
-        vincent "Well, darlin', I would LOVE to release you from your goddamn earthly bonds."
-        n "I jumped up from my spot and tried to run."
+        vincent "Ну, любий, я з ВЕЛИКИМ задоволенням звільню тебе від твоїх клятих земних пут" # "Well, darlin', I would LOVE to release you from your goddamn earthly bonds."
+        n "Я скочив зі свого місця й спробував тікати" # "I jumped up from my spot and tried to run."
         $ health -=10
         play sound "vincent/gunshot.mp3"
         pause (.5)
-        n "A gun shot rang out in the bunker as I felt my knee give way."
+        n "У бункері пролунав постріл, і я відчув, як моє коліно підкосилося" # "A gun shot rang out in the bunker as I felt my knee give way."
         $ health -=10
         $ vblush,vexp = 0,2
-        vincent "I don't feel like fucking chasing you."
-        n "I screamed as I held the bullet wound."
-        n "I felt the blood dripping between my fingers and he kicked me in the stomach to get me to turn over."
-        n "He pushed the bat against my nose."
-        vincent "You know how many people's skulls I've caved in with this baby?"
-        n "He started to push harder and I whimpered trying to crawl away."
-        vincent "HEY. You're not going anywhere."
+        vincent "Немає в мене, блять, настрою за тобою ганятися" # "I don't feel like fucking chasing you."
+        n "Я закричав, тримаючись за вогнепальну рану" # "I screamed as I held the bullet wound."
+        n "Я відчував, як кров сочиться між пальцями, а він ударив мене ногою в живіт, щоб перевернути" # "I felt the blood dripping between my fingers and he kicked me in the stomach to get me to turn over."
+        n "Він притиснув біту до мого носа" # "He pushed the bat against my nose."
+        vincent "Знаєш, скільки черепів я провалив оцим малятком?" # "You know how many people's skulls I've caved in with this baby?"
+        n "Він почав тиснути сильніше, а я заскиглив, намагаючись відповзти" # "He started to push harder and I whimpered trying to crawl away."
+        vincent "ГЕЙ. Ти нікуди не підеш" # "HEY. You're not going anywhere."
         show CG_Vincent_with_bat with dissolve
-        n "I could feel the wood smash into my nose with one swift movement, breaking the bone." with vpunch
+        n "Я відчув, як дерево одним різким рухом врізається мені в ніс, ламаючи кістку" with vpunch # "I could feel the wood smash into my nose with one swift movement, breaking the bone."
         $ health -=10
-        n "I let out a high pitched scream as the blood filled my senses."
-        n "Blood dripped down my face as he pushed his boot into my sternum."
-        n "I could feel the air pushing out of my lungs as I put my hands weakly on his boot."
-        n "Vincent clentched his teeth and pulled the bat back, smashing my arm." with vpunch
+        n "Я пронизливо закричав, коли кров заполонила всі відчуття" # "I let out a high pitched scream as the blood filled my senses."
+        n "Кров стікала моїм обличчям, поки він вдавлював чобіт мені в грудину" # "Blood dripped down my face as he pushed his boot into my sternum."
+        n "Я відчував, як повітря вибиває з легень, слабко хапаючись руками за його чобіт" # "I could feel the air pushing out of my lungs as I put my hands weakly on his boot."
+        n "Вінсент зціпив зуби й замахнувся бітою, трощачи мою руку" with vpunch # "Vincent clentched his teeth and pulled the bat back, smashing my arm."
         $ health -=10
-        n "I let out a scream as the blunt force shattered my bone."
-        n "The pain radiated up my arm and made me feel sick."
-        vincent "I can't believe...you."
+        n "Я закричав, коли тупий удар роздробив мою кістку" # "I let out a scream as the blunt force shattered my bone."
+        n "Біль розтікався по руці й викликав нудоту" # "The pain radiated up my arm and made me feel sick."
+        vincent "Не можу повірити...в тебе" # "I can't believe...you."
         $ vblush,vexp = 0,13
-        n "He let out a frustrated growl."
+        n "Він розчаровано загарчав" # "He let out a frustrated growl."
         $ vblush,vexp = 0,2
-        p "S-"
-        vincent "What was that?"
-        n "Vincent brought up the bat and smashed my teeth into my face."
-        vincent "Who gave you FUCKING permission to talk?"
-        n "I coughed."
-        n "It was all bone... and blood."
-        n "The world was spinning around me."
-        n "But I wasn't dead."
-        vincent "You're going to die."
-        n "I heard him say as my ears rang."
-        vincent "I went too easy on you."
-        vincent "I FUCKING trusted you."
-        vincent "What do I get in return."
-        n "I felt his thumbs over my eyes as he pushed them into the sockets."
-        n "I could feel my eyes bursting under the pressure of his hands."
+        p "В-" # "S-"
+        vincent "Що ти сказав?" # "What was that?"
+        n "Вінсент замахнувся бітою й вбив мої зуби мені в обличчя" # "Vincent brought up the bat and smashed my teeth into my face."
+        vincent "Хто, блять, дозволив тобі говорити?" # "Who gave you FUCKING permission to talk?"
+        n "Я закашлявся" # "I coughed."
+        n "Самі кістки... і кров" # "It was all bone... and blood."
+        n "Світ обертався навколо мене" # "The world was spinning around me."
+        n "Але я не був мертвий" # "But I wasn't dead."
+        vincent "Ти помреш" # "You're going to die."
+        n "Почув я його слова крізь дзвін у вухах" # "I heard him say as my ears rang."
+        vincent "Я був з тобою надто м'яким" # "I went too easy on you."
+        vincent "Я, блять, тобі довіряв" # "I FUCKING trusted you."
+        vincent "І що я отримую взамін" # "What do I get in return."
+        n "Я відчув його великі пальці на своїх очах, коли він вдавлював їх у очниці" # "I felt his thumbs over my eyes as he pushed them into the sockets."
+        n "Я відчував, як мої очі лопаються під тиском його рук" # "I could feel my eyes bursting under the pressure of his hands."
         $ temper +=100
         $ health -=100
         scene black with fade
-        vincent "Fuck you."
-        n "I tried to scream."
-        n "It was all blood."
-        n "Just kill me."
-        n "I felt something tear through me... like a dog."
+        vincent "Пішов ти нахуй" # "Fuck you."
+        n "Я спробував закричати" # "I tried to scream."
+        n "Сама кров" # "It was all blood."
+        n "Просто вбий мене" # "Just kill me."
+        n "Я відчув, як щось роздирає мене... наче пес" # "I felt something tear through me... like a dog."
         hide screen health_bar
         hide screen sanity_bar
         hide screen vincent_rage_bar
@@ -4083,8 +4083,8 @@ menu:
         $ persistent.vincent_ending_bat = True
         scene endslate with Dissolve(1.0)
         screen vincent_ending_bat:
-            text "{=endslate_title}You Died!{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-            text "\n\n\n\n{=endslate_subtitle}Vincent beat you to death.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+            text "{=endslate_title}Ти помер!{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died!"
+            text "\n\n\n\n{=endslate_subtitle}Вінсент забив тебе до смерті.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "Vincent beat you to death."
         show screen vincent_ending_bat 
         with Dissolve(1.0)
         pause
@@ -4094,382 +4094,382 @@ menu:
 
 label forgive_vincent_2:
 menu:
-    "\"Why take someone down here though?\"":
-        p "Why can't you just lock yourself down here?"
-        vincent "It's the bloodlust."
-        vincent "If I don't get a fair amount then well..."
-        vincent "Have you heard of the southside cabin massacre?"
-        n "I rubbed my chin."
-        p "I think I heard about that on the news."
-        p "A few years back, they said a pack of wolves-"
-        vincent "Murdered 16 people."
-        vincent "That was me."
+    "\"Але навіщо тягнути когось сюди?\"": # "Why take someone down here though?"
+        p "Чому б тобі просто не замикати себе тут?" # "Why can't you just lock yourself down here?"
+        vincent "Це кровожерливість" # "It's the bloodlust."
+        vincent "Якщо мені її не вистачає, то ну..." # "If I don't get a fair amount then well..."
+        vincent "Ти чув про різанину в хатині на південній околиці?" # "Have you heard of the southside cabin massacre?"
+        n "Я потер підборіддя" # "I rubbed my chin."
+        p "Здається, я чув про це в новинах" # "I think I heard about that on the news."
+        p "Кілька років тому, казали, ніби зграя вовків-" # "A few years back, they said a pack of wolves-"
+        vincent "Убила 16 людей" # "Murdered 16 people."
+        vincent "Це був я" # "That was me."
         $ vbase,vblush,vexp = 4,0,14
-        p "WHAT!?"
-        vincent "I went a year without killing someone."
-        vincent "Well, on my full moon nights."
-        n "I looked at him narrowing my eyes."
-        vincent "Look."
+        p "ЩО!?" # "WHAT!?"
+        vincent "Я цілий рік нікого не вбивав" # "I went a year without killing someone."
+        vincent "Ну, у ночі повного місяця" # "Well, on my full moon nights."
+        n "Я глянув на нього, примруживши очі" # "I looked at him narrowing my eyes."
+        vincent "Слухай" # "Look."
         $ vbase,vblush,vexp = 4,0,12
-        vincent "I'm not very good at self control."
-        p "You can say that again."
-        vincent "But!"
-        vincent "It's what happens when I try to be 'conservative' with my murderin'."
-        vincent "PEOPLE STILL NEED THEIR ASS BEAT ALRIGHT?"
+        vincent "Я не дуже вмію себе контролювати" # "I'm not very good at self control."
+        p "І не кажи" # "You can say that again."
+        vincent "Але!" # "But!"
+        vincent "Ось що стається, коли я намагаюся бути «стриманим» зі своїми вбивствами" # "It's what happens when I try to be 'conservative' with my murderin'."
+        vincent "ЛЮДЯМ ВСЕ ОДНО ТРЕБА НАВАЛЯТИ, ЗРОЗУМІЛО?" # "PEOPLE STILL NEED THEIR ASS BEAT ALRIGHT?"
         $ vbase,vblush,vexp = 4,0,1
-        p "Are you trying to convince me or yourself?"
-        n "He punched me in the arm and I rubbed it."
-        p "Ow."
+        p "Ти намагаєшся переконати мене чи себе?" # "Are you trying to convince me or yourself?"
+        n "Він ударив мене в руку, і я потер її" # "He punched me in the arm and I rubbed it."
+        p "Ой" # "Ow."
         $ vbase,vblush,vexp = 4,0,17
-        vincent "Don't be a baby."
-        vincent "I don't hit that hard."
-        p "Yes you do."
-    "\"Can't you let me go?\"":
+        vincent "Не будь дитиною" # "Don't be a baby."
+        vincent "Я не так сильно й б'ю" # "I don't hit that hard."
+        p "Ще й як сильно" # "Yes you do."
+    "\"Ти не можеш мене відпустити?\"": # "Can't you let me go?"
 
-        n "Vincent paused, thinking and looking down."
-        n "He looked at his hands with a somber expression and shifted his gaze back to me."
-        n "His ears receeded back, his tail gone."
+        n "Вінсент завмер, замислившись і опустивши погляд" # "Vincent paused, thinking and looking down."
+        n "Він глянув на свої руки з похмурим виразом і знову перевів погляд на мене" # "He looked at his hands with a somber expression and shifted his gaze back to me."
+        n "Його вуха зникли, хвіст щез" # "His ears receeded back, his tail gone."
         hide vincent with dissolve
         $ vbase,vblush,vexp = 3,0,14
         show vincent with dissolve
-        vincent "You want to be let go that badly..?"
-        n "Vincent got up and leaned over me."
-        n "I nodded my head and he ran his hand through my hair."
-        n "He pushed his hands against my throat and squeezed."
-        vincent "It'll be over in a few seconds."
-        n "I heard him say."
-        n "I started to see stars as I put my hands on his arm."
-        n "He wasn't killing me."
-        n "I felt something warm hit my hand."
+        vincent "Ти так сильно хочеш, щоб тебе відпустили..?" # "You want to be let go that badly..?"
+        n "Вінсент підвівся й навис наді мною" # "Vincent got up and leaned over me."
+        n "Я кивнув, і він провів рукою по моєму волоссю" # "I nodded my head and he ran his hand through my hair."
+        n "Він притиснув руки до мого горла й стиснув" # "He pushed his hands against my throat and squeezed."
+        vincent "За кілька секунд усе скінчиться" # "It'll be over in a few seconds."
+        n "Почув я його слова" # "I heard him say."
+        n "У мене в очах замиготіли зірки, і я поклав руки на його передпліччя" # "I started to see stars as I put my hands on his arm."
+        n "Він мене не вбивав" # "He wasn't killing me."
+        n "Я відчув, як щось тепле впало мені на руку" # "I felt something warm hit my hand."
         $ vbase,vblush,vexp = 3,0,15
-        n "I gripped his arm."
-        p "V-vincent."
-        vincent "...I love you."
+        n "Я вчепився в його руку" # "I gripped his arm."
+        p "В-вінсент" # "V-vincent."
+        vincent "...Я тебе кохаю" # "...I love you."
         hide screen health_bar
         hide screen sanity_bar
         hide screen vincent_rage_bar
         scene black with fade
-        n "I passed out."
-        n "It felt like an eternity of darkness."
-        n "I just wanted to talk to Vincent again."
-        n "It felt like a dream, watching the wolf in front of me."
+        n "Я знепритомнів" # "I passed out."
+        n "Це відчувалося як вічність темряви" # "It felt like an eternity of darkness."
+        n "Я просто хотів знову поговорити з Вінсентом" # "I just wanted to talk to Vincent again."
+        n "Це було наче сон — дивитися на вовка переді мною" # "It felt like a dream, watching the wolf in front of me."
         show CG_vincent_dream with dissolve
-        n "He turned his back on me and started to walk away."
+        n "Він повернувся до мене спиною й почав іти геть" # "He turned his back on me and started to walk away."
         show CG_vincent_dream1 with dissolve
-        n "I wanted to stop him but."
+        n "Я хотів його спинити, але" # "I wanted to stop him but."
         show CG_vincent_dream2 with dissolve
-        p "DON'T GO."
-        n "I screamed into the darkness."
-        n "I woke up in a cold sweat and looked around."
+        p "НЕ ЙДИ" # "DON'T GO."
+        n "Закричав я в темряву" # "I screamed into the darkness."
+        n "Я прокинувся в холодному поту й роззирнувся" # "I woke up in a cold sweat and looked around."
         scene vincent_hospital with fade
-        n "I was in less pain, all my wounds were covered."
-        n "I was in a hospital room."
-        n "There were nurses and doctors that roamed around me."
-        n "The police asked what happened to me?"
-        n "I told them I didn't remember."
-        n "I did.. I remembered everything."
-        n "They talked about the person who dropped me off."
-        n "A tall man with a lot of scars."
-        n "I told them he was a friend."
-        n "A friend... I felt my tears well up around my eyes."
-        n "I wanted to leave."
-        n "It was a few days before they discharged me from the hospital."
-        n "I was just on my way out when a nurse handed me an envelope."
-        n "Her words came like a buzzing in my ears as she spoke."
-        n "I shook as I opened the envelope."
-        n "There was note inside, an attempt at good handwriting, simple words."
-        n "I stared at the note as I clutched it in my hand."
+        n "Болю поменшало, усі мої рани були перев'язані" # "I was in less pain, all my wounds were covered."
+        n "Я був у лікарняній палаті" # "I was in a hospital room."
+        n "Довкола мене снували медсестри й лікарі" # "There were nurses and doctors that roamed around me."
+        n "Поліція питала, що зі мною сталося" # "The police asked what happened to me?"
+        n "Я сказав, що не пам'ятаю" # "I told them I didn't remember."
+        n "Насправді пам'ятав.. я пам'ятав усе" # "I did.. I remembered everything."
+        n "Вони говорили про того, хто мене привіз" # "They talked about the person who dropped me off."
+        n "Високий чоловік з безліччю шрамів" # "A tall man with a lot of scars."
+        n "Я сказав їм, що він друг" # "I told them he was a friend."
+        n "Друг... Я відчув, як сльози набігають на очі" # "A friend... I felt my tears well up around my eyes."
+        n "Я хотів піти" # "I wanted to leave."
+        n "Минуло кілька днів, перш ніж мене виписали з лікарні" # "It was a few days before they discharged me from the hospital."
+        n "Я вже виходив, коли медсестра простягнула мені конверт" # "I was just on my way out when a nurse handed me an envelope."
+        n "Її слова долинали до мене, наче дзижчання у вухах" # "Her words came like a buzzing in my ears as she spoke."
+        n "Я тремтів, відкриваючи конверт" # "I shook as I opened the envelope."
+        n "Усередині була записка, спроба гарного почерку, прості слова" # "There was note inside, an attempt at good handwriting, simple words."
+        n "Я витріщився на записку, стискаючи її в руці" # "I stared at the note as I clutched it in my hand."
         $ persistent.vincent_ending_letgo = True
         scene CG_vincent_note with Dissolve(1.0)
         pause
         return
-    "\"You can't control yourself?\"":
+    "\"Ти не можеш себе контролювати?\"": # "You can't control yourself?"
 
-        n "He shook his head."
-        vincent "Nah, I wish I could."
-        vincent "I'm feral when I'm in werewolf form."
-        vincent "One of the perks."
-        p "Sounds dangerous."
-        vincent "You're damn right it is."
+        n "Він похитав головою" # "He shook his head."
+        vincent "Не-а, хотів би я вміти" # "Nah, I wish I could."
+        vincent "У вовкулацькій формі я стаю диким" # "I'm feral when I'm in werewolf form."
+        vincent "Один із бонусів" # "One of the perks."
+        p "Звучить небезпечно" # "Sounds dangerous."
+        vincent "Ще б пак, чорт забирай" # "You're damn right it is."
 
-    "\"Who's Sano Kojima?\"" if persistent.character_unlock_sano == True:
-        vincent "How do you know that name?"
-        vincent "Tsk. I don't know who that is!"
-        vincent "He just showed up one day and handed me this red patch."
-        n "He seemed frustrated and backed up just a bit."
-        n "He looked at the desk and then back to me."
-        vincent "What do you know about him?"
-        p "I just know he's a doctor, that's all."
-        n "I said nervously shifting around."
-        n "He sighed and rubbed the back of his head."
-        vincent "So, no more than me huh?"
-        n "He let out a sigh."
-        vincent "Whatever, it doesn't bother me anymore anyways."
+    "\"Хто такий Сано Коджіма?\"" if persistent.character_unlock_sano == True: # "Who's Sano Kojima?"
+        vincent "Звідки ти знаєш це ім'я?" # "How do you know that name?"
+        vincent "Тц. Я не знаю, хто це!" # "Tsk. I don't know who that is!"
+        vincent "Він одного дня просто з'явився й вручив мені цю червону нашивку" # "He just showed up one day and handed me this red patch."
+        n "Він здавався роздратованим і трохи відступив" # "He seemed frustrated and backed up just a bit."
+        n "Він глянув на стіл, а тоді знову на мене" # "He looked at the desk and then back to me."
+        vincent "Що ти про нього знаєш?" # "What do you know about him?"
+        p "Я лише знаю, що він лікар, оце й усе" # "I just know he's a doctor, that's all."
+        n "Сказав я, нервово соваючись" # "I said nervously shifting around."
+        n "Він зітхнув і потер потилицю" # "He sighed and rubbed the back of his head."
+        vincent "Тобто не більше за мене, га?" # "So, no more than me huh?"
+        n "Він зітхнув" # "He let out a sigh."
+        vincent "Та байдуже, мене це все одно вже не турбує" # "Whatever, it doesn't bother me anymore anyways."
 
 
 label vincent_sano_goodending:
-n "Vincent sighed and leaned against the wall."
-vincent "No one wants to hear me bitch about life."
-vincent "It's shit and we all know it."
+n "Вінсент зітхнув і притулився до стіни" # "Vincent sighed and leaned against the wall."
+vincent "Нікому не хочеться слухати, як я скиглю про життя" # "No one wants to hear me bitch about life."
+vincent "Воно лайно, і ми всі це знаємо" # "It's shit and we all know it."
 $ vbase,vblush,vexp = 4,0,14
-n "He stood up and dusted off his jeans."
-vincent "You're not going to be around much longer at any rate."
-vincent "I'm sorry..."
-n "He sounded upset."
-n "Vincent turned towards the door."
-n "I didn't want him to leave me alone in here."
+n "Він підвівся й обтрусив джинси" # "He stood up and dusted off his jeans."
+vincent "Ти все одно недовго тут пробудеш" # "You're not going to be around much longer at any rate."
+vincent "Пробач..." # "I'm sorry..."
+n "Він звучав засмучено" # "He sounded upset."
+n "Вінсент повернувся до дверей" # "Vincent turned towards the door."
+n "Я не хотів, щоб він лишав мене тут самого" # "I didn't want him to leave me alone in here."
 menu:
-    "-Catch him-":
+    "-Схопити його-": # "-Catch him-"
         jump vincent_Catchhim_Goodending
-    "\"You don't have to be alone.\"":
+    "\"Тобі не обов'язково бути самому\"": # "You don't have to be alone."
         jump vincent_comfort_goodending
 
 
 label vincent_comfort_goodending:
-vincent "I have to be alone."
-n "Vincent said turning his back to me."
-n "He pulled a black leather collar out of his pocket and gripped it hard."
-vincent "I've made it pretty clear that I can't take care of anything."
-vincent "Or anyone."
+vincent "Я мушу бути сам" # "I have to be alone."
+n "Сказав Вінсент, повернувшись до мене спиною" # "Vincent said turning his back to me."
+n "Він витягнув з кишені чорний шкіряний нашийник і міцно стиснув його" # "He pulled a black leather collar out of his pocket and gripped it hard."
+vincent "Я ж чітко дав зрозуміти, що ні про що не можу подбати" # "I've made it pretty clear that I can't take care of anything."
+vincent "Ні про кого" # "Or anyone."
 $ vbase,vblush,vexp = 4,0,2
-n "He said throwing it into the wall, bounced off the wall with a hollow sound and hit the floor."
-n "He stared blankly down at it."
-vincent "Not even myself."
-n "He said as he reached for the door."
-n "I jumped up and grabbed his arm stopping him from opening the latch."
-p "Stop."
-p "Please... Stop."
+n "Сказав він, жбурнувши його об стіну; він відскочив з глухим звуком і впав на підлогу" # "He said throwing it into the wall, bounced off the wall with a hollow sound and hit the floor."
+n "Він тупо втупився в нього" # "He stared blankly down at it."
+vincent "Навіть про себе самого" # "Not even myself."
+n "Сказав він, потягнувшись до дверей" # "He said as he reached for the door."
+n "Я скочив і схопив його за руку, не давши відчинити засув" # "I jumped up and grabbed his arm stopping him from opening the latch."
+p "Стій" # "Stop."
+p "Будь ласка... Стій" # "Please... Stop."
 $ vbase,vblush,vexp = 4,0,18
-n "I begged as I grabbed his arm."
-p "I don't want you to leave."
-n "Vincent pulled his hand back as if he was going to backhand me but stopped."
-n "I didn't flinch."
-n "He reached down and put his hand on my cheek."
-vincent "Don't look at me like that."
-vincent "You're gonna make me-"
+n "Благав я, вчепившись у його руку" # "I begged as I grabbed his arm."
+p "Я не хочу, щоб ти йшов" # "I don't want you to leave."
+n "Вінсент відвів руку, ніби збирався дати мені ляпаса, але спинився" # "Vincent pulled his hand back as if he was going to backhand me but stopped."
+n "Я не здригнувся" # "I didn't flinch."
+n "Він нахилився й поклав руку мені на щоку" # "He reached down and put his hand on my cheek."
+vincent "Не дивись на мене так" # "Don't look at me like that."
+vincent "Ти змусиш мене-" # "You're gonna make me-"
 $ vbase,vblush,vexp = 4,0,18
-p "Change your mind?"
-p "It sounds like you already have."
-n "He kneeled down in front of me and wrapped his arms around my waist."
-n "He buried his face into my stomach and let out a soft sound."
+p "Передумати?" # "Change your mind?"
+p "Схоже, ти вже передумав" # "It sounds like you already have."
+n "Він опустився на коліна переді мною й обхопив руками мою талію" # "He kneeled down in front of me and wrapped his arms around my waist."
+n "Він уткнувся обличчям мені в живіт і тихо застогнав" # "He buried his face into my stomach and let out a soft sound."
 $ vbase,vblush,vexp = 4,0,15
-n "I put my hand on his head and ran my fingers through his hair."
-vincent "Stop."
-vincent "Stop being nice to me."
-vincent "I don't deserve it."
+n "Я поклав руку йому на голову й провів пальцями по волоссю" # "I put my hand on his head and ran my fingers through his hair."
+vincent "Припини" # "Stop."
+vincent "Припини бути добрим до мене" # "Stop being nice to me."
+vincent "Я цього не заслуговую" # "I don't deserve it."
 menu:
-    "-Be firm-":
+    "-Бути наполегливим-": # "-Be firm-"
         jump vincent_firm_powerbottom
-    "-Be gentle-":
+    "-Бути ніжним-": # "-Be gentle-"
 
-        n "I put my hands on his shoulders and pushed his arms open."
-        p "You do."
-        p "I'm not the one that's being broken here."
-        n "I said leaning forward and hugging him hard."
-        p "You're too hard on yourself."
-        n "He wrapped his arms around me and squeezed, he held me tightly."
-        n "But, there was a gentle hesitance in his embrace, making sure that he wouldn't squeeze too roughly."
-        n "He held on."
+        n "Я поклав руки йому на плечі й розвів його руки" # "I put my hands on his shoulders and pushed his arms open."
+        p "Заслуговуєш" # "You do."
+        p "Це не мене тут ламають" # "I'm not the one that's being broken here."
+        n "Сказав я, нахилившись уперед і міцно його обійнявши" # "I said leaning forward and hugging him hard."
+        p "Ти надто суворий до себе" # "You're too hard on yourself."
+        n "Він обхопив мене руками й стиснув, міцно притиснувши" # "He wrapped his arms around me and squeezed, he held me tightly."
+        n "Але в його обіймах була ніжна нерішучість, ніби він стежив, щоб не стиснути надто грубо" # "But, there was a gentle hesitance in his embrace, making sure that he wouldn't squeeze too roughly."
+        n "Він тримався" # "He held on."
         $ vbase,vblush,vexp = 4,0,14
-        n "Like he'd never see me again."
-        vincent "I'm always hard on myself."
-        n "He muttered into my shoulder."
-        n "He pulled back slightly and I leaned in."
-        n "He met me halfway and kissed my lips."
+        n "Ніби більше ніколи мене не побачить" # "Like he'd never see me again."
+        vincent "Я завжди суворий до себе" # "I'm always hard on myself."
+        n "Пробурмотів він мені в плече" # "He muttered into my shoulder."
+        n "Він трохи відсторонився, а я подався ближче" # "He pulled back slightly and I leaned in."
+        n "Він рушив назустріч і поцілував мене в губи" # "He met me halfway and kissed my lips."
         $ vbase,vblush,vexp = 4,0,11
-        n "His hands were shaking and he pulled away."
+        n "Його руки тремтіли, і він відсторонився" # "His hands were shaking and he pulled away."
         jump vincent_goodending
 
 
 label vincent_firm_powerbottom:
-p "Shut up."
+p "Стули пельку" # "Shut up."
 $ vbase,vblush,vexp = 4,0,7
-n "Vincent's eye shot open and he looked up at me."
-n "I put my hands on his face and pushed him as hard as I could to get him to sit back."
+n "Око Вінсента широко розплющилося, і він глянув угору на мене" # "Vincent's eye shot open and he looked up at me."
+n "Я поклав руки йому на обличчя й щосили штовхнув, щоб він відкинувся назад" # "I put my hands on his face and pushed him as hard as I could to get him to sit back."
 $ vbase,vblush,vexp = 4,0,1
-n "He did what I wanted and sat back looking up at me."
-p "Shut up."
-p "You don't get to decide what I'm feeling for me."
-n "I said grinding down on him and placing my hands on his shoulders."
-n "He let out a soft panting sound as he put his hands on my hips."
-n "I moved my hips over his waist, feeling him getting hard underneath me."
-vincent "What are you doing?"
-n "He growled softly."
+n "Він зробив, як я хотів, і відкинувся назад, дивлячись угору на мене" # "He did what I wanted and sat back looking up at me."
+p "Стули пельку" # "Shut up."
+p "Не тобі вирішувати, що я відчуваю" # "You don't get to decide what I'm feeling for me."
+n "Сказав я, тручись об нього й кладучи руки йому на плечі" # "I said grinding down on him and placing my hands on his shoulders."
+n "Він тихо засопів, поклавши руки мені на стегна" # "He let out a soft panting sound as he put his hands on my hips."
+n "Я рухав стегнами над його поясом, відчуваючи, як він твердне піді мною" # "I moved my hips over his waist, feeling him getting hard underneath me."
+vincent "Що ти робиш?" # "What are you doing?"
+n "Він тихо загарчав" # "He growled softly."
 $ vbase,vblush,vexp = 4,2,1
-p "You're wanted, you have NO say in it."
-n "I said leaning into his soft ear."
-p "...I want you."
-p "I love you."
-vincent "I love you to- AGH"
+p "Тебе бажають, і твоєї думки тут НЕ питають" # "You're wanted, you have NO say in it."
+n "Сказав я, нахилившись до його м'якого вуха" # "I said leaning into his soft ear."
+p "...Я хочу тебе" # "...I want you."
+p "Я тебе кохаю" # "I love you."
+vincent "І я тебе ко- АГХ" # "I love you to- AGH"
 $ vbase,vblush,vexp = 4,2,10
-n "I licked the ear tip and nibbled it."
-n "Enjoying the sound of pleasure he made under me."
-n "He bucked up against my hips and I could feel his erection through his pants."
-p "I'm going to show you."
-n "I said seeing that he was letting me do as I pleased."
-n "I pulled his jeans open and slid down on top of his erection."
-n "It felt different than the other times we were together."
-n "This was on my terms."
-n "I let out a loud moan as I felt his nails digging into my hips."
-n "It wasn't deep enough to do any damage but they'd leave scars."
-p "Yes... mark me up... Vincent."
-n "I rocked my body on top of him."
-n "Vincent moaned and growled underneath me, pushing hard up into me."
-n "I could feel his mouth on my chest, sucking on my skin."
-n "He bit down and licked my skin, leaving purple marks all over me."
-n "I could feel myself getting closer to orgasming as he let out a loud growl underneath me."
-vincent "...[player_name]..."
+n "Я лизнув кінчик вуха й прикусив його" # "I licked the ear tip and nibbled it."
+n "Насолоджуючись звуком задоволення, який він видав піді мною" # "Enjoying the sound of pleasure he made under me."
+n "Він вигнувся назустріч моїм стегнам, і я відчув його ерекцію крізь штани" # "He bucked up against my hips and I could feel his erection through his pants."
+p "Я тобі покажу" # "I'm going to show you."
+n "Сказав я, бачачи, що він дозволяє мені робити, що заманеться" # "I said seeing that he was letting me do as I pleased."
+n "Я розстебнув його джинси й опустився на його ерекцію" # "I pulled his jeans open and slid down on top of his erection."
+n "Це відчувалося інакше, ніж усі інші наші рази" # "It felt different than the other times we were together."
+n "Цього разу на моїх умовах" # "This was on my terms."
+n "Я голосно застогнав, відчувши, як його нігті впиваються мені в стегна" # "I let out a loud moan as I felt his nails digging into my hips."
+n "Не досить глибоко, щоб завдати шкоди, але сліди лишаться" # "It wasn't deep enough to do any damage but they'd leave scars."
+p "Так... залиш на мені сліди... Вінсенте" # "Yes... mark me up... Vincent."
+n "Я розгойдував тіло на ньому зверху" # "I rocked my body on top of him."
+n "Вінсент стогнав і гарчав піді мною, сильно вштовхуючись у мене" # "Vincent moaned and growled underneath me, pushing hard up into me."
+n "Я відчував його рот на своїх грудях, як він смокче мою шкіру" # "I could feel his mouth on my chest, sucking on my skin."
+n "Він кусав і облизував мою шкіру, лишаючи фіолетові сліди по всьому тілу" # "He bit down and licked my skin, leaving purple marks all over me."
+n "Я відчував, як наближаюся до оргазму, поки він голосно загарчав піді мною" # "I could feel myself getting closer to orgasming as he let out a loud growl underneath me."
+vincent "...[player_name]..." # "...[player_name]..."
 $ vbase,vblush,vexp = 4,2,11
-n "I could feel myself tightening as he called out for me."
-n "I felt a warm liquid fill me up as I slumped backwards."
-vincent "Fine... you win."
-n "He said with soft pants as he leaned over me and kissed me gently on the mouth."
-p "Good."
+n "Я відчув, як стискаюся, коли він вигукнув моє ім'я" # "I could feel myself tightening as he called out for me."
+n "Я відчув, як тепла рідина наповнює мене, і відкинувся назад" # "I felt a warm liquid fill me up as I slumped backwards."
+vincent "Гаразд... твоя взяла" # "Fine... you win."
+n "Сказав він, тихо задихаючись, і, нахилившись наді мною, ніжно поцілував мене в губи" # "He said with soft pants as he leaned over me and kissed me gently on the mouth."
+p "Добре" # "Good."
 jump vincent_goodending
 
 label vincent_Catchhim_Goodending:
-n "I sprung up out of my spot."
-p "GOTCHA."
-n "I tackled him as hard as I could." with vpunch
+n "Я скочив зі свого місця" # "I sprung up out of my spot."
+p "ПОПАВСЯ" # "GOTCHA."
+n "Я щосили налетів на нього" with vpunch # "I tackled him as hard as I could."
 $ vbase,vblush,vexp = 4,2,7
-n "He turned around."
-n "Despite my best efforts to tackle him, he didn't budge."
+n "Він обернувся" # "He turned around."
+n "Попри всі мої зусилля збити його з ніг, він навіть не поворухнувся" # "Despite my best efforts to tackle him, he didn't budge."
 $ vbase,vblush,vexp = 4,2,1
-n "I backed up a smile creeping up on my face."
-p "Catch me if you can."
-n "His eye widened as I teetered away."
-n "I looked stupid."
-n "I couldn't run very well and I was in some pain."
-n "What else could I do to keep him here?"
-n "I could hear him thumping behind me and he tackled me back sending us both sailing into the floor."
-vincent "You gotta be nuts."
-vincent "I just told you I was a werewolf and you wanna play games with me."
-n "Vincent rubbed his fingers against my lips."
-n "I opened my mouth, licking the tips of his fingers."
-n "They tasted like metal."
-n "I bit down playfully on his skin."
-n "He let out a low pleasured growl."
-n "He pulled out his fingers and left them on my face, rubbing his thumb against my cheek."
-p "I didn't want you to leave."
-p "I-if I'm not gonna be here longer, then-"
-p "I want you."
+n "Я позадкував, і на моєму обличчі розповзлася усмішка" # "I backed up a smile creeping up on my face."
+p "Спіймай мене, якщо зможеш" # "Catch me if you can."
+n "Його око розширилося, коли я, хитаючись, відступив" # "His eye widened as I teetered away."
+n "Я виглядав по-дурному" # "I looked stupid."
+n "Бігати в мене виходило кепсько, та й було доволі боляче" # "I couldn't run very well and I was in some pain."
+n "Що ще я міг зробити, щоб його втримати?" # "What else could I do to keep him here?"
+n "Я чув, як він гупає позаду, і він налетів на мене у відповідь, від чого ми обидва полетіли на підлогу" # "I could hear him thumping behind me and he tackled me back sending us both sailing into the floor."
+vincent "Ти, певно, здурів" # "You gotta be nuts."
+vincent "Я щойно сказав тобі, що я вовкулака, а ти зі мною в ігри бавитися хочеш" # "I just told you I was a werewolf and you wanna play games with me."
+n "Вінсент провів пальцями по моїх губах" # "Vincent rubbed his fingers against my lips."
+n "Я відкрив рота, облизуючи кінчики його пальців" # "I opened my mouth, licking the tips of his fingers."
+n "Вони мали металевий присмак" # "They tasted like metal."
+n "Я грайливо прикусив його шкіру" # "I bit down playfully on his skin."
+n "Він видав низьке задоволене гарчання" # "He let out a low pleasured growl."
+n "Він витягнув пальці й лишив їх на моєму обличчі, потираючи великим пальцем мою щоку" # "He pulled out his fingers and left them on my face, rubbing his thumb against my cheek."
+p "Я не хотів, щоб ти йшов" # "I didn't want you to leave."
+p "Я-якщо мені лишилося тут недовго, то-" # "I-if I'm not gonna be here longer, then-"
+p "Я хочу тебе" # "I want you."
 $ vbase,vblush,vexp = 4,2,7
-n "Vincent leaned down and nuzzled my neck, sniffing my skin."
-vincent "You're insane."
+n "Вінсент нахилився й уткнувся в мою шию, вдихаючи запах шкіри" # "Vincent leaned down and nuzzled my neck, sniffing my skin."
+vincent "Ти божевільний" # "You're insane."
 $ vbase,vblush,vexp = 4,2,16
-n "Vincent kissed my neck."
-n "I let out a small pleasured moan as I felt his tongue on my shoulder."
-n "He bit down on me."
-n "I was bleeding, but it was nothing."
-n "I could take his little love bites."
-n "I lifted my hips as he ran his rough hands down my back."
-n "He pressed his lips against mine."
-n "His kiss sent my body aflame."
-n "It was hungry, like he was going to eat me."
-n "I moaned into his lips."
-n "I wrapped my arms around the back of his neck forcing him down."
-n "I pushed my tongue into his mouth, fighting him for dominance."
-n "Vincent didn't back down as he filled my mouth."
-n "I rubbed against him, I could feel how hard he was under his pants."
-p "Vin-vincent."
-n "I moaned out finally breaking our kiss for some air."
-n "His ears perked as he looked down at me."
+n "Вінсент поцілував мою шию" # "Vincent kissed my neck."
+n "Я тихо застогнав від задоволення, відчувши його язик на плечі" # "I let out a small pleasured moan as I felt his tongue on my shoulder."
+n "Він вкусив мене" # "He bit down on me."
+n "Я кровив, але це були дрібниці" # "I was bleeding, but it was nothing."
+n "Я міг витерпіти його маленькі любовні укуси" # "I could take his little love bites."
+n "Я підняв стегна, поки він проводив своїми грубими руками по моїй спині" # "I lifted my hips as he ran his rough hands down my back."
+n "Він притиснув свої губи до моїх" # "He pressed his lips against mine."
+n "Його поцілунок запалив моє тіло" # "His kiss sent my body aflame."
+n "Він був жадібний, ніби він збирався мене з'їсти" # "It was hungry, like he was going to eat me."
+n "Я застогнав йому в губи" # "I moaned into his lips."
+n "Я обхопив руками його шию, притягуючи ближче" # "I wrapped my arms around the back of his neck forcing him down."
+n "Я проштовхнув язика йому в рот, борючись за домінування" # "I pushed my tongue into his mouth, fighting him for dominance."
+n "Вінсент не поступався, заповнюючи мій рот" # "Vincent didn't back down as he filled my mouth."
+n "Я потерся об нього, відчуваючи, який він твердий під штанами" # "I rubbed against him, I could feel how hard he was under his pants."
+p "Він-вінсент" # "Vin-vincent."
+n "Простогнав я, нарешті розірвавши поцілунок, щоб вдихнути повітря" # "I moaned out finally breaking our kiss for some air."
+n "Його вуха нашорошилися, коли він глянув на мене згори" # "His ears perked as he looked down at me."
 show CG_Vincent_blushy with dissolve
-p "Please."
-n "He let out soft pants and shook his head."
-vincent "You have stockholm or something."
-p "Maybe."
-p "But, fuck it."
-n "Vincent laughed as he opened his pants."
+p "Будь ласка" # "Please."
+n "Він тихо засопів і похитав головою" # "He let out soft pants and shook his head."
+vincent "У тебе стокгольмський синдром чи щось таке" # "You have stockholm or something."
+p "Може бути" # "Maybe."
+p "Але, та й хуй з ним" # "But, fuck it."
+n "Вінсент засміявся, розстібаючи штани" # "Vincent laughed as he opened his pants."
 $ vbase,vblush,vexp = 4,0,10
-n "He rubbed his cock up against me."
-n "I scratched his back as I felt him push himself inside of me."
-n "He let out a low growl as he moved inside of me."
-n "His thick cock working it's way deep inside."
-n "This was different than before."
-n "I didn't want him to stop."
-n "He didn't speak, all he did was growl and moan."
-n "He didn't need to speak."
-n "The way he caressed my skin."
-n "He kissed me."
-n "His passion spoke for itself."
-n "I let out a moan as rocked his hips in and out of me."
-n "His low growls vibrated through my body."
-n "I could feel him moving faster as I swung my legs around him."
-vincent "F-fuck..."
+n "Він потерся членом об мене" # "He rubbed his cock up against me."
+n "Я дряпав його спину, відчувши, як він заштовхується в мене" # "I scratched his back as I felt him push himself inside of me."
+n "Він низько загарчав, рухаючись усередині мене" # "He let out a low growl as he moved inside of me."
+n "Його товстий член пробирався глибоко всередину" # "His thick cock working it's way deep inside."
+n "Цього разу все було інакше" # "This was different than before."
+n "Я не хотів, щоб він зупинявся" # "I didn't want him to stop."
+n "Він не говорив, тільки гарчав і стогнав" # "He didn't speak, all he did was growl and moan."
+n "Йому й не треба було говорити" # "He didn't need to speak."
+n "Те, як він гладив мою шкіру" # "The way he caressed my skin."
+n "Він цілував мене" # "He kissed me."
+n "Його пристрасть говорила сама за себе" # "His passion spoke for itself."
+n "Я застогнав, поки він рухав стегнами, входячи й виходячи з мене" # "I let out a moan as rocked his hips in and out of me."
+n "Його низьке гарчання відлунювало через усе моє тіло" # "His low growls vibrated through my body."
+n "Я відчував, як він рухається швидше, поки я обвивав його ногами" # "I could feel him moving faster as I swung my legs around him."
+vincent "Б-блять..." # "F-fuck..."
 scene falloutshelter
 show vincent
-n "I could feel him cum inside as I let him go."
-n "I laid on the floor like a wet noodle, panting hard."
-n "He leaned into me and kissed my lips."
+n "Я відчув, як він кінчає всередині, і відпустив його" # "I could feel him cum inside as I let him go."
+n "Я лежав на підлозі, як мокра ганчірка, важко дихаючи" # "I laid on the floor like a wet noodle, panting hard."
+n "Він нахилився до мене й поцілував мене в губи" # "He leaned into me and kissed my lips."
 jump vincent_goodending
 
 label vincent_goodending:
 $ vbase,vblush,vexp = 4,0,1
-vincent "Fuck what time is it!?"
-n "Vincent got up and held his head."
+vincent "Блять, котра година!?" # "Fuck what time is it!?"
+n "Вінсент підвівся й схопився за голову" # "Vincent got up and held his head."
 $ vbase,vblush,vexp = 4,0,7
-vincent "Nonono FUCK."
-n "Vincent growled and looked around quickly."
-p "Vincent what's wrong!?"
+vincent "Ніні-ні, БЛЯТЬ" # "Nonono FUCK."
+n "Вінсент загарчав і швидко роззирнувся" # "Vincent growled and looked around quickly."
+p "Вінсенте, що сталося!?" # "Vincent what's wrong!?"
 $ vbase,vblush,vexp = 4,0,2
-n "He put his hand on his weapons locker and punched in the code."
-vincent "...Fuck..."
+n "Він поклав руку на зброярню й набрав код" # "He put his hand on his weapons locker and punched in the code."
+vincent "...Блять..." # "...Fuck..."
 scene falloutshelter:
     xalign 0.5
     easeout 0.3 xalign 0.0
-n "He growled as he pulled down the rack of guns."
-n "They banged loudly on the floor and I looked up at him."
+n "Він загарчав, зриваючи вниз стійку зі зброєю" # "He growled as he pulled down the rack of guns."
+n "Вони з гуркотом попадали на підлогу, і я глянув угору на нього" # "They banged loudly on the floor and I looked up at him."
 show vincent
-p "Ah."
-n "I started but he grabbed my throat."
-vincent "SHUT UP."
-n "He growled quickly and jammed me into the locker shutting it behind him."
-n "I grabbed the grate and looked at him."
+p "Ах" # "Ah."
+n "Почав я, але він схопив мене за горло" # "I started but he grabbed my throat."
+vincent "ЗАМОВКНИ" # "SHUT UP."
+n "Він швидко загарчав і запхав мене у зброярню, зачинивши її за мною" # "He growled quickly and jammed me into the locker shutting it behind him."
+n "Я вхопився за ґрати й глянув на нього" # "I grabbed the grate and looked at him."
 show CG_vincent_door with dissolve
-p "What... are you doing.."
-vincent "I...I'm saving you..."
-n "He growled with his head down."
-vincent "You're the only one..."
-vincent "You're the only one worth saving..."
-vincent "I love you."
-n "I grabbed the fencing between me and him."
-vincent "Back UP."
-n "He banged on the doors."
+p "Що... ти робиш.." # "What... are you doing.."
+vincent "Я...я тебе рятую..." # "I...I'm saving you..."
+n "Прогарчав він, опустивши голову" # "He growled with his head down."
+vincent "Ти єдиний..." # "You're the only one..."
+vincent "Єдиний, кого варто рятувати..." # "You're the only one worth saving..."
+vincent "Я тебе кохаю" # "I love you."
+n "Я вчепився в ґратку між мною і ним" # "I grabbed the fencing between me and him."
+vincent "ВІДІЙДИ" # "Back UP."
+n "Він гупав по дверцятах" # "He banged on the doors."
 menu:
-    "-Reach out for him-":
-        n "I reached out for him as he let out a growl."
-        n "He scratched my arm and I took my hand back."
-        p "OW."
-        n "It wasn't too bad..."
-        n "But... I was feeling a bit dizzy now."
-        n "I sat down on the bottom of the locker as he paced around."
-        n "He let out an ear splitting howl as I held on tight for the rest of the night."
+    "-Потягнутися до нього-": # "-Reach out for him-"
+        n "Я потягнувся до нього, а він загарчав" # "I reached out for him as he let out a growl."
+        n "Він подряпав мені руку, і я відсмикнув її назад" # "He scratched my arm and I took my hand back."
+        p "ОЙ" # "OW."
+        n "Не так уже й погано..." # "It wasn't too bad..."
+        n "Але... тепер у мене трохи паморочилося в голові" # "But... I was feeling a bit dizzy now."
+        n "Я сів на дно зброярні, поки він міряв кроками кімнату" # "I sat down on the bottom of the locker as he paced around."
+        n "Він видав пронизливе виття, а я міцно тримався до кінця ночі" # "He let out an ear splitting howl as I held on tight for the rest of the night."
         hide screen health_bar
         hide screen sanity_bar
         hide screen vincent_rage_bar
         $ persistent.vincent_ending_good_ending = True
         scene endslate_clean with Dissolve(1.0)
         screen vincent_ending_good_ending:
-            text "{=endslate_title}You survived!{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-            text "\n\n\n\n{=endslate_subtitle}Vincent saved you.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
-        show screen vincent_ending_good_ending 
+            text "{=endslate_title}Ти вижив!{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You survived!"
+            text "\n\n\n\n{=endslate_subtitle}Вінсент врятував тебе.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "Vincent saved you."
+        show screen vincent_ending_good_ending
         with Dissolve(1.0)
         pause
         jump extra_goodending
-    "-Back up-":
-        n "I backed up like he told me to."
-        p "Vincent..."
-        n "He howled into the night his loud cry bouncing against the walls."
-        n "I closed my eyes and waited for that night to be over...."
+    "-Відійти-": # "-Back up-"
+        n "Я відступив, як він і сказав" # "I backed up like he told me to."
+        p "Вінсенте..." # "Vincent..."
+        n "Він завив у ніч, його гучний крик відлунював від стін" # "He howled into the night his loud cry bouncing against the walls."
+        n "Я заплющив очі й чекав, поки та ніч скінчиться...." # "I closed my eyes and waited for that night to be over...."
         hide screen health_bar
         hide screen sanity_bar
         hide screen vincent_rage_bar
         $ persistent.vincent_ending_good_ending = True
         scene endslate_clean with Dissolve(1.0)
         screen vincent_ending_good_ending:
-            text "{=endslate_title}You survived!{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-            text "\n\n\n\n{=endslate_subtitle}Vincent saved you.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+            text "{=endslate_title}Ти вижив!{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You survived!"
+            text "\n\n\n\n{=endslate_subtitle}Вінсент врятував тебе.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "Vincent saved you."
         show screen vincent_ending_good_ending 
         with Dissolve(1.0)
         pause
@@ -4487,29 +4487,29 @@ scene falloutshelter:
     xalign 0.0
 with dissolve
 play music "vincent/vincent_morningafter.mp3"
-n "That one night felt like an eternity."
-n "But, I heard the door of the locker open and stared at Vincent's naked body."
+n "Та одна ніч відчувалася як вічність" # "That one night felt like an eternity."
+n "Але я почув, як відчиняються дверцята зброярні, і втупився в оголене тіло Вінсента" # "But, I heard the door of the locker open and stared at Vincent's naked body."
 show vincent
 $ vbase,vblush,vexp = 5,0,2
-vincent "Are you okay?"
-n "My mind snapped back to his face and I nodded quickly."
-p "Yeah, I'm fine."
-p "What about you?"
-n "Vincent scoffed and went to the door."
-vincent "I'm always a little tired after transformation..."
-n "I looked at my hand and cradled it."
-p "...You scratched me."
+vincent "Ти в порядку?" # "Are you okay?"
+n "Мої думки повернулися до його обличчя, і я швидко кивнув" # "My mind snapped back to his face and I nodded quickly."
+p "Ага, я в нормі" # "Yeah, I'm fine."
+p "А ти?" # "What about you?"
+n "Вінсент пирхнув і рушив до дверей" # "Vincent scoffed and went to the door."
+vincent "Я завжди трохи втомлений після перетворення..." # "I'm always a little tired after transformation..."
+n "Я глянув на свою руку й притиснув її до себе" # "I looked at my hand and cradled it."
+p "...Ти мене подряпав" # "...You scratched me."
 $ vbase,vblush,vexp = 5,0,7
-n "Vincent held my hand gently."
-vincent "...Ah.... I guess We'll be hunting together next full moon.."
+n "Вінсент ніжно взяв мою руку" # "Vincent held my hand gently."
+vincent "...Ах.... Схоже, наступного повного місяця ми полюватимемо разом.." # "...Ah.... I guess We'll be hunting together next full moon.."
 $ vbase,vblush,vexp = 5,0,11
 show CG_Vincent_Happy with dissolve
-n "What did he mean by that?"
-n "He opened the door to the bunker and sun flooded into the room."
-vincent "I've never had a packmate before."
+n "Що він мав на увазі?" # "What did he mean by that?"
+n "Він відчинив двері бункера, і кімнату залило сонце" # "He opened the door to the bunker and sun flooded into the room."
+vincent "У мене ніколи раніше не було члена зграї" # "I've never had a packmate before."
 scene Vincent_Happy_endslate with Dissolve(1.0)
 screen vincent_pack:
-    text "Vincent turned you.\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
+    text "Вінсент обернув тебе.\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "Vincent turned you."
 show screen vincent_pack
 with Dissolve(1.0)
 pause
@@ -4517,13 +4517,13 @@ $ renpy.full_restart()
 
 label farz_day_three:
 $ vincent_love +=10
-n "Farz started to back up slowly."
-farz "Come on."
-n "He grabbed my hand and ran off with me out of the bunker."
-n "He slammed the door shut."
-n "My feet were still in pain and throbbing."
-n "But, we didn't stop running till we got back into the house."
-n "I could hear a loud howl in the bunker."
+n "Фарц почав повільно задкувати" # "Farz started to back up slowly."
+farz "Ходімо" # "Come on."
+n "Він схопив мене за руку й вибіг зі мною з бункера" # "He grabbed my hand and ran off with me out of the bunker."
+n "Він грюкнув дверима" # "He slammed the door shut."
+n "Мої ноги все ще боліли й пульсували" # "My feet were still in pain and throbbing."
+n "Але ми не спинялися, поки не добігли назад до будинку" # "But, we didn't stop running till we got back into the house."
+n "Я чув гучне виття в бункері" # "I could hear a loud howl in the bunker."
 hide screen health_bar
 hide screen sanity_bar
 hide screen vincent_rage_bar
@@ -4531,187 +4531,187 @@ scene vincent_bedroom_night with fade
 play music "vincent/vincent_sex.mp3"
 $ fexp = 6
 show farz
-farz "Ah... he's gonna be pissy in the morning."
-p "What? Why?"
-farz "You were supposed to be like the sacrificial lamb."
-farz "Kill one, save others or some shit."
-farz "Sometimes he doesn't get a victim for the transformation."
-farz "It makes him super pissy in the morning."
-p "Sounds like fun."
+farz "Ах... уранці він буде злий як чорт" # "Ah... he's gonna be pissy in the morning."
+p "Що? Чому?" # "What? Why?"
+farz "Ти мав бути кимось на кшталт жертовного ягняти" # "You were supposed to be like the sacrificial lamb."
+farz "Убий одного, врятуй інших, чи якесь таке лайно" # "Kill one, save others or some shit."
+farz "Іноді він не отримує жертви для перетворення" # "Sometimes he doesn't get a victim for the transformation."
+farz "Через це вранці він стає страшенно злий" # "It makes him super pissy in the morning."
+p "Звучить весело" # "Sounds like fun."
 $ fexp = 7
-farz "It is, we just have to calm him down!"
-farz "You'll like it I promise."
-farz "Sit down."
-n "He motioned at Vincent's bed."
-n "I took a seat and he looked at my wounds."
-farz "I'll fix this up."
+farz "Так і є, нам просто треба його заспокоїти!" # "It is, we just have to calm him down!"
+farz "Тобі сподобається, обіцяю" # "You'll like it I promise."
+farz "Сідай" # "Sit down."
+n "Він кивнув на ліжко Вінсента" # "He motioned at Vincent's bed."
+n "Я сів, а він глянув на мої рани" # "I took a seat and he looked at my wounds."
+farz "Я це підлатаю" # "I'll fix this up."
 menu:
-    "\"Thank you\"":
-        farz "I told him I'd watch you."
-        farz "And I'm doing that."
-        n "He quickly covered up my wounds and I felt much better already."
-    "\"Why are you helping me?\"":
+    "\"Дякую\"": # "Thank you"
+        farz "Я сказав йому, що пригляну за тобою" # "I told him I'd watch you."
+        farz "І я це роблю" # "And I'm doing that."
+        n "Він швидко перев'язав мої рани, і мені вже стало набагато краще" # "He quickly covered up my wounds and I felt much better already."
+    "\"Чому ти мені допомагаєш?\"": # "Why are you helping me?"
 
-        farz "I thought it'd be fun to have someone else around."
-        farz "You just happen to be what I was looking for."
-    "\"What's going to happen tomorrow?\"":
+        farz "Я подумав, що було б весело мати ще когось поруч" # "I thought it'd be fun to have someone else around."
+        farz "А ти якраз виявився тим, кого я шукав" # "You just happen to be what I was looking for."
+    "\"Що станеться завтра?\"": # "What's going to happen tomorrow?"
 
-        farz "He's probably gonna want to take his frustration out on us."
-        n "I let out a small whimper and he slapped one of my wounds making me squeak."
-        farz "It won't be bad, not as bad as it was for the last few days."
+        farz "Він, певно, захоче зігнати на нас своє роздратування" # "He's probably gonna want to take his frustration out on us."
+        n "Я тихо заскиглив, а він ляснув по одній з моїх ран, від чого я пискнув" # "I let out a small whimper and he slapped one of my wounds making me squeak."
+        farz "Буде не так погано, не так, як було ці кілька останніх днів" # "It won't be bad, not as bad as it was for the last few days."
 
-farz "Let's get some sleep."
-farz "We're gonna need it."
-n "We curled up on Vincent's bed."
-n "And for once, I had a good nights sleep."
+farz "Ходімо поспимо" # "Let's get some sleep."
+farz "Це нам знадобиться" # "We're gonna need it."
+n "Ми скрутилися на ліжку Вінсента" # "We curled up on Vincent's bed."
+n "І вперше за весь час я добре виспався" # "And for once, I had a good nights sleep."
 scene black with fade
-n "The next morning my eyes fluttered open as I pulled the warm comforter around me."
+n "Наступного ранку мої очі розплющилися, і я щільніше загорнувся в тепле покривало" # "The next morning my eyes fluttered open as I pulled the warm comforter around me."
 scene vincent_bedroom_day
 $ fexp= 5
 show farz
-farz "You look like shit."
-p "Thanks."
+farz "Ти виглядаєш як лайно" # "You look like shit."
+p "Дякую" # "Thanks."
 $ fexp= 7
-farz "I think I have something that might fit you."
-n "Farz moved away and dug around in the closet."
-n "He held out a pair of shorts, nylon stockings and a tank top."
-n "All in black."
-farz "Here."
-p "Wh-what!? I- That's a little revealing don't you think?"
-farz "You wanna make Vincent happy?"
-farz "He got some kinks, some of them I bet would look better on you."
-p "Okay."
-n "I slipped the soft nylons over my legs and pushed the shorts around my waist."
-n "I put on the tanktop and rubbed my arm."
-p "How do I look?"
-farz "You look great!"
-n "He walked over to me and pushed me back down on Vincent's bed."
-farz "Vincent's going to be coming back up soon."
-farz "We should get ready."
-n "Farz leaned over me and put his hands around my neck."
-n "He slowly pushed his hands into my neck."
-farz "You better get used to this, he likes choking people."
-n "I felt his crotch against mine and I twisted my hips to rub up against him."
-n "I nodded my head and put my hands gently on his arms."
-n "Farz rubbed my neck as we grinded our hips together."
-p "Ah~"
-farz "Hah, I'm getting excited."
-n "He rolled over and he pulled me on top of him."
-farz "You try it."
-farz "It's fun."
-n "I nodded my head and pushed my hands around his neck."
-n "The collar was in the way a bit, but I managed."
-n "I pushed down and felt his breath in my hands."
-n "The heart beat in his neck."
-n "He looked excited but I didn't push any harder than that."
-farz "You're not as strong as Vincent but... it's still fun right?"
-farz "Sometimes you gotta get a piece of both worlds before you really appreciate one."
-p "You're really smart."
-farz "I'm not smart, just passionate."
-n "I leaned into him and he wrapped his arms around me."
-vincent "What are you two doing...?"
-n "We turned our heads to the voice in the doorway."
+farz "Здається, у мене є дещо, що тобі підійде" # "I think I have something that might fit you."
+n "Фарц відійшов і почав порпатися в шафі" # "Farz moved away and dug around in the closet."
+n "Він простягнув шорти, нейлонові панчохи й майку" # "He held out a pair of shorts, nylon stockings and a tank top."
+n "Усе чорне" # "All in black."
+farz "Тримай" # "Here."
+p "Щ-що!? Я- Це трохи відверто, тобі не здається?" # "Wh-what!? I- That's a little revealing don't you think?"
+farz "Хочеш порадувати Вінсента?" # "You wanna make Vincent happy?"
+farz "У нього є свої збочення, і, б'юсь об заклад, дещо з них краще виглядатиме на тобі" # "He got some kinks, some of them I bet would look better on you."
+p "Гаразд" # "Okay."
+n "Я натягнув м'які нейлонові панчохи на ноги й підтягнув шорти на талію" # "I slipped the soft nylons over my legs and pushed the shorts around my waist."
+n "Я вдягнув майку й потер руку" # "I put on the tanktop and rubbed my arm."
+p "Як я виглядаю?" # "How do I look?"
+farz "Ти виглядаєш чудово!" # "You look great!"
+n "Він підійшов до мене й штовхнув мене назад на ліжко Вінсента" # "He walked over to me and pushed me back down on Vincent's bed."
+farz "Вінсент скоро повернеться" # "Vincent's going to be coming back up soon."
+farz "Нам треба підготуватися" # "We should get ready."
+n "Фарц навис наді мною й обхопив руками мою шию" # "Farz leaned over me and put his hands around my neck."
+n "Він повільно стиснув мою шию" # "He slowly pushed his hands into my neck."
+farz "Краще звикай, він любить душити людей" # "You better get used to this, he likes choking people."
+n "Я відчув його пах напроти свого й крутнув стегнами, тручись об нього" # "I felt his crotch against mine and I twisted my hips to rub up against him."
+n "Я кивнув і ніжно поклав руки йому на передпліччя" # "I nodded my head and put my hands gently on his arms."
+n "Фарц масажував мою шию, поки ми терлися стегнами одне об одного" # "Farz rubbed my neck as we grinded our hips together."
+p "Ах~" # "Ah~"
+farz "Хах, я вже збуджуюся" # "Hah, I'm getting excited."
+n "Він перекотився й потягнув мене на себе зверху" # "He rolled over and he pulled me on top of him."
+farz "Тепер ти спробуй" # "You try it."
+farz "Це весело" # "It's fun."
+n "Я кивнув і обхопив руками його шию" # "I nodded my head and pushed my hands around his neck."
+n "Нашийник трохи заважав, але я впорався" # "The collar was in the way a bit, but I managed."
+n "Я стиснув і відчув його дихання під своїми руками" # "I pushed down and felt his breath in my hands."
+n "Пульс у його шиї" # "The heart beat in his neck."
+n "Він виглядав збудженим, але сильніше я не тиснув" # "He looked excited but I didn't push any harder than that."
+farz "Ти не такий сильний, як Вінсент, але... все одно весело, правда?" # "You're not as strong as Vincent but... it's still fun right?"
+farz "Іноді треба скуштувати обидва світи, перш ніж по-справжньому оцінити один" # "Sometimes you gotta get a piece of both worlds before you really appreciate one."
+p "А ти справді розумний" # "You're really smart."
+farz "Я не розумний, просто пристрасний" # "I'm not smart, just passionate."
+n "Я притулився до нього, і він обхопив мене руками" # "I leaned into him and he wrapped his arms around me."
+vincent "Що це ви двоє робите...?" # "What are you two doing...?"
+n "Ми повернули голови на голос у дверях" # "We turned our heads to the voice in the doorway."
 $ fexp = 7
 $ vbase, vexp = 5, 17
 show farz:
     xpos 150
 show vincent:
     xpos 300
-farz "Vincent!"
-n "He looked exhaused as he trudged his way into the room."
-vincent "Cute outfit."
-n "Vincent shoved me and Farz across the bed and sat down."
-n "Farz crawled over sat down on his lap."
-farz "Vincent, how are you feeling?"
-vincent "Like I got hit by a garbage truck."
-n "Farz motioned me over and made a motion at his shoulders."
-n "I reached over and rubbed Vincent's shoulders."
-n "He let out a low growl and he leaned back into my arms."
+farz "Вінсенте!" # "Vincent!"
+n "Він виглядав виснаженим, ледве плентаючись до кімнати" # "He looked exhaused as he trudged his way into the room."
+vincent "Милий прикид" # "Cute outfit."
+n "Вінсент відпихнув мене й Фарца в бік ліжка й сів" # "Vincent shoved me and Farz across the bed and sat down."
+n "Фарц підповз і всівся йому на коліна" # "Farz crawled over sat down on his lap."
+farz "Вінсенте, як почуваєшся?" # "Vincent, how are you feeling?"
+vincent "Ніби мене сміттєвоз переїхав" # "Like I got hit by a garbage truck."
+n "Фарц покликав мене й показав на його плечі" # "Farz motioned me over and made a motion at his shoulders."
+n "Я потягнувся й почав розтирати плечі Вінсента" # "I reached over and rubbed Vincent's shoulders."
+n "Він низько загарчав і відкинувся мені в обійми" # "He let out a low growl and he leaned back into my arms."
 $ vbase, vexp = 5, 10
-vincent "A guy can get used to this."
-n "I reached out and held him in my arms as he put one hand on my forearm."
+vincent "До такого можна й звикнути" # "A guy can get used to this."
+n "Я обійняв його, а він поклав одну руку мені на передпліччя" # "I reached out and held him in my arms as he put one hand on my forearm."
 show CG_farz_vincent_kiss with dissolve
-n "Farz leaned in and kissed him."
-n "I watched on tilting my head to the side watching their passion."
+n "Фарц нахилився й поцілував його" # "Farz leaned in and kissed him."
+n "Я спостерігав, схиливши голову набік, дивлячись на їхню пристрасть" # "I watched on tilting my head to the side watching their passion."
 $ vbase, vexp = 5, 11
-n "Vincent's eye shifted to me."
+n "Око Вінсента перевело погляд на мене" # "Vincent's eye shifted to me."
 show CG_Vincent_kiss with dissolve
-vincent "What about you?"
-vincent "I bet you want a collar too huh?"
-vincent "I'll make you a nice one."
-n "He put his free hand behind my head and I pressed my lips against his."
-n "I put my hands on his chest as I felt Farz's hand reach down my shorts."
-farz "We can make you feel better, sir."
-n "Vincent's lips left mine, leaving me short of breath and wanting more."
-p "Let us help you."
+vincent "А ти як?" # "What about you?"
+vincent "Б'юсь об заклад, ти теж хочеш нашийник, га?" # "I bet you want a collar too huh?"
+vincent "Я зроблю тобі гарний" # "I'll make you a nice one."
+n "Він поклав вільну руку мені за голову, і я притиснув свої губи до його" # "He put his free hand behind my head and I pressed my lips against his."
+n "Я поклав руки йому на груди, відчувши, як рука Фарца пробирається мені в шорти" # "I put my hands on his chest as I felt Farz's hand reach down my shorts."
+farz "Ми можемо зробити так, щоб вам полегшало, сер" # "We can make you feel better, sir."
+n "Губи Вінсента відірвалися від моїх, лишивши мене задиханим і жадібним до більшого" # "Vincent's lips left mine, leaving me short of breath and wanting more."
+p "Дозволь нам тобі допомогти" # "Let us help you."
 $ vbase, vblush, vexp = 5,1,6
-vincent "Alright, you two wanna do this?"
-vincent "Be my guest."
-n "Vincent moved Farz off his lap and kneeled."
+vincent "Гаразд, ви двоє цього хочете?" # "Alright, you two wanna do this?"
+vincent "Прошу дуже" # "Be my guest."
+n "Вінсент зсунув Фарца з колін і став навколішки" # "Vincent moved Farz off his lap and kneeled."
 $ fexp = 8
-n "Farz leaned his head against Vincent's leg and looked at Vincent's hard cock."
+n "Фарц притулився головою до ноги Вінсента й глянув на його стоячий член" # "Farz leaned his head against Vincent's leg and looked at Vincent's hard cock."
 show CG_Farz_leaning_on_Vincents_leg with dissolve
-n "Farz pushed it in his mouth, almost as if he was instructing me how to suck it."
+n "Фарц запхав його собі в рот, майже ніби показуючи мені, як його смоктати" # "Farz pushed it in his mouth, almost as if he was instructing me how to suck it."
 $ vbase, vblush, vexp = 5,0,10
 show CG_Farz_leaning_on_Vincents_leg:
     subpixel True
     yalign 0.5
     easeout 0.1 yalign 0.1
-n "I watched at full attention, wanting to try it myself."
-n "Farz looked over at me."
-farz "Open up."
+n "Я уважно спостерігав, хотілося самому спробувати" # "I watched at full attention, wanting to try it myself."
+n "Фарц глянув на мене" # "Farz looked over at me."
+farz "Відкривай" # "Open up."
 show CG_vincent_Farz_BJ with dissolve
-n "He pulled my lips back forcing my mouth wide open."
-n "Farz pushed my face down on Vincent's cock as hard as he could."
-n "I gagged on his thick cock but Farz wouldn't let me pull back."
-farz "Come on you can do it."
-n "I looked up at Vincent as he let out a moan."
-n "I felt myself getting more excited as Farz's hand moved into my shorts again."
-n "Farz let my mouth go as he pulled my shorts off."
-n "His fingers working their way inside of me."
-vincent "Get them good and ready, Farz."
-vincent "I need a good fuck."
-farz "Yes sir!"
-n "I could feel Farz's hand leave me for only a moment as wet lubricant moved across my ass and inside of me."
-n "I let out a small moan as I felt the lube stick between me and my stockings."
-n "Farz slipped off my shorts and pulled me off of Vincent."
-n "He's been inside of me before."
-n "But, some how this was different."
-n "I was nervous."
-n "I wanted him to feel good."
+n "Він відтягнув мої губи, змусивши рот широко відкритися" # "He pulled my lips back forcing my mouth wide open."
+n "Фарц з усієї сили насадив моє обличчя на член Вінсента" # "Farz pushed my face down on Vincent's cock as hard as he could."
+n "Я вдавився його товстим членом, але Фарц не давав мені відсунутися" # "I gagged on his thick cock but Farz wouldn't let me pull back."
+farz "Ну ж бо, ти зможеш" # "Come on you can do it."
+n "Я глянув угору на Вінсента, а він застогнав" # "I looked up at Vincent as he let out a moan."
+n "Я відчув, як збуджуюся ще більше, коли рука Фарца знову залізла мені в шорти" # "I felt myself getting more excited as Farz's hand moved into my shorts again."
+n "Фарц відпустив мій рот і стягнув з мене шорти" # "Farz let my mouth go as he pulled my shorts off."
+n "Його пальці пробиралися всередину мене" # "His fingers working their way inside of me."
+vincent "Підготуй його як слід, Фарц" # "Get them good and ready, Farz."
+vincent "Мені треба добряче потрахатися" # "I need a good fuck."
+farz "Так, сер!" # "Yes sir!"
+n "Рука Фарца на мить покинула мене, і мокре мастило розтеклося по моїй дупі й усередині" # "I could feel Farz's hand leave me for only a moment as wet lubricant moved across my ass and inside of me."
+n "Я тихо застогнав, відчувши, як мастило липне між мною й панчохами" # "I let out a small moan as I felt the lube stick between me and my stockings."
+n "Фарц стягнув мої шорти й відтягнув мене від Вінсента" # "Farz slipped off my shorts and pulled me off of Vincent."
+n "Він уже бував усередині мене раніше" # "He's been inside of me before."
+n "Але чомусь цього разу все було інакше" # "But, some how this was different."
+n "Я нервувався" # "I was nervous."
+n "Я хотів, щоб йому було приємно" # "I wanted him to feel good."
 show CG_Vincent_Fuck with dissolve
-n "Farz pulled out a knife and cut a hole in my stockings, exposing everything to Vincent."
-n "I tried to move back and forth but Farz held me down."
-n "The tip of Vincent's cock slipped easily inside of me."
-n "I let out a loud moan and looked up at Farz."
-farz "How does it feel?"
-p "Ahh ahh...."
-n "I couldn't speak, all I could do was make panting sounds at him."
-n "I felt my head spinning as I watched the two kiss across me."
-n "I nuzzled Farz's pants as he rubbed himself on my face."
-p "F-Farz."
-n "I unzipped his pants and his cock sprung out of his pants."
-n "He rubbed his cock against my lips and he pushed it into my mouth."
-n "I felt Vincent's hands around my throat and he pushed down."
-n "I tensed up as he pushed."
-vincent "Hah... Is that your cock I feel in there, Farz?"
-n "I wasn't even sure that Farz was paying attention anymore."
-n "I closed my eyes as both men pushed their way inside of me."
-n "My head spinning with pleasure."
-n "Vincent's strong hands on my neck."
-n "I didn't want it to stop but I felt my body lock up."
-n "I was cumming and I could feel warm liquid filling me up from both sides."
-n "I coughed as Farz pulled his cock out of my mouth."
-n "Vincent pulled out of me and laid back between the two of us."
-n "I rested my head on Vincent's free shoulder looking at the two of them."
-vincent "Welcome to the pack, [player_name]."
-n "Farz curled up close and put his hand on top of my own."
-n "Vincent pulled us both close to him and gave us a good squeeze before closing his eye to rest."
+n "Фарц дістав ножа й прорізав дірку в моїх панчохах, оголивши все перед Вінсентом" # "Farz pulled out a knife and cut a hole in my stockings, exposing everything to Vincent."
+n "Я спробував рухатися туди-сюди, але Фарц притримував мене" # "I tried to move back and forth but Farz held me down."
+n "Кінчик члена Вінсента легко ковзнув усередину мене" # "The tip of Vincent's cock slipped easily inside of me."
+n "Я голосно застогнав і глянув угору на Фарца" # "I let out a loud moan and looked up at Farz."
+farz "Як відчуття?" # "How does it feel?"
+p "Ахх ахх...." # "Ahh ahh...."
+n "Я не міг говорити, тільки задихано сопів до нього" # "I couldn't speak, all I could do was make panting sounds at him."
+n "Голова йшла обертом, поки я дивився, як ці двоє цілуються наді мною" # "I felt my head spinning as I watched the two kiss across me."
+n "Я тицявся носом у штани Фарца, поки він терся об моє обличчя" # "I nuzzled Farz's pants as he rubbed himself on my face."
+p "Ф-Фарц" # "F-Farz."
+n "Я розстебнув його штани, і його член вискочив назовні" # "I unzipped his pants and his cock sprung out of his pants."
+n "Він потерся членом об мої губи й заштовхнув його мені в рот" # "He rubbed his cock against my lips and he pushed it into my mouth."
+n "Я відчув руки Вінсента на своєму горлі, і він стиснув" # "I felt Vincent's hands around my throat and he pushed down."
+n "Я напружився, коли він натиснув" # "I tensed up as he pushed."
+vincent "Хах... Це твій член я там відчуваю, Фарц?" # "Hah... Is that your cock I feel in there, Farz?"
+n "Я вже навіть не був певен, що Фарц узагалі щось помічає" # "I wasn't even sure that Farz was paying attention anymore."
+n "Я заплющив очі, поки обидва чоловіки заштовхувалися в мене" # "I closed my eyes as both men pushed their way inside of me."
+n "Голова йшла обертом від насолоди" # "My head spinning with pleasure."
+n "Сильні руки Вінсента на моїй шиї" # "Vincent's strong hands on my neck."
+n "Я не хотів, щоб це припинялося, але відчув, як моє тіло заклякло" # "I didn't want it to stop but I felt my body lock up."
+n "Я кінчав і відчував, як тепла рідина наповнює мене з обох боків" # "I was cumming and I could feel warm liquid filling me up from both sides."
+n "Я закашлявся, коли Фарц витягнув член з мого рота" # "I coughed as Farz pulled his cock out of my mouth."
+n "Вінсент вийшов з мене й ліг між нами двома" # "Vincent pulled out of me and laid back between the two of us."
+n "Я поклав голову на вільне плече Вінсента, дивлячись на них обох" # "I rested my head on Vincent's free shoulder looking at the two of them."
+vincent "Ласкаво просимо до зграї, [player_name]." # "Welcome to the pack, [player_name]."
+n "Фарц скрутився поруч і поклав свою руку на мою" # "Farz curled up close and put his hand on top of my own."
+n "Вінсент притягнув нас обох до себе й міцно стиснув, перш ніж заплющити око, щоб відпочити" # "Vincent pulled us both close to him and gave us a good squeeze before closing his eye to rest."
 $ persistent.farz_vincent_ending_good = True
 scene endslate_clean with Dissolve(1.0)
 screen farz_vincent_ending_good:
-    text "{=endslate_title}You Survived.{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-    text "\n\n\n\n{=endslate_subtitle}You were accepted.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+    text "{=endslate_title}Ти вижив.{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Survived."
+    text "\n\n\n\n{=endslate_subtitle}Тебе прийняли.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "You were accepted."
 show screen farz_vincent_ending_good
 with Dissolve(1.0)
 pause
@@ -4731,33 +4731,33 @@ if sanity <= 30:
 
 label vincent_badend_pinata:
 scene falloutshelter
-n "Vincent walked into the bunker and looked at me."
+n "Вінсент увійшов до бункера й глянув на мене" # "Vincent walked into the bunker and looked at me."
 label vincent_badend_pinata2:
 play music "vincent/vincent_angry.mp3"
-vincent "...Alright. You piece of shit."
+vincent "...Ну гаразд. Ти шматок лайна" # "...Alright. You piece of shit."
 show vincent
 $ vbase,vblush,vexp = 2,0,5
-n "He grabbed his razor wire and started to lash it around me."
-n "I let out a scream but he taped my mouth shut."
-vincent "No. None of that."
-vincent "All I need is your blood."
+n "Він схопив свій колючий дріт і почав обмотувати мене ним" # "He grabbed his razor wire and started to lash it around me."
+n "Я закричав, але він заклеїв мені рота скотчем" # "I let out a scream but he taped my mouth shut."
+vincent "Ні. Обійдемося без цього" # "No. None of that."
+vincent "Мені потрібна лише твоя кров" # "All I need is your blood."
 $ vbase,vblush,vexp = 2,0,13
-n "He pulled the wire tight and I let out a muffled scream as the wire grinded into my flesh."
-n "I could feel my tears running down my face."
-n "He grabbed the meat hook on the ceiling and hooked it on the wire."
-n "I could feel the wire getting pulled through my skin."
-n "Vincent licked the blood dripping down my leg."
-vincent "You look cute hanging up there."
-n "Vincent said as he looked at me."
-n "Vincent put his hands on his head and started to growl loudly."
+n "Він натягнув дріт, і я приглушено закричав, коли той врізався в мою плоть" # "He pulled the wire tight and I let out a muffled scream as the wire grinded into my flesh."
+n "Я відчував, як сльози течуть по моєму обличчю" # "I could feel my tears running down my face."
+n "Він схопив м'ясний гак на стелі й зачепив його за дріт" # "He grabbed the meat hook on the ceiling and hooked it on the wire."
+n "Я відчував, як дріт протягується крізь мою шкіру" # "I could feel the wire getting pulled through my skin."
+n "Вінсент злизав кров, що стікала по моїй нозі" # "Vincent licked the blood dripping down my leg."
+vincent "Ти гарненько виглядаєш, висячи там" # "You look cute hanging up there."
+n "Сказав Вінсент, дивлячись на мене" # "Vincent said as he looked at me."
+n "Вінсент схопився за голову й почав голосно гарчати" # "Vincent put his hands on his head and started to growl loudly."
 $ sanity -=100
-n "I wasn't sure what I was even looking at any more."
-n "I let out a loud scream."
+n "Я вже й не був певен, на що взагалі дивлюся" # "I wasn't sure what I was even looking at any more."
+n "Я голосно закричав" # "I let out a loud scream."
 show CG_Vincent_Wolf_PINATA with dissolve
-n "He let out a long howl."
+n "Він видав протяжне виття" # "He let out a long howl."
 $ health -=100
-n "I could feel my blood dripping out of me as he tore through my belly with his claws."
-n "All I could hear was his howls."
+n "Я відчував, як моя кров витікає, поки він роздирав мій живіт кігтями" # "I could feel my blood dripping out of me as he tore through my belly with his claws."
+n "Усе, що я чув, — це його виття" # "All I could hear was his howls."
 hide screen health_bar
 hide screen sanity_bar
 hide screen vincent_rage_bar
@@ -4765,8 +4765,8 @@ play music "vincent/vincent_death.mp3"
 $ persistent.vincent_ending_pinata = True
 scene endslate with Dissolve(1.0)
 screen vincent_ending_pinata:
-    text "{=endslate_title}You Died{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-    text "\n\n\n\n{=endslate_subtitle}Vincent used you as a pinata.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+    text "{=endslate_title}Ти помер{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died"
+    text "\n\n\n\n{=endslate_subtitle}Вінсент зробив з тебе пінату.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "Vincent used you as a pinata."
 show screen vincent_ending_pinata
 with Dissolve(1.0)
 pause
@@ -4776,55 +4776,55 @@ label vincent_badend_vore:
 hide vincent
 scene black with fade
 scene falloutshelter_dark with fade
-n "I bounced in anticipation."
-n "I wanted Vincent to come in for the day...."
-n "I needed him."
-n "I felt the door open and I looked at it."
-n "I felt so excited."
+n "Я аж підстрибував у передчутті" # "I bounced in anticipation."
+n "Я хотів, щоб Вінсент зайшов провідати мене...." # "I wanted Vincent to come in for the day...."
+n "Він був мені потрібен" # "I needed him."
+n "Я відчув, як відчиняються двері, і глянув на них" # "I felt the door open and I looked at it."
+n "Я був такий збуджений" # "I felt so excited."
 scene falloutshelter with dissolve
 $ vbase,vblush,vexp = 4,0,2
 show vincent
-p "Vincent."
-n "I practically moaned out his name as he came in."
-n "He leaned over me and I looked at his ears."
-vincent "What's your problem?"
-n "Did I have a problem?"
-n "I just wanted to play with Vincent."
-n "He sniffed me and dug his claws into my arm."
-n "I moaned out with pain and delight as he pushed his nails into my flesh."
-p "A~AAH..."
-n "Vincent started to pant as his tail moved back and forth."
-n "It was so cute."
-n "He reached down and bit my arm."
-n "It felt like a delicate nibble at first."
-n "I leaned back let him bite me."
-n "I moaned out again and it made his ear perk."
+p "Вінсент" # "Vincent."
+n "Я мало не простогнав його ім'я, коли він увійшов" # "I practically moaned out his name as he came in."
+n "Він навис наді мною, а я глянув на його вуха" # "He leaned over me and I looked at his ears."
+vincent "Що з тобою не так?" # "What's your problem?"
+n "Хіба зі мною щось не так?" # "Did I have a problem?"
+n "Я просто хотів погратися з Вінсентом" # "I just wanted to play with Vincent."
+n "Він понюхав мене й вп'явся кігтями мені в руку" # "He sniffed me and dug his claws into my arm."
+n "Я застогнав від болю й насолоди, коли він встромив нігті в мою плоть" # "I moaned out with pain and delight as he pushed his nails into my flesh."
+p "А~ААХ..." # "A~AAH..."
+n "Вінсент почав важко дихати, а його хвіст рухався туди-сюди" # "Vincent started to pant as his tail moved back and forth."
+n "Це було так мило" # "It was so cute."
+n "Він нахилився й вкусив мене за руку" # "He reached down and bit my arm."
+n "Спершу це відчувалося як делікатне покусування" # "It felt like a delicate nibble at first."
+n "Я відкинувся назад, дозволяючи йому кусати мене" # "I leaned back let him bite me."
+n "Я знову застогнав, і його вухо нашорошилося" # "I moaned out again and it made his ear perk."
 $ vbase,vblush,vexp = 4,0,4
-vincent "...I'm.... hungry."
-n "He growled lightly as he started to bite harder."
-n "I felt his teeth tear my flesh and I moaned out."
-n "It didn't even hurt anymore."
-n "I knew it was supposed to."
-n "I laughed and laid back."
-p "Eat.. me... Mr. Wolf."
-n "I taunted playfully as he chewed my skin."
-n "He looked more excited and blood thirsty."
-n "He pushed his fingers into my stomach and I screeched."
-n "I could feel the tears welling up on the corner of my eyes as he pushed his teeth into my soft innards."
-n "I could feel his fingers ripping at my skin."
-n "I let out a pleasured sound."
-n "What was happening to me?"
-n "Why did I like this so much?"
-n "I let my eyes roll back into my head as I panted."
-n "He was eating me. "
+vincent "...Я.... голодний" # "...I'm.... hungry."
+n "Він легенько загарчав і почав кусати сильніше" # "He growled lightly as he started to bite harder."
+n "Я відчув, як його зуби роздирають мою плоть, і застогнав" # "I felt his teeth tear my flesh and I moaned out."
+n "Уже навіть не боліло" # "It didn't even hurt anymore."
+n "Я знав, що мало б" # "I knew it was supposed to."
+n "Я засміявся й відкинувся назад" # "I laughed and laid back."
+p "З'їж.. мене... пане Вовче" # "Eat.. me... Mr. Wolf."
+n "Грайливо піддражнював я, поки він жував мою шкіру" # "I taunted playfully as he chewed my skin."
+n "Він виглядав ще більш збудженим і кровожерливим" # "He looked more excited and blood thirsty."
+n "Він встромив пальці мені в живіт, і я заверещав" # "He pushed his fingers into my stomach and I screeched."
+n "Я відчував, як сльози набігають у куточках очей, поки він занурював зуби в мої м'які нутрощі" # "I could feel the tears welling up on the corner of my eyes as he pushed his teeth into my soft innards."
+n "Я відчував, як його пальці роздирають мою шкіру" # "I could feel his fingers ripping at my skin."
+n "Я видав звук задоволення" # "I let out a pleasured sound."
+n "Що зі мною відбувалося?" # "What was happening to me?"
+n "Чому мені це так подобалося?" # "Why did I like this so much?"
+n "Я закотив очі, важко дихаючи" # "I let my eyes roll back into my head as I panted."
+n "Він мене їв. " # "He was eating me. "
 show CG_Vincent_Wolf_vore with dissolve
-n "He was yanking out my guts and chewing on them like gum."
-n "He let out a loud howl as he ripped through me."
-n "Everything was going cold."
-n "But, I couldn't stop giggling."
-p "EAT ME ALIVE!"
-n "Everything went black."
-n "All I could hear was chewing."
+n "Він виривав мої кишки й жував їх, наче жуйку" # "He was yanking out my guts and chewing on them like gum."
+n "Він голосно завив, роздираючи мене" # "He let out a loud howl as he ripped through me."
+n "Усе холонуло" # "Everything was going cold."
+n "Але я не міг перестати хихотіти" # "But, I couldn't stop giggling."
+p "З'ЇЖ МЕНЕ ЖИВЦЕМ!" # "EAT ME ALIVE!"
+n "Усе почорніло" # "Everything went black."
+n "Усе, що я чув, — це чавкання" # "All I could hear was chewing."
 hide screen health_bar
 hide screen sanity_bar
 hide screen vincent_rage_bar
@@ -4832,8 +4832,8 @@ play music "vincent/vincent_death.mp3"
 $ persistent.vincent_ending_badvore = True
 scene endslate with Dissolve(1.0)
 screen vincent_ending_badvore:
-    text "{=endslate_title}You Died{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-    text "\n\n\n\n{=endslate_subtitle}Vincent ate you.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+    text "{=endslate_title}Ти помер{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died"
+    text "\n\n\n\n{=endslate_subtitle}Вінсент з'їв тебе.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "Vincent ate you."
 show screen vincent_ending_badvore
 with Dissolve(1.0)
 pause
@@ -4842,9 +4842,9 @@ return
 
 label vincent_healthdeath_alone:
 hide screen countdown
-n "My vision was getting blurry."
-n "I looked down at my feet and saw nothing but blood."
-p "...Ugh... shit."
+n "В очах мутнішало" # "My vision was getting blurry."
+n "Я глянув униз на свої ноги й не побачив нічого, крім крові" # "I looked down at my feet and saw nothing but blood."
+p "...Ух... чорт" # "...Ugh... shit."
 hide screen health_bar
 hide screen sanity_bar
 hide screen vincent_rage_bar
@@ -4852,46 +4852,46 @@ play music "vincent/vincent_death.mp3"
 $ persistent.vincent_ending_alone = True
 scene endslate with Dissolve(1.0)
 screen vincent_ending_alone:
-    text "{=endslate_title}You Died{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-    text "\n\n\n\n{=endslate_subtitle}You died alone.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+    text "{=endslate_title}Ти помер{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died"
+    text "\n\n\n\n{=endslate_subtitle}Ти помер на самоті.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "You died alone."
 show screen vincent_ending_alone
 with Dissolve(1.0)
 pause
 return
 
 label vincent_neglove_death:
-n "Vincent looked to the side and tsked."
-vincent "...You are a boring little shit aren't you?"
-n "Vincent kneeled down and grabbed my legs."
-n "He sniffed me deep and licked my skin."
-p "Ahh.. "
-n "I felt a chill up my spine as he ran his tongue up my stomach to my chest."
-n "I arched my back into his touch."
+n "Вінсент глянув убік і цокнув язиком" # "Vincent looked to the side and tsked."
+vincent "...Ти нудне мале лайно, чи не так?" # "...You are a boring little shit aren't you?"
+n "Вінсент присів і схопив мене за ноги" # "Vincent kneeled down and grabbed my legs."
+n "Він глибоко мене понюхав і лизнув мою шкіру" # "He sniffed me deep and licked my skin."
+p "Ахх.. " # "Ahh.. "
+n "Холод пробіг моїм хребтом, коли він провів язиком від живота до грудей" # "I felt a chill up my spine as he ran his tongue up my stomach to my chest."
+n "Я вигнув спину назустріч його дотику" # "I arched my back into his touch."
 $ vexp = 4
-vincent "You like it when I do this to you?"
-n "I felt every inch of myself tremble as he spoke into my chest."
-n "I let out a breath but it was cut short."
-n "Vincent thrusted a large knife into my chest and started to dig."
-n "I coughed out blood and stared at him."
-p "AHH!!!"
+vincent "Тобі подобається, коли я роблю з тобою таке?" # "You like it when I do this to you?"
+n "Кожен сантиметр мого тіла тремтів, поки він говорив мені в груди" # "I felt every inch of myself tremble as he spoke into my chest."
+n "Я видихнув, але видих обірвався" # "I let out a breath but it was cut short."
+n "Вінсент увігнав великий ніж мені в груди й почав копирсатися" # "Vincent thrusted a large knife into my chest and started to dig."
+n "Я викашляв кров і витріщився на нього" # "I coughed out blood and stared at him."
+p "ААХ!!!" # "AHH!!!"
 $ health -=30
-n "I could feel him breaking my rib cage."
-n "I let out a scream but I kept choking on the blood filling my lungs."
-vincent "You really think I was going to keep you."
-n "He grinned at me as he broke the rib out of my chest."
+n "Я відчував, як він ламає мою грудну клітку" # "I could feel him breaking my rib cage."
+n "Я закричав, але все давився кров'ю, що заповнювала легені" # "I let out a scream but I kept choking on the blood filling my lungs."
+vincent "Ти справді думав, що я тебе лишу" # "You really think I was going to keep you."
+n "Він вишкірився до мене, виламуючи ребро з моїх грудей" # "He grinned at me as he broke the rib out of my chest."
 $ health -=30
-n "I stared at him coughing."
+n "Я витріщився на нього, кашляючи" # "I stared at him coughing."
 show CG_vincent_Neglove_death with dissolve
-n "I felt myself getting weaker as the blood poured out of me."
-p "...St-stop..."
+n "Я відчував, як слабшаю, поки кров витікала з мене" # "I felt myself getting weaker as the blood poured out of me."
+p "...З-зупинись..." # "...St-stop..."
 $ health -=30
-n "Vincent ripped the bone from my chest and gnawed on it."
-n "I could feel my vision blurring as Vincent ran his tongue on my rib."
-vincent "Your meat tastes amazing."
-n "I closed my eyes."
+n "Вінсент вирвав кістку з моїх грудей і почав її гризти" # "Vincent ripped the bone from my chest and gnawed on it."
+n "В очах мутнішало, поки Вінсент облизував моє ребро" # "I could feel my vision blurring as Vincent ran his tongue on my rib."
+vincent "Твоє м'ясо на смак неймовірне" # "Your meat tastes amazing."
+n "Я заплющив очі" # "I closed my eyes."
 $ health -=30
-vincent "I'll enjoy you for days."
-n "I could hear him laughing in the darkness as I felt him cut into my stomach."
+vincent "Я насолоджуватимусь тобою днями" # "I'll enjoy you for days."
+n "Я чув, як він сміється в темряві, поки відчував, як він розрізає мій живіт" # "I could hear him laughing in the darkness as I felt him cut into my stomach."
 hide screen health_bar
 hide screen sanity_bar
 hide screen vincent_rage_bar
@@ -4899,28 +4899,28 @@ play music "vincent/vincent_death.mp3"
 $ persistent.vincent_ending_neg_lovedeath = True
 scene endslate with Dissolve(1.0)
 screen vincent_neg_lovedeath:
-    text "{=endslate_title}You Died{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-    text "\n\n\n\n{=endslate_subtitle}Vincent didn't like you.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+    text "{=endslate_title}Ти помер{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died"
+    text "\n\n\n\n{=endslate_subtitle}Ти не сподобався Вінсенту.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "Vincent didn't like you."
 show screen vincent_neg_lovedeath
 with Dissolve(1.0)
 pause
 return
 
 label vincent_health_death:
-n "Vincent slapped my face."
-n "I could feel myself getting more tired."
-vincent "Hey what's your problem!?"
-vincent "This isn't that bad!"
-n "Vincent sighed as he stood up straight."
-vincent "Well You couldn't take this much hm?"
-n "Vincent put his foot on my chest forcing me down to the floor."
-vincent "I'll make it quick.."
-n "He lifted his boot and smashed it into my chest."
-n "I let out a gasp as he stomped my ribs in."
-n "I could hear my bones cracking but-"
-n "I couldn't scream."
-n "I was too tired."
-vincent "Sorry, kiddo, We couldn't have more fun."
+n "Вінсент ляснув мене по обличчю" # "Vincent slapped my face."
+n "Я відчував, як утома дедалі більше бере гору" # "I could feel myself getting more tired."
+vincent "Гей, що з тобою не так!?" # "Hey what's your problem!?"
+vincent "Це ж не так уже й погано!" # "This isn't that bad!"
+n "Вінсент зітхнув і випростався" # "Vincent sighed as he stood up straight."
+vincent "Ну, стільки ти витримати не зміг, га?" # "Well You couldn't take this much hm?"
+n "Вінсент поставив ногу мені на груди, притискаючи до підлоги" # "Vincent put his foot on my chest forcing me down to the floor."
+vincent "Я зроблю це швидко.." # "I'll make it quick.."
+n "Він підняв чобіт і вгатив ним мені в груди" # "He lifted his boot and smashed it into my chest."
+n "Я охнув, коли він розтрощив мені ребра" # "I let out a gasp as he stomped my ribs in."
+n "Я чув, як хрустять мої кістки, але-" # "I could hear my bones cracking but-"
+n "Я не міг кричати" # "I couldn't scream."
+n "Я був надто виснажений" # "I was too tired."
+vincent "Вибач, малий, більше повеселитися нам не судилося" # "Sorry, kiddo, We couldn't have more fun."
 hide screen health_bar
 hide screen sanity_bar
 hide screen vincent_rage_bar
@@ -4928,84 +4928,84 @@ play music "vincent/vincent_death.mp3"
 $ persistent.vincent_ending_healthdeath = True
 scene endslate with Dissolve(1.0)
 screen vincent_ending_healthdeath:
-    text "{=endslate_title}You Died{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-    text "\n\n\n\n{=endslate_subtitle}You were too tired.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+    text "{=endslate_title}Ти помер{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died"
+    text "\n\n\n\n{=endslate_subtitle}Ти був надто виснажений.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "You were too tired."
 show screen vincent_ending_healthdeath
 with Dissolve(1.0)
 pause
 return
 
 label vincent_temper_death:
-n "Vincent dropped what he was doing."
+n "Вінсент кинув те, чим займався" # "Vincent dropped what he was doing."
 $ vblush, vexp = 0 , 2
-n "He grabbed my wrists and handcuffed them in a new set of handcuffs away from the radiator."
-p "HEY... WHAT ARE-"
-vincent "SHUT IT."
-n "Vincent growled between his teeth as he looked up."
-n "There was a meat hook on a chain hanging from the ceiling."
-n "He yanked it down and hooked the handcuffs on to it."
-n "He slapped my face as he walked past me to crank the hook back into the ceiling."
-n "I could feel the handcuffs cutting into my wrists."
-n "He started to pace back and forth with slow strides."
-n "He slowly looked in my direction from time to time."
-vincent "Fuck."
-n "He walked back to his desk and picked up something from the desk."
-n "He slipped something over his hands and walked over to me."
-vincent "I need ... some of this aggression out."
-n "Vincent flashed his brass knuckles at me and I gulped."
-p "Wa-wait... Please."
-n "I let out a soft sob as he shook his head."
-vincent "NO WAITING."
-n "He grabbed my sides and pulled me down quick and sharp."
-n "I could feel my arms dislocating from the joint as he pulled."
+n "Він схопив мої зап'ястя й скував їх новими наручниками, віддалік від батареї" # "He grabbed my wrists and handcuffed them in a new set of handcuffs away from the radiator."
+p "ГЕЙ... ЩО ТИ РО-" # "HEY... WHAT ARE-"
+vincent "СТУЛИ ЇЇ" # "SHUT IT."
+n "Вінсент загарчав крізь зуби, підвівши погляд" # "Vincent growled between his teeth as he looked up."
+n "Зі стелі на ланцюгу звисав м'ясний гак" # "There was a meat hook on a chain hanging from the ceiling."
+n "Він смикнув його вниз і зачепив за нього наручники" # "He yanked it down and hooked the handcuffs on to it."
+n "Він ляснув мене по обличчю, проходячи повз, щоб підняти гак назад до стелі" # "He slapped my face as he walked past me to crank the hook back into the ceiling."
+n "Я відчував, як наручники врізаються в мої зап'ястя" # "I could feel the handcuffs cutting into my wrists."
+n "Він почав міряти кроками кімнату повільною ходою" # "He started to pace back and forth with slow strides."
+n "Час від часу він повільно поглядав у мій бік" # "He slowly looked in my direction from time to time."
+vincent "Блять" # "Fuck."
+n "Він повернувся до столу й узяв щось із нього" # "He walked back to his desk and picked up something from the desk."
+n "Він натягнув щось на руки й підійшов до мене" # "He slipped something over his hands and walked over to me."
+vincent "Мені треба ... випустити трохи цієї агресії" # "I need ... some of this aggression out."
+n "Вінсент блиснув переді мною кастетом, і я ковтнув" # "Vincent flashed his brass knuckles at me and I gulped."
+p "С-стій... Будь ласка" # "Wa-wait... Please."
+n "Я тихо схлипнув, а він похитав головою" # "I let out a soft sob as he shook his head."
+vincent "НІЯКИХ СТІЙ" # "NO WAITING."
+n "Він схопив мене за боки й різко смикнув униз" # "He grabbed my sides and pulled me down quick and sharp."
+n "Я відчував, як мої руки вивихуються з суглобів, поки він тягнув" # "I could feel my arms dislocating from the joint as he pulled."
 $ health -=30
-p "STOP..."
-n "I cried out and thrashed."
+p "ЗУПИНИСЬ..." # "STOP..."
+n "Я закричав і забився" # "I cried out and thrashed."
 $ health -=10
-n "But, my movements were all in vain as I felt my joint dislocating."
-n "Hot tears streamed down my face as I looked at him."
-p "...N-..no I'm sorry..."
-p "Please... let me down..."
-n "He growled loudly."
-n "He took a fighting stance that looked familiar but I didn't have time to think about it before he cracked his knuckles into my leg."
+n "Але мої рухи були марні, і я відчув, як вивихується суглоб" # "But, my movements were all in vain as I felt my joint dislocating."
+n "Гарячі сльози текли моїм обличчям, поки я дивився на нього" # "Hot tears streamed down my face as I looked at him."
+p "...Н-..ні, вибач..." # "...N-..no I'm sorry..."
+p "Будь ласка... спусти мене..." # "Please... let me down..."
+n "Він голосно загарчав" # "He growled loudly."
+n "Він став у бойову стійку, яка здалася знайомою, але я не встиг про це подумати, як він вгатив кастетом мені в ногу" # "He took a fighting stance that looked familiar but I didn't have time to think about it before he cracked his knuckles into my leg."
 $ health -=10
-n "I let out a loud scream that echoed off the walls of the bunker."
+n "Я голосно закричав, і крик відлунив від стін бункера" # "I let out a loud scream that echoed off the walls of the bunker."
 $ vexp = 5
-vincent "That's right."
-vincent "Fucking scream."
+vincent "Ось так" # "That's right."
+vincent "Кричи, блять" # "Fucking scream."
 $ health -=10
-n "He growled under his breath as he set another punch into my leg."
+n "Він загарчав собі під ніс, завдаючи ще одного удару по нозі" # "He growled under his breath as he set another punch into my leg."
 $ vexp = 4
-vincent "I wonder if I can break your femur."
+vincent "Цікаво, чи зможу я зламати тобі стегнову кістку" # "I wonder if I can break your femur."
 $ health -=10
-n "He started to send repeating blows into my leg."
+n "Він почав наносити удар за ударом по моїй нозі" # "He started to send repeating blows into my leg."
 $ health -=10
-n "I cried as the hard metal and his heavy punches made contact with me."
+n "Я плакав, поки твердий метал і його важкі удари врізалися в мене" # "I cried as the hard metal and his heavy punches made contact with me."
 $ health -=10
-n "He was too strong and in what felt like an eternity I could hear a loud snap."
+n "Він був надто сильний, і за час, що здався вічністю, я почув гучний хрускіт" # "He was too strong and in what felt like an eternity I could hear a loud snap."
 $ vexp = 5
-n "I let out a shrill shriek as my femur cracked leaving my leg a bloody mess."
+n "Я пронизливо заверещав, коли моя стегнова кістка тріснула, перетворивши ногу на криваве місиво" # "I let out a shrill shriek as my femur cracked leaving my leg a bloody mess."
 $ health -=50
-n "He grabbed my chin as he watched me sob."
-vincent "I'm not done with you yet."
-n "He scooted back a step as I looked up at him."
-n "He rushed forward and smashed my ribs with his elbow."
+n "Він схопив мене за підборіддя, дивлячись, як я ридаю" # "He grabbed my chin as he watched me sob."
+vincent "Я з тобою ще не закінчив" # "I'm not done with you yet."
+n "Він відступив на крок, поки я дивився на нього знизу" # "He scooted back a step as I looked up at him."
+n "Він рвонув уперед і вгатив ліктем мені по ребрах" # "He rushed forward and smashed my ribs with his elbow."
 $ health -=50
-n "The pain was blinding, I didn't know how strong he was."
-n "I gasped loudly and coughed."
-n "I could feel my ribs cracking every time I took a breath."
-n "Vincent put his fists up again and sent blow after blow into my torso."
-n "I couldn't breath, I let out a scream but all that came out was blood."
+n "Біль засліплював, я й гадки не мав, який він сильний" # "The pain was blinding, I didn't know how strong he was."
+n "Я голосно охнув і закашлявся" # "I gasped loudly and coughed."
+n "Я відчував, як мої ребра тріщать з кожним вдихом" # "I could feel my ribs cracking every time I took a breath."
+n "Вінсент знову підняв кулаки й завдавав удар за ударом по моєму торсу" # "Vincent put his fists up again and sent blow after blow into my torso."
+n "Я не міг дихати, я закричав, але з рота вийшла лише кров" # "I couldn't breath, I let out a scream but all that came out was blood."
 show CG_vincent_temper_death with dissolve
-n "Vincent looked at me and smirked, smashing his lips on mine, sucking out the blood and blowing in air."
-vincent "Don't die on me yet."
-vincent "I wanna savor your suffering."
-n "Vincent licked my blood off his lips as I looked hazily at him."
-n "I opened my mouth to speak but I only let out soft gasps."
-n "My vision was getting blurry as he wiped the sweat off his forehead."
-vincent "That was a good work out."
-n "He grinned as my vision started to fade."
-vincent "You're more useful as a punching bag."
+n "Вінсент глянув на мене й самовдоволено посміхнувся, притиснувши свої губи до моїх, висмоктуючи кров і вдуваючи повітря" # "Vincent looked at me and smirked, smashing his lips on mine, sucking out the blood and blowing in air."
+vincent "Не смій ще здихати" # "Don't die on me yet."
+vincent "Я хочу насолодитися твоїми стражданнями" # "I wanna savor your suffering."
+n "Вінсент злизав мою кров з губ, поки я мутно дивився на нього" # "Vincent licked my blood off his lips as I looked hazily at him."
+n "Я відкрив рота, щоб щось сказати, але з нього виривалося лише тихе хрипіння" # "I opened my mouth to speak but I only let out soft gasps."
+n "В очах мутнішало, поки він витирав піт з чола" # "My vision was getting blurry as he wiped the sweat off his forehead."
+vincent "Оце було гарне тренування" # "That was a good work out."
+n "Він вишкірився, поки мій зір починав згасати" # "He grinned as my vision started to fade."
+vincent "Від тебе більше користі як від груші для биття" # "You're more useful as a punching bag."
 hide screen health_bar
 hide screen sanity_bar
 hide screen vincent_rage_bar
@@ -5013,8 +5013,8 @@ play music "vincent/vincent_death.mp3"
 $ persistent.vincent_ending_temperdeath = True
 scene endslate with Dissolve(1.0)
 screen vincent_ending_temperdeath:
-    text "{=endslate_title}You Died{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-    text "\n\n\n\n{=endslate_subtitle}Vincent used you as a punching bag.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+    text "{=endslate_title}Ти помер{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died"
+    text "\n\n\n\n{=endslate_subtitle}Вінсент зробив з тебе грушу для биття.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "Vincent used you as a punching bag."
 show screen vincent_ending_temperdeath
 with Dissolve(1.0)
 pause
@@ -5023,19 +5023,19 @@ return
 
 label cain_VS_Vincent_ending:
 hide screen cain_feather
-n "I closed my eyes."
-n "What could I do?"
-n "I needed someone..."
+n "Я заплющив очі" # "I closed my eyes."
+n "Що я міг зробити?" # "What could I do?"
+n "Мені хтось був потрібен..." # "I needed someone..."
 hide farz with dissolve
 show vincent at center
-p "Cain help me."
-n "I clutched my hand tightly around a feather I was sure I didn't have before."
+p "Каїне, допоможи мені" # "Cain help me."
+n "Я міцно стиснув у руці перо, якого точно раніше не мав" # "I clutched my hand tightly around a feather I was sure I didn't have before."
 $ vexp =1
-vincent "What did you say!?"
-n "I heard Vincent's voice call out roughly to me."
-n "I opened my eyes and looked up."
-n "Large black wings."
-$ cain_name = "Cain"
+vincent "Що ти сказав!?" # "What did you say!?"
+n "Я почув, як голос Вінсента грубо гукнув до мене" # "I heard Vincent's voice call out roughly to me."
+n "Я розплющив очі й підвів погляд" # "I opened my eyes and looked up."
+n "Великі чорні крила" # "Large black wings."
+$ cain_name = "Каїн" # "Cain"
 play music "cain/cain_shift.mp3"
 $ cain_love = 100
 $ cbase, cexp= 3,1
@@ -5050,12 +5050,12 @@ show cain:
     alpha 0.0
     pause 0.2
     easeout 0.3 alpha 1.0
-cain "Tsk tsk tsk."
-cain "Always getting yourself into trouble hm?"
+cain "Тц-тц-тц" # "Tsk tsk tsk."
+cain "Вічно ти влипаєш у халепу, га?" # "Always getting yourself into trouble hm?"
 hide vincent with dissolve
-n "Cain turned towards me, his glowing eyes locking onto mine."
+n "Каїн повернувся до мене, його сяючі очі прикипіли до моїх" # "Cain turned towards me, his glowing eyes locking onto mine."
 show cain at center
-n "He snapped his fingers and pointed at Farz in the room."
+n "Він клацнув пальцями й вказав на Фарца в кімнаті" # "He snapped his fingers and pointed at Farz in the room."
 hide cain dissolve
 scene falloutshelter:
     subpixel True
@@ -5063,87 +5063,87 @@ scene falloutshelter:
     easeout 0.1 xalign 0.0
 $ fbase, fexp = 1, 2
 show farz
-cain "Take care of that will you?"
-farz "FUCK YOU."
-n "The person called as I tackled him to the ground."
-farz "GET OFF OF ME, BITCH."
-n "He screamed as he punched me in the face."
-n "I grabbed the knife from his other hand and plunged it into his chest."
+cain "Розберися з цим, гаразд?" # "Take care of that will you?"
+farz "ПІШОВ ТИ НАХУЙ" # "FUCK YOU."
+n "Крикнула ця особа, поки я валив його на землю" # "The person called as I tackled him to the ground."
+farz "ЗЛІЗЬ З МЕНЕ, СУКО" # "GET OFF OF ME, BITCH."
+n "Він закричав, вдаривши мене в обличчя" # "He screamed as he punched me in the face."
+n "Я вихопив ніж з його другої руки й увігнав йому в груди" # "I grabbed the knife from his other hand and plunged it into his chest."
 hide farz with dissolve
 scene falloutshelter:
     subpixel True
     xalign 0.0
     easeout 0.1 xalign 0.5
-n "I let out a loud cry as I felt someone grab my hair and toss me at Cain."
-n "I could feel Cain's hands on my torso, catching me midair."
+n "Я голосно скрикнув, коли хтось схопив мене за волосся й жбурнув до Каїна" # "I let out a loud cry as I felt someone grab my hair and toss me at Cain."
+n "Я відчув руки Каїна на своєму торсі, коли він упіймав мене в повітрі" # "I could feel Cain's hands on my torso, catching me midair."
 show cain:
     xalign 0.9
-n "It was quiet."
-n "I could hear the other person coughing and Vincent's low voice."
-n "He said something to them."
-n "It was too soft, I couldn't hear it myself."
-n "He held Farz close and I knew he was dead."
-n "I killed Farz."
-n "It was too quiet."
+n "Було тихо" # "It was quiet."
+n "Я чув, як хтось кашляє, і низький голос Вінсента" # "I could hear the other person coughing and Vincent's low voice."
+n "Він щось їм сказав" # "He said something to them."
+n "Надто тихо, я й сам не розчув" # "It was too soft, I couldn't hear it myself."
+n "Він притискав Фарца до себе, і я знав, що той мертвий" # "He held Farz close and I knew he was dead."
+n "Я вбив Фарца" # "I killed Farz."
+n "Було надто тихо" # "It was too quiet."
 $ cbase, cexp= 3,9
-cain "Get up beast, It's your turn."
-n "Cain said his tone bored and flat."
+cain "Вставай, звіре, тепер твоя черга" # "Get up beast, It's your turn."
+n "Сказав Каїн знудженим і рівним тоном" # "Cain said his tone bored and flat."
 $ temper +=100
-n "Vincent got up and let out a loud cry."
-n "Vincent's pain howl vibrated off the walls."
-n "Cain seemed uninteresred in the display as Vincent turned on his heel."
-n " He charged straight at me."
+n "Вінсент підвівся й голосно закричав" # "Vincent got up and let out a loud cry."
+n "Сповнене болю виття Вінсента відлунювало від стін" # "Vincent's pain howl vibrated off the walls."
+n "Каїн, здавалося, був байдужий до цього видовища, поки Вінсент розвертався на п'ятах" # "Cain seemed uninteresred in the display as Vincent turned on his heel."
+n " Він кинувся прямо на мене" # " He charged straight at me."
 show vincent:
     xalign 0.1
 $ vexp = 13
-vincent "I'M GOING TO RIP YOUR GODDAMN HEAD OFF."
-n "Cain pushed me aside and pulled out long silver sword."
-cain "This will suffice for you."
-n "Cain said as he pushed it into Vincent's chest."
+vincent "Я ВІДІРВУ ТОБІ ТВОЮ КЛЯТУ ГОЛОВУ" # "I'M GOING TO RIP YOUR GODDAMN HEAD OFF."
+n "Каїн відштовхнув мене вбік і витягнув довгий срібний меч" # "Cain pushed me aside and pulled out long silver sword."
+cain "Цього для тебе вистачить" # "This will suffice for you."
+n "Сказав Каїн, встромляючи його Вінсенту в груди" # "Cain said as he pushed it into Vincent's chest."
 show CG_vincent_VS_cain with dissolve
-n "Vincent gnashed his teeth at Cain."
-cain "Tsk."
-n "Cain pushed the sword in further causing Vincent to cough blood."
-n "He looked up at Cain."
-cain "Haven't you learned-"
+n "Вінсент вишкірив зуби на Каїна" # "Vincent gnashed his teeth at Cain."
+cain "Тц" # "Tsk."
+n "Каїн заштовхнув меч глибше, від чого Вінсент викашляв кров" # "Cain pushed the sword in further causing Vincent to cough blood."
+n "Він глянув угору на Каїна" # "He looked up at Cain."
+cain "Хіба ти й досі не засвоїв-" # "Haven't you learned-"
 $ cbase, cexp= 3,8
-n "Cain's words were cut short by Vincent spitting his own blood into Cain's open mouth."
-n "Cain let the sword go."
+n "Слова Каїна обірвалися, коли Вінсент плюнув власною кров'ю в розкритий рот Каїна" # "Cain's words were cut short by Vincent spitting his own blood into Cain's open mouth."
+n "Каїн відпустив меч" # "Cain let the sword go."
 scene falloutshelter:
     subpixel True
     xalign 0.5
 show cain with dissolve
-n "Vincent weak laughter filled the room as he stumbled backwards kneeling down near Farz's body again."
-vincent "..S-say hi to my dad for me."
+n "Слабкий сміх Вінсента заповнив кімнату, поки він, заточуючись, позадкував і знову опустився на коліна біля тіла Фарца" # "Vincent weak laughter filled the room as he stumbled backwards kneeling down near Farz's body again."
+vincent "..П-передавай привіт моєму батьку" # "..S-say hi to my dad for me."
 hide screen health_bar
 hide screen sanity_bar
 hide screen vincent_rage_bar
-n "Vincent laid down neck to the other body."
-n "Cain touched the blood around his mouth and looked at it narrowing his eyes."
-cain "...You can't stay out of trouble can you?"
-n "Cain put his hand on my shoulder."
-n "It felt like a torrent of darkness as I appeared back in my own apartment."
+n "Вінсент ліг поруч з іншим тілом" # "Vincent laid down neck to the other body."
+n "Каїн торкнувся крові навколо свого рота й глянув на неї, примруживши очі" # "Cain touched the blood around his mouth and looked at it narrowing his eyes."
+cain "...Ти ніяк не можеш триматися подалі від халеп, чи не так?" # "...You can't stay out of trouble can you?"
+n "Каїн поклав руку мені на плече" # "Cain put his hand on my shoulder."
+n "Це відчувалося як потік темряви, і я опинився назад у власній квартирі" # "It felt like a torrent of darkness as I appeared back in my own apartment."
 scene bedroom with fade
 show cain with dissolve
-p "Oh..Th-thank you."
+p "О..Д-дякую" # "Oh..Th-thank you."
 $ cbase, cexp= 3,12
-cain "No need for thanks."
-n "Cain backed up."
-n "I looked around nervously."
-n "Something didn't feel right."
-n "The walls were shifting inwards."
-n "I put my hand on one of the walls."
+cain "Подяки не треба" # "No need for thanks."
+n "Каїн відступив" # "Cain backed up."
+n "Я нервово роззирнувся" # "I looked around nervously."
+n "Щось було не так" # "Something didn't feel right."
+n "Стіни сунулися всередину" # "The walls were shifting inwards."
+n "Я поклав руку на одну зі стін" # "I put my hand on one of the walls."
 $ cbase, cexp= 3,18
-cain "You owe me now."
-cain "Your soul will do."
-n "He kicked my knees out from under me."
-n "I scrambled desperately to get up but..."
+cain "Тепер ти мені винен" # "You owe me now."
+cain "Твоя душа підійде" # "Your soul will do."
+n "Він вибив з-під мене ноги" # "He kicked my knees out from under me."
+n "Я відчайдушно борсався, намагаючись встати, але..." # "I scrambled desperately to get up but..."
 scene black with fade
-n "I could feel the ceiling above my head."
-n "Everything was closing in and I kneeled down putting my forehead on the floor."
-cain "Know your place."
-n "Cain's words rumbled in my small box."
-n "I couldn't move."
+n "Я відчував стелю прямо над головою" # "I could feel the ceiling above my head."
+n "Усе стискалося довкола, і я опустився навколішки, притиснувши чоло до підлоги" # "Everything was closing in and I kneeled down putting my forehead on the floor."
+cain "Знай своє місце" # "Know your place."
+n "Слова Каїна прогриміли в моїй тісній коробці" # "Cain's words rumbled in my small box."
+n "Я не міг поворухнутися" # "I couldn't move."
 hide screen health_bar
 hide screen sanity_bar
 hide screen vincent_rage_bar
@@ -5152,8 +5152,8 @@ $ persistent.vincent_ending_death = True
 $ persistent.cain_ending_vincent_saved = True
 scene black with Dissolve(1.0)
 screen cain_ending_vincent_saved:
-    text "{=endslate_title}You survived!{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-    text "\n\n\n\n{=endslate_subtitle}Cain saved you.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+    text "{=endslate_title}Ти вижив!{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You survived!"
+    text "\n\n\n\n{=endslate_subtitle}Каїн врятував тебе.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "Cain saved you."
 show screen cain_ending_vincent_saved 
 with Dissolve(1.0)
 pause
@@ -5362,817 +5362,817 @@ $ damien_day2_call = False
 $ cain_noon_bathroom = False
 $ cain_bedroom_day1 = False
 scene bedroom
-n "Maybe a cafe would be nice tonight."
-n "I left my apartment and headed to the cafe."
+n "Може, кафе — непогана ідея на сьогоднішній вечір" # "Maybe a cafe would be nice tonight."
+n "Я вийшов зі своєї квартири й попрямував до кафе" # "I left my apartment and headed to the cafe."
 scene cafe with fade
 play music "cain/cain_intro.mp3"
-n " It was actually pretty quiet."
-n "The sound of a piano slowly began to cut through the silence like tissue and I was soon completely mesmerized by the bewitching music."
-n " I don't even really remember entering the cafe I was so enthralled."
-cain "Moonlight Sonata."
-n " A suave voice broke me from my stupor."
-n "I had suddenly found myself standing next to the source of the alluring music."
+n " Тут було доволі тихо" # " It was actually pretty quiet."
+n "Звук піаніно повільно почав розтинати тишу, наче тканину, і невдовзі я був повністю зачарований цією ворожливою музикою" # "The sound of a piano slowly began to cut through the silence like tissue and I was soon completely mesmerized by the bewitching music."
+n " Я навіть не пам'ятаю, як зайшов до кафе, настільки був захоплений" # " I don't even really remember entering the cafe I was so enthralled."
+cain "Місячна соната" # "Moonlight Sonata."
+n " Оксамитовий голос вирвав мене із заціпеніння" # " A suave voice broke me from my stupor."
+n "Я раптом виявив, що стою поруч із джерелом цієї звабливої музики" # "I had suddenly found myself standing next to the source of the alluring music."
 show cain fake
 $ persistent.character_unlock_cain = True
-cain "Enjoying the music?"
-n "I stared at him for a moment before responding."
-p "Oh! Yes. It's very lovely."
-n " He looked up from the keys, his hands continuing their melodious work."
-cain "Please, have a seat."
-n "He nodded to a nearby chair before returning his attention to the ivories."
-n "I took my seat and quietly watched him play."
-n "His long fingers danced elegantly across the keys and I couldn't help but be hypnotized all over again."
-n "I stared at the side of his face and watched him for a moment."
-n "I...I wanted to know more about him."
-cain "Is there something on my face?"
-n "His joking comment brought me back to reality."
-n "Again.. I looked up at him and shook my head."
-p "Uh, no."
-p "Just amazed by your playing."
-n "He chuckled and gave me a side glance."
-cain "Now, I know that you didn't come all the way here just to listen to me play."
-n "He took his hands off the keys and turned to face me, finally giving me his full attention."
-cain "So then, sweetheart, what can I do for you?"
+cain "Насолоджуєшся музикою?" # "Enjoying the music?"
+n "Я якусь мить витріщався на нього, перш ніж відповісти" # "I stared at him for a moment before responding."
+p "О! Так. Вона дуже чарівна" # "Oh! Yes. It's very lovely."
+n " Він відірвав погляд від клавіш, а його руки продовжували свою мелодійну роботу" # " He looked up from the keys, his hands continuing their melodious work."
+cain "Прошу, присядь" # "Please, have a seat."
+n "Він кивнув на сусідній стілець, перш ніж повернути увагу до клавіш" # "He nodded to a nearby chair before returning his attention to the ivories."
+n "Я сів і тихо спостерігав, як він грає" # "I took my seat and quietly watched him play."
+n "Його довгі пальці елегантно танцювали по клавішах, і я знову не міг не піддатися гіпнозу" # "His long fingers danced elegantly across the keys and I couldn't help but be hypnotized all over again."
+n "Я задивився на його профіль і якусь мить спостерігав за ним" # "I stared at the side of his face and watched him for a moment."
+n "Я...я хотів дізнатися про нього більше" # "I...I wanted to know more about him."
+cain "У мене щось на обличчі?" # "Is there something on my face?"
+n "Його жартівливе зауваження повернуло мене до реальності" # "His joking comment brought me back to reality."
+n "Знову.. я глянув на нього й похитав головою" # "Again.. I looked up at him and shook my head."
+p "Е, ні" # "Uh, no."
+p "Просто вражений твоєю грою" # "Just amazed by your playing."
+n "Він гигикнув і скоса глянув на мене" # "He chuckled and gave me a side glance."
+cain "Ну, я знаю, що ти прийшов сюди не тільки заради того, щоб слухати мою гру" # "Now, I know that you didn't come all the way here just to listen to me play."
+n "Він прибрав руки з клавіш і повернувся до мене, нарешті приділивши мені всю свою увагу" # "He took his hands off the keys and turned to face me, finally giving me his full attention."
+cain "То чим я можу тобі допомогти, любчику?" # "So then, sweetheart, what can I do for you?"
 menu:
-    "\"Oh, right. I guess a coffee sounds good right about now.\"":
+    "\"О, точно. Гадаю, кава зараз була б доречною.\"": # "Oh, right. I guess a coffee sounds good right about now."
         show cain fake_eyeroll
         $ cain_boredom += 1
-        cain "Well, I suppose that IS why most people come to a cafe."
+        cain "Ну, гадаю, саме ЗАРАДИ цього більшість людей і приходить до кафе" # "Well, I suppose that IS why most people come to a cafe."
         show cain fake
-        n "He teased and stood up."
-    "\"Maybe I did just come here for the music. Is that a crime?\"":
+        n "Піддражнив він і підвівся" # "He teased and stood up."
+    "\"Може, я й прийшов сюди заради музики. Хіба це злочин?\"": # "Maybe I did just come here for the music. Is that a crime?"
 
         $ cain_love +=10
-        n " He laughed at me and crossed his arms."
-        cain "As far as I know it's not, but I think you might have to reevaluate your priorities, sugar."
-        n "He stood up."
-    "\"Maybe I just wanted to find some interesting people to talk to.\"":
+        n " Він засміявся з мене й схрестив руки" # " He laughed at me and crossed his arms."
+        cain "Наскільки мені відомо, ні, але, гадаю, тобі варто переглянути свої пріоритети, солоденький" # "As far as I know it's not, but I think you might have to reevaluate your priorities, sugar."
+        n "Він підвівся" # "He stood up."
+    "\"Може, я просто хотів знайти цікавих людей для розмови.\"": # "Maybe I just wanted to find some interesting people to talk to."
 
         show cain fake_frown
         $ cain_love -=10
-        cain "Oh? And do I fit that \"interesting person\" criteria?"
+        cain "О? І чи підходжу я під критерій \"цікавої людини\"?" # "Oh? And do I fit that "interesting person" criteria?"
         show cain fake_grin
-        n " I couldn't come up with a response."
-        n "I only blushed harder."
-        n "He then got up from his bench and motioned for me to follow him."
-        cain "Come with me."
+        n " Я не зміг придумати відповіді" # " I couldn't come up with a response."
+        n "Я лише сильніше почервонів" # "I only blushed harder."
+        n "Тоді він підвівся зі свого стільця й жестом покликав мене за собою" # "He then got up from his bench and motioned for me to follow him."
+        cain "Ходімо зі мною" # "Come with me."
 
-p "What about the piano?"
-n "I asked, pointing at the beautiful instrument."
+p "А як же піаніно?" # "What about the piano?"
+n "Спитав я, вказуючи на прекрасний інструмент" # "I asked, pointing at the beautiful instrument."
 show cain fake
-cain "Don't worry."
-cain "It's not going anywhere."
-n " He held out his hand and helped me out of my seat."
-n "We walked over to the barista's counter together and ordered some coffee."
-n "I watched him as he spoke to the woman working behind the counter."
-n "I kept my eyes on him."
-n "I was finding it exceedingly difficult to look anywhere else."
-cain "So what's your name, love?"
-n "He asked, his attention now back on me."
-n "I snapped back to reality before managing to choke out my name."
-p "It's %(player_name)s."
+cain "Не хвилюйся" # "Don't worry."
+cain "Воно нікуди не дінеться" # "It's not going anywhere."
+n " Він простягнув руку й допоміг мені підвестися" # " He held out his hand and helped me out of my seat."
+n "Ми разом підійшли до стійки бариста й замовили кави" # "We walked over to the barista's counter together and ordered some coffee."
+n "Я спостерігав за ним, поки він говорив із жінкою за стійкою" # "I watched him as he spoke to the woman working behind the counter."
+n "Я не зводив з нього очей" # "I kept my eyes on him."
+n "Мені було неймовірно важко дивитися будь-куди ще" # "I was finding it exceedingly difficult to look anywhere else."
+cain "То як тебе звати, любий?" # "So what's your name, love?"
+n "Спитав він, знову звернувши увагу на мене" # "He asked, his attention now back on me."
+n "Я повернувся до реальності й нарешті спромігся вимовити своє ім'я" # "I snapped back to reality before managing to choke out my name."
+p "Мене звати %(player_name)s" # "It's %(player_name)s."
 if player_name == "Ashe":
     show cain fake_smirk
-    cain "Interesting name."
+    cain "Цікаве ім'я" # "Interesting name."
     show cain fake
 show cain fake_grin
-n "He brought me over to the table."
-n "He pushed a fancy looking coffee with ice cream towards me."
-cain "A pleasure to meet you."
-$ cain_name = "Cain"
-cain "My name is Cain. "
-n "Cain picked up a spoon and offered it to me."
-cain "Here, give this a try."
-cain "This place serves the best affogato that you will ever taste."
+n "Він підвів мене до столика" # "He brought me over to the table."
+n "Він підсунув до мене вишукану каву з морозивом" # "He pushed a fancy looking coffee with ice cream towards me."
+cain "Приємно познайомитися" # "A pleasure to meet you."
+$ cain_name = "Каїн" # "Cain"
+cain "Мене звати Каїн. " # "My name is Cain. "
+n "Каїн узяв ложку й простягнув мені" # "Cain picked up a spoon and offered it to me."
+cain "Ось, скуштуй це" # "Here, give this a try."
+cain "Тут подають найкраще афоґато, яке ти коли-небудь куштуватимеш" # "This place serves the best affogato that you will ever taste."
 show cain fake
 menu:
-    "\"I don't really like ice cream.\"":
+    "\"Я не дуже люблю морозиво.\"": # "I don't really like ice cream."
         $ cain_love +=10
-        cain "Ah. That's too bad."
-        cain "I suppose I should have asked you what you liked first."
-        n "Cain chuckled before digging into the dessert himself and pushing his black coffee over to me."
-        cain "Maybe you should try this instead."
-        cain "The coffee here is still very good."
-        n "He dipped his spoon into the bowl and continued to eat the affogato."
-        n "I looked down at the steaming dark coffee and took a sip."
-        n "Despite the inky color the flavor was rich and flavorful."
-        n "He was right."
-        n "It WAS very good."
-    "-Take the spoon-":
+        cain "Ах. Як шкода" # "Ah. That's too bad."
+        cain "Гадаю, спершу мені варто було спитати, що ти любиш" # "I suppose I should have asked you what you liked first."
+        n "Каїн гигикнув, а тоді сам узявся до десерту й підсунув мені свою чорну каву" # "Cain chuckled before digging into the dessert himself and pushing his black coffee over to me."
+        cain "Може, тоді спробуй краще оце" # "Maybe you should try this instead."
+        cain "Кава тут теж дуже добра" # "The coffee here is still very good."
+        n "Він занурив ложку в креманку й продовжив їсти афоґато" # "He dipped his spoon into the bowl and continued to eat the affogato."
+        n "Я глянув на гарячу темну каву й зробив ковток" # "I looked down at the steaming dark coffee and took a sip."
+        n "Попри чорнильний колір, смак був насичений і багатий" # "Despite the inky color the flavor was rich and flavorful."
+        n "Він мав рацію" # "He was right."
+        n "Вона СПРАВДІ була дуже добра" # "It WAS very good."
+    "-Взяти ложку-": # "-Take the spoon-"
 
         show cain fake_eyeroll
         $ cain_boredom += 1
-        n "I smiled and tried a spoonful."
+        n "Я всміхнувся й скуштував ложечку" # "I smiled and tried a spoonful."
         show cain fake
-        n "It tasted great!"
-        n "So great in fact I let the spoon linger in my mouth a bit."
-        n "Cain took a sip of coffee from his mug."
-        cain "So, how does it taste?"
-        n "I could feel my face heating up."
-        p "It's really good."
+        n "На смак було чудово!" # "It tasted great!"
+        n "Настільки чудово, що я навіть трохи затримав ложку в роті" # "So great in fact I let the spoon linger in my mouth a bit."
+        n "Каїн зробив ковток кави зі своєї чашки" # "Cain took a sip of coffee from his mug."
+        cain "Ну, як тобі на смак?" # "So, how does it taste?"
+        n "Я відчував, як моє обличчя пашіє" # "I could feel my face heating up."
+        p "Воно справді смачне" # "It's really good."
         show cain fake_grin
-        n "Cain reached out and patted my free hand."
-        n "His hands were warm and my face felt much hotter than it did earlier."
-        cain "Glad to hear it."
+        n "Каїн простягнув руку й поплескав мою вільну долоню" # "Cain reached out and patted my free hand."
+        n "Його руки були теплі, а моє обличчя палало ще сильніше, ніж раніше" # "His hands were warm and my face felt much hotter than it did earlier."
+        cain "Радий це чути" # "Glad to hear it."
         show cain fake
-        n "He released my hand and returned to his coffee."
-    "\"You first?\"":
+        n "Він відпустив мою руку й повернувся до своєї кави" # "He released my hand and returned to his coffee."
+    "\"Ти перший?\"": # "You first?"
 
         show cain fake_frown
         $ cain_love -=10
-        cain "Alright. As long as you don't mind having some of my germs with your dessert."
+        cain "Гаразд. Якщо ти не проти скуштувати трохи моїх мікробів разом із десертом" # "Alright. As long as you don't mind having some of my germs with your dessert."
         show cain fake
-        n "Cain laughed, picked up the spoon, and took a bite."
-        n "He dipped it back in and then held out the spoon for me."
-        cain "Open."
-        n "I opened my mouth for him and took a bite."
-        n "It was so delicious I ended up taking the spoon from him and licked the cream off of it."
-        p "It's absolutely delicious."
+        n "Каїн засміявся, узяв ложку й відкусив" # "Cain laughed, picked up the spoon, and took a bite."
+        n "Він знову занурив її й простягнув ложку мені" # "He dipped it back in and then held out the spoon for me."
+        cain "Відкривай" # "Open."
+        n "Я відкрив для нього рота й скуштував" # "I opened my mouth for him and took a bite."
+        n "Це було так смачно, що я врешті забрав у нього ложку й злизав з неї вершки" # "It was so delicious I ended up taking the spoon from him and licked the cream off of it."
+        p "Це абсолютно божественно" # "It's absolutely delicious."
         show cain fake_grin
-        cain "I'm glad you enjoyed it."
+        cain "Радий, що тобі сподобалось" # "I'm glad you enjoyed it."
         show cain fake
 
-n "Cain looked at the clock hanging above the barista's counter."
-cain "Oh my. Is it that time already?"
-n "He looked at me and leaned his head to the side."
-cain "I suppose time really does fly when you're having fun."
-n "He stood up, took my hand in his, and gave it a kiss."
-cain "Have a lovely rest of the night, my dear."
-cain "Unfortunately I have to go, but I do hope that we meet again."
-n "He started making his way towards the exit."
+n "Каїн глянув на годинник, що висів над стійкою бариста" # "Cain looked at the clock hanging above the barista's counter."
+cain "О боже. Невже вже так пізно?" # "Oh my. Is it that time already?"
+n "Він глянув на мене й схилив голову набік" # "He looked at me and leaned his head to the side."
+cain "Гадаю, час і справді летить, коли тобі весело" # "I suppose time really does fly when you're having fun."
+n "Він підвівся, узяв мою руку у свою й поцілував її" # "He stood up, took my hand in his, and gave it a kiss."
+cain "Гарного тобі решти вечора, любий" # "Have a lovely rest of the night, my dear."
+cain "На жаль, мені треба йти, але я щиро сподіваюся, що ми ще зустрінемось" # "Unfortunately I have to go, but I do hope that we meet again."
+n "Він рушив до виходу" # "He started making his way towards the exit."
 
 menu:
-    "\"Wait!\"":
+    "\"Стій!\"": # "Wait!"
         show cain fake_eyeroll
         $ cain_boredom += 1
-        cain "Yes?"
+        cain "Так?" # "Yes?"
         show cain fake
-        n "I felt my toes curl in my shoes, apprehensive on what to say next. "
-        p "N-never mind."
-        p "You have a good night too!"
-        n "Cain walked over and leaned his face in close to mine."
-        cain "...If there is something that you desire, you must ask for it."
-        cain "Indecisiveness can be one costly oversight."
+        n "Я відчув, як мої пальці на ногах підібгалися в черевиках, я боявся, що сказати далі. " # "I felt my toes curl in my shoes, apprehensive on what to say next. "
+        p "Н-не зважай" # "N-never mind."
+        p "І тобі гарної ночі!" # "You have a good night too!"
+        n "Каїн підійшов і наблизив своє обличчя до мого" # "Cain walked over and leaned his face in close to mine."
+        cain "...Якщо ти чогось прагнеш, ти маєш про це попросити" # "...If there is something that you desire, you must ask for it."
+        cain "Нерішучість може стати дорогою помилкою" # "Indecisiveness can be one costly oversight."
         show cain fake_smirk
-        cain "If you are too frightened to grab hold of your wishes then you will never have them."
-        n "Cain spoke softly and walked away."
-        n "I wasn't sure what to say."
+        cain "Якщо ти надто наляканий, щоб ухопитися за свої бажання, ти ніколи їх не матимеш" # "If you are too frightened to grab hold of your wishes then you will never have them."
+        n "Каїн промовив це тихо й пішов геть" # "Cain spoke softly and walked away."
+        n "Я не знав, що сказати" # "I wasn't sure what to say."
         hide cain with dissolve
-        n "By the time I was able to think up a retort he had already disappeared."
-        n "What...what was that all about?"
-    "\"Have a good night!\"":
+        n "Поки я спромігся придумати відповідь, він уже зник" # "By the time I was able to think up a retort he had already disappeared."
+        n "Що...що це взагалі було?" # "What...what was that all about?"
+    "\"Гарної ночі!\"": # "Have a good night!"
 
         $ cain_love +=10
-        p "You know, it's kind of funny."
-        p "You didn't strike me as the type to have a bedtime."
-        n "I teased. He responded with a jovial laugh."
-        cain "Well, I'm not as young as I used to be."
-        cain "I need to get my beauty sleep."
-        n "He pushed his fingers through his hair."
-        p "You look fairly young."
-        p "How old are you exactly, Cain?"
+        p "Знаєш, це навіть трохи кумедно" # "You know, it's kind of funny."
+        p "Ти не здався мені тим, у кого є час відходу до сну" # "You didn't strike me as the type to have a bedtime."
+        n "Піддражнив я. Він відповів веселим сміхом" # "I teased. He responded with a jovial laugh."
+        cain "Ну, я вже не такий молодий, як колись" # "Well, I'm not as young as I used to be."
+        cain "Мені потрібен сон для краси" # "I need to get my beauty sleep."
+        n "Він провів пальцями по волоссю" # "He pushed his fingers through his hair."
+        p "А виглядаєш ти доволі молодо" # "You look fairly young."
+        p "Скільки тобі насправді років, Каїне?" # "How old are you exactly, Cain?"
         show cain fake_smirk
-        n "Cain chuckled a little and raised his eyebrows in what seemed like amusement."
-        cain "Have a good night, my dear."
-        cain "Maybe we'll meet again someday."
+        n "Каїн трохи гигикнув і звів брови, ніби це його потішило" # "Cain chuckled a little and raised his eyebrows in what seemed like amusement."
+        cain "Гарної ночі, любий" # "Have a good night, my dear."
+        cain "Може, колись ми ще зустрінемось" # "Maybe we'll meet again someday."
         hide cain with dissolve
-        n "He waved at me before finally walking out the door."
-        n "Yeah...maybe."
-    "\"I should probably get going too then.\"":
+        n "Він махнув мені, перш ніж нарешті вийти за двері" # "He waved at me before finally walking out the door."
+        n "Ага...може" # "Yeah...maybe."
+    "\"Тоді мені, мабуть, теж пора йти.\"": # "I should probably get going too then."
 
         show cain fake_frown
         $ cain_boredom += 1
         $ cain_love -=10
-        p "It {i}is{/i} getting pretty late."
+        p "Уже {i}справді{/i} доволі пізно" # "It is getting pretty late."
         show cain fake
-        cain "Yes, that's a good idea."
-        cain "You don't want stay out too late."
-        n "Cain put a hand gently on my shoulder."
+        cain "Так, це слушна думка" # "Yes, that's a good idea."
+        cain "Не варто засиджуватися надто пізно" # "You don't want stay out too late."
+        n "Каїн ніжно поклав руку мені на плече" # "Cain put a hand gently on my shoulder."
         show cain fake_smirk
-        n "Something about his tone made me feel a little...uneasy."
-        n "It almost felt like {i}he{/i} was threatening me."
-        cain "I could walk you home if you like."
-        n "He asked, his hand still resting on my shoulder."
-        p "N-no thanks."
-        p "I think I should be okay by myself."
-        n "I said trying to sound polite as possible."
-        cain "Well alright then, if you're sure."
+        n "Щось у його тоні змусило мене почуватися трохи... незатишно" # "Something about his tone made me feel a little...uneasy."
+        n "Це майже скидалося на те, що {i}він{/i} мені погрожує" # "It almost felt like he was threatening me."
+        cain "Я міг би провести тебе додому, якщо хочеш" # "I could walk you home if you like."
+        n "Спитав він, і його рука все ще лежала на моєму плечі" # "He asked, his hand still resting on my shoulder."
+        p "Н-ні, дякую" # "N-no thanks."
+        p "Гадаю, я й сам упораюся" # "I think I should be okay by myself."
+        n "Сказав я, намагаючись звучати якомога ввічливіше" # "I said trying to sound polite as possible."
+        cain "Ну гаразд, якщо ти впевнений" # "Well alright then, if you're sure."
         show cain fake_grin
-        n "He then took his hand off my shoulder and began making his way toward the door."
-        cain "Have a wonderful evening, love."
-        n "He looked back at me before leaving."
-        cain "And have a safe trip home."
+        n "Тоді він прибрав руку з мого плеча й рушив до дверей" # "He then took his hand off my shoulder and began making his way toward the door."
+        cain "Чудового вечора, любий" # "Have a wonderful evening, love."
+        n "Він озирнувся на мене перед тим, як піти" # "He looked back at me before leaving."
+        cain "І дістанься додому безпечно" # "And have a safe trip home."
         hide cain with dissolve
 
 
-n "I noticed a large black feather sitting on the table."
+n "Я помітив на столі велике чорне перо" # "I noticed a large black feather sitting on the table."
 show feather normal
-n "I picked it up and examined it."
-p "How did this get here?"
-n "Something about it was strange."
-n "It didn't look like a normal bird feather."
-n "It was much larger and thicker than any feather that I've ever seen."
-p "What the hell is-"
+n "Я підняв його й оглянув" # "I picked it up and examined it."
+p "Як воно тут опинилося?" # "How did this get here?"
+n "Щось у ньому було дивне" # "Something about it was strange."
+n "Воно не було схоже на звичайне пташине перо" # "It didn't look like a normal bird feather."
+n "Воно було набагато більше й товще за будь-яке перо, яке я коли-небудь бачив" # "It was much larger and thicker than any feather that I've ever seen."
+p "Що за біс-" # "What the hell is-"
 stop music
 play music "cain/heartbeat.mp3"
 show cafe_pulse
 show feather normal
-n "My heart inexplicably started pounding."
-n " I dropped the feather back on the table, but the thumping didn't stop."
+n "Моє серце незбагненно закалатало" # "My heart inexplicably started pounding."
+n " Я кинув перо назад на стіл, але калатання не припинялося" # " I dropped the feather back on the table, but the thumping didn't stop."
 hide feather normal with dissolve
-n "I got up from my seat and rushed out of the cafe."
-n "Maybe...maybe I can just walk it off."
-n "The pulsing in my chest only grew more severe as I tried to walk home."
-n " My heart was beating so loud in my ears that I couldn't even think straight."
+n "Я підвівся з місця й вибіг з кафе" # "I got up from my seat and rushed out of the cafe."
+n "Може...може, мені просто треба розходитися" # "Maybe...maybe I can just walk it off."
+n "Пульсація в грудях лише посилювалася, поки я намагався йти додому" # "The pulsing in my chest only grew more severe as I tried to walk home."
+n " Серце гупало у вухах так гучно, що я навіть не міг ясно мислити" # " My heart was beating so loud in my ears that I couldn't even think straight."
 scene bg_outside_pub:
     xalign .9
-n "It felt like my heart was going to explode."
-n "Despite this mysterious affliction I ran home."
-n "I ran until my muscles burned and the acid in my stomach crawled up my throat."
-n "I put my hand over my mouth as the urge to vomit began to creep in."
-n "Almost--almost there!"
-n "I pulled the keys out of my pocket and hastily searched through them as I approached my door. "
+n "Здавалося, ніби моє серце от-от вибухне" # "It felt like my heart was going to explode."
+n "Попри цю загадкову напасть, я побіг додому" # "Despite this mysterious affliction I ran home."
+n "Я біг, аж поки м'язи не запалали, а шлунковий сік не підступив до горла" # "I ran until my muscles burned and the acid in my stomach crawled up my throat."
+n "Я затиснув рота рукою, коли почала підкрадатися нудота" # "I put my hand over my mouth as the urge to vomit began to creep in."
+n "Майже--майже вдома!" # "Almost--almost there!"
+n "Я витягнув з кишені ключі й похапцем перебирав їх, підходячи до дверей. " # "I pulled the keys out of my pocket and hastily searched through them as I approached my door. "
 scene bedroom with dissolve
-n "I leaned myself against my door and wiped the sweat from my forehead."
-n "I was exhausted from the whole thing."
-n "What was happening to me?"
-n "Why was I feeling this way?"
-n "I could feel tears streaming down my face."
-n "I was scared."
-n "I shoved my face into one of my pillows and cried into it."
-n "I needed help, but I didn't know what to do."
-n "I was so tired."
+n "Я притулився до дверей і витер піт з чола" # "I leaned myself against my door and wiped the sweat from my forehead."
+n "Я був виснажений усім цим" # "I was exhausted from the whole thing."
+n "Що зі мною відбувалося?" # "What was happening to me?"
+n "Чому я так почувався?" # "Why was I feeling this way?"
+n "Я відчував, як сльози течуть по моєму обличчю" # "I could feel tears streaming down my face."
+n "Мені було страшно" # "I was scared."
+n "Я уткнувся обличчям у подушку й заплакав у неї" # "I shoved my face into one of my pillows and cried into it."
+n "Мені потрібна була допомога, але я не знав, що робити" # "I needed help, but I didn't know what to do."
+n "Я був такий виснажений" # "I was so tired."
 scene black with fade
-n "My eyelids fluttered before closing, finally losing the last shred of energy that I had."
+n "Мої повіки затріпотіли й заплющилися, коли я втратив останню краплю сил" # "My eyelids fluttered before closing, finally losing the last shred of energy that I had."
 play music "cain/cain_calm.mp3"
-n "I felt a gentle warmth touch my face."
-n "The sun."
-n "I groaned as I flipped over in my sheets, feeling how soft they were under my hands."
-n "They smelled nice too."
-n "Wait... My window didn't catch the sun in the morning."
-n "Only during sunset."
-n "I sat up quickly and looked around."
+n "Я відчув, як ніжне тепло торкнулося мого обличчя" # "I felt a gentle warmth touch my face."
+n "Сонце" # "The sun."
+n "Я застогнав, перевертаючись у простирадлах і відчуваючи, які вони м'які під моїми руками" # "I groaned as I flipped over in my sheets, feeling how soft they were under my hands."
+n "Вони ще й приємно пахли" # "They smelled nice too."
+n "Стій... Моє вікно вранці не ловить сонце" # "Wait... My window didn't catch the sun in the morning."
+n "Тільки на заході" # "Only during sunset."
+n "Я швидко сів і роззирнувся" # "I sat up quickly and looked around."
 scene cain_bedroom_morning with dissolve
-n "This wasn't my room."
-n "Where was I?"
-n "I noticed a note on the night stand next to the bed."
-n "I nervously reached for it."
-n "'Meet me in the living room.'"
-n "Living room?"
-n "I looked at the other side of the card."
-n "Nothing else was written."
-n " I got out of bed and looked at my body."
-n "When did I take my clothes off?"
-n "I was only in my underwear."
-n "I left the strange room, clutching the note close to me. "
+n "Це була не моя кімната" # "This wasn't my room."
+n "Де я був?" # "Where was I?"
+n "Я помітив записку на тумбочці біля ліжка" # "I noticed a note on the night stand next to the bed."
+n "Я нервово потягнувся до неї" # "I nervously reached for it."
+n "«Зустрінемось у вітальні.»" # "'Meet me in the living room.'"
+n "У вітальні?" # "Living room?"
+n "Я глянув на зворот картки" # "I looked at the other side of the card."
+n "Більше нічого не було написано" # "Nothing else was written."
+n " Я встав з ліжка й глянув на своє тіло" # " I got out of bed and looked at my body."
+n "Коли я зняв одяг?" # "When did I take my clothes off?"
+n "Я був лише в білизні" # "I was only in my underwear."
+n "Я вийшов з дивної кімнати, притискаючи записку до себе. " # "I left the strange room, clutching the note close to me. "
 show cain_livingroom with fade
-n "I wandered into the living room, my eyes scanned the large expensive looking apartment until they found a man standing in front of a window that led out to a balcony."
-p "...Cain?"
-n "My voice escaped my lips."
-n "He turned around to face me and that horrible feeling that I got from the feather started to come back."
+n "Я забрів до вітальні, мій погляд ковзав великою дорогою на вигляд квартирою, поки не натрапив на чоловіка, що стояв перед вікном, яке виходило на балкон" # "I wandered into the living room, my eyes scanned the large expensive looking apartment until they found a man standing in front of a window that led out to a balcony."
+p "...Каїн?" # "...Cain?"
+n "Голос сам зірвався з моїх губ" # "My voice escaped my lips."
+n "Він обернувся до мене, і те жахливе відчуття від пера почало повертатися" # "He turned around to face me and that horrible feeling that I got from the feather started to come back."
 play music "cain/cain_shift.mp3"
 show cain fake_smirk
-cain "Oh, you're awake."
-cain "How was your sleep?"
-n "I didn't answer."
-n "I wasn't in the mood for his jokes."
-cain "That well, huh?"
-n "His sweet gentle voice from last night turned cruel and sadistic."
-p "What's happening?"
-p "How did I get here?"
-n "My voice was trembling."
-n "Even through my anger I couldn't mask the fear and uneasiness I was feeling."
-n "Cain laughed diabolically at me. "
+cain "О, ти прокинувся" # "Oh, you're awake."
+cain "Як спалося?" # "How was your sleep?"
+n "Я не відповів" # "I didn't answer."
+n "Мені було не до його жартів" # "I wasn't in the mood for his jokes."
+cain "Аж так добре, га?" # "That well, huh?"
+n "Його солодкий ніжний голос з учорашнього вечора став жорстоким і садистським" # "His sweet gentle voice from last night turned cruel and sadistic."
+p "Що відбувається?" # "What's happening?"
+p "Як я тут опинився?" # "How did I get here?"
+n "Мій голос тремтів" # "My voice was trembling."
+n "Навіть крізь гнів я не міг приховати страх і тривогу, які відчував" # "Even through my anger I couldn't mask the fear and uneasiness I was feeling."
+n "Каїн диявольськи розсміявся з мене. " # "Cain laughed diabolically at me. "
 show cain switch
 $ sanity -=10
 if sanity <= 0:
     jump cain_sanity_ending
-n "Then, I noticed something...odd happening to Cain."
-n "I wasn't sure if what I was seeing was real or just a hallucination."
-n "His body was starting to change."
-n "His form shifted into someone else entirely."
+n "А тоді я помітив, що з Каїном коїться щось... дивне" # "Then, I noticed something...odd happening to Cain."
+n "Я не був певен, чи те, що я бачу, реальне, чи просто галюцинація" # "I wasn't sure if what I was seeing was real or just a hallucination."
+n "Його тіло почало змінюватися" # "His body was starting to change."
+n "Його подоба перетворилася на когось геть іншого" # "His form shifted into someone else entirely."
 $ cwings,cbase, cexp = 0,3,1
 show cain with dissolve
-n "He ran a hand through his red hair and stared at me."
-cain "Why, I brought you here of course."
-n "I have to get out of here."
-n "I took a step back and started inching out of the room before breaking into a run."
-n "I didn't get very far, as my body collided with some sort of invisible barrier." with vpunch
-n "Hard."
+n "Він провів рукою по своєму рудому волоссю й витріщився на мене" # "He ran a hand through his red hair and stared at me."
+cain "Та звісно ж я привів тебе сюди" # "Why, I brought you here of course."
+n "Мені треба звідси вибратися" # "I have to get out of here."
+n "Я ступив крок назад і почав потроху задкувати з кімнати, а тоді кинувся бігти" # "I took a step back and started inching out of the room before breaking into a run."
+n "Я не встиг далеко забігти, як моє тіло врізалося в якийсь невидимий бар'єр" with vpunch # "I didn't get very far, as my body collided with some sort of invisible barrier."
+n "Сильно" # "Hard."
 $ cbase, cexp = 3,5
-n "Cain sighed as he watched me crumple to the floor."
-cain "Tsk, tsk."
+n "Каїн зітхнув, дивлячись, як я осідаю на підлогу" # "Cain sighed as he watched me crumple to the floor."
+cain "Тц, тц" # "Tsk, tsk."
 $ cbase, cexp = 3,1
-n "I rolled around to face him."
-n "His bright yellow eyes pierced through me as some phantom hand grabbed my neck and dragged me across the floor."
-n "I struggled to breath as the ghostly claw tightened its grip on my throat."
-n "I frantically grabbed at my neck, trying to get whatever was choking me to stop."
-n "All I could do was writhe and squirm helplessly on the floor."
-cain "Don't waste your energy, my pet."
-cain "A lowly creature like you has no hope of escaping."
-cain "Just accept your fate as my new toy and make this easy on yourself."
-n "Cain's hand replaced the unseen one as he picked me up from the ground by my neck."
-n "He held me up and stared at me."
-n "Jet black wings extended from his back."
+n "Я перекотився обличчям до нього" # "I rolled around to face him."
+n "Його яскраво-жовті очі пронизали мене наскрізь, коли якась примарна рука схопила мене за шию й потягла підлогою" # "His bright yellow eyes pierced through me as some phantom hand grabbed my neck and dragged me across the floor."
+n "Я силкувався дихати, поки примарний кіготь стискав моє горло" # "I struggled to breath as the ghostly claw tightened its grip on my throat."
+n "Я гарячково хапався за шию, намагаючись зупинити те, що мене душило" # "I frantically grabbed at my neck, trying to get whatever was choking me to stop."
+n "Усе, що я міг, — це безпорадно звиватися й борсатися на підлозі" # "All I could do was writhe and squirm helplessly on the floor."
+cain "Не витрачай сили, мій улюбленцю" # "Don't waste your energy, my pet."
+cain "Така жалюгідна істота, як ти, не має жодної надії втекти" # "A lowly creature like you has no hope of escaping."
+cain "Просто прийми свою долю як моя нова іграшка й полегши собі життя" # "Just accept your fate as my new toy and make this easy on yourself."
+n "Рука Каїна замінила невидиму, коли він підняв мене з підлоги за шию" # "Cain's hand replaced the unseen one as he picked me up from the ground by my neck."
+n "Він тримав мене на весу й витріщався на мене" # "He held me up and stared at me."
+n "З його спини розгорнулися вугільно-чорні крила" # "Jet black wings extended from his back."
 show wings cain behind cain with dissolve
 $ cwings,cbase, cexp = 1,3,1
-n "What was he?"
-cain "Alright, I'll tell you."
-cain "I'm going to flay your skin, crack your bones, play with your organs, and maybe even drink your blood."
-cain "I'll be doing whatever I damn well please."
-n "He released my throat and I dropped to the floor."
-cain "You will beg for death, and you WILL get it."
-cain "Once I've had my fill of you."
-cain "But until that time comes you will be living on your knees!"
-n "I could feel the same invisible force pinning my entire body to the floor."
-n "It felt like a giant rock was slowly crushing me."
-n "He didn't even need to lay a finger on me."
-n "He...he was a monster."
-n "Cain watched me as I fought in vain to pick myself up."
-n "He then stomped and grinded the heel of his shoe into the side of my head."
-cain "That being said, I'm interested in seeing how long you'll last."
-n "Cain removed his foot and turned away."
+n "Що він таке?" # "What was he?"
+cain "Гаразд, я тобі скажу" # "Alright, I'll tell you."
+cain "Я здеру з тебе шкіру, потрощу твої кістки, погратися з твоїми органами, а може, навіть вип'ю твою кров" # "I'm going to flay your skin, crack your bones, play with your organs, and maybe even drink your blood."
+cain "Я робитиму все, що мені, чорт забирай, заманеться" # "I'll be doing whatever I damn well please."
+n "Він відпустив моє горло, і я впав на підлогу" # "He released my throat and I dropped to the floor."
+cain "Ти благатимеш про смерть, і ти її ОТРИМАЄШ" # "You will beg for death, and you WILL get it."
+cain "Щойно я тобою насичуся" # "Once I've had my fill of you."
+cain "Але до того часу ти житимеш на колінах!" # "But until that time comes you will be living on your knees!"
+n "Я відчував, як та сама невидима сила притискає все моє тіло до підлоги" # "I could feel the same invisible force pinning my entire body to the floor."
+n "Здавалося, ніби велетенський камінь повільно розчавлює мене" # "It felt like a giant rock was slowly crushing me."
+n "Йому навіть не треба було й пальцем мене торкатися" # "He didn't even need to lay a finger on me."
+n "Він...він був монстром" # "He...he was a monster."
+n "Каїн дивився, як я марно намагаюся підвестися" # "Cain watched me as I fought in vain to pick myself up."
+n "А тоді він притупнув і вдавив підбор черевика мені в скроню" # "He then stomped and grinded the heel of his shoe into the side of my head."
+cain "А втім, мені цікаво подивитися, як довго ти протримаєшся" # "That being said, I'm interested in seeing how long you'll last."
+n "Каїн прибрав ногу й відвернувся" # "Cain removed his foot and turned away."
 $ cwings,cbase, cexp = 0,3,1
-n "His wings receded into his back as the unseen pressure faded."
+n "Його крила втягнулися в спину, а невидимий тиск зник" # "His wings receded into his back as the unseen pressure faded."
 hide wings cain with dissolve
 show cain
 menu:
-    "\"Why are you doing this?\"":
+    "\"Навіщо ти це робиш?\"": # "Why are you doing this?"
         $ cwings,cbase, cexp = 0,3,1
         $ cain_love -=10
         if player_name == "Ashe":
             $ cwings,cbase, cexp = 0,3,2
-            cain "...You're not human right?"
-            n "I bit my lip and shook my head."
-            cain "...That's what I thought."
-            cain "I can sniff out your kind from a mile away."
-            cain "You just answered your own question, reaper."
-            cain "I'll make sure you suffer slow."
+            cain "...Ти ж не людина, так?" # "...You're not human right?"
+            n "Я прикусив губу й похитав головою" # "I bit my lip and shook my head."
+            cain "...Так я і думав" # "...That's what I thought."
+            cain "Я за версту чую таких, як ти" # "I can sniff out your kind from a mile away."
+            cain "Ти щойно сам відповів на своє питання, жнець" # "You just answered your own question, reaper."
+            cain "Я подбаю, щоб ти страждав повільно" # "I'll make sure you suffer slow."
         else:
-            n "Cain turned back around to face me."
-            cain "Why?"
-            cain "Because I can, my new precious toy."
+            n "Каїн знову обернувся до мене" # "Cain turned back around to face me."
+            cain "Чому?" # "Why?"
+            cain "Бо я можу, моя нова дорогоцінна іграшко" # "Because I can, my new precious toy."
             $ cwings,cbase, cexp = 0,3,1
-            cain "That's the only reason I need."
-            cain "When you have power like mine you can take whatever you want."
-            cain "No being on Earth can hope to stand up to me."
+            cain "Це єдина причина, яка мені потрібна" # "That's the only reason I need."
+            cain "Коли маєш таку силу, як у мене, можеш брати все, що заманеться" # "When you have power like mine you can take whatever you want."
+            cain "Жодна істота на Землі не має шансів мені протистояти" # "No being on Earth can hope to stand up to me."
             $ sanity -=10
             if sanity <= 0:
                 jump cain_sanity_ending
-            cain "The taste that you got was barely an iota of what I'm capable of."
-    "-Stay quiet.-":
+            cain "Те, що ти скуштував, — це заледве крихта того, на що я здатен" # "The taste that you got was barely an iota of what I'm capable of."
+    "-Мовчати-": # "-Stay quiet.-"
 
         $ cwings,cbase, cexp = 0,3,5
         $ cain_boredom += 1
         if cain_boredom >=3:
             jump cain_boredom_day1
         else:
-            n "I bit my bottom lip."
+            n "Я прикусив нижню губу" # "I bit my bottom lip."
             $ cwings,cbase, cexp = 0,3,4
-            n "What could I say in a situation like this?"
-            n "I was going to be this person's...\"plaything\" until got he bored and decided to off me."
-            n "I really don't want to know what evil plans that he has for me."
-    "\"Why me?\"":
+            n "Що я міг сказати в такій ситуації?" # "What could I say in a situation like this?"
+            n "Я мав стати чиєюсь... «іграшкою», поки йому не набридне й він не вирішить мене прикінчити" # "I was going to be this person's..."plaything" until got he bored and decided to off me."
+            n "Я справді не хочу знати, які лихі плани він на мене має" # "I really don't want to know what evil plans that he has for me."
+    "\"Чому саме я?\"": # "Why me?"
 
         $ cain_love +=10
-        cain "Why you indeed."
-        n "Cain leaned against the window."
-        cain "You humans are a dime a dozen."
-        cain "None of you are as unique as all of you like to believe, but you.....hmm."
-        n "He crossed his arms and looked up at the ceiling."
-        n "It seemed like he wasn't entirely sure himself."
+        cain "І справді, чому саме ти" # "Why you indeed."
+        n "Каїн притулився до вікна" # "Cain leaned against the window."
+        cain "Вас, людей, — як бруду" # "You humans are a dime a dozen."
+        cain "Ніхто з вас не такий унікальний, як вам усім подобається вважати, але ти.....хмм" # "None of you are as unique as all of you like to believe, but you.....hmm."
+        n "Він схрестив руки й глянув угору на стелю" # "He crossed his arms and looked up at the ceiling."
+        n "Здавалося, він і сам не був до кінця впевнений" # "It seemed like he wasn't entirely sure himself."
         if player_name == "Ashe":
             $ cwings,cbase, cexp = 0,3,2
-            cain "...You're not human are you?"
-            n "I bit my lip and shook my head."
-            cain "...That's what I thought."
-            cain "I can sniff out your kind from a mile away."
+            cain "...Ти ж не людина, так?" # "...You're not human are you?"
+            n "Я прикусив губу й похитав головою" # "I bit my lip and shook my head."
+            cain "...Так я і думав" # "...That's what I thought."
+            cain "Я за версту чую таких, як ти" # "I can sniff out your kind from a mile away."
         else:
-            cain "Let's just say that you happen to fit my \"interesting person\" criteria."
-            n "He shifted his gaze over to me."
-            cain "Honestly, you should feel honored that I chose you to be my little puppet.."
-            cain "It's a privilege that not too many get to enjoy."
+            cain "Скажімо так: ти якраз підходиш під мій критерій «цікавої людини»" # "Let's just say that you happen to fit my "interesting person" criteria."
+            n "Він перевів погляд на мене" # "He shifted his gaze over to me."
+            cain "Чесно кажучи, ти маєш почуватися вшанованим, що я обрав тебе своєю маленькою маріонеткою.." # "Honestly, you should feel honored that I chose you to be my little puppet.."
+            cain "Це привілей, який мало кому випадає" # "It's a privilege that not too many get to enjoy."
 
-n "I tried to stand up slowly, my legs were wobbling as I did."
-n "But, I managed."
+n "Я спробував повільно підвестися, мої ноги тремтіли, поки я це робив" # "I tried to stand up slowly, my legs were wobbling as I did."
+n "Але я впорався" # "But, I managed."
 $ cwings,cbase, cexp = 0,3,1
-cain "Keep me interested in you, love."
-n "He went to sit down."
+cain "Тримай мій інтерес до себе, любий" # "Keep me interested in you, love."
+n "Він пішов сідати" # "He went to sit down."
 hide cain
 
 
 
 menu:
-    "-Talk to Cain-":
+    "-Заговорити до Каїна-": # "-Talk to Cain-"
         jump talk_cain_1
-    "-Look around-":
+    "-Роззирнутися-": # "-Look around-"
         $ lookaround_punishment1 = False
         jump look_around_morning
 
 label talk_cain_1:
 show cain
 $ cwings,cbase, cexp = 0,3,4
-n "Cain looked over his shoulder at me."
-cain "What is it, meat?"
-n "His tone suddenly rude and uncouth."
+n "Каїн озирнувся через плече на мене" # "Cain looked over his shoulder at me."
+cain "Чого тобі, м'ясо?" # "What is it, meat?"
+n "Його тон раптом став грубим і неотесаним" # "His tone suddenly rude and uncouth."
 $ cwings,cbase, cexp = 0,3,1
 menu:
-    "\"So...what now?\"":
+    "\"То...що тепер?\"": # "So...what now?"
         $ cain_love +=10
-        p "Should I try to run away?"
-        p "Give you the thrill of the chase?"
+        p "Може, мені спробувати втекти?" # "Should I try to run away?"
+        p "Подарувати тобі азарт погоні?" # "Give you the thrill of the chase?"
         $ cwings,cbase, cexp = 0,3,11
-        cain "You tried that just a second ago and how did that turn out for you?"
+        cain "Ти спробував це щойно секунду тому, і як воно для тебе обернулося?" # "You tried that just a second ago and how did that turn out for you?"
         $ cwings,cbase, cexp = 0,3,1
-        n "Lacking any retorts and now slightly embarrassed I looked at the floor."
-        n " Cain walked over, backed me into the wall, and leaned in close."
+        n "Не маючи чим відповісти й трохи збентежений, я втупився в підлогу" # "Lacking any retorts and now slightly embarrassed I looked at the floor."
+        n " Каїн підійшов, притиснув мене до стіни й нахилився близько" # " Cain walked over, backed me into the wall, and leaned in close."
         if player_name == "Ashe":
             $ cwings,cbase, cexp = 0,3,4
-            cain "You think you can escape me, reaper?"
-            cain "There's no chance."
-            cain "You can try to run... But I'll find you."
+            cain "Гадаєш, що зможеш утекти від мене, женче?" # "You think you can escape me, reaper?"
+            cain "Жодного шансу" # "There's no chance."
+            cain "Можеш спробувати тікати... Але я тебе знайду" # "You can try to run... But I'll find you."
         else:
-            cain "Besides, you have nowhere to run to."
-        cain "So just sit down, shut your mouth, look pretty, and do as I say."
-        n "He grabbed me by the face and forced me to meet his gaze."
-        cain "And you better watch that attitude of yours, pet."
-        cain "You forget where you are. Know your place!"
-        n "My head was thrown against the wall behind me." with vpunch
+            cain "Та й тікати тобі нікуди" # "Besides, you have nowhere to run to."
+        cain "Тож просто сядь, стули пельку, будь гарненьким і роби, як я кажу" # "So just sit down, shut your mouth, look pretty, and do as I say."
+        n "Він схопив мене за обличчя й змусив зустрітися з його поглядом" # "He grabbed me by the face and forced me to meet his gaze."
+        cain "І краще припни свій язичок, улюбленцю" # "And you better watch that attitude of yours, pet."
+        cain "Ти забуваєш, де ти. Знай своє місце!" # "You forget where you are. Know your place!"
+        n "Мою голову відкинуло об стіну позаду мене" with vpunch # "My head was thrown against the wall behind me."
         $ health -=5
-        n "I rubbed the back of my head, feeling sorry that I said anything."
+        n "Я потер потилицю, шкодуючи, що взагалі щось сказав" # "I rubbed the back of my head, feeling sorry that I said anything."
         jump cain_day1_noon
-    "\"Is this the part where I get tied up?\"":
+    "\"Це та частина, де мене зв'яжуть?\"": # "Is this the part where I get tied up?"
 
         $ cwings,cbase, cexp = 0,3,5
         $ cain_boredom += 1
         if cain_boredom >=3:
             jump cain_boredom_day1
-        p "Restrain me so I can't try to escape?"
-        cain "Oh there will be some tying up later, if I'm in the mood for it."
-        cain "But it's not going to be what you think it's for."
-        n "His eyes shifted to the door for a moment and then back to me."
+        p "Скрутиш мене, щоб я не зміг утекти?" # "Restrain me so I can't try to escape?"
+        cain "О, зв'язування ще буде, згодом, якщо мені закортить" # "Oh there will be some tying up later, if I'm in the mood for it."
+        cain "Але не для того, що ти думаєш" # "But it's not going to be what you think it's for."
+        n "Його погляд на мить ковзнув до дверей, а тоді назад до мене" # "His eyes shifted to the door for a moment and then back to me."
         $ cwings,cbase, cexp = 0,3,4
-        cain "Listen sweetheart, even if you somehow managed out of here, you most certainly die out there."
-        p "What do you mean?"
-        n "I asked, unclear as to what he meant by that."
-        cain "You're in MY domain."
+        cain "Слухай, любчику, навіть якщо ти якимось дивом і вибрався б звідси, там ти точно загинеш" # "Listen sweetheart, even if you somehow managed out of here, you most certainly die out there."
+        p "Що ти маєш на увазі?" # "What do you mean?"
+        n "Спитав я, не розуміючи, що він мав на увазі" # "I asked, unclear as to what he meant by that."
+        cain "Ти в МОЇХ володіннях" # "You're in MY domain."
         $ cwings,cbase, cexp = 0,3,9
-        cain "There is no way a human like you could survive out there."
+        cain "Така людина, як ти, там нізащо не виживе" # "There is no way a human like you could survive out there."
         $ cwings,cbase, cexp = 0,3,18
-        cain "Lots of nasty creatures outside would love to get their claws on a tasty little morsel like you."
+        cain "Купа гидких створінь там залюбки вчепилася б кігтями в такий смачний шматочок, як ти" # "Lots of nasty creatures outside would love to get their claws on a tasty little morsel like you."
         $ sanity -=10
-        n "He said pointing to the door."
+        n "Сказав він, вказуючи на двері" # "He said pointing to the door."
         $ cwings,cbase, cexp = 0,3,12
-        cain "So if you want to go take your chances out there be my guest, but if you ask me, it's MUCH nicer in here."
-        n "Cain raised his arms in approval of his abode."
-        p "So I'm dead either way great."
-        n "I held my face in my hands, I felt so utterly defeated."
-        n "He then walked over and got in close to my ear."
+        cain "Тож якщо хочеш випробувати долю там — прошу дуже, але як на мене, тут НАБАГАТО приємніше" # "So if you want to go take your chances out there be my guest, but if you ask me, it's MUCH nicer in here."
+        n "Каїн розкинув руки, схвально оцінюючи свою оселю" # "Cain raised his arms in approval of his abode."
+        p "Тобто я мертвий у будь-якому разі, чудово" # "So I'm dead either way great."
+        n "Я сховав обличчя в долонях, я почувався геть розбитим" # "I held my face in my hands, I felt so utterly defeated."
+        n "Тоді він підійшов і наблизився до мого вуха" # "He then walked over and got in close to my ear."
         $ cwings,cbase, cexp = 0,3,9
-        cain "That's about the size of it yes."
+        cain "Достоту так воно і є" # "That's about the size of it yes."
         jump cain_day1_noon
-    "\"Where are we?\"":
+    "\"Де ми?\"": # "Where are we?"
 
         $ cain_love -=10
         $ cwings,cbase, cexp = 0,3,7
-        cain "My house of course."
+        cain "У моїй оселі, звісно ж" # "My house of course."
         $ cwings,cbase, cexp = 0,3,9
-        cain "You're free to move around as you like."
-        cain "I'll get you when I need you."
-        n "I looked around the room again and then back at him."
-        p "You're...you're going to let me roam free?"
-        p "Why?"
-        n "He sighed and rubbed his temples."
+        cain "Можеш вільно ходити, де заманеться" # "You're free to move around as you like."
+        cain "Я покличу тебе, коли будеш мені потрібен" # "I'll get you when I need you."
+        n "Я знову оглянув кімнату, а тоді перевів погляд на нього" # "I looked around the room again and then back at him."
+        p "Ти...ти дозволиш мені вільно розгулювати?" # "You're...you're going to let me roam free?"
+        p "Чому?" # "Why?"
+        n "Він зітхнув і потер скроні" # "He sighed and rubbed his temples."
         $ cwings,cbase, cexp = 0,3,5
-        cain "Because this is my domain."
-        cain "There isn't a place you can go that I won't be able to find you."
+        cain "Позаяк це мої володіння" # "Because this is my domain."
+        cain "Немає такого місця, куди б ти подівся й де б я тебе не відшукав" # "There isn't a place you can go that I won't be able to find you."
         $ cwings,cbase, cexp = 0,3,9
-        cain "I'm also a lot faster than you might think."
+        cain "До того ж я значно прудкіший, ніж ти можеш гадати" # "I'm also a lot faster than you might think."
         $ sanity -=10
         if sanity <= 0:
             jump cain_sanity_ending
-        n "He patted my face hard and walked past me."
-        cain "So keep that in mind."
+        n "Він сильно поплескав мене по обличчю й пройшов повз" # "He patted my face hard and walked past me."
+        cain "Тож май це на увазі" # "So keep that in mind."
         jump cain_day1_noon
 
 
 label look_around_morning:
-n "I wasn't really in the mood to speak with Cain."
-n "I looked around the room."
-n "Everything looked pretty normal."
-n "I shuffled through his magazines on the table."
-n "It was just some business and world news stuff."
-n "He seemed like a pretty serious guy, despite his intentions for me."
-n "It didn't seem like he was all too interested in speaking with me as well."
-n "Cain just sipped his coffee and looked outside."
+n "Мені геть не хотілося розмовляти з Каїном" # "I wasn't really in the mood to speak with Cain."
+n "Я оглянув кімнату" # "I looked around the room."
+n "Усе виглядало доволі звичайно" # "Everything looked pretty normal."
+n "Я перебрав його журнали на столі" # "I shuffled through his magazines on the table."
+n "Це були якісь ділові й світові новини" # "It was just some business and world news stuff."
+n "Він здавався доволі серйозним типом, попри свої наміри щодо мене" # "He seemed like a pretty serious guy, despite his intentions for me."
+n "Схоже, він теж не надто прагнув зі мною розмовляти" # "It didn't seem like he was all too interested in speaking with me as well."
+n "Каїн лише сьорбав свою каву й дивився надвір" # "Cain just sipped his coffee and looked outside."
 menu:
-    "-Keep looking around-":
+    "-Роззиратися далі-": # "-Keep looking around-"
         $ lookaround_punishment1 = True
         jump cain_punishment_1
-    "\"It's nice out\"":
+    "\"Гарно надворі\"": # "It's nice out"
         $ cain_love +=10
-        n "I spoke to him hesitantly, unsure of his mood."
-        n "He took a sip his coffee and set it on the window sill."
+        n "Я заговорив до нього нерішуче, не певний його настрою" # "I spoke to him hesitantly, unsure of his mood."
+        n "Він відсьорбнув кави й поставив її на підвіконня" # "He took a sip his coffee and set it on the window sill."
         show cain
         $ cwings,cbase, cexp = 0,3,7
-        cain "Yes...very nice."
-        cain "Being locked away for so long you start to forget what the sun looks like."
+        cain "Так...вельми гарно" # "Yes...very nice."
+        cain "Коли тебе ув'язнено так надовго, починаєш забувати, який на вигляд сонце" # "Being locked away for so long you start to forget what the sun looks like."
         $ cwings,cbase, cexp = 0,3,8
-        p "Locked away? Like in prison?"
-        n "I shifted nervously, but I kept my eyes on him."
+        p "Ув'язнено? Наче в тюрмі?" # "Locked away? Like in prison?"
+        n "Я нервово засовався, але не зводив з нього очей" # "I shifted nervously, but I kept my eyes on him."
         $ sanity -=10
         if sanity <= 0:
             jump cain_sanity_ending
-        n "Was...was this guy an ex-con?!"
-        n " I felt sweat beginning to crawl down the back of my neck."
-        n "He looked out the window again."
-        cain "I suppose you could call it that."
-        cain "It is a prison of sorts."
-        cain "I believe you humans know it by a different name."
-        n "Cain's tone was somber, making it apparent that this wasn't a happy subject for him."
-        n "Was that why he was keeping me here?"
-        n "Did he want someone else to go through what he did?"
-        n "Or did he just want someone to take his rage out on?"
-        n "Why me of all people?"
-        n "I...I don't know."
-        n "I didn't want to ask him anymore questions."
-        n "I didn't want to think about it."
+        n "Невже...невже цей тип був колишнім в'язнем?!" # "Was...was this guy an ex-con?!"
+        n " Я відчув, як піт починає стікати по потилиці" # " I felt sweat beginning to crawl down the back of my neck."
+        n "Він знову глянув у вікно" # "He looked out the window again."
+        cain "Гадаю, можна й так це назвати" # "I suppose you could call it that."
+        cain "Це свого роду в'язниця" # "It is a prison of sorts."
+        cain "Хоча ви, люди, либонь, знаєте її під іншим ім'ям" # "I believe you humans know it by a different name."
+        n "Тон Каїна був похмурий, і ставало ясно, що це не надто радісна для нього тема" # "Cain's tone was somber, making it apparent that this wasn't a happy subject for him."
+        n "Невже саме тому він тримав мене тут?" # "Was that why he was keeping me here?"
+        n "Чи хотів він, щоб хтось інший пройшов через те, що пройшов він?" # "Did he want someone else to go through what he did?"
+        n "Чи він просто хотів когось, на кому можна зігнати свою лють?" # "Or did he just want someone to take his rage out on?"
+        n "Чому саме я з усіх людей?" # "Why me of all people?"
+        n "Я...я не знаю" # "I...I don't know."
+        n "Мені більше не хотілося ставити йому питання" # "I didn't want to ask him anymore questions."
+        n "Мені не хотілося про це думати" # "I didn't want to think about it."
         jump cain_day1_noon
 
 
 label cain_punishment_1:
 show cain
-cain "What are you looking for?"
-n "Cain asked as I reached for the door."
-n "I dropped my arm and sighed looking over at him."
-p "Just looking around."
-cain "Why don't you take a seat and talk to me instead?"
-n "Cain extended his arm and pointing at the chair across from him."
-n "I saw no reason not to and did as he asked."
-p "What could we talk about?"
+cain "Що ти шукаєш?" # "What are you looking for?"
+n "Спитав Каїн, коли я потягнувся до дверей" # "Cain asked as I reached for the door."
+n "Я опустив руку й зітхнув, глянувши на нього" # "I dropped my arm and sighed looking over at him."
+p "Просто роззираюся" # "Just looking around."
+cain "Чому б тобі краще не присісти й не поговорити зі мною?" # "Why don't you take a seat and talk to me instead?"
+n "Каїн простягнув руку, вказуючи на стілець навпроти себе" # "Cain extended his arm and pointing at the chair across from him."
+n "Я не бачив причини відмовлятися й зробив, як він просив" # "I saw no reason not to and did as he asked."
+p "Про що ми могли б говорити?" # "What could we talk about?"
 $ cwings,cbase, cexp = 0,3,9
-cain "Are you not curious about why you're here?"
-cain "I'm an angel you know."
-cain "You realize that any sinful thoughts that might be plaguing you."
-cain "I might be able to help you with them."
+cain "Хіба тобі не цікаво, чому ти тут?" # "Are you not curious about why you're here?"
+cain "Я, знаєш, ангел" # "I'm an angel you know."
+cain "Ти ж розумієш, що будь-які гріховні думки, які тебе, можливо, ятрять" # "You realize that any sinful thoughts that might be plaguing you."
+cain "Я, либонь, зможу тобі з ними зарадити" # "I might be able to help you with them."
 menu:
-    "-Tell him about your sins-":
+    "-Розповісти йому про свої гріхи-": # "-Tell him about your sins-"
         $ cain_boredom +=1
         $ cwings,cbase, cexp = 0,3,5
         jump tell_cain_sins
-    "-Don't tell him anything-":
+    "-Нічого йому не казати-": # "-Don't tell him anything-"
 
         $ cain_love +=10
         jump dont_tell_cain_sins
 
 label dont_tell_cain_sins:
-n "I didn’t know what it was, but something about his words set me on edge."
+n "Я не знав, що це було, але щось у його словах насторожувало мене" # "I didn’t know what it was, but something about his words set me on edge."
 $ cwings,cbase, cexp = 0,3,7
-n "Whatever he was offering, I wasn’t interested."
-n "I averted my gaze. I wasn’t going to admit anything to him."
-cain "Oh? Getting quiet now huh?"
-n "Cain said putting up his hand, I could feel myself dragging over to him."
-n "My body left the chair and his invisible hands pulling me over to him."
+n "Хай що б він пропонував, мене це не цікавило" # "Whatever he was offering, I wasn’t interested."
+n "Я відвів погляд. Я не збирався йому ні в чому зізнаватися" # "I averted my gaze. I wasn’t going to admit anything to him."
+cain "О? Замовк, значить, га?" # "Oh? Getting quiet now huh?"
+n "Промовив Каїн, піднявши руку, і я відчув, як мене тягне до нього" # "Cain said putting up his hand, I could feel myself dragging over to him."
+n "Моє тіло зірвалося зі стільця, і його невидимі руки потягли мене до нього" # "My body left the chair and his invisible hands pulling me over to him."
 $ cwings,cbase, cexp = 0,3,12
-cain "No matter, I'll punish you anyways!"
-n "His tone was cheerful but deadly."
-cain "If you're going to pout like a child, then I'll treat you like one."
+cain "То байдуже, я однаково тебе покараю!" # "No matter, I'll punish you anyways!"
+n "Тон його був веселий, але смертоносний" # "His tone was cheerful but deadly."
+cain "Якщо ти дутимешся, наче дитя, то й поводитимуся з тобою як з дитям" # "If you're going to pout like a child, then I'll treat you like one."
 $ cwings,cbase, cexp = 0,3,9
-cain "Ask daddy for his forgiveness."
+cain "Проси в татка пробачення" # "Ask daddy for his forgiveness."
 menu:
-    "-Do as he says-":
+    "-Зробити, як він каже-": # "-Do as he says-"
         $ sanity -=10
         $ cain_love +=10
-        n "I could tell I’d made him angry and I didn’t want things to get worse."
-        p "I-I’m sorry."
-        n "I stumbled over the words, humiliated."
-        n "My face felt hot."
-        n "I couldn’t believe I was doing this."
-        p "Please forgive me...daddy."
-        n "He pulled down my underwear and rubbed his palm against my ass."
+        n "Я бачив, що розлютив його, і не хотів, щоб стало ще гірше" # "I could tell I’d made him angry and I didn’t want things to get worse."
+        p "В-вибач" # "I-I’m sorry."
+        n "Я затнувся на словах, принижений" # "I stumbled over the words, humiliated."
+        n "Моє обличчя палало" # "My face felt hot."
+        n "Я не міг повірити, що роблю це" # "I couldn’t believe I was doing this."
+        p "Будь ласка, пробач мені...татку" # "Please forgive me...daddy."
+        n "Він стягнув мою білизну й провів долонею по моїй дупі" # "He pulled down my underwear and rubbed his palm against my ass."
         $ cwings,cbase, cexp = 0,3,11
-        cain "Bend over my knee, I'll forgive you."
+        cain "Перегнися через моє коліно, і я тобі пробачу" # "Bend over my knee, I'll forgive you."
         jump cain_daddy_kink
-    "-Refuse-":
+    "-Відмовитися-": # "-Refuse-"
         $ sanity +=10
         jump cain_dayone_refuse
 
 label cain_daddy_kink:
 menu:
-    "\"Okay.\"":
+    "\"Гаразд.\"": # "Okay."
         $ sanity -=10
-        n "I was nearly dizzy with embarrassment but I didn’t want to disobey now."
-        n "Hesitantly, I lowered my body across his lap, wriggling slightly in discomfort at his knee digging into my stomach."
-        p "Like...like this?"
+        n "У мене мало не паморочилося в голові від сорому, але я не хотів тепер його не слухатися" # "I was nearly dizzy with embarrassment but I didn’t want to disobey now."
+        n "Нерішуче я опустив тіло йому на коліна, трохи звиваючись від незручності, бо його коліно впиналося мені в живіт" # "Hesitantly, I lowered my body across his lap, wriggling slightly in discomfort at his knee digging into my stomach."
+        p "Отак...отак?" # "Like...like this?"
         $ cwings,cbase, cexp = 0,3,18
-        cain "Yes, you're a good listener!"
-        n "Cain said swatting his hand across my ass."
-        n "He sent a few blows into my skin, only leaving a mild stinging sensation as he rubbed his hand on my skin."
-        n "His gentle touches soothed my skin and made my heart beat faster."
-        n "My face grew hotter as I realized I was relaxing into his touch."
+        cain "Так, ти слухняний!" # "Yes, you're a good listener!"
+        n "Сказав Каїн, ляснувши долонею по моїй дупі" # "Cain said swatting his hand across my ass."
+        n "Він завдав кілька ударів по моїй шкірі, залишаючи лише легке пощипування, а тоді провів рукою по ній" # "He sent a few blows into my skin, only leaving a mild stinging sensation as he rubbed his hand on my skin."
+        n "Його ніжні дотики заспокоювали шкіру й змушували серце битися швидше" # "His gentle touches soothed my skin and made my heart beat faster."
+        n "Моє обличчя запалало ще сильніше, коли я усвідомив, що розслабляюся під його дотиком" # "My face grew hotter as I realized I was relaxing into his touch."
         $ cwings,cbase, cexp = 0,3,4
-        cain "How does that feel?"
-        n "I bit my lip."
-        n "It definitely didn’t feel bad."
-        n "The slap had hurt a little bit but after the pain faded I recognized a new feeling blooming in the pit of my stomach."
-        p "It...feels good."
+        cain "Які відчуття?" # "How does that feel?"
+        n "Я прикусив губу" # "I bit my lip."
+        n "Це точно не було неприємно" # "It definitely didn’t feel bad."
+        n "Ляпас трохи болів, але коли біль ущух, я відчув, як десь унизу живота розквітає нове відчуття" # "The slap had hurt a little bit but after the pain faded I recognized a new feeling blooming in the pit of my stomach."
+        p "Це...приємно" # "It...feels good."
         $ cwings,cbase, cexp = 0,3,11
-        n "Cain leaned into my shoulder."
-        cain "Does it?"
+        n "Каїн прихилився до мого плеча" # "Cain leaned into my shoulder."
+        cain "Справді?" # "Does it?"
         $ cwings,cbase, cexp = 0,3,9
-        n "His lips brushed against my shoulder and he kissed my flesh."
-        cain "I wouldn't want to keep you hanging now."
-        n "Cain's low tone floating into my ear."
-        n "He rubbed his fingers on my ass and they hovered over my entrance."
-        cain "Let's do something else."
-        n "He stroked around my erogenous zone, slowly pushing his fingers inside of me."
-        cain "Ah. You're not even resisting."
-        cain "Do you really like this?"
-        n "He teased as he pushed his fingers in and out of me."
-        n "A moan slipped past my lips before I could stop it."
-        n "I didn’t think I’d be able to lie at this point if I wanted to anyway."
-        n "My body reacted to his every touch, my back arching and my hips moving without conscious thought."
-        p "I really do."
-        n "I wasn’t as embarrassed as before."
-        n "He slid me off his lap and pulled my hips up."
+        n "Його губи ковзнули по моєму плечу, і він поцілував мою плоть" # "His lips brushed against my shoulder and he kissed my flesh."
+        cain "Не хотів би тримати тебе в очікуванні" # "I wouldn't want to keep you hanging now."
+        n "Низький тон Каїна вливався мені у вухо" # "Cain's low tone floating into my ear."
+        n "Він провів пальцями по моїй дупі, і вони завмерли біля мого входу" # "He rubbed his fingers on my ass and they hovered over my entrance."
+        cain "Зробімо дещо інше" # "Let's do something else."
+        n "Він погладив довкола моєї ерогенної зони, повільно заштовхуючи пальці всередину мене" # "He stroked around my erogenous zone, slowly pushing his fingers inside of me."
+        cain "Ах. Ти навіть не пручаєшся" # "Ah. You're not even resisting."
+        cain "Невже тобі це так до вподоби?" # "Do you really like this?"
+        n "Дражнив він, засовуючи й висуваючи пальці з мене" # "He teased as he pushed his fingers in and out of me."
+        n "Стогін зірвався з моїх губ, перш ніж я встиг його стримати" # "A moan slipped past my lips before I could stop it."
+        n "Гадаю, на цьому етапі я не зміг би збрехати, навіть якби захотів" # "I didn’t think I’d be able to lie at this point if I wanted to anyway."
+        n "Моє тіло відгукувалося на кожен його дотик, спина вигиналася, а стегна рухалися самі собою" # "My body reacted to his every touch, my back arching and my hips moving without conscious thought."
+        p "Справді до вподоби" # "I really do."
+        n "Мені вже не було так соромно, як раніше" # "I wasn’t as embarrassed as before."
+        n "Він зсунув мене зі своїх колін і підняв мої стегна вгору" # "He slid me off his lap and pulled my hips up."
         $ cwings,cbase, cexp = 0,3,10
-        cain "Well, let me indulge you sweetie."
-        n "He said as he rubbed his cock up against me."
+        cain "Що ж, дозволь мені потішити тебе, солоденький" # "Well, let me indulge you sweetie."
+        n "Сказав він, тручись членом об мене" # "He said as he rubbed his cock up against me."
         $ cwings,cbase, cexp = 0,3,9
-        cain "Beg for it."
-        n "He commanded in a smooth and deep tone."
-        n "I was ready to do whatever he said if it meant he’d touch me more."
+        cain "Благай про це" # "Beg for it."
+        n "Наказав він гладким і глибоким тоном" # "He commanded in a smooth and deep tone."
+        n "Я був готовий зробити все, що він скаже, аби він торкався мене більше" # "I was ready to do whatever he said if it meant he’d touch me more."
         $ sanity -=10
-        p "I want you."
-        n "I knew I sounded breathless and needy."
-        n "I didn’t care."
-        p "I want to feel you, all of you."
-        p "Please fuck me."
-        n "Without another word he forced his way inside of me."
-        n "He let out a stable breath and pushed in and out of me."
+        p "Я хочу тебе" # "I want you."
+        n "Я знав, що звучу задихано й жадібно" # "I knew I sounded breathless and needy."
+        n "Мені було байдуже" # "I didn’t care."
+        p "Я хочу відчути тебе, всього тебе" # "I want to feel you, all of you."
+        p "Будь ласка, трахни мене" # "Please fuck me."
+        n "Не кажучи більше ні слова, він силою увійшов у мене" # "Without another word he forced his way inside of me."
+        n "Він рівно видихнув і рухався в мені туди-сюди" # "He let out a stable breath and pushed in and out of me."
         $ cwings,cbase, cexp = 0,3,16
-        cain "Ah. You feel so good."
-        n "He moaned into my back."
-        n "He grabbed my arm and twisted it around my back, using it to thrust deep inside of me."
-        n "My whole body moved with the force of his thrusts."
-        n "I didn’t try to stop the sounds that he brought out of me, long moans and pleasured whimpers."
+        cain "Ах. Ти такий приємний" # "Ah. You feel so good."
+        n "Простогнав він мені в спину" # "He moaned into my back."
+        n "Він схопив мою руку й заламав її за спину, використовуючи це, щоб проникати глибоко в мене" # "He grabbed my arm and twisted it around my back, using it to thrust deep inside of me."
+        n "Усе моє тіло рухалося від сили його поштовхів" # "My whole body moved with the force of his thrusts."
+        n "Я не намагався стримати звуки, які він з мене видобував, — протяжні стогони й сповнене насолоди скигління" # "I didn’t try to stop the sounds that he brought out of me, long moans and pleasured whimpers."
         $ cwings,cbase, cexp = 0,3,17
-        p "Ahh! Cain! Cain…."
-        n "I said his name over and over with the same passionate desperation as a prayer."
-        p "Oh...oh god."
-        n "I knew I wouldn’t last long."
-        n "Cain's motions came in hard and fast."
+        p "Ахх! Каїне! Каїне…." # "Ahh! Cain! Cain…."
+        n "Я повторював його ім'я знову й знову з тією ж пристрасною відчайдушністю, що й молитву" # "I said his name over and over with the same passionate desperation as a prayer."
+        p "О...о боже" # "Oh...oh god."
+        n "Я знав, що довго не протримаюся" # "I knew I wouldn’t last long."
+        n "Рухи Каїна ставали різкими й швидкими" # "Cain's motions came in hard and fast."
         $ cwings,cbase, cexp = 0,3,9
-        cain "You can call me god if you want."
-        n "He teased letting out a breath."
-        n "My breath hitched at his words."
-        n "Having him above me--inside me--telling me something like that made me shiver."
-        n "This was worship in a way."
-        n "I’d submitted to him and let him do what he wanted to me."
-        n "And I’d enjoyed it."
+        cain "Можеш звати мене богом, якщо хочеш" # "You can call me god if you want."
+        n "Дражнив він, видихаючи" # "He teased letting out a breath."
+        n "Мій подих затнувся від його слів" # "My breath hitched at his words."
+        n "Від того, що він наді мною--усередині мене--каже мені таке, я затремтів" # "Having him above me--inside me--telling me something like that made me shiver."
+        n "Це було свого роду поклоніння" # "This was worship in a way."
+        n "Я скорився йому й дозволив робити зі мною все, що він захоче" # "I’d submitted to him and let him do what he wanted to me."
+        n "І мені це подобалося" # "And I’d enjoyed it."
         $ sanity -=10
-        n "It was fitting to think of him as a god."
-        n "He clenched his teeth and came deep inside of me."
-        n "Cain let my hips fall on the couch."
-        n "His hand caressing my hair gently, feeling the strands."
-        cain "Why don't you rest there?"
-        n "Cain pulled off his blazer and dropped it on me."
-        n "He got up and left me alone."
+        n "Було цілком доречно вважати його богом" # "It was fitting to think of him as a god."
+        n "Він зціпив зуби й кінчив глибоко в мене" # "He clenched his teeth and came deep inside of me."
+        n "Каїн дав моїм стегнам опуститися на диван" # "Cain let my hips fall on the couch."
+        n "Його рука ніжно гладила моє волосся, перебираючи пасма" # "His hand caressing my hair gently, feeling the strands."
+        cain "Чому б тобі не відпочити тут?" # "Why don't you rest there?"
+        n "Каїн зняв свій піджак і накинув його на мене" # "Cain pulled off his blazer and dropped it on me."
+        n "Він підвівся й лишив мене самого" # "He got up and left me alone."
         scene black with fade
-        n "I snuggled his jacket smelling the cologne on it."
-        n "The warmth and smell made my head spin, I closed my eyes and fell asleep."
+        n "Я загорнувся в його піджак, вдихаючи запах одеколону на ньому" # "I snuggled his jacket smelling the cologne on it."
+        n "Тепло й запах закружляли мені голову, я заплющив очі й заснув" # "The warmth and smell made my head spin, I closed my eyes and fell asleep."
         jump cain_night_1
-    "\"NO!\"":
+    "\"НІ!\"": # "NO!"
 
         $ cain_love -=10
         jump cain_dayone_refuse
 
 label cain_dayone_refuse:
 $ cwings,cbase, cexp = 0,3,2
-cain "No?"
+cain "Ні?" # "No?"
 $ cwings,cbase, cexp = 0,3,5
-n "Cain said with a sigh."
+n "Промовив Каїн, зітхнувши" # "Cain said with a sigh."
 $ cwings,cbase, cexp = 0,3,8
-n "He grabbed my wrist and forced me over his knee."
-cain "We'll just see about that."
-n "He tore off my underwear and reeled back sending his palm into my ass with a great amount of force."
-n "Pain radiated through my body and a scream tore from my throat."
-n "The sound of the slap was almost frightfully loud, echoing in the silence."
+n "Він схопив моє зап'ястя й перегнув мене через своє коліно" # "He grabbed my wrist and forced me over his knee."
+cain "Ну це ми ще побачимо" # "We'll just see about that."
+n "Він зірвав мою білизну й, замахнувшись, з великою силою опустив долоню на мою дупу" # "He tore off my underwear and reeled back sending his palm into my ass with a great amount of force."
+n "Біль пронизав усе моє тіло, і крик вирвався з мого горла" # "Pain radiated through my body and a scream tore from my throat."
+n "Звук ляпаса був майже лячно гучним, відлунюючи в тиші" # "The sound of the slap was almost frightfully loud, echoing in the silence."
 $ health -=5
-n "I didn’t expect it to hurt so much."
-n "I squeezed my eyes shut as tears threatened to fall."
-cain "Was that not enough?"
+n "Я не очікував, що буде так боляче" # "I didn’t expect it to hurt so much."
+n "Я міцно заплющив очі, стримуючи сльози, що от-от мали покотитися" # "I squeezed my eyes shut as tears threatened to fall."
+cain "Хіба цього було замало?" # "Was that not enough?"
 $ cwings,cbase, cexp = 0,3,9
-n "Cain said tilting his head to the side."
-cain "Well, honey, I got something else then."
-n "He put up his hand and I looked over my shoulder."
-n "His palm radiated and glowed like a hot iron as he brought it down on my skin."
+n "Промовив Каїн, схиливши голову набік" # "Cain said tilting his head to the side."
+cain "Що ж, любчику, тоді маю для тебе дещо інше" # "Well, honey, I got something else then."
+n "Він підняв руку, і я озирнувся через плече" # "He put up his hand and I looked over my shoulder."
+n "Його долоня пашіла й жевріла, наче розпечене залізо, коли він опустив її на мою шкіру" # "His palm radiated and glowed like a hot iron as he brought it down on my skin."
 $ health -=10
-n "I could hear the heat searing my flesh."
-n "The agonizing burning sensation made me thrash and writhe in pain."
+n "Я чув, як жар випікає мою плоть" # "I could hear the heat searing my flesh."
+n "Нестерпне пекуче відчуття змушувало мене битися й звиватися від болю" # "The agonizing burning sensation made me thrash and writhe in pain."
 $ health -=10
-n "I struggled to get enough air into my lungs as I cried out hoarsely."
-n "I wasn’t too proud to beg anymore."
-p "No more."
-p "It hurts so much."
-p "Please...no more."
-n "Cain peeled his hand off my ass and looked at my flesh that tore away from me."
+n "Я силкувався набрати повітря в легені, хрипко скрикуючи" # "I struggled to get enough air into my lungs as I cried out hoarsely."
+n "Я вже не був надто гордим, щоб благати" # "I wasn’t too proud to beg anymore."
+p "Годі" # "No more."
+p "Так боляче" # "It hurts so much."
+p "Будь ласка...годі" # "Please...no more."
+n "Каїн відірвав руку від моєї дупи й глянув на мою плоть, що відстала від мене" # "Cain peeled his hand off my ass and looked at my flesh that tore away from me."
 $ sanity -=10
-cain "Had enough hm?"
-n "He licked my blood off his fingers and looked down at me."
-n "He grabbed a fist full of my hair and leaned into me."
+cain "Досить з тебе, гм?" # "Had enough hm?"
+n "Він злизав мою кров з пальців і глянув на мене згори вниз" # "He licked my blood off his fingers and looked down at me."
+n "Він схопив жменю мого волосся й нахилився до мене" # "He grabbed a fist full of my hair and leaned into me."
 $ cwings,cbase, cexp = 0,3,7
-cain "Next time... You should just do as you're told."
+cain "Наступного разу... просто роби, як тобі велять" # "Next time... You should just do as you're told."
 $ cwings,cbase, cexp = 0,3,9
-n "He said as he pushed his bloody fingers into my mouth."
-n "His hand was no longer hot and my mouth was filled with the flavor of burnt skin and hot blood."
+n "Сказав він, засовуючи закривавлені пальці мені в рот" # "He said as he pushed his bloody fingers into my mouth."
+n "Його рука вже не була гарячою, а мій рот наповнився смаком паленої шкіри й гарячої крові" # "His hand was no longer hot and my mouth was filled with the flavor of burnt skin and hot blood."
 $ sanity -=10
-n "My stomach turned at the sick, coppery taste."
-n "I swallowed to keep down the bile rising in my throat and nearly heaved again."
-n "I shivered, trying to stay calm, but I felt so disgusted and humiliated."
-n "He dropped me on the couch and walked away."
+n "Мій шлунок перевернувся від цього огидного мідного присмаку" # "My stomach turned at the sick, coppery taste."
+n "Я ковтнув, щоб стримати жовч, що підступала до горла, і мене мало знову не знудило" # "I swallowed to keep down the bile rising in my throat and nearly heaved again."
+n "Я тремтів, намагаючись зберігати спокій, але почувався таким гидким і приниженим" # "I shivered, trying to stay calm, but I felt so disgusted and humiliated."
+n "Він кинув мене на диван і пішов геть" # "He dropped me on the couch and walked away."
 scene black
-n "I closed my eyes and tried to forget what just happened."
+n "Я заплющив очі й спробував забути те, що щойно сталося" # "I closed my eyes and tried to forget what just happened."
 jump cain_night_1
 
 label tell_cain_sins:
-n "I considered his words carefully."
+n "Я ретельно обміркував його слова" # "I considered his words carefully."
 $ cwings,cbase, cexp = 0,3,7
-n "Did I have any \"sinful thoughts?\"?"
-n "At the very least, I knew I had a lot on my mind, and maybe a few things I wasn’t so proud of."
-n "I wasn’t sure what I had to lose anymore. I decided to tell him."
+n "Чи мав я якісь «гріховні думки»?" # "Did I have any "sinful thoughts?"?"
+n "Принаймні я знав, що маю багато чого на думці, і, можливо, дещо, чим не надто пишався" # "At the very least, I knew I had a lot on my mind, and maybe a few things I wasn’t so proud of."
+n "Я вже не був певен, що мені втрачати. Я вирішив йому розповісти" # "I wasn’t sure what I had to lose anymore. I decided to tell him."
 $ sanity-=10
-n "Cain nodded at every word and folded his fingers in front of his face."
-n "He looked thoughtful as I spoke and took a deep breath when I was finished."
-cain "You seem to have a lot on your mind."
-n "He stood up and put his hands on his hips watching me."
-cain "So, do you want absolution, sinner?"
-n "I hesitated."
-n "He sounded serious about this."
-p "What...what do you mean, exactly?"
-cain "I mean... I can absolve you of your sins in my domain."
+n "Каїн кивав на кожне слово й склав пальці перед обличчям" # "Cain nodded at every word and folded his fingers in front of his face."
+n "Він мав задумливий вигляд, поки я говорив, і глибоко вдихнув, коли я закінчив" # "He looked thoughtful as I spoke and took a deep breath when I was finished."
+cain "Схоже, тебе гнітить багато чого" # "You seem to have a lot on your mind."
+n "Він підвівся й, узявшись руками в боки, дивився на мене" # "He stood up and put his hands on his hips watching me."
+cain "То чи прагнеш ти відпущення, грішнику?" # "So, do you want absolution, sinner?"
+n "Я завагався" # "I hesitated."
+n "Він, схоже, говорив про це серйозно" # "He sounded serious about this."
+p "Що...що саме ти маєш на увазі?" # "What...what do you mean, exactly?"
+cain "Я маю на увазі... що можу відпустити тобі гріхи у своїх володіннях" # "I mean... I can absolve you of your sins in my domain."
 $ cwings,cbase, cexp = 0,3,9
-cain "You can be free of your worries and anxiety."
-cain "This could be a new start for you after all."
-cain "Wouldn't it be nice?"
+cain "Ти можеш звільнитися від своїх турбот і тривог" # "You can be free of your worries and anxiety."
+cain "Зрештою, це міг би стати для тебе новим початком" # "This could be a new start for you after all."
+cain "Хіба це не було б чудово?" # "Wouldn't it be nice?"
 menu:
-    "\"Yeah, that would be nice.\"":
+    "\"Так, це було б чудово.\"": # "Yeah, that would be nice."
         $ cain_love +=10
-        n "I’d been terrified and confused since I got here."
-        n "If he was willing to do something to help me, I wasn’t about to turn him down."
-        n "Cain made a motion with his hand as if to tell me to turn around."
+        n "Відколи я тут опинився, я був наляканий і розгублений" # "I’d been terrified and confused since I got here."
+        n "Якщо він був готовий зробити щось, щоб мені допомогти, я не збирався відмовлятися" # "If he was willing to do something to help me, I wasn’t about to turn him down."
+        n "Каїн зробив жест рукою, ніби велячи мені обернутися" # "Cain made a motion with his hand as if to tell me to turn around."
         $ cwings,cbase, cexp = 0,3,1
-        cain "Turn and I'll absolve you."
-        n "I turned my back to him and gripped the seat."
-        n "I could hear something heavy hit the floor."
-        n "He reeled back and I felt something lashing against my skin."
+        cain "Обернися, і я відпущу тобі гріхи" # "Turn and I'll absolve you."
+        n "Я повернувся до нього спиною й вчепився в сидіння" # "I turned my back to him and gripped the seat."
+        n "Я почув, як щось важке впало на підлогу" # "I could hear something heavy hit the floor."
+        n "Він замахнувся, і я відчув, як щось хльоснуло по моїй шкірі" # "He reeled back and I felt something lashing against my skin."
         $ health -=5
-        n "The shock and the pain made me cry out."
-        n "I looked over my shoulder and saw the instrument of my pain clatter against the floor."
-        n "A whip."
-        n "Cain pulled the whip back and looked at the leather strips."
-        cain "Hmm. I don't think that's nearly enough for you."
-        cain "I want to hear you beg for forgiveness."
+        n "Від шоку й болю я скрикнув" # "The shock and the pain made me cry out."
+        n "Я озирнувся через плече й побачив, як знаряддя мого болю брязнуло об підлогу" # "I looked over my shoulder and saw the instrument of my pain clatter against the floor."
+        n "Батіг" # "A whip."
+        n "Каїн відвів батіг назад і глянув на шкіряні смуги" # "Cain pulled the whip back and looked at the leather strips."
+        cain "Хмм. Не думаю, що цього для тебе бодай близько досить" # "Hmm. I don't think that's nearly enough for you."
+        cain "Я хочу почути, як ти благаєш про прощення" # "I want to hear you beg for forgiveness."
         $ cwings,cbase, cexp = 0,3,9
-        n "He pulled back one more time and whipped me again, this time tearing flesh from my back."
+        n "Він замахнувся ще раз і знову хльоснув мене, цього разу зідравши плоть зі спини" # "He pulled back one more time and whipped me again, this time tearing flesh from my back."
         $ health-=10
-        n "I choked on a scream at the sensation, my body tensing in reaction to the pain."
-        n "I was in agony."
-        n "I just wanted it to be over."
-        p "Please. Please, I want to be forgiven."
-        n "My voice was hoarse."
-        n "It felt like my back was on fire."
-        n "I tried not to cry."
-        cain "HAHA THAT'S A GOOD PET."
-        n "Cain whipped me one more time and dropped the flogger on the floor."
-        n "He leaned towards my back and ran his tongue against my blood."
-        n "The look on his face sent a shiver down my spine."
-        cain "Hm... You taste good."
+        n "Я захлинувся криком від цього відчуття, моє тіло напружилося у відповідь на біль" # "I choked on a scream at the sensation, my body tensing in reaction to the pain."
+        n "Я був у агонії" # "I was in agony."
+        n "Я лише хотів, щоб це скінчилося" # "I just wanted it to be over."
+        p "Будь ласка. Будь ласка, я хочу, щоб мені пробачили" # "Please. Please, I want to be forgiven."
+        n "Мій голос захрип" # "My voice was hoarse."
+        n "Здавалося, ніби моя спина палає" # "It felt like my back was on fire."
+        n "Я намагався не плакати" # "I tried not to cry."
+        cain "ХАХА ОСЬ ГАРНИЙ УЛЮБЛЕНЕЦЬ" # "HAHA THAT'S A GOOD PET."
+        n "Каїн хльоснув мене ще раз і кинув батіг на підлогу" # "Cain whipped me one more time and dropped the flogger on the floor."
+        n "Він нахилився до моєї спини й провів язиком по моїй крові" # "He leaned towards my back and ran his tongue against my blood."
+        n "Вираз його обличчя змусив дрож пробігти моїм хребтом" # "The look on his face sent a shiver down my spine."
+        cain "Гм... Ти смачний на смак" # "Hm... You taste good."
         $ sanity +=10
-        n "Despite everything that had just happened, I felt better somehow."
-        n "My heart wasn’t pounding, and my nerves had settled."
-        n "It was almost as if I had a clearer conscience than before."
-        cain "Isn't it better to just tell the truth, little one?"
-        n "Cain said running his fingers down my back, the pain on my back releasing at his touch."
+        n "Попри все, що щойно сталося, мені якось полегшало" # "Despite everything that had just happened, I felt better somehow."
+        n "Моє серце вже не калатало, а нерви заспокоїлися" # "My heart wasn’t pounding, and my nerves had settled."
+        n "Це було майже так, ніби моя совість стала чистішою, ніж раніше" # "It was almost as if I had a clearer conscience than before."
+        cain "Хіба не краще просто казати правду, малий?" # "Isn't it better to just tell the truth, little one?"
+        n "Промовив Каїн, проводячи пальцями по моїй спині, і біль відступав від його дотику" # "Cain said running his fingers down my back, the pain on my back releasing at his touch."
         $ health +=5
-        n "Cain looked at me and kissed the back of my head."
-        cain "You've been absolved."
-        cain "Why don't you clean up and take a load off."
-        n "He put a towel next to me and exited the room allowing me a moment of silent thoughts."
+        n "Каїн глянув на мене й поцілував мене в потилицю" # "Cain looked at me and kissed the back of my head."
+        cain "Тобі відпущено гріхи" # "You've been absolved."
+        cain "Чому б тобі не привести себе до ладу й не перепочити" # "Why don't you clean up and take a load off."
+        n "Він поклав рушник поруч зі мною й вийшов з кімнати, лишивши мене наодинці з тихими думками" # "He put a towel next to me and exited the room allowing me a moment of silent thoughts."
         scene black with fade
-        n "I closed my eyes and pulled the towel around me, letting it's warmth comfort me."
+        n "Я заплющив очі й загорнувся в рушник, дозволивши його теплу мене втішити" # "I closed my eyes and pulled the towel around me, letting it's warmth comfort me."
         $ sanity +=10
-        n "I quickly fell into a restful sleep."
+        n "Я швидко провалився в спокійний сон" # "I quickly fell into a restful sleep."
         jump cain_night_1
-    "\"I changed my mind.\"":
+    "\"Я передумав.\"": # "I changed my mind."
 
         $ cain_love -=10
         $ cwings,cbase, cexp = 0,3,7
-        n "Cain shrugged his shoulders."
-        cain "Your loss."
-        n "He got up and grabbed my neck."
-        cain "You should have really said yes."
-        n "He slammed me into the ground, I felt my head bouncing off the hardwood then nothing but blackness."
+        n "Каїн знизав плечима" # "Cain shrugged his shoulders."
+        cain "Тобі ж гірше" # "Your loss."
+        n "Він підвівся й схопив мене за шию" # "He got up and grabbed my neck."
+        cain "Тобі справді варто було погодитися" # "You should have really said yes."
+        n "Він жбурнув мене на підлогу, я відчув, як моя голова відскочила від паркету, а тоді — сама лише темрява" # "He slammed me into the ground, I felt my head bouncing off the hardwood then nothing but blackness."
         scene black with fade
         $ health-=20
         jump cain_night_1
@@ -6183,37 +6183,37 @@ scene livingroom:
     xalign 0.5
     easeout 0.9 xalign 0.0
 if lookaround_punishment1 == True:
-    n "I woke up and looked around."
+    n "Я прокинувся й роззирнувся" # "I woke up and looked around."
     show CG_CainReading
-    n "Cain was sitting on the living room couch, reading a book."
+    n "Каїн сидів на дивані у вітальні, читаючи книгу" # "Cain was sitting on the living room couch, reading a book."
 else:
-    n "Cain moved to the couch and took a seat."
+    n "Каїн перебрався на диван і сів" # "Cain moved to the couch and took a seat."
     show CG_CainReading
-    n "He lifted a book off the table and began to read it."
+    n "Він узяв книгу зі столу й почав її читати" # "He lifted a book off the table and began to read it."
 show CG_CainReading2
-cain "It's not polite to stare."
+cain "Витріщатися нечемно" # "It's not polite to stare."
 show CG_CainReading2_glow:
     subpixel True
     alpha 0.0
     easein 0.4 alpha 1.0
     easeout 0.3 alpha 0.0
-cain "Didn't anyone teach you any manners?"
-n "I jumped, startled by Cain's comment."
+cain "Хіба тебе ніхто не навчив гарних манер?" # "Didn't anyone teach you any manners?"
+n "Я здригнувся, наляканий зауваженням Каїна" # "I jumped, startled by Cain's comment."
 scene cain_livingroom
-n "I didn't even realize that I was staring at him."
+n "Я навіть не помітив, що витріщаюся на нього" # "I didn't even realize that I was staring at him."
 show cain
 
 menu:
-    "-Yell at him-":
+    "-Накричати на нього-": # "-Yell at him-"
         $ cain_love +=10
-        p "Are...are you nuts!?"
-        p "You must be fucking insane if you think that I'm going to let you keep me here!"
-        n "I shouted, completely fed up with this man's games."
+        p "Ти...ти здурів!?" # "Are...are you nuts!?"
+        p "Ти, блять, точно божевільний, якщо думаєш, що я дозволю тримати мене тут!" # "You must be fucking insane if you think that I'm going to let you keep me here!"
+        n "Крикнув я, геть ситий по горло іграми цього чоловіка" # "I shouted, completely fed up with this man's games."
         scene livingroom:
             xalign 0.0
             easeout 0.9 xalign 0.9
-        n "I turned around and stormed off towards the door."
-        n "A mass of black feathers began to swirl in front of me and my eyes widened as Cain walked out of it. "
+        n "Я розвернувся й рушив геть до дверей" # "I turned around and stormed off towards the door."
+        n "Купа чорного пір'я закружляла переді мною, і мої очі розширилися, коли Каїн вийшов з неї. " # "A mass of black feathers began to swirl in front of me and my eyes widened as Cain walked out of it. "
         $ cwings,cbase, cexp = 0,3,2
         show feather_animation:
             subpixel True
@@ -6221,35 +6221,35 @@ menu:
             easein 0.2 ypos 50 alpha 1.0
             easeout 0.1 alpha 0.0
         show cain with dissolve
-        cain "Listen here you impudent little child, I don't have the patience for your defiant drivel."
-        n "He examined me with cold eyes before speaking again."
-        cain "You're beginning to show me how much of a waste of life you are."
-        n "He raised his hand and I could feel myself lifting off the ground."
-        n " I kicked and screamed as I floated before being slammed into the wall." with vpunch
+        cain "Слухай-но, зухвале дитя, немає в мене терпіння на твоє непокірне блеяння" # "Listen here you impudent little child, I don't have the patience for your defiant drivel."
+        n "Він оглянув мене холодними очима, перш ніж знову заговорити" # "He examined me with cold eyes before speaking again."
+        cain "Ти починаєш показувати мені, яка ж ти нікчемна подоба життя" # "You're beginning to show me how much of a waste of life you are."
+        n "Він підняв руку, і я відчув, як відриваюся від землі" # "He raised his hand and I could feel myself lifting off the ground."
+        n " Я брикався й кричав, повиснувши в повітрі, а тоді мене жбурнуло об стіну" with vpunch # " I kicked and screamed as I floated before being slammed into the wall."
         jump cain_roses
-    "-Ask him to let you go-":
+    "-Попросити відпустити тебе-": # "-Ask him to let you go-"
 
         $ cain_boredom +=1
         if cain_boredom >=3:
             jump cain_boredom_day1
         $ cwings,cbase, cexp = 0,3,5
-        p "Hey, uh....Cain?"
-        n "Cain looked up from his book for a moment before closing it and placing it on the table."
+        p "Гей, е....Каїне?" # "Hey, uh....Cain?"
+        n "Каїн на мить відірвав погляд від книги, а тоді згорнув її й поклав на стіл" # "Cain looked up from his book for a moment before closing it and placing it on the table."
         $ cwings,cbase, cexp = 0,3,7
-        cain "What is it?"
-        n "I took a nervous gulp."
-        n "I was finding it hard to answer him with his eyes boring into me like hateful drills."
-        cain "Let me guess, you want me to let you go. Right?"
-        n "I nodded."
+        cain "Що таке?" # "What is it?"
+        n "Я нервово ковтнув" # "I took a nervous gulp."
+        n "Мені було важко йому відповісти, коли його очі вгвинчувалися в мене, наче лютаві свердла" # "I was finding it hard to answer him with his eyes boring into me like hateful drills."
+        cain "Дай-но вгадаю: ти хочеш, щоб я тебе відпустив. Так?" # "Let me guess, you want me to let you go. Right?"
+        n "Я кивнув" # "I nodded."
         $ cwings,cbase, cexp = 0,3,11
-        n "He got up from his seat and raised his hand."
+        n "Він підвівся з місця й підняв руку" # "He got up from his seat and raised his hand."
         scene livingroom:
             xalign 0.0
             easeout 0.05 xalign 0.9
         $ health -=5
-        n "An invisible force smashed me into the wall." with vpunch
+        n "Невидима сила жбурнула мене об стіну" with vpunch # "An invisible force smashed me into the wall."
         jump cain_roses
-    "-Back off-":
+    "-Відступити-": # "-Back off-"
 
         $ cwings,cbase, cexp = 0,3,7
         $ cain_love -=10
@@ -6258,152 +6258,152 @@ menu:
 
 label cain_look_around_day1_noon:
 $ cain_noon_bathroom = False
-n "I should look around more."
+n "Треба ще роззирнутися" # "I should look around more."
 menu:
-    "-Bathroom-":
+    "-Ванна-": # "-Bathroom-"
         jump cain_day1_bathroom_noon
-    "-Bedroom-":
+    "-Спальня-": # "-Bedroom-"
         jump cain_day1_bedroom_noon
 
 label cain_roses:
-n "The force relented and I slumped the floor."
+n "Сила відступила, і я осів на підлогу" # "The force relented and I slumped the floor."
 show cain
-cain "Listen here, love."
-n "Cain kneeled down and gently caressed my hair."
-n "I felt something wrap around my arms and legs."
-n "I looked down to see what appeared to be vines."
-n "I didn't get much of a glance since Cain lifted my head up by the chin and forced me to look at him."
+cain "Слухай-но, любий" # "Listen here, love."
+n "Каїн опустився навколішки й ніжно погладив моє волосся" # "Cain kneeled down and gently caressed my hair."
+n "Я відчув, як щось обвиває мої руки й ноги" # "I felt something wrap around my arms and legs."
+n "Я глянув униз і побачив, як здалося, лозу" # "I looked down to see what appeared to be vines."
+n "Але роздивитися я не встиг, бо Каїн підняв мою голову за підборіддя й змусив глянути на нього" # "I didn't get much of a glance since Cain lifted my head up by the chin and forced me to look at him."
 $ cwings,cbase, cexp = 0,3,8
-cain "Look at me when I'm talking to you, trash."
-n "The vines started to twist around my limbs, getting tighter I could feel sharp thorns begin to dig into my flesh."
-n "The vines then lifted me off the ground, displaying my entangled body to Cain."
+cain "Дивись на мене, коли я до тебе говорю, покидьку" # "Look at me when I'm talking to you, trash."
+n "Лоза почала обкручуватися навколо моїх кінцівок, стискаючись дедалі тугіше, і я відчув, як гострі шипи впиваються в мою плоть" # "The vines started to twist around my limbs, getting tighter I could feel sharp thorns begin to dig into my flesh."
+n "Тоді лоза підняла мене над землею, виставивши моє сплутане тіло перед Каїном" # "The vines then lifted me off the ground, displaying my entangled body to Cain."
 $ health -=10
 $ cwings,cbase, cexp = 0,3,7
-cain "Now, I wouldn't say that I'm much of a gardener."
-cain "Plants don't seem to last long in my care."
-cain "I suppose you could say I lack the \"green thumb\" that competent gardeners possess."
-n "Cain circled around me as he spoke."
-n "All I could do was whimper and squirm as the vines tightened and barbs cut my skin."
+cain "Що ж, не сказав би, що з мене великий садівник" # "Now, I wouldn't say that I'm much of a gardener."
+cain "Рослини, схоже, недовго живуть під моєю опікою" # "Plants don't seem to last long in my care."
+cain "Гадаю, можна сказати, що мені бракує тієї «легкої руки», яку мають вправні садівники" # "I suppose you could say I lack the "green thumb" that competent gardeners possess."
+n "Каїн ходив колами навколо мене, говорячи" # "Cain circled around me as he spoke."
+n "Усе, що я міг, — це скиглити й звиватися, поки лоза стискалася, а шипи різали мою шкіру" # "All I could do was whimper and squirm as the vines tightened and barbs cut my skin."
 $ cwings,cbase, cexp = 0,3,4
-cain "But, I do have an appreciation for roses."
-cain "Red ones in particular."
-n "Cain reached over to the vine that was restraining my left arm and plucked a red rose off it. "
-n "He held it up and examined it."
-cain "A flower known to represent everlasting love and romance."
-n "He shook his head in disapproval before continuing."
-cain "You humans try to find meaning in the strangest places."
-cain "Somehow you found it fitting to attach intimacy, adoration, and fondness to a small, inconsequential plant."
-cain "In doing this, you create a false sense of love in the exchanging of these flowers since you sad mortals are too inept at truly expressing it."
-n "Cain crushed the rose in his hand."
-cain "Pathetic."
-n "He opened his hand and let the petals fall to the floor."
-cain "It's just a pretty weed that you all foolishly decided had significance."
+cain "Але троянди я таки ціную" # "But, I do have an appreciation for roses."
+cain "Надто ж червоні" # "Red ones in particular."
+n "Каїн потягнувся до лози, що сковувала мою ліву руку, і зірвав з неї червону троянду. " # "Cain reached over to the vine that was restraining my left arm and plucked a red rose off it. "
+n "Він підняв її й оглянув" # "He held it up and examined it."
+cain "Квітка, що, як відомо, символізує вічне кохання й романтику" # "A flower known to represent everlasting love and romance."
+n "Він несхвально похитав головою, перш ніж продовжити" # "He shook his head in disapproval before continuing."
+cain "Ви, люди, шукаєте сенс у найдивніших місцях" # "You humans try to find meaning in the strangest places."
+cain "Ви якимось чином вирішили, що доречно приписати близькість, обожнювання й ніжність цій дрібній, нікчемній рослині" # "Somehow you found it fitting to attach intimacy, adoration, and fondness to a small, inconsequential plant."
+cain "І цим ви створюєте оманливе відчуття любові в обміні цими квітами, позаяк ви, жалюгідні смертні, надто нездатні виразити її по-справжньому" # "In doing this, you create a false sense of love in the exchanging of these flowers since you sad mortals are too inept at truly expressing it."
+n "Каїн розчавив троянду в руці" # "Cain crushed the rose in his hand."
+cain "Жалюгідно" # "Pathetic."
+n "Він розтулив долоню й дав пелюсткам опасти на підлогу" # "He opened his hand and let the petals fall to the floor."
+cain "Це просто гарний бур'ян, якому ви всі так нерозумно вирішили надати значення" # "It's just a pretty weed that you all foolishly decided had significance."
 $ cwings,cbase, cexp = 0,3,7
 show cain
-n "I...I could feel the thorns dig deeper."
-n "They were growing longer, becoming more akin to spikes than thorns."
-n "I gasped as the sharp spines slowly drove themselves into me."
-n "I whimpered and tears began to run the down my face."
+n "Я...я відчував, як шипи впиваються глибше" # "I...I could feel the thorns dig deeper."
+n "Вони видовжувалися, стаючи радше схожими на палі, ніж на шипи" # "They were growing longer, becoming more akin to spikes than thorns."
+n "Я охнув, коли гострі колючки повільно вганялися в мене" # "I gasped as the sharp spines slowly drove themselves into me."
+n "Я заскиглив, і сльози покотилися по моєму обличчю" # "I whimpered and tears began to run the down my face."
 $ cwings,cbase, cexp = 0,3,9
-n "Cain noticed my crying and leaned his face in close to mine."
-cain "What's wrong, my pet?"
-cain "Did I upset you?"
-cain "You've gotten so quiet."
+n "Каїн помітив мої сльози й наблизив своє обличчя до мого" # "Cain noticed my crying and leaned his face in close to mine."
+cain "Що сталося, мій улюбленцю?" # "What's wrong, my pet?"
+cain "Невже я тебе засмутив?" # "Did I upset you?"
+cain "Ти так притих" # "You've gotten so quiet."
 
 menu:
-    " \"STOP!\"":
+    " \"СТІЙ!\"": # "STOP!"
         $ cain_boredom +=1
         if cain_boredom >=3:
             jump cain_boredom_day1
         $ cwings,cbase, cexp = 0,3,5
-        p "Stop....please..."
-        n "I sobbed as the vines continued their savage work."
-        p "I can't..."
-        n "Cain took off his blazer and tossed it aside as he got closer."
+        p "Стій....будь ласка..." # "Stop....please..."
+        n "Я ридав, поки лоза продовжувала свою дику роботу" # "I sobbed as the vines continued their savage work."
+        p "Я не можу..." # "I can't..."
+        n "Каїн зняв піджак і відкинув його вбік, підступаючи ближче" # "Cain took off his blazer and tossed it aside as he got closer."
         $ cwings,cbase, cexp = 0,6,11
-        cain "Stop? The fun hasn't even started yet."
-        n "I felt a barb begin to form against the middle of my back."
+        cain "Стій? Та забава ще навіть не почалася" # "Stop? The fun hasn't even started yet."
+        n "Я відчув, як шип починає проростати посеред моєї спини" # "I felt a barb begin to form against the middle of my back."
         $ health -=10
-        cain "I have to say though, this is a really good look for you."
-        n "He said as he eyed me up and down."
-        n "The sharp tip of the newly developing spike struggled to pierce my spine as it fought against the bone."
+        cain "Хоча мушу визнати, тобі це вельми личить" # "I have to say though, this is a really good look for you."
+        n "Сказав він, оглядаючи мене з голови до ніг" # "He said as he eyed me up and down."
+        n "Гострий кінчик палі, що проростала, силкувався прохромити мій хребет, борючись із кісткою" # "The sharp tip of the newly developing spike struggled to pierce my spine as it fought against the bone."
         $ health -=10
-        p "AH! Cain, please!"
-        n "I begged."
-        n "Cain let out an exasperated sigh."
+        p "АХ! Каїне, благаю!" # "AH! Cain, please!"
+        n "Благав я" # "I begged."
+        n "Каїн роздратовано зітхнув" # "Cain let out an exasperated sigh."
         $ cwings,cbase, cexp = 0,6,5
-        cain "My, you're so fragile."
-        cain "And here I was hoping you were made of tougher stock."
-        n "I couldn't handle much more of this."
-        n "My body was reaching its breaking point."
+        cain "О, який же ти крихкий" # "My, you're so fragile."
+        cain "А я ж сподівався, що ти зі стійкішого тіста" # "And here I was hoping you were made of tougher stock."
+        n "Я більше цього не витримував" # "I couldn't handle much more of this."
+        n "Моє тіло досягало своєї межі" # "My body was reaching its breaking point."
         if cain_love <=30:
-            n "The razor-edged stakes finally penetrated bone as I heard my spine snap and an immense wave of pain shot through my body."
-            n "I tried to plead for him to stop, but all I could do was scream and wail in agony."
-            p "C-Cain..."
+            n "Гострі, наче лезо, палі нарешті пробили кістку, я почув, як хруснув мій хребет, і величезна хвиля болю прошила моє тіло" # "The razor-edged stakes finally penetrated bone as I heard my spine snap and an immense wave of pain shot through my body."
+            n "Я намагався благати його зупинитися, але міг лише кричати й волати в агонії" # "I tried to plead for him to stop, but all I could do was scream and wail in agony."
+            p "К-Каїне..." # "C-Cain..."
             $ cwings,cbase, cexp = 0,6,4
-            n "Cain rested his index finger on my lips."
-            cain "Shhhh. Don't worry, sweetheart."
-            cain "It'll all be over soon."
-            n "A plethora of long bloody barbs protruded from my arms and legs, giving my body the appearance of a nightmarish pincushion."
-            n "More spikes ripped through my torso, tearing through skin, muscle, and bone."
-            n "I coughed and sputtered up blood onto my chest."
-            n "I weakly lifted up my head to look at Cain."
-            n "A pressure began to build under my sternum."
-            n "Roses burst out of my chest, my vision slowly grew dark."
+            n "Каїн поклав вказівний палець на мої губи" # "Cain rested his index finger on my lips."
+            cain "Тсссс. Не хвилюйся, солоденький" # "Shhhh. Don't worry, sweetheart."
+            cain "Скоро все скінчиться" # "It'll all be over soon."
+            n "Безліч довгих закривавлених шипів стирчала з моїх рук і ніг, надаючи моєму тілу вигляду жахливої подушечки для голок" # "A plethora of long bloody barbs protruded from my arms and legs, giving my body the appearance of a nightmarish pincushion."
+            n "Ще більше паль прорвалося крізь мій торс, роздираючи шкіру, м'язи й кістки" # "More spikes ripped through my torso, tearing through skin, muscle, and bone."
+            n "Я кашляв і випльовував кров собі на груди" # "I coughed and sputtered up blood onto my chest."
+            n "Я кволо підняв голову, щоб глянути на Каїна" # "I weakly lifted up my head to look at Cain."
+            n "Під грудиною почав наростати тиск" # "A pressure began to build under my sternum."
+            n "Троянди вибухнули з моїх грудей, і мій зір повільно згасав" # "Roses burst out of my chest, my vision slowly grew dark."
             show CG_cain_Bloody_Rose with dissolve
-            n "I heard Cain speak as my hearing started to fade."
-            cain "You know, I think that you might make a wonderful centerpiece."
-            cain "Now, where should I put you?"
-            cain "You're a little too big for the dining room table."
+            n "Я почув, як Каїн говорить, поки мій слух починав згасати" # "I heard Cain speak as my hearing started to fade."
+            cain "Знаєш, гадаю, з тебе вийшла б чудова окраса столу" # "You know, I think that you might make a wonderful centerpiece."
+            cain "Ну, і куди ж мені тебе поставити?" # "Now, where should I put you?"
+            cain "Для обіднього столу ти трохи завеликий" # "You're a little too big for the dining room table."
             hide screen health_bar
             hide screen sanity_bar
             play music "cain/cain_death.mp3"
             $ persistent.cain_ending_centerpeice = True
             scene endslate with Dissolve(1.0)
             screen cain_ending_centerpeice:
-                text "{=endslate_title}You Died{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-                text "\n\n\n\n{=endslate_subtitle}Cain made you a centerpiece.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+                text "{=endslate_title}Ти помер{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died"
+                text "\n\n\n\n{=endslate_subtitle}Каїн зробив з тебе окрасу столу.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "Cain made you a centerpiece."
             show screen cain_ending_centerpeice
             with Dissolve(1.0)
             pause
             return
         else:
-            n "Cain studied me for a moment, contemplating his next move."
-            cain "Alright. I'll stop."
-            cain "It would be a shame if you were to die now."
-            cain "Especially since I've barely had my fun with you."
-            n "He waved his hand and the thorns retracted, the vines loosened, and my bloodied body was lowered to the floor."
-            n "Cain turned his back to me before walking out of the room."
-            cain "Get yourself cleaned up."
-            cain "And try not to bleed on everything."
+            n "Каїн якусь мить вивчав мене, обмірковуючи свій наступний крок" # "Cain studied me for a moment, contemplating his next move."
+            cain "Гаразд. Я зупинюся" # "Alright. I'll stop."
+            cain "Було б шкода, якби ти помер тепер" # "It would be a shame if you were to die now."
+            cain "Надто ж тому, що я заледве встиг з тобою розважитися" # "Especially since I've barely had my fun with you."
+            n "Він махнув рукою, шипи втягнулися, лоза послабшала, і моє закривавлене тіло опустилося на підлогу" # "He waved his hand and the thorns retracted, the vines loosened, and my bloodied body was lowered to the floor."
+            n "Каїн повернувся до мене спиною й вийшов з кімнати" # "Cain turned his back to me before walking out of the room."
+            cain "Приведи себе до ладу" # "Get yourself cleaned up."
+            cain "І постарайся не закривавити тут усе" # "And try not to bleed on everything."
             hide cain with fade
             jump cain_night_1
-    "\"It hurts.\"":
+    "\"Боляче.\"": # "It hurts."
 
         $ cain_love +=10
-        n "The pain made it difficult to speak."
+        n "Через біль було важко говорити" # "The pain made it difficult to speak."
         $ health -=10
-        n "Cain ran his fingers through my hair and caressed my face."
-        n "He took off his blazer and tossed it aside."
+        n "Каїн провів пальцями крізь моє волосся й погладив моє обличчя" # "Cain ran his fingers through my hair and caressed my face."
+        n "Він зняв піджак і відкинув його вбік" # "He took off his blazer and tossed it aside."
         $ cwings,cbase, cexp = 0,6,12
-        cain "You don't say."
-        n "He ran his fingers up my skin and I trembled at his touch."
-        cain "Well love, did you ever think to consider that it's supposed to hurt?"
+        cain "Та невже" # "You don't say."
+        n "Він провів пальцями вгору по моїй шкірі, і я затремтів від його дотику" # "He ran his fingers up my skin and I trembled at his touch."
+        cain "Ну, любий, а чи спадало тобі колись на думку, що так і має бути — боляче?" # "Well love, did you ever think to consider that it's supposed to hurt?"
         $ cwings,cbase, cexp = 0,6,6
-        n "Cain rubbed his hands across my body as if he were examining me."
-        cain "Hmm. Perhaps I should leave you be for now."
-        cain "I'd hate for my new toy's life span to be so short."
-        n "The thorns receded and the vines wilted."
-        n " I collapsed to the floor and curled myself into a ball."
+        n "Каїн провів руками по моєму тілу, ніби оглядаючи мене" # "Cain rubbed his hands across my body as if he were examining me."
+        cain "Хмм. Мабуть, поки що я лишу тебе в спокої" # "Hmm. Perhaps I should leave you be for now."
+        cain "Не хотів би, щоб вік моєї нової іграшки був такий короткий" # "I'd hate for my new toy's life span to be so short."
+        n "Шипи втягнулися, а лоза зів'яла" # "The thorns receded and the vines wilted."
+        n " Я звалився на підлогу й скрутився в клубок" # " I collapsed to the floor and curled myself into a ball."
         $ cwings,cbase, cexp = 0,6,9
-        cain "I'm not really in the mood to hunt for a replacement so soon."
+        cain "Не надто мені хочеться так скоро шукати заміну" # "I'm not really in the mood to hunt for a replacement so soon."
         hide cain with fade
-        n "Cain stepped over me and walked into the other room."
-        n "I looked at my limbs, wanting to see the extent of the damage."
-        n "A myriad of cuts and lacerations littered my arms and legs, blood still flowing out from the wounds."
-        n " I wept on the cold floor."
+        n "Каїн переступив через мене й пішов до іншої кімнати" # "Cain stepped over me and walked into the other room."
+        n "Я глянув на свої кінцівки, бажаючи побачити, наскільки все погано" # "I looked at my limbs, wanting to see the extent of the damage."
+        n "Безліч порізів і ран поцяткувала мої руки й ноги, кров усе ще сочилася з них" # "A myriad of cuts and lacerations littered my arms and legs, blood still flowing out from the wounds."
+        n " Я плакав на холодній підлозі" # " I wept on the cold floor."
         scene black with fade
-        n "With any luck...maybe I'll bleed out.."
+        n "Якщо пощастить...може, я стечу кров'ю.." # "With any luck...maybe I'll bleed out.."
         jump cain_night_1
 
 label cain_day1_bedroom_noon:
@@ -6416,11 +6416,11 @@ screen phone_button:
 
 scene cain_bedroom_morning
 show screen phone_button
-n "I walked into Cain's bedrooom and looked around."
-n "It was beautiful and I looked out the window."
-n "Nothing more outside than red sky..."
-n "I sighed and moved away from the window."
-n "There wasn't anything important here."
+n "Я зайшов до спальні Каїна й роззирнувся" # "I walked into Cain's bedrooom and looked around."
+n "Тут було красиво, і я глянув у вікно" # "It was beautiful and I looked out the window."
+n "За вікном не було нічого, крім червоного неба..." # "Nothing more outside than red sky..."
+n "Я зітхнув і відійшов від вікна" # "I sighed and moved away from the window."
+n "Тут не було нічого важливого" # "There wasn't anything important here."
 hide screen phone_button
 jump cain_night_1
 
@@ -6429,201 +6429,201 @@ $ cain_noon_bathroom = True
 scene cain_bathroom with dissolve
 $ cain_love +=10
 play music "cain/cain_calm.mp3"
-n "I walked into the bathroom and inspected the pillar to my right."
-n "I placed my hand on it as the sun poured into the room."
-n "I then made my way over to an elegant looking bathtub and sat on the rim of it."
-n "I closed my eyes, basking in the warm rays."
-n "It all felt very serene."
-n "The combination of sun's warmth and the silence made me feel calm."
-n "For a moment I forgot where I was, I forgot about my situation."
-n "It was nice."
+n "Я зайшов до ванної й оглянув колону праворуч" # "I walked into the bathroom and inspected the pillar to my right."
+n "Я поклав на неї руку, поки сонце заливало кімнату" # "I placed my hand on it as the sun poured into the room."
+n "Тоді я підійшов до елегантної ванни й сів на її бортик" # "I then made my way over to an elegant looking bathtub and sat on the rim of it."
+n "Я заплющив очі, ніжачись у теплих променях" # "I closed my eyes, basking in the warm rays."
+n "Усе відчувалося дуже безтурботним" # "It all felt very serene."
+n "Поєднання сонячного тепла й тиші заспокоювало мене" # "The combination of sun's warmth and the silence made me feel calm."
+n "На мить я забув, де я, забув про своє становище" # "For a moment I forgot where I was, I forgot about my situation."
+n "Це було приємно" # "It was nice."
 $ cwings,cbase, cexp = 0,6,7
 show cain
-cain "It's a nice bathroom, huh?"
-n "Cain's voice broke the tranquil scene."
-p "Y-yeah."
-n "He walked over and patted my head."
-n "I looked up at him, confused as to what kind of plans that he was brewing in that brain of his."
-n "Cain looked down at the tub."
+cain "Гарна ванна кімната, чи не так?" # "It's a nice bathroom, huh?"
+n "Голос Каїна розбив цю спокійну сцену" # "Cain's voice broke the tranquil scene."
+p "А-ага" # "Y-yeah."
+n "Він підійшов і поплескав мене по голові" # "He walked over and patted my head."
+n "Я глянув угору на нього, не розуміючи, які плани він виношує у своїй голові" # "I looked up at him, confused as to what kind of plans that he was brewing in that brain of his."
+n "Каїн глянув на ванну" # "Cain looked down at the tub."
 $ cwings,cbase, cexp = 0,6,18
-cain "Hmm. Maybe I can think up something fun to do in here later."
+cain "Хмм. Може, згодом я вигадаю, чим тут можна буде розважитися" # "Hmm. Maybe I can think up something fun to do in here later."
 play music ["cain/cain_shift.mp3" ] fadeout 1.0 fadein 1.0
-n "I looked at the tub then back at him."
-n "My heart began to race from the look that he was giving me."
-n "Cain turned away and exited the room without explaining further."
+n "Я глянув на ванну, а тоді знову на нього" # "I looked at the tub then back at him."
+n "Моє серце закалатало від того погляду, яким він мене дивився" # "My heart began to race from the look that he was giving me."
+n "Каїн відвернувся й вийшов з кімнати, більше нічого не пояснивши" # "Cain turned away and exited the room without explaining further."
 hide cain with dissolve
-n "I got the uneasy feeling that he and I didn't share the same idea of \"fun\"."
-n "I got up from the tub and headed out of the bathroom."
-n "I probably shouldn't linger here for much longer."
+n "У мене виникло тривожне відчуття, що ми з ним по-різному уявляємо «розваги»" # "I got the uneasy feeling that he and I didn't share the same idea of "fun"."
+n "Я підвівся з ванни й попрямував геть з ванної" # "I got up from the tub and headed out of the bathroom."
+n "Мабуть, не варто мені тут довше затримуватися" # "I probably shouldn't linger here for much longer."
 scene black with fade
-n "All the peacefulness had left the room anyways."
+n "Уся ця безтурботність усе одно вже покинула кімнату" # "All the peacefulness had left the room anyways."
 jump cain_night_1
 
 label cain_night_1:
 if cain_bedroom_day1 == True:
-    n "I spent some time in Cain's bedroom."
+    n "Я провів деякий час у спальні Каїна" # "I spent some time in Cain's bedroom."
 else:
-    n "Some time in my stupor I must have wandered back into the bedroom."
+    n "Десь у своєму заціпенінні я, певно, забрів назад до спальні" # "Some time in my stupor I must have wandered back into the bedroom."
 scene black with fade
 scene cain_bedroom_night
-n "Where should I go tonight?"
+n "Куди мені податися цієї ночі?" # "Where should I go tonight?"
 menu:
-    "-Bathroom-" if cain_noon_bathroom == True:
+    "-Ванна-" if cain_noon_bathroom == True: # "-Bathroom-"
         jump cain_nightone_bathroom
-    "-Balcony-":
+    "-Балкон-": # "-Balcony-"
         jump cain_night_1_Balcony
-    "-Livingroom-":
+    "-Вітальня-": # "-Livingroom-"
         jump cain_night_1_livingroom
 
 label cain_night_1_livingroom:
 scene cain_livingroom:
     subpixel True
     xalign 0.9
-n "I saw Cain at the stove cooking something."
+n "Я побачив Каїна біля плити, він щось готував" # "I saw Cain at the stove cooking something."
 $ cwings,cbase, cexp = 0,8,9
-n "Steak?"
-p "What's that?"
+n "Стейк?" # "Steak?"
+p "Що це?" # "What's that?"
 scene cain_livingroom:
     subpixel True
     xalign 0.9
 show cain with dissolve
-cain "It's steak."
-p "What kind?"
-cain "Beef, silly child."
+cain "Це стейк" # "It's steak."
+p "Який?" # "What kind?"
+cain "Яловичина, дурне дитя" # "Beef, silly child."
 $ cwings,cbase, cexp = 0,8,4
-cain "What else would I be eating?"
-cain "I was a human once as well, you know."
-n "I narrowed my eyes and I could feel myself being lifted off the ground."
-p "H-HEY!"
-n "I screamed as he slammed me down on the table."
-n "He loomed over me."
-cain "Stay still, pet."
+cain "Що ще я мав би їсти?" # "What else would I be eating?"
+cain "Я, знаєш, теж колись був людиною" # "I was a human once as well, you know."
+n "Я примружив очі й відчув, як відриваюся від землі" # "I narrowed my eyes and I could feel myself being lifted off the ground."
+p "Г-ГЕЙ!" # "H-HEY!"
+n "Я закричав, коли він жбурнув мене на стіл" # "I screamed as he slammed me down on the table."
+n "Він навис наді мною" # "He loomed over me."
+cain "Не рухайся, улюбленцю" # "Stay still, pet."
 $ cwings,cbase, cexp = 0,8,9
-n "He placed the hot meat on my stomach."
-n "I felt it burning through my skin and I slapped my hands over my mouth to muffle the scream."
-n "I could feel my stomach muscles tighten as he leaned over me. "
-cain "You don't need to scream."
-cain "Just don't move. "
-n "Cain took out a sharp looking fork and stabbed it into the meat. "
-n "It grazed my skin."
-n "I let out a small relieved sigh but quickly stiffened back up when he took out a knife."
-n "A sharp ritual dagger."
+n "Він поклав гаряче м'ясо мені на живіт" # "He placed the hot meat on my stomach."
+n "Я відчув, як воно пропікає мою шкіру, і затиснув рота руками, щоб приглушити крик" # "I felt it burning through my skin and I slapped my hands over my mouth to muffle the scream."
+n "Я відчував, як мої м'язи живота напружуються, поки він нахилявся наді мною. " # "I could feel my stomach muscles tighten as he leaned over me. "
+cain "Тобі не треба кричати" # "You don't need to scream."
+cain "Просто не рухайся. " # "Just don't move. "
+n "Каїн дістав гостру на вигляд виделку й встромив її в м'ясо. " # "Cain took out a sharp looking fork and stabbed it into the meat. "
+n "Вона зачепила мою шкіру" # "It grazed my skin."
+n "Я тихо полегшено зітхнув, але швидко знову напружився, коли він дістав ніж" # "I let out a small relieved sigh but quickly stiffened back up when he took out a knife."
+n "Гострий ритуальний кинджал" # "A sharp ritual dagger."
 
 menu:
-    "\"WHAT ARE YOU DOING!?\"":
+    "\"ЩО ТИ РОБИШ!?\"": # "WHAT ARE YOU DOING!?"
         $ cain_love +=10
         $ cwings,cbase, cexp = 0,8,9
-        n "Cain let out an exasperated sighed and he pushed the fork harder into the meat stabbing me."
+        n "Каїн роздратовано зітхнув і сильніше вдавив виделку в м'ясо, штрикнувши мене" # "Cain let out an exasperated sighed and he pushed the fork harder into the meat stabbing me."
         $ health -=5
         $ sanity -=10
         if sanity <= 0:
             jump cain_sanity_ending
-        cain "Be a good dinner plate."
-        n "His words were pointed, warning me of the pain that was coming."
-    "-Stay still-":
+        cain "Будь гарною обідньою тарілкою" # "Be a good dinner plate."
+        n "Його слова були гострі, попереджаючи про біль, що насувався" # "His words were pointed, warning me of the pain that was coming."
+    "-Не рухатися-": # "-Stay still-"
         $ cain_boredom +=1
         if cain_boredom >=3:
             jump cain_boredom_day1
         $ cwings,cbase, cexp = 0,8,5
-        n "I stayed still and did as he asked."
+        n "Я не рухався й зробив, як він просив" # "I stayed still and did as he asked."
         $ cwings,cbase, cexp = 0,8,4
-        n "I was trembling slightly but Cain didn't seem to notice it."
+        n "Я трохи тремтів, але Каїн, схоже, цього не помічав" # "I was trembling slightly but Cain didn't seem to notice it."
 
-n "Cain pushed the knife into the meat and began cutting through it."
-n "I could feel the sharp teeth of the knife digging into the upper layer of my skin."
+n "Каїн вдавив ніж у м'ясо й почав його різати" # "Cain pushed the knife into the meat and began cutting through it."
+n "Я відчував, як гострі зубці ножа вгризаються у верхній шар моєї шкіри" # "I could feel the sharp teeth of the knife digging into the upper layer of my skin."
 $ health -=5
 $ cwings,cbase, cexp = 0,8,11
-n "I let out a small pained noise."
-cain "This meat is a bit over cooked."
-n "Cain looked at the piece of meat."
+n "Я тихо застогнав від болю" # "I let out a small pained noise."
+cain "Це м'ясо трохи пересмажене" # "This meat is a bit over cooked."
+n "Каїн глянув на шматок м'яса" # "Cain looked at the piece of meat."
 $ cwings,cbase, cexp = 0,8,7
-cain "Still a bit bloody though."
-n "It was covered in my blood as he put it into his mouth."
-n "He looked at me as I trembled lightly."
+cain "Хоча все ще трохи з кров'ю" # "Still a bit bloody though."
+n "Воно було вкрите моєю кров'ю, коли він поклав його в рот" # "It was covered in my blood as he put it into his mouth."
+n "Він глянув на мене, поки я легенько тремтів" # "He looked at me as I trembled lightly."
 $ cwings,cbase, cexp = 0,8,1
-cain "Are you hungry?"
-n "He didn't let me begin before he started to cut into my thigh."
+cain "Ти голодний?" # "Are you hungry?"
+n "Він не дав мені й почати, як заходився різати моє стегно" # "He didn't let me begin before he started to cut into my thigh."
 $ health-=10
-n "I screamed and he put his hand over my mouth pushing me down on the table."
-cain "Don't scream."
+n "Я закричав, а він затиснув мені рота рукою, притиснувши до столу" # "I screamed and he put his hand over my mouth pushing me down on the table."
+cain "Не кричи" # "Don't scream."
 $ sanity-=10
 if sanity <= 0:
     jump cain_sanity_ending
-n "Cain pushed the knife into my muscle."
-n "The pain shot through my skin as he tore off the piece of flesh from my body."
+n "Каїн вдавив ніж у мій м'яз" # "Cain pushed the knife into my muscle."
+n "Біль пронизав мою шкіру, коли він відірвав шматок плоті від мого тіла" # "The pain shot through my skin as he tore off the piece of flesh from my body."
 $ health-=10
-n "He cut a perfect square of meat out of me."
+n "Він вирізав з мене ідеальний квадрат м'яса" # "He cut a perfect square of meat out of me."
 show CG_Cain_meatonfork_meat
-cain "Say Ah..."
+cain "Скажи «А»..." # "Say Ah..."
 menu:
     "-Refuse-":
-        p "NO."
-        n "Cain sighed and look at his knife."
-        cain "What good are you then?"
-        n "Cain stabbed the knife into my gut and ripped my organs out of my stomach."
-        n "I started to scream."
-        p "STOP!! STOP!!"
-        p "IT HURTS!"
+        p "НІ" # "NO."
+        n "Каїн зітхнув і глянув на свій ніж" # "Cain sighed and look at his knife."
+        cain "То яка з тебе тоді користь?" # "What good are you then?"
+        n "Каїн увігнав ніж мені в живіт і вирвав мої органи з нутра" # "Cain stabbed the knife into my gut and ripped my organs out of my stomach."
+        n "Я закричав" # "I started to scream."
+        p "СТІЙ!! СТІЙ!!" # "STOP!! STOP!!"
+        p "БОЛЯЧЕ!" # "IT HURTS!"
         $ health -=100
         $ sanity -=10
-        n "Everything was cold and painful."
-        n "I just wanted to die."
-        cain "...You're not dying yet..."
+        n "Усе було холодним і болючим" # "Everything was cold and painful."
+        n "Я просто хотів померти" # "I just wanted to die."
+        cain "...Ти ще не помираєш..." # "...You're not dying yet..."
         $ health +=100
         $ sanity -=10
-        n "He said softly as I felt myself keeping consciousness."
+        n "Тихо промовив він, і я відчув, що не втрачаю свідомості" # "He said softly as I felt myself keeping consciousness."
         $ health -=100
         $ sanity -=10
-        n "I gasped for air... I knew I should be dead."
+        n "Я хапав ротом повітря... я знав, що мав би вже бути мертвим" # "I gasped for air... I knew I should be dead."
         $ health +=100
         $ sanity -=10
-        n "But he was keeping me alive."
+        n "Але він тримав мене живим" # "But he was keeping me alive."
         $ health -=100
         $ sanity -=10
         show CG_Cain_Gutrip
-        n "He pushed the guts into my open mouth."
+        n "Він заштовхнув кишки мені у відкритий рот" # "He pushed the guts into my open mouth."
         $ health +=100
         $ sanity -=10
-        cain "...What's wrong sweetie?"
+        cain "...Що сталося, солоденький?" # "...What's wrong sweetie?"
         $ health -=100
-        cain "Too much?"
+        cain "Забагато?" # "Too much?"
         $ health +=100
         $ sanity -=10
-        n "He pushed the coppery cords into my throat."
+        n "Він заштовхнув ці мідні жмути мені в горло" # "He pushed the coppery cords into my throat."
         $ health -=10
         $ sanity -=10
-        n "I couldn't breath."
+        n "Я не міг дихати" # "I couldn't breath."
         $ health -=10
         $ sanity -=10
-        n "I just wanted die."
+        n "Я просто хотів померти" # "I just wanted die."
         $ health -=10
         $ sanity -=10
-        n "I gagged and choked."
+        n "Я давився й захлинався" # "I gagged and choked."
         $ health -=10
         $ sanity -=10
-        n "I wanted it out of my mouth."
+        n "Я хотів, щоб це вийшло з мого рота" # "I wanted it out of my mouth."
         $ health -=10
         $ sanity -=10
-        n "Cain pushed more of the cords in as I tried to breath through my nose."
+        n "Каїн заштовхував дедалі більше цих жмутів, поки я намагався дихати носом" # "Cain pushed more of the cords in as I tried to breath through my nose."
         $ health -=10
         $ sanity -=10
-        cain "Eat it."
+        cain "Їж" # "Eat it."
         $ health -=10
         $ sanity -=10
-        n "What other choice did I have."
-        n "I swallowed what was in my throat as much as I could."
-        n "Cain started to laugh as my mind blanked out."
+        n "Який ще вибір я мав" # "What other choice did I have."
+        n "Я проковтнув усе, що було в горлі, скільки міг" # "I swallowed what was in my throat as much as I could."
+        n "Каїн засміявся, поки моя свідомість згасала" # "Cain started to laugh as my mind blanked out."
         $ health -=100
         $ sanity -=100
-        cain "You can go now."
+        cain "Тепер можеш іти" # "You can go now."
         hide screen health_bar
         hide screen sanity_bar
         play music "cain/cain_death.mp3"
         $ persistent.cain_ending_autocani = True
         scene endslate with Dissolve(1.0)
         screen cain_ending_autocani:
-            text "{=endslate_title}You Died{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-            text "\n\n\n\n{=endslate_subtitle}You ate yourself.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+            text "{=endslate_title}Ти помер{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died"
+            text "\n\n\n\n{=endslate_subtitle}Ти з'їв самого себе.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "You ate yourself."
         show screen cain_ending_autocani
         with Dissolve(1.0)
         pause
@@ -6633,61 +6633,61 @@ menu:
 
         $ sanity -=10
         $ cain_love +=10
-        n "I opened my mouth and let him feed me the bit of me he took off."
-        n "It tasted horrible and it made me sick knowing where it came from."
-        cain "How was that, lovely?"
+        n "Я відкрив рота й дав йому згодувати мені той шматок мене, який він відрізав" # "I opened my mouth and let him feed me the bit of me he took off."
+        n "На смак це було жахливо, і мене нудило від усвідомлення, звідки воно" # "It tasted horrible and it made me sick knowing where it came from."
+        cain "Ну як тобі, любчику?" # "How was that, lovely?"
         if sanity <= 0:
             jump cain_sanity_ending
         show CG_Cain_meatonfork with dissolve
         menu:
-            "\"Fuck you..\"":
+            "\"Пішов ти..\"": # "Fuck you.."
                 $ cain_love -=10
                 $ sanity +=10
                 $ cwings,cbase, cexp = 0,8,7
-                cain "Feisty."
-                n "He elbowed my wound causing me to cry out."
+                cain "Норовливий" # "Feisty."
+                n "Він ударив ліктем по моїй рані, від чого я скрикнув" # "He elbowed my wound causing me to cry out."
                 $ cwings,cbase, cexp = 0,8,12
-                cain "Go to sleep."
+                cain "Іди спати" # "Go to sleep."
                 scene black with fade
-                n "All I could think of was the seering pain"
+                n "Усе, про що я міг думати, — це пекучий біль" # "All I could think of was the seering pain"
                 jump cain_Morning_day2
-            "\"It was good.\"":
+            "\"Було смачно.\"": # "It was good."
                 $ cain_love +=10
-                n "I smiled weakly."
-                n "He could fix this for me right?"
+                n "Я кволо всміхнувся" # "I smiled weakly."
+                n "Він же може це мені залікувати, правда?" # "He could fix this for me right?"
                 $ cwings,cbase, cexp = 0,8,4
-                p "It was good."
+                p "Було смачно" # "It was good."
                 $ sanity -=10
                 if sanity <= 0:
                     jump cain_sanity_ending
-                n " I said trying to sound perky."
-                n "I was losing some blood and light headed but I smiled for him. "
-                n "Cain put his hand on my head."
+                n " Сказав я, намагаючись звучати бадьоро" # " I said trying to sound perky."
+                n "Я втрачав кров, і в голові паморочилося, але я всміхнувся йому. " # "I was losing some blood and light headed but I smiled for him. "
+                n "Каїн поклав руку мені на голову" # "Cain put his hand on my head."
                 $ cwings,cbase, cexp = 0,8,10
-                cain "That's a good pet."
-                n "He pushed the food off me and pushed a napkin on my wound."
+                cain "Ось гарний улюбленець" # "That's a good pet."
+                n "Він скинув їжу з мене й притиснув серветку до рани" # "He pushed the food off me and pushed a napkin on my wound."
                 scene cain_livingroom with dissolve:
                     subpixel True
                     xalign 0.9
                 show cain with dissolve
-                n "I let out a loud squeal at the pain."
-                cain "Hold it there till tomorrow, darling."
-                n "He said as he left me on the table."
-                n "I laid my head back with the napkin on my stomach."
-                n "Somehow it felt better."
-                n "I closed my eyes and passed out from the blood loss."
+                n "Я голосно завищав від болю" # "I let out a loud squeal at the pain."
+                cain "Тримай її там до завтра, любий" # "Hold it there till tomorrow, darling."
+                n "Сказав він, лишивши мене на столі" # "He said as he left me on the table."
+                n "Я відкинув голову назад, притиснувши серветку до живота" # "I laid my head back with the napkin on my stomach."
+                n "Якимось чином полегшало" # "Somehow it felt better."
+                n "Я заплющив очі й знепритомнів від втрати крові" # "I closed my eyes and passed out from the blood loss."
                 scene black with fade
                 jump cain_Morning_day2
-            "-Say nothing-":
+            "-Мовчати-": # "-Say nothing-"
                 $ cain_love -=10
                 $ sanity -=10
-                n "I curled up and tried to forget what just happened."
+                n "Я скрутився й спробував забути те, що щойно сталося" # "I curled up and tried to forget what just happened."
                 if sanity <= 0:
                     jump cain_sanity_ending
                 $ cwings,cbase, cexp = 0,8,12
-                cain "Take care of that yourself. You're capable."
-                n "Cain said as he backed away from me."
-                n "I collected a napkin close by and passed out."
+                cain "Подбай про це сам. Ти на це здатен" # "Take care of that yourself. You're capable."
+                n "Сказав Каїн, відступаючи від мене" # "Cain said as he backed away from me."
+                n "Я взяв серветку, що лежала поруч, і знепритомнів" # "I collected a napkin close by and passed out."
                 scene black with fade
                 jump cain_Morning_day2
 
@@ -6695,142 +6695,142 @@ menu:
 label cain_night_1_Balcony:
 scene cain_livingroom_night with dissolve
 play music "cain/cain_calm.mp3"
-n "I walked into the living room and looked around."
-n "It was a little dark in here, but I managed to see a silhouette on the balcony."
-n "I crept through the darkness and carefully made my way towards the patio."
-n "Cain didn't react to my opening of the sliding door, maintaining his focus to something off in the distance."
+n "Я зайшов до вітальні й роззирнувся" # "I walked into the living room and looked around."
+n "Тут було трохи темно, але я зумів розгледіти силует на балконі" # "It was a little dark in here, but I managed to see a silhouette on the balcony."
+n "Я скрадався крізь темряву й обережно пробирався до балкона" # "I crept through the darkness and carefully made my way towards the patio."
+n "Каїн не відреагував на те, що я відчинив розсувні двері, зосереджений на чомусь удалині" # "Cain didn't react to my opening of the sliding door, maintaining his focus to something off in the distance."
 scene cain_balcony with fade
-cain "Come over here."
+cain "Підійди сюди" # "Come over here."
 $ cwings,cbase, cexp = 0,7,14
 show cain
-n "His tone was different from earlier."
-n "It sounded more soft and thoughtful."
-n "I wandered over to him and looked at the horizon."
-n "I noticed that the sky looked different."
-n "Something about it seemed off."
-n "It looked kind of unnatural."
+n "Його тон був інакший, ніж раніше" # "His tone was different from earlier."
+n "Він звучав м'якше й задумливіше" # "It sounded more soft and thoughtful."
+n "Я підійшов до нього й глянув на обрій" # "I wandered over to him and looked at the horizon."
+n "Я помітив, що небо виглядало інакше" # "I noticed that the sky looked different."
+n "Щось у ньому було не так" # "Something about it seemed off."
+n "Воно виглядало якось неприродно" # "It looked kind of unnatural."
 menu:
-    "\"Where are we?\"":
-        n "Cain gave me a quick side glance."
+    "\"Де ми?\"": # "Where are we?"
+        n "Каїн кинув на мене швидкий скісний погляд" # "Cain gave me a quick side glance."
         $ cwings,cbase, cexp = 0,7,15
-        cain "My, you're an inquisitive one."
-        n "He stared thoughtfully at the sunset for a moment."
-        cain "I'll tell you."
-        n "Cain leaned on the rail."
+        cain "О, який же ти допитливий" # "My, you're an inquisitive one."
+        n "Він якусь мить задумливо дивився на захід сонця" # "He stared thoughtfully at the sunset for a moment."
+        cain "Я тобі скажу" # "I'll tell you."
+        n "Каїн сперся на поручень" # "Cain leaned on the rail."
         $ cwings,cbase, cexp = 0,7,14
-        cain "We are in what you humans know as Tartarus."
-        cain "Although Tartarus is different from what you know it to be in your realm."
-        cain "It acts as a halfway point between hell and earth instead of a prison for the damned."
-        cain "That's what Hell is for."
-        cain "But for a Fallen like me, Tartarus is more of a haven."
-    "\"What are you looking at?\"":
-        n "Cain kept his eyes on the horizon."
-        cain "Hm? The sunset."
-        n "Cain said as he nodded over to the skyline."
-        cain "Don't tell you've never seen a sunset before."
-        n "It was definitely no sunset that I have ever seen."
-        n " It looked kind of...abnormal to me."
-        cain "Say what you will about this place, the sunset is always beautiful in Tartarus."
-    "\"You don't seem like the type to enjoy this scenery.\"":
-        p "I mean you're supposed to be a big shot demon right?"
-        p "Why aren't you chasing me around or hurting me?"
-        n "Cain said nothing as he kept his eye on the horizon."
-        p "You don't have anything to say!?"
-        p "MAYBE YOU DON'T HAVE THE STONES TO HURT ME!"
-        n "Cain put out his hand and flicked it towards the rail."
-        n "I watched his hand motion for a second."
-        n "It didn't last long as I felt myself lift off the floor."
-        cain "Have some class, you animal."
-        n "I felt myself falling off the side of the balcony."
+        cain "Ми в тому, що ви, люди, знаєте як Тартар" # "We are in what you humans know as Tartarus."
+        cain "Хоча Тартар відрізняється від того, яким ви його знаєте у своєму світі" # "Although Tartarus is different from what you know it to be in your realm."
+        cain "Він радше слугує проміжною межею між пеклом і землею, аніж в'язницею для проклятих" # "It acts as a halfway point between hell and earth instead of a prison for the damned."
+        cain "Для цього існує Пекло" # "That's what Hell is for."
+        cain "Але для Занепалого, як я, Тартар — радше прихисток" # "But for a Fallen like me, Tartarus is more of a haven."
+    "\"На що ти дивишся?\"": # "What are you looking at?"
+        n "Каїн не зводив очей з обрію" # "Cain kept his eyes on the horizon."
+        cain "Хм? На захід сонця" # "Hm? The sunset."
+        n "Сказав Каїн, кивнувши в бік небокраю" # "Cain said as he nodded over to the skyline."
+        cain "Тільки не кажи, що ти ніколи раніше не бачив заходу сонця" # "Don't tell you've never seen a sunset before."
+        n "Це точно був не такий захід, який я коли-небудь бачив" # "It was definitely no sunset that I have ever seen."
+        n " Мені воно здалося якимось... ненормальним" # " It looked kind of...abnormal to me."
+        cain "Кажи що завгодно про це місце, але захід сонця в Тартарі завжди прекрасний" # "Say what you will about this place, the sunset is always beautiful in Tartarus."
+    "\"Ти не схожий на того, хто насолоджується таким краєвидом.\"": # "You don't seem like the type to enjoy this scenery."
+        p "Тобто ти ж начебто якийсь могутній демон, так?" # "I mean you're supposed to be a big shot demon right?"
+        p "Чому ти не ганяєшся за мною й не завдаєш мені болю?" # "Why aren't you chasing me around or hurting me?"
+        n "Каїн нічого не сказав, не зводячи ока з обрію" # "Cain said nothing as he kept his eye on the horizon."
+        p "Тобі нічого сказати!?" # "You don't have anything to say!?"
+        p "МОЖЕ, У ТЕБЕ ПРОСТО КИШКА ТОНКА, ЩОБ ЗРОБИТИ МЕНІ БОЛЯЧЕ!" # "MAYBE YOU DON'T HAVE THE STONES TO HURT ME!"
+        n "Каїн виставив руку й махнув нею в бік поручня" # "Cain put out his hand and flicked it towards the rail."
+        n "Я якусь секунду стежив за рухом його руки" # "I watched his hand motion for a second."
+        n "Тривало це недовго, бо я відчув, як відриваюся від підлоги" # "It didn't last long as I felt myself lift off the floor."
+        cain "Май хоч трохи гідності, тварино" # "Have some class, you animal."
+        n "Я відчув, як падаю з краю балкона" # "I felt myself falling off the side of the balcony."
         hide screen health_bar
         hide screen sanity_bar
         play music "cain/cain_death.mp3"
         $ persistent.cain_ending_pushed_balcony = True
         scene endslate with Dissolve(1.0)
         screen cain_ending_pushed_balcony:
-            text "{=endslate_title}You Died{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-            text "\n\n\n\n{=endslate_subtitle}Cain pushed you off.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+            text "{=endslate_title}Ти помер{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died"
+            text "\n\n\n\n{=endslate_subtitle}Каїн зіштовхнув тебе.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "Cain pushed you off."
         show screen cain_ending_pushed_balcony
         with Dissolve(1.0)
         pause
         return
 
-n "I stood next to Cain and watched the sunset with him."
-n "As strange as the sunset in this place was, I couldn't help but think that it did look of pretty."
+n "Я стояв поруч із Каїном і дивився разом з ним на захід сонця" # "I stood next to Cain and watched the sunset with him."
+n "Хоч яким дивним був захід сонця в цьому місці, я не міг не подумати, що він таки гарний" # "As strange as the sunset in this place was, I couldn't help but think that it did look of pretty."
 $ cwings,cbase, cexp = 0,7,15
-n " I leaned into his touch without thinking."
-cain "Hm?"
+n " Я, не думаючи, подався назустріч його дотику" # " I leaned into his touch without thinking."
+cain "Хм?" # "Hm?"
 $ cwings,cbase, cexp = 0,8,7
-n "Cain shifted in front of me and I felt my back hit the rail of the balcony."
-n "He leaned down and nuzzled my neck."
-p "...C-Cain..."
-n "I gasped out as he put his hands on my hips."
+n "Каїн ступив переді мною, і я відчув, як моя спина вперлася в поручень балкона" # "Cain shifted in front of me and I felt my back hit the rail of the balcony."
+n "Він нахилився й уткнувся в мою шию" # "He leaned down and nuzzled my neck."
+p "...К-Каїне..." # "...C-Cain..."
+n "Я охнув, коли він поклав руки мені на стегна" # "I gasped out as he put his hands on my hips."
 $ cwings,cbase, cexp = 0,8,16
-cain "You smell nice."
-n "Cain whispered into my skin."
-n "I trembled as his hands traveled up and down my body."
-n "I felt his lips touch my neck and I gasped."
-p "Please... Don't.."
+cain "Ти гарно пахнеш" # "You smell nice."
+n "Прошепотів Каїн мені в шкіру" # "Cain whispered into my skin."
+n "Я тремтів, поки його руки блукали вгору й вниз по моєму тілу" # "I trembled as his hands traveled up and down my body."
+n "Я відчув, як його губи торкнулися моєї шиї, і охнув" # "I felt his lips touch my neck and I gasped."
+p "Будь ласка... Не треба.." # "Please... Don't.."
 play music "cain/cain_shift.mp3"
-n "He suddenly grabbed me by my neck and lifted me off the floor."
-p "W-What the hell are you doing?!"
+n "Він раптом схопив мене за шию й підняв над підлогою" # "He suddenly grabbed me by my neck and lifted me off the floor."
+p "Щ-що ти в біса робиш?!" # "W-What the hell are you doing?!"
 $ cwings,cbase, cexp = 0,8,1
-n "I kicked and screamed as I hovered above the ground."
-n "Cain ripped my underwear off of my legs."
+n "Я брикався й кричав, повиснувши над землею" # "I kicked and screamed as I hovered above the ground."
+n "Каїн зірвав з моїх ніг білизну" # "Cain ripped my underwear off of my legs."
 $ sanity -=10
 if sanity <= 0:
     jump cain_sanity_ending
-cain "Let's have a little fun."
-n "Cain said as he dangled me off the side of the balcony."
-cain "Let's see how strong your will to live is."
-n "I could feel the wind blow against my bare legs."
-n "I grabbed on to Cain's arm to secure myself to something in case he decided to just let go."
+cain "Розважмося трішки" # "Let's have a little fun."
+n "Сказав Каїн, звісивши мене з краю балкона" # "Cain said as he dangled me off the side of the balcony."
+cain "Погляньмо, наскільки сильна твоя жага жити" # "Let's see how strong your will to live is."
+n "Я відчував, як вітер обвіває мої голі ноги" # "I could feel the wind blow against my bare legs."
+n "Я вчепився в руку Каїна, щоб хоч за щось триматися, якщо він раптом вирішить просто відпустити" # "I grabbed on to Cain's arm to secure myself to something in case he decided to just let go."
 $ cwings,cbase, cexp = 0,8,1
-cain "Beg."
-n "He commanded, now stroking his cock with his free hand."
-n "I panicked and looked around. "
-n "There was no where else to go but down."
+cain "Благай" # "Beg."
+n "Наказав він, тепер погладжуючи свій член вільною рукою" # "He commanded, now stroking his cock with his free hand."
+n "Я запанікував і роззирнувся. " # "I panicked and looked around. "
+n "Іти не було куди, крім як донизу" # "There was no where else to go but down."
 $ time = 1
 $ timer_range = 1
 $ timer_jump = 'balcony_sex'
 show screen countdown
 menu:
-    "-Beg-" if cain_boredom >=3:
+    "-Благати-" if cain_boredom >=3: # "-Beg-"
         hide screen countdown
         jump balcony_beg
-    "-Struggle-":
+    "-Пручатися-": # "-Struggle-"
         hide screen countdown
         jump balcony_struggle
 
 label balcony_beg:
 $ cwings,cbase, cexp = 0,8,8
-cain "Really?"
-cain "Just like that?"
-cain "Have you no spine?"
-cain "No pride?"
-n "I didn't know how to answer him."
-n "I...I just didn't want to die."
-cain "Tsk. Pathetic."
-cain "I had such high hopes for you."
-n "He sighed and shook his head."
-cain "Maybe I'll see if you have a spine after your pitiful body stains the ground."
-n "My eyes widened with fear."
-p "N-no! Wait-"
-n "He released his grip and I struggled to keep my hold on his arm."
-n "The last thing I saw was Cain's vile grin as my hands lost the strength to hold on and finally let go."
+cain "Справді?" # "Really?"
+cain "Отак просто?" # "Just like that?"
+cain "Невже в тебе немає хребта?" # "Have you no spine?"
+cain "Ані гордості?" # "No pride?"
+n "Я не знав, що йому відповісти" # "I didn't know how to answer him."
+n "Я...я просто не хотів помирати" # "I...I just didn't want to die."
+cain "Тц. Жалюгідно" # "Tsk. Pathetic."
+cain "Я так на тебе сподівався" # "I had such high hopes for you."
+n "Він зітхнув і похитав головою" # "He sighed and shook his head."
+cain "Може, я й побачу, чи є в тебе хребет, коли твоє жалюгідне тіло заплямує землю" # "Maybe I'll see if you have a spine after your pitiful body stains the ground."
+n "Мої очі розширилися від страху" # "My eyes widened with fear."
+p "Н-ні! Стій-" # "N-no! Wait-"
+n "Він розтиснув хватку, і я з усіх сил намагався втриматися за його руку" # "He released his grip and I struggled to keep my hold on his arm."
+n "Останнє, що я бачив, — це мерзенну посмішку Каїна, коли мої руки втратили силу триматися й нарешті зірвалися" # "The last thing I saw was Cain's vile grin as my hands lost the strength to hold on and finally let go."
 show CG_Cain_Fall with dissolve
-n "I screamed as I made my rapid descent to the ground below, my screams ceasing when my body violently smacked into the hard stone floor."
-n "Overwhelming pain shot through my broken frame."
+n "Я кричав, стрімко падаючи до землі внизу, і крик обірвався, коли моє тіло з розмаху вдарилося об тверду кам'яну підлогу" # "I screamed as I made my rapid descent to the ground below, my screams ceasing when my body violently smacked into the hard stone floor."
+n "Нестерпний біль прошив моє понівечене тіло" # "Overwhelming pain shot through my broken frame."
 scene black with fade
-n "I could feel blood gush from my fractured skull as my consciousness slowly faded and my vision...went dark..."
+n "Я відчував, як кров ринула з мого розтрощеного черепа, поки свідомість повільно згасала, а мій зір...потемнів..." # "I could feel blood gush from my fractured skull as my consciousness slowly faded and my vision...went dark..."
 hide screen health_bar
 hide screen sanity_bar
 play music "cain/cain_death.mp3"
 $ persistent.cain_ending_dropped_balcony = True
 scene endslate with Dissolve(1.0)
 screen cain_ending_dropped_balcony:
-    text "{=endslate_title}You Died{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-    text "\n\n\n\n{=endslate_subtitle}Cain dropped you.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+    text "{=endslate_title}Ти помер{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died"
+    text "\n\n\n\n{=endslate_subtitle}Каїн скинув тебе.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "Cain dropped you."
 show screen cain_ending_dropped_balcony
 with Dissolve(1.0)
 pause
@@ -6838,251 +6838,251 @@ return
 
 
 label balcony_struggle:
-p "W-what?! No! HELL no, even!"
-n "I shouted, grabbing onto his arm and trying to pull myself closer to the balcony."
-n "He started to laugh."
+p "Щ-що?! Ні! Та навіть НІ В ЯКОМУ РАЗІ!" # "W-what?! No! HELL no, even!"
+n "Крикнув я, хапаючись за його руку й намагаючись підтягнутися ближче до балкона" # "I shouted, grabbing onto his arm and trying to pull myself closer to the balcony."
+n "Він засміявся" # "He started to laugh."
 $ cwings,cbase, cexp = 0,8,9
-cain "No? Is that your final answer?"
-n "I glared at him before giving him my \"answer.\""
-p "Fuck. You."
-n "Cain's expression changed from one of amusement to one of displeasure."
-cain "You know, you've suddenly become a lot heavier."
-cain "I don't think I can hold on much longer."
-n "My eyes widened as I felt Cain loosen his grip."
-cain "Good bye."
-n "Cain taunted before releasing his hold completely."
-p "N-No! DAMN YOU!"
+cain "Ні? Це твоя остаточна відповідь?" # "No? Is that your final answer?"
+n "Я люто зиркнув на нього, перш ніж дати йому свою «відповідь»" # "I glared at him before giving him my "answer.""
+p "Пішов. Ти." # "Fuck. You."
+n "Вираз обличчя Каїна змінився з веселого на невдоволений" # "Cain's expression changed from one of amusement to one of displeasure."
+cain "Знаєш, ти раптом став значно важчим" # "You know, you've suddenly become a lot heavier."
+cain "Не думаю, що зможу тримати ще довго" # "I don't think I can hold on much longer."
+n "Мої очі розширилися, коли я відчув, як Каїн послаблює хватку" # "My eyes widened as I felt Cain loosen his grip."
+cain "Прощавай" # "Good bye."
+n "Насміхнувся Каїн, перш ніж повністю розтиснути руку" # "Cain taunted before releasing his hold completely."
+p "Н-ні! БУДЬ ТИ ПРОКЛЯТИЙ!" # "N-No! DAMN YOU!"
 show CG_Cain_Fall with dissolve
-n "I shrieked as I rapidly started plummeting to the ground below."
-n "Well, this is it I guess."
-n "Thrown from a fallen angel's balcony."
-n "I suppose there's worse ways I could have gone."
-n "I closed my eyes and braced for the inevitable splat I would make against the harsh floor."
+n "Я заверещав, стрімко полетівши до землі внизу" # "I shrieked as I rapidly started plummeting to the ground below."
+n "Ну, ось і все, мабуть" # "Well, this is it I guess."
+n "Скинутий з балкона занепалого ангела" # "Thrown from a fallen angel's balcony."
+n "Гадаю, бувають і гірші способи померти" # "I suppose there's worse ways I could have gone."
+n "Я заплющив очі й приготувався до неминучого шльопку об жорстку підлогу" # "I closed my eyes and braced for the inevitable splat I would make against the harsh floor."
 if cain_love < 50:
     $ health -=100
-    n "I felt my head hit the ground."
+    n "Я відчув, як моя голова вдарилася об землю" # "I felt my head hit the ground."
     hide screen health_bar
     hide screen sanity_bar
     play music "cain/cain_death.mp3"
     $ persistent.cain_ending_struggled_balcony = True
     scene endslate with Dissolve(1.0)
     screen cain_ending_struggled_balcony:
-        text "{=endslate_title}You Died{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-        text "\n\n\n\n{=endslate_subtitle}You struggled.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+        text "{=endslate_title}Ти помер{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died"
+        text "\n\n\n\n{=endslate_subtitle}Ти пручався.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "You struggled."
     show screen cain_ending_struggled_balcony
     with Dissolve(1.0)
     pause
     return
 else:
     scene black with fade
-    n "Am...am I dead?"
-    n "I feel like should have hit the ground by now."
-    n "I opened one eye to see a winged Cain holding me in his arms and flying upwards."
+    n "Я...я мертвий?" # "Am...am I dead?"
+    n "Мені здається, я вже мав би вдаритися об землю" # "I feel like should have hit the ground by now."
+    n "Я розплющив одне око й побачив крилатого Каїна, що тримав мене в обіймах і летів угору" # "I opened one eye to see a winged Cain holding me in his arms and flying upwards."
     hide CG_Cain_Fall with dissolve
-    p "What the-"
-    n "I opened one eye and looked up at Cain."
-    cain "You know, perhaps I was being a little hasty I threw you off the balcony."
-    cain "I think I can still find a use for you."
-    n " I wrapped my arms around his neck."
-    p "Yeah whatever."
+    p "Що за-" # "What the-"
+    n "Я розплющив одне око й глянув угору на Каїна" # "I opened one eye and looked up at Cain."
+    cain "Знаєш, певно, я трохи поквапився, скинувши тебе з балкона" # "You know, perhaps I was being a little hasty I threw you off the balcony."
+    cain "Гадаю, я ще знайду тобі застосування" # "I think I can still find a use for you."
+    n " Я обхопив руками його шию" # " I wrapped my arms around his neck."
+    p "Ага, як скажеш" # "Yeah whatever."
     $ cwings,cbase, cexp = 1,8,9
-    n "Once we made it back up to the balcony, Cain saw it fitting to just roughly plonk me on the floor."
-    p "OW! Come on, man..."
-    n "I whined, rubbing my now aching bottom"
-    n " He chuckled as his large wings receded into his back."
+    n "Щойно ми повернулися на балкон, Каїн вирішив, що доречно просто грубо жбурнути мене на підлогу" # "Once we made it back up to the balcony, Cain saw it fitting to just roughly plonk me on the floor."
+    p "ОЙ! Ну ти чого, чоловіче..." # "OW! Come on, man..."
+    n "Заскиглив я, потираючи тепер уже ниючу дупу" # "I whined, rubbing my now aching bottom"
+    n " Він гигикнув, коли його великі крила втягнулися в спину" # " He chuckled as his large wings receded into his back."
     $ cwings,cbase, cexp = 0,8,9
-    cain "Why don't you get some rest."
-    cain "I have a long day planned for you tomorrow."
+    cain "Чому б тобі не відпочити" # "Why don't you get some rest."
+    cain "На завтра я запланував для тебе довгий день" # "I have a long day planned for you tomorrow."
     $ cwings,cbase, cexp = 0,8,1
-    n "He stepped over me and walked back inside."
-    n "I groaned."
-    p "Oh great."
-    p "I can't wait."
-    n "I walked back inside and quickly moved to the bedroom."
+    n "Він переступив через мене й пішов назад усередину" # "He stepped over me and walked back inside."
+    n "Я застогнав" # "I groaned."
+    p "О, чудово" # "Oh great."
+    p "Аж не терпиться" # "I can't wait."
+    n "Я зайшов назад усередину й швидко попрямував до спальні" # "I walked back inside and quickly moved to the bedroom."
     scene cain_bedroom_night with fade
-    n "I jumped into his bed and covered my head hoping that I could sleep that night."
+    n "Я застрибнув у його ліжко й накрив голову, сподіваючись заснути тієї ночі" # "I jumped into his bed and covered my head hoping that I could sleep that night."
     scene black with dissolve
     jump cain_Morning_day2
 
 
 label balcony_sex:
-p "Hey what are you-"
-n "I tried to ask, but was promptly silenced when he forced himself inside of me."
-n "I remained motionless with my mouth agape as he continued to drill me."
-p "St-stop."
-n "I finally choked out."
+p "Гей, що ти-" # "Hey what are you-"
+n "Я спробував спитати, але вмить замовк, коли він силою увійшов у мене" # "I tried to ask, but was promptly silenced when he forced himself inside of me."
+n "Я завмер з роззявленим ротом, поки він продовжував мене довбати" # "I remained motionless with my mouth agape as he continued to drill me."
+p "З-зупинись" # "St-stop."
+n "Нарешті вичавив я" # "I finally choked out."
 $ cwings,cbase, cexp = 0,8,2
-cain "Quiet."
-n "I could feel his cock pull in and out while the scent of the ocean permeated the air."
-cain "Ahh.."
+cain "Тихо" # "Quiet."
+n "Я відчував, як його член входить і виходить, поки повітря просякало запахом океану" # "I could feel his cock pull in and out while the scent of the ocean permeated the air."
+cain "Ахх.." # "Ahh.."
 $ cwings,cbase, cexp = 0,8,7
-n "Cain grunted, pounding harder."
-n "I put my hands on the railing to keep myself balanced."
-p "Cain..."
-n "I moaned as he tightened his grip."
-n "My head buzzed from the relentless hammering of my insides."
-cain "I...I'm going to cum!"
-n "Cain grunted as he fucked me faster."
-n "I began to pant as my whole body tensed up, his warm cum filling me."
-n "I convulsed in ecstasy as I came with his final thrusts."
-n "Cain released his hold on my neck and pulled himself out of me."
-n "I fell to my knees, still clinging onto the railing."
-n "I was too weak to stand."
-n "Not after that."
+n "Каїн крекнув, гатячи сильніше" # "Cain grunted, pounding harder."
+n "Я поклав руки на поручень, щоб утримати рівновагу" # "I put my hands on the railing to keep myself balanced."
+p "Каїне..." # "Cain..."
+n "Я застогнав, коли він міцніше стиснув хватку" # "I moaned as he tightened his grip."
+n "У голові гуло від невпинного гупання всередині мене" # "My head buzzed from the relentless hammering of my insides."
+cain "Я...я зараз кінчу!" # "I...I'm going to cum!"
+n "Каїн крекнув, трахаючи мене швидше" # "Cain grunted as he fucked me faster."
+n "Я почав важко дихати, усе моє тіло напружилося, а його тепла сперма наповнювала мене" # "I began to pant as my whole body tensed up, his warm cum filling me."
+n "Я здригнувся в екстазі, кінчаючи з його останніми поштовхами" # "I convulsed in ecstasy as I came with his final thrusts."
+n "Каїн відпустив мою шию й вийшов з мене" # "Cain released his hold on my neck and pulled himself out of me."
+n "Я впав на коліна, усе ще чіпляючись за поручень" # "I fell to my knees, still clinging onto the railing."
+n "Я був надто слабкий, щоб стояти" # "I was too weak to stand."
+n "Не після такого" # "Not after that."
 $ cwings,cbase, cexp = 0,8,7
-n "As I struggled to pull myself up, I felt something soft fall on my shoulders."
-n "It was Cain's blazer."
-n "I placed my hand on it for a moment before pulling it around me."
-n "It was strange how warm and comforting it felt."
-p "T-thank you."
+n "Поки я силкувався підвестися, я відчув, як щось м'яке опустилося мені на плечі" # "As I struggled to pull myself up, I felt something soft fall on my shoulders."
+n "Це був піджак Каїна" # "It was Cain's blazer."
+n "Я на мить поклав на нього руку, перш ніж загорнутися в нього" # "I placed my hand on it for a moment before pulling it around me."
+n "Дивно, яким теплим і затишним він відчувався" # "It was strange how warm and comforting it felt."
+p "Д-дякую" # "T-thank you."
 $ cain_love +=10
-n "I said in a timid and tired voice."
-n "Cain waved his hand dismissively."
-cain "Don't worry about it."
-n "He offered me a hand and helped me to my feet."
-n "I leaned on his shoulder and he placed a hand on my head."
-n "The sound of waves was soothing. The feeling of Cain's shoulder was comfortable."
-n "I began to nod off as he gently ran his fingers through my hair."
-n "His soft voice interrupted the tranquil silence."
-cain "Come on."
-cain "Let's get you back inside."
+n "Сказав я боязким і втомленим голосом" # "I said in a timid and tired voice."
+n "Каїн недбало махнув рукою" # "Cain waved his hand dismissively."
+cain "Не переймайся цим" # "Don't worry about it."
+n "Він простягнув мені руку й допоміг звестися на ноги" # "He offered me a hand and helped me to my feet."
+n "Я сперся на його плече, а він поклав руку мені на голову" # "I leaned on his shoulder and he placed a hand on my head."
+n "Шум хвиль заспокоював. Плече Каїна відчувалося затишним" # "The sound of waves was soothing. The feeling of Cain's shoulder was comfortable."
+n "Я почав задрімувати, поки він ніжно перебирав пальцями моє волосся" # "I began to nod off as he gently ran his fingers through my hair."
+n "Його м'який голос перервав спокійну тишу" # "His soft voice interrupted the tranquil silence."
+cain "Ходімо" # "Come on."
+cain "Заведімо тебе назад усередину" # "Let's get you back inside."
 scene black with dissolve
-n "I wandered back inside with him and went straight to bed."
+n "Я побрів назад усередину разом з ним і одразу ліг спати" # "I wandered back inside with him and went straight to bed."
 jump cain_Morning_day2
 
 
 
 label cain_nightone_bathroom:
 $ cain_love +=10
-n "I reached for the door of the bathroom."
-n "What was I doing?"
-n "Was I actually going to go see him in the bathroom?"
-n "I touched the doorknob and slowly opened the door."
+n "Я потягнувся до дверей ванної" # "I reached for the door of the bathroom."
+n "Що я робив?" # "What was I doing?"
+n "Невже я справді збирався піти до нього у ванну?" # "Was I actually going to go see him in the bathroom?"
+n "Я торкнувся ручки дверей і повільно відчинив їх" # "I touched the doorknob and slowly opened the door."
 scene cain_bathroom_night with fade
-n "Cain wasn't in here but... "
-n "The tub was full of water and there were wine glasses on the side."
-n "I tilted my head and walked closer to the tub."
-n "I felt a pair of heavy hands on my hips and jumped."
-p "EEEK!"
-n "I squeaked out as I turned around."
+n "Каїна тут не було, але... " # "Cain wasn't in here but... "
+n "Ванна була повна води, а збоку стояли келихи з вином" # "The tub was full of water and there were wine glasses on the side."
+n "Я схилив голову набік і підійшов ближче до ванни" # "I tilted my head and walked closer to the tub."
+n "Я відчув пару важких рук на своїх стегнах і підстрибнув" # "I felt a pair of heavy hands on my hips and jumped."
+p "ІЇЇК!" # "EEEK!"
+n "Пискнув я, обертаючись" # "I squeaked out as I turned around."
 $ cwings,cbase, cexp = 0,1,1
 show cain
-cain "Why are you so jumpy?"
-cain "It's just me."
+cain "Чого ти такий полохливий?" # "Why are you so jumpy?"
+cain "Це лише я" # "It's just me."
 $ cwings,cbase, cexp = 0,1,11
-n "'You're exactly why I'm so jumpy,' I thought to myself as I crossed my arms."
-cain "You shouldn't be so jumpy around me, I DO live here after all."
-n "Cain said with a condescending tone that made me narrow my eyes."
-cain "Like what you see?"
-n "I opened my mouth to give him a witty response but I looked him over."
-n "He was completely naked."
+n "«Саме через тебе я такий полохливий», — подумав я, схрестивши руки" # "'You're exactly why I'm so jumpy,' I thought to myself as I crossed my arms."
+cain "Не варто тобі так сахатися біля мене, я ж усе-таки тут живу" # "You shouldn't be so jumpy around me, I DO live here after all."
+n "Сказав Каїн зверхнім тоном, від якого я примружив очі" # "Cain said with a condescending tone that made me narrow my eyes."
+cain "Подобається те, що бачиш?" # "Like what you see?"
+n "Я відкрив рота, щоб дати дотепну відповідь, але оглянув його" # "I opened my mouth to give him a witty response but I looked him over."
+n "Він був геть голий" # "He was completely naked."
 $ cwings,cbase, cexp = 0,1,9
-p "AH. WHY ARE YOU-"
-cain "Don't ask stupid questions."
-cain "It's a bathroom and I want to take a bath."
-n "He turned away from me and got into the bath himself."
-n "I stared at him and he motioned to me."
-cain "Come on."
-n "It sounded more like a command than a request so I took off my clothes and gingerly got into the water with him."
-n "Cain picked up a wine glass that was filled with a dark red liquid."
-n "I watched him sip it and I cringed."
-n "I wasn't sure what it was but it looked gross. "
+p "АХ. ЧОМУ ТИ-" # "AH. WHY ARE YOU-"
+cain "Не став дурних питань" # "Don't ask stupid questions."
+cain "Це ванна кімната, і я хочу скупатися" # "It's a bathroom and I want to take a bath."
+n "Він відвернувся від мене й сам заліз у ванну" # "He turned away from me and got into the bath himself."
+n "Я витріщився на нього, а він кивнув мені" # "I stared at him and he motioned to me."
+cain "Ну ж бо" # "Come on."
+n "Це прозвучало радше як наказ, ніж прохання, тож я зняв одяг і обережно заліз у воду до нього" # "It sounded more like a command than a request so I took off my clothes and gingerly got into the water with him."
+n "Каїн узяв келих, наповнений темно-червоною рідиною" # "Cain picked up a wine glass that was filled with a dark red liquid."
+n "Я дивився, як він відсьорбує її, і скривився" # "I watched him sip it and I cringed."
+n "Я не знав, що це, але виглядало воно бридко. " # "I wasn't sure what it was but it looked gross. "
 
 menu:
-    "\"What is that?\"":
+    "\"Що це таке?\"": # "What is that?"
         jump bath_what_is
-    "\"What are you?\"":
+    "\"Що ти таке?\"": # "What are you?"
         jump bathroom_what_are
 
 
 label bath_what_is:
-p "...What is that?"
-n "I asked looking at the glass."
+p "...Що це таке?" # "...What is that?"
+n "Спитав я, дивлячись на келих" # "I asked looking at the glass."
 $ cwings,cbase, cexp = 0,1,1
-cain "It's wine."
-p "Why does it look like that?"
-n "I scooted closer and he swirled it in his glass."
-n "Cain pushed back his wet hair."
+cain "Це вино" # "It's wine."
+p "Чому воно так виглядає?" # "Why does it look like that?"
+n "Я присунувся ближче, а він покрутив його в келиху" # "I scooted closer and he swirled it in his glass."
+n "Каїн відкинув назад мокре волосся" # "Cain pushed back his wet hair."
 $ cwings,cbase, cexp = 0,2,13
-cain "It's..."
-n "He let out a dark chuckle and looked at me, his eyes piercing through me making me feel small again."
-cain "Demon wine."
-p "So like blood!?"
-n "I said in a panicked voice."
-cain "I'm not a vampire!!"
-cain "It's made out of pomegranate and a few other ingredients."
-cain "Want to try it?"
+cain "Це..." # "It's..."
+n "Він похмуро гигикнув і глянув на мене, його очі пронизали мене наскрізь, знову змусивши почуватися нікчемним" # "He let out a dark chuckle and looked at me, his eyes piercing through me making me feel small again."
+cain "Демонське вино" # "Demon wine."
+p "Тобто наче кров!?" # "So like blood!?"
+n "Сказав я панічним голосом" # "I said in a panicked voice."
+cain "Я не вампір!!" # "I'm not a vampire!!"
+cain "Воно зроблене з гранату й ще кількох складників" # "It's made out of pomegranate and a few other ingredients."
+cain "Хочеш скуштувати?" # "Want to try it?"
 menu:
-    "\"Yes.\"":
+    "\"Так.\"": # "Yes."
         jump bath_drink_yes
-    "\"No.\"":
+    "\"Ні.\"": # "No."
         jump bath_drink_no
 
 
 label bath_drink_yes:
 $ cain_love +=10
-p "...Um. Okay."
-n "He held up the glass and took a sip of it before shifting towards me."
-n "He pushed his lips against mine and my eyes shot open."
-n "I struggled and put my hands on his shoulders."
-n "I tried to push against him but he was too strong."
-n "I could feel the liquid filling up my mouth."
-n "I swallowed it and it felt like my body was on fire."
-p "AHH... What was in that..?"
-n "My voice came out breathy and panting."
-cain "Well..."
+p "...Ем. Гаразд" # "...Um. Okay."
+n "Він підняв келих і зробив ковток, перш ніж присунутися до мене" # "He held up the glass and took a sip of it before shifting towards me."
+n "Він притиснув свої губи до моїх, і мої очі широко розплющились" # "He pushed his lips against mine and my eyes shot open."
+n "Я запручався й поклав руки йому на плечі" # "I struggled and put my hands on his shoulders."
+n "Я спробував відштовхнутися від нього, але він був надто сильний" # "I tried to push against him but he was too strong."
+n "Я відчував, як рідина наповнює мій рот" # "I could feel the liquid filling up my mouth."
+n "Я проковтнув її, і моє тіло ніби спалахнуло" # "I swallowed it and it felt like my body was on fire."
+p "ААХ... Що там було..?" # "AHH... What was in that..?"
+n "Мій голос вийшов задиханим і уривчастим" # "My voice came out breathy and panting."
+cain "Що ж..." # "Well..."
 $ cwings,cbase, cexp = 0,2,13
-n "Cain looked at my body and flicked my nipple."
-n "I let out a loud moan and put my hands over my mouth."
-n "He let out another loud laugh and licked his lips."
+n "Каїн глянув на моє тіло й клацнув по моєму соску" # "Cain looked at my body and flicked my nipple."
+n "Я голосно застогнав і затиснув рота руками" # "I let out a loud moan and put my hands over my mouth."
+n "Він знову голосно засміявся й облизав губи" # "He let out another loud laugh and licked his lips."
 $ cwings,cbase, cexp = 0,2,24
-cain "Looks like it works on you much faster than any demon."
-n "He rubbed his hands down my sides and I felt my toes curling up."
-n "His touch was making my head spin."
+cain "Схоже, на тебе воно діє значно швидше, ніж на будь-якого демона" # "Looks like it works on you much faster than any demon."
+n "Він провів руками по моїх боках, і я відчув, як підбираються пальці на ногах" # "He rubbed his hands down my sides and I felt my toes curling up."
+n "Від його дотику голова йшла обертом" # "His touch was making my head spin."
 $ cwings,cbase, cexp = 0,2,16
-n "He leaned into my ear and licked it, nipping softly."
-n "I let out another moan."
-cain "You feeling it yet?"
-n "He whispered into my ear."
-cain "I'm going to take what I want now."
+n "Він нахилився до мого вуха й лизнув його, легенько прикусивши" # "He leaned into my ear and licked it, nipping softly."
+n "Я знову застогнав" # "I let out another moan."
+cain "Ну що, вже забирає?" # "You feeling it yet?"
+n "Прошепотів він мені у вухо" # "He whispered into my ear."
+cain "Тепер я візьму те, чого хочу" # "I'm going to take what I want now."
 $ cwings,cbase, cexp = 0,2,17
-n "I quickly nodded my head as he stood over me."
-n "I could feel myself orgasming as he pushed his cock inside of me."
-cain "So soon? We're not done here."
-n "Cain started to thrust in me faster."
-n "I could hear the water splashing out of the bath."
-n "He grabbed my shoulders and pushed my head under the water."
-n "I could feel terror pulsing through my body."
-n "I grabbed his arm as he held me down."
-n "But he didn't let me up."
-n "I felt bubbles of air leave my mouth and I smacked his arm twice."
+n "Я швидко кивнув, поки він нависав наді мною" # "I quickly nodded my head as he stood over me."
+n "Я відчув, як кінчаю, коли він увігнав член у мене" # "I could feel myself orgasming as he pushed his cock inside of me."
+cain "Так скоро? Ми ще не закінчили" # "So soon? We're not done here."
+n "Каїн почав рухатися в мені швидше" # "Cain started to thrust in me faster."
+n "Я чув, як вода вихлюпується з ванни" # "I could hear the water splashing out of the bath."
+n "Він схопив мене за плечі й занурив мою голову під воду" # "He grabbed my shoulders and pushed my head under the water."
+n "Я відчував, як жах пульсує в моєму тілі" # "I could feel terror pulsing through my body."
+n "Я вчепився в його руку, поки він тримав мене" # "I grabbed his arm as he held me down."
+n "Але він не давав мені виринути" # "But he didn't let me up."
+n "Я відчув, як бульбашки повітря вириваються з мого рота, і двічі ляснув по його руці" # "I felt bubbles of air leave my mouth and I smacked his arm twice."
 if cain_love < 50:
-    n "He let me go and I pushed my head up for air but I hit the top of the water like a wall."
-    n "It felt like I was looking through glass as I put my hands against it."
-    n "He started to thrust faster in me."
-    n "My lungs filling with water."
-    n "I could feel him cumming inside of me as everything went dark..."
+    n "Він відпустив мене, і я рвонув головою вгору по повітря, але вдарився об поверхню води, наче об стіну" # "He let me go and I pushed my head up for air but I hit the top of the water like a wall."
+    n "Здавалося, ніби я дивлюся крізь скло, коли притиснув до неї руки" # "It felt like I was looking through glass as I put my hands against it."
+    n "Він почав рухатися в мені швидше" # "He started to thrust faster in me."
+    n "Мої легені наповнювалися водою" # "My lungs filling with water."
+    n "Я відчував, як він кінчає всередині мене, поки все довкола темніло..." # "I could feel him cumming inside of me as everything went dark..."
     hide screen health_bar
     hide screen sanity_bar
     play music "cain/cain_death.mp3"
     $ persistent.cain_ending_drown = True
     scene endslate with Dissolve(1.0)
     screen cain_ending_drown:
-        text "{=endslate_title}You Died{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter
-        text "\n\n\n\n{=endslate_subtitle}Cain drowned you.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter
+        text "{=endslate_title}Ти помер{/=endslate_title}\n\n\n" outlines [(2, "000000", 0, 0)] at truecenter # "You Died"
+        text "\n\n\n\n{=endslate_subtitle}Каїн утопив тебе.{/=endslate_subtitle}" outlines [(2, "000000", 0, 0)] at truecenter # "Cain drowned you."
     show screen cain_ending_drown
     with Dissolve(1.0)
     pause
     return
 else:
-    n "He let me go and I came up for air."
-    cain "You're lucky I knew what you meant."
-    n "I breathed hard, I didn't think he would let me up."
-    p "Y-you can keep going if you want.."
-    n "Cain put his hands on my hips again."
+    n "Він відпустив мене, і я виринув по повітря" # "He let me go and I came up for air."
+    cain "Тобі пощастило, що я зрозумів, що ти хотів сказати" # "You're lucky I knew what you meant."
+    n "Я важко дихав, я й не думав, що він мене відпустить" # "I breathed hard, I didn't think he would let me up."
+    p "М-можеш продовжувати, якщо хочеш.." # "Y-you can keep going if you want.."
+    n "Каїн знову поклав руки мені на стегна" # "Cain put his hands on my hips again."
     $ cwings,cbase, cexp = 0,2,13
-    cain "Don't mind if I do."
-    n "He started to thrust again and I wrapped my arms around his shoulders."
+    cain "Не відмовлюся" # "Don't mind if I do."
+    n "Він знову почав рухатися, а я обхопив руками його плечі" # "He started to thrust again and I wrapped my arms around his shoulders."
     n "Cain put his lips against my shoulder and started to suck on the skin as he moved."
     n "I pulled my legs tight around him and he came inside of me."
     n "He nuzzled me."
